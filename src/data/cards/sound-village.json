@@ -765,7 +765,7 @@
       "rarity": "uncommon",
       "isLegendary": false,
       "flavorText": "Bite me. No seriously \u2014 it heals.",
-      "artPath": "cards/ninja/karin.webp",
+      "artPath": null,
       "set": "sound-village",
       "setNumber": 16
     },
@@ -992,7 +992,7 @@
       "rarity": "common",
       "isLegendary": false,
       "flavorText": "Orochimaru-sama has plans for me.",
-      "artPath": "cards/ninja/sound-genin.webp",
+      "artPath": null,
       "set": "sound-village",
       "setNumber": 22
     },
@@ -1023,7 +1023,7 @@
       "rarity": "uncommon",
       "isLegendary": false,
       "flavorText": "The Sound stands united.",
-      "artPath": "cards/ninja/sound-jonin.webp",
+      "artPath": null,
       "set": "sound-village",
       "setNumber": 23
     },
@@ -1053,7 +1053,7 @@
       "rarity": "uncommon",
       "isLegendary": false,
       "flavorText": "I exist to serve.",
-      "artPath": "cards/ninja/oto-anbu.webp",
+      "artPath": null,
       "set": "sound-village",
       "setNumber": 24
     },

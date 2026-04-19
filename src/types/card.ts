@@ -62,7 +62,7 @@ export interface NinjaCard {
   isLegendary: boolean;
   isShiny?: boolean;
   flavorText: string;
-  artPath: string;
+  artPath: string | null;
 }
 
 export interface JutsuScrollCard {
@@ -75,7 +75,7 @@ export interface JutsuScrollCard {
   set: string;
   setNumber?: number;
   isShiny?: boolean;
-  artPath: string;
+  artPath: string | null;
 }
 
 export interface ToolCard {
@@ -88,7 +88,7 @@ export interface ToolCard {
   set: string;
   setNumber?: number;
   isShiny?: boolean;
-  artPath: string;
+  artPath: string | null;
 }
 
 export interface SenseiCard {
@@ -102,7 +102,7 @@ export interface SenseiCard {
   set: string;
   setNumber?: number;
   isShiny?: boolean;
-  artPath: string;
+  artPath: string | null;
 }
 
 export type GameCard = NinjaCard | JutsuScrollCard | ToolCard | SenseiCard;

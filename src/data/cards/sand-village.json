@@ -1033,7 +1033,7 @@
       "rarity": "common",
       "isLegendary": false,
       "flavorText": "Gaara-sensei taught me this.",
-      "artPath": "cards/ninja/sand-student.webp",
+      "artPath": null,
       "set": "sand-village",
       "setNumber": 23
     },

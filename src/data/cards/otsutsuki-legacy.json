@@ -534,7 +534,7 @@
       "rarity": "uncommon",
       "isLegendary": false,
       "flavorText": "Power is to be taken.",
-      "artPath": "cards/ninja/otsutsuki-acolyte.webp",
+      "artPath": null,
       "set": "otsutsuki-legacy",
       "setNumber": 12
     },
@@ -564,7 +564,7 @@
       "rarity": "rare",
       "isLegendary": false,
       "flavorText": "For the Goddess. For the Tree.",
-      "artPath": "cards/ninja/otsutsuki-knight.webp",
+      "artPath": null,
       "set": "otsutsuki-legacy",
       "setNumber": 13
     },
@@ -598,7 +598,7 @@
       "rarity": "common",
       "isLegendary": false,
       "flavorText": "We serve the Goddess.",
-      "artPath": "cards/ninja/otsutsuki-priestess.webp",
+      "artPath": null,
       "set": "otsutsuki-legacy",
       "setNumber": 14
     },
@@ -628,7 +628,7 @@
       "rarity": "uncommon",
       "isLegendary": false,
       "flavorText": "I have served a thousand years.",
-      "artPath": "cards/ninja/otsutsuki-warrior.webp",
+      "artPath": null,
       "set": "otsutsuki-legacy",
       "setNumber": 15
     },
@@ -659,7 +659,7 @@
       "rarity": "rare",
       "isLegendary": false,
       "flavorText": "The Tree must bear fruit.",
-      "artPath": "cards/ninja/fruit-guardian.webp",
+      "artPath": null,
       "set": "otsutsuki-legacy",
       "setNumber": 16
     },
@@ -693,7 +693,7 @@
       "rarity": "uncommon",
       "isLegendary": false,
       "flavorText": "All chakra returns to the Tree.",
-      "artPath": "cards/ninja/tree-root.webp",
+      "artPath": null,
       "set": "otsutsuki-legacy",
       "setNumber": 17
     },
@@ -726,7 +726,7 @@
       "rarity": "common",
       "isLegendary": false,
       "flavorText": "The Goddess sees through me.",
-      "artPath": "cards/ninja/rabbit-scout.webp",
+      "artPath": null,
       "set": "otsutsuki-legacy",
       "setNumber": 18
     },

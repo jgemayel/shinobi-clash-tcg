@@ -651,7 +651,7 @@
       "rarity": "uncommon",
       "isLegendary": false,
       "flavorText": "Stone sees all.",
-      "artPath": "cards/ninja/iwa-anbu.webp",
+      "artPath": null,
       "set": "stone-village",
       "setNumber": 15
     },
@@ -681,7 +681,7 @@
       "rarity": "uncommon",
       "isLegendary": false,
       "flavorText": "The elite guard.",
-      "artPath": "cards/ninja/iwa-elite.webp",
+      "artPath": null,
       "set": "stone-village",
       "setNumber": 16
     },
@@ -711,7 +711,7 @@
       "rarity": "uncommon",
       "isLegendary": false,
       "flavorText": "Our hearts are stone.",
-      "artPath": "cards/ninja/iwa-jonin.webp",
+      "artPath": null,
       "set": "stone-village",
       "setNumber": 17
     },
@@ -745,7 +745,7 @@
       "rarity": "common",
       "isLegendary": false,
       "flavorText": "The rock heals its own.",
-      "artPath": "cards/ninja/iwa-medic.webp",
+      "artPath": null,
       "set": "stone-village",
       "setNumber": 18
     },
@@ -775,7 +775,7 @@
       "rarity": "common",
       "isLegendary": false,
       "flavorText": "One shot, one kill.",
-      "artPath": "cards/ninja/iwa-sniper.webp",
+      "artPath": null,
       "set": "stone-village",
       "setNumber": 19
     },
@@ -805,7 +805,7 @@
       "rarity": "common",
       "isLegendary": false,
       "flavorText": "I'll be a Tsuchikage someday.",
-      "artPath": "cards/ninja/stone-cadet.webp",
+      "artPath": null,
       "set": "stone-village",
       "setNumber": 20
     },
@@ -835,7 +835,7 @@
       "rarity": "common",
       "isLegendary": false,
       "flavorText": "The earth speaks to me.",
-      "artPath": "cards/ninja/stone-scout.webp",
+      "artPath": null,
       "set": "stone-village",
       "setNumber": 21
     },
@@ -866,7 +866,7 @@
       "rarity": "uncommon",
       "isLegendary": false,
       "flavorText": "*earth rumbling*",
-      "artPath": "cards/ninja/rock-golem.webp",
+      "artPath": null,
       "set": "stone-village",
       "setNumber": 22
     },
@@ -907,7 +907,7 @@
       "rarity": "rare",
       "isLegendary": false,
       "flavorText": "The Kekkei Tota chooses me.",
-      "artPath": "cards/ninja/dust-prodigy.webp",
+      "artPath": null,
       "set": "stone-village",
       "setNumber": 23
     },

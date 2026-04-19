@@ -8,7 +8,7 @@ interface CardArtProps {
   cardType: string;
   chakraType?: string;
   stage?: number;
-  artPath?: string;
+  artPath?: string | null;
 }
 
 const S = '#f5d0a9'; // standard skin

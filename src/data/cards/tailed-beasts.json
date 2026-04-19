@@ -1184,7 +1184,7 @@
       "rarity": "common",
       "isLegendary": false,
       "flavorText": "I can feel it... whispering.",
-      "artPath": "cards/ninja/jinchuriki-trainee.webp",
+      "artPath": null,
       "set": "tailed-beasts",
       "setNumber": 24
     },
@@ -1214,7 +1214,7 @@
       "rarity": "common",
       "isLegendary": false,
       "flavorText": "Even fragments remember.",
-      "artPath": "cards/ninja/bijuu-fragment.webp",
+      "artPath": null,
       "set": "tailed-beasts",
       "setNumber": 25
     },
@@ -1244,7 +1244,7 @@
       "rarity": "uncommon",
       "isLegendary": false,
       "flavorText": "The host wears the power like a coat.",
-      "artPath": "cards/ninja/bijuu-shell.webp",
+      "artPath": null,
       "set": "tailed-beasts",
       "setNumber": 26
     },
@@ -1274,7 +1274,7 @@
       "rarity": "uncommon",
       "isLegendary": false,
       "flavorText": "Fragments can fight too.",
-      "artPath": "cards/ninja/bijuu-clone.webp",
+      "artPath": null,
       "set": "tailed-beasts",
       "setNumber": 27
     },
@@ -1304,7 +1304,7 @@
       "rarity": "common",
       "isLegendary": false,
       "flavorText": "One day I will have tails.",
-      "artPath": "cards/ninja/chakra-cub.webp",
+      "artPath": null,
       "set": "tailed-beasts",
       "setNumber": 28
     },
@@ -1348,7 +1348,7 @@
       "rarity": "secret",
       "isLegendary": true,
       "flavorText": "The dream of one eye, cast upon the world.",
-      "artPath": "cards/ninja/rinne-sharingan.webp",
+      "artPath": null,
       "set": "tailed-beasts",
       "setNumber": 29
     },

@@ -849,7 +849,7 @@
       "rarity": "rare",
       "isLegendary": false,
       "flavorText": "A rare user of the First Hokage's Wood Release.",
-      "artPath": "cards/ninja/yamato.webp",
+      "artPath": null,
       "set": "hidden-leaf-origins",
       "setNumber": 18
     },
@@ -889,7 +889,7 @@
       "rarity": "uncommon",
       "isLegendary": false,
       "flavorText": "Trained by Root to have no emotions \u2014 until he met Team 7.",
-      "artPath": "cards/ninja/sai.webp",
+      "artPath": null,
       "set": "hidden-leaf-origins",
       "setNumber": 19
     },
@@ -1170,7 +1170,7 @@
       "rarity": "rare",
       "isLegendary": false,
       "flavorText": "The Hyuga Clan's branded genius.",
-      "artPath": "cards/ninja/neji-stage1.webp",
+      "artPath": null,
       "set": "hidden-leaf-origins",
       "setNumber": 25
     },
@@ -1481,7 +1481,7 @@
       "rarity": "rare",
       "isLegendary": false,
       "flavorText": "Her confidence bloomed on the battlefield.",
-      "artPath": "cards/ninja/hinata-stage1.webp",
+      "artPath": null,
       "set": "hidden-leaf-origins",
       "setNumber": 32
     },
@@ -2045,7 +2045,7 @@
       "rarity": "uncommon",
       "isLegendary": false,
       "flavorText": "Carries TonTon wherever the Fifth Hokage goes.",
-      "artPath": "cards/ninja/shizune.webp",
+      "artPath": null,
       "set": "hidden-leaf-origins",
       "setNumber": 44
     },
@@ -2088,7 +2088,7 @@
       "rarity": "rare",
       "isLegendary": false,
       "flavorText": "The Heaven Curse Seal still lingers under her collar.",
-      "artPath": "cards/ninja/anko.webp",
+      "artPath": null,
       "set": "hidden-leaf-origins",
       "setNumber": 45
     },
@@ -2130,7 +2130,7 @@
       "rarity": "uncommon",
       "isLegendary": false,
       "flavorText": "Scars of a career in the Torture and Interrogation Force.",
-      "artPath": "cards/ninja/ibiki.webp",
+      "artPath": null,
       "set": "hidden-leaf-origins",
       "setNumber": 46
     },
@@ -2170,7 +2170,7 @@
       "rarity": "uncommon",
       "isLegendary": false,
       "flavorText": "Minato's bodyguard, always chewing a senbon.",
-      "artPath": "cards/ninja/genma.webp",
+      "artPath": null,
       "set": "hidden-leaf-origins",
       "setNumber": 47
     },
@@ -2213,7 +2213,7 @@
       "rarity": "rare",
       "isLegendary": false,
       "flavorText": "\"Shunshin no Shisui\" \u2014 Itachi's closest friend.",
-      "artPath": "cards/ninja/shisui-stage0.webp",
+      "artPath": null,
       "set": "hidden-leaf-origins",
       "setNumber": 48
     },
@@ -2260,7 +2260,7 @@
       "rarity": "ultra-rare",
       "isLegendary": true,
       "flavorText": "The ultimate genjutsu \u2014 a gift from a sacrificed eye.",
-      "artPath": "cards/ninja/shisui-stage1.webp",
+      "artPath": null,
       "set": "hidden-leaf-origins",
       "setNumber": 49
     },
@@ -2300,7 +2300,7 @@
       "rarity": "rare",
       "isLegendary": true,
       "flavorText": "His arm bears a dozen stolen Sharingans.",
-      "artPath": "cards/ninja/danzo.webp",
+      "artPath": null,
       "set": "hidden-leaf-origins",
       "setNumber": 50
     },
@@ -2710,7 +2710,7 @@
       "rarity": "common",
       "isLegendary": false,
       "flavorText": "Iruka's former colleague who betrayed the Leaf.",
-      "artPath": "cards/ninja/mizuki.webp",
+      "artPath": null,
       "set": "hidden-leaf-origins",
       "setNumber": 59
     },

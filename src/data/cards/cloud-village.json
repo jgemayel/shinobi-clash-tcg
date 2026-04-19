@@ -875,7 +875,7 @@
       "rarity": "uncommon",
       "isLegendary": false,
       "flavorText": "Light speed justice.",
-      "artPath": "cards/ninja/kumo-anbu.webp",
+      "artPath": null,
       "set": "cloud-village",
       "setNumber": 21
     },
@@ -905,7 +905,7 @@
       "rarity": "common",
       "isLegendary": false,
       "flavorText": "I'll be Raikage one day!",
-      "artPath": "cards/ninja/cloud-student.webp",
+      "artPath": null,
       "set": "cloud-village",
       "setNumber": 22
     },
@@ -935,7 +935,7 @@
       "rarity": "common",
       "isLegendary": false,
       "flavorText": "This blade sings in the storm.",
-      "artPath": "cards/ninja/bolt-sword.webp",
+      "artPath": null,
       "set": "cloud-village",
       "setNumber": 23
     },

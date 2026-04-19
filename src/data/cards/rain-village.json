@@ -517,7 +517,7 @@
       "rarity": "common",
       "isLegendary": false,
       "flavorText": "My clan was scattered, but I remain.",
-      "artPath": "cards/ninja/sasame.webp",
+      "artPath": null,
       "set": "rain-village",
       "setNumber": 12
     },
@@ -547,7 +547,7 @@
       "rarity": "uncommon",
       "isLegendary": false,
       "flavorText": "Fuma honor demands we fight.",
-      "artPath": "cards/ninja/arashi.webp",
+      "artPath": null,
       "set": "rain-village",
       "setNumber": 13
     },
@@ -581,7 +581,7 @@
       "rarity": "common",
       "isLegendary": false,
       "flavorText": "My webs catch the rain.",
-      "artPath": "cards/ninja/jigumo.webp",
+      "artPath": null,
       "set": "rain-village",
       "setNumber": 14
     },
@@ -731,7 +731,7 @@
       "rarity": "uncommon",
       "isLegendary": false,
       "flavorText": "The rain is our cover.",
-      "artPath": "cards/ninja/rain-anbu.webp",
+      "artPath": null,
       "set": "rain-village",
       "setNumber": 19
     },
@@ -761,7 +761,7 @@
       "rarity": "common",
       "isLegendary": false,
       "flavorText": "One day... I'll be Pain-sama's right hand.",
-      "artPath": "cards/ninja/rain-genin.webp",
+      "artPath": null,
       "set": "rain-village",
       "setNumber": 20
     },
@@ -791,7 +791,7 @@
       "rarity": "uncommon",
       "isLegendary": false,
       "flavorText": "Rain hides my steps.",
-      "artPath": "cards/ninja/rain-jonin.webp",
+      "artPath": null,
       "set": "rain-village",
       "setNumber": 21
     },
@@ -825,7 +825,7 @@
       "rarity": "common",
       "isLegendary": false,
       "flavorText": "The rain renews.",
-      "artPath": "cards/ninja/ame-medic.webp",
+      "artPath": null,
       "set": "rain-village",
       "setNumber": 22
     },
