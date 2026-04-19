@@ -14,7 +14,7 @@ import { canEvolve, evolveCard } from './EvolutionValidator';
 import { generateChakraOptions, attachChakra, removeChakra } from './ChakraManager';
 import { checkWinCondition } from './WinConditionChecker';
 import { isNinja, canPayChakraCost, generateInstanceId } from '@/lib/cardUtils';
-import { STARTING_HAND_SIZE, MAX_HAND_SIZE, MAX_BENCH_SIZE, REGULAR_KO_POINTS, LEGENDARY_KO_POINTS, CONFUSION_SELF_DAMAGE } from '@/lib/constants';
+import { STARTING_HAND_SIZE, MAX_HAND_SIZE, MAX_BENCH_SIZE, REGULAR_KO_POINTS, EX_KO_POINTS, CONFUSION_SELF_DAMAGE } from '@/lib/constants';
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -733,8 +733,8 @@ function handleKO(
   if (!koPlayer.active) return { state };
 
   const koCard = koPlayer.active;
-  const points = isNinja(koCard.card) && (koCard.card as NinjaCard).isLegendary
-    ? LEGENDARY_KO_POINTS
+  const points = isNinja(koCard.card) && (koCard.card as NinjaCard).isEx
+    ? EX_KO_POINTS
     : REGULAR_KO_POINTS;
 
   events.push({

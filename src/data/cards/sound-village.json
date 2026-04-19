@@ -12,24 +12,15 @@
       "subtitle": "Missing-nin Sannin",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 140,
+      "hp": 100,
       "chakraType": "colorless",
       "attacks": [
-        {
-          "name": "Striking Shadow Snakes",
-          "cost": {
-            "colorless": 1
-          },
-          "damage": 50,
-          "effect": null,
-          "description": "Snakes lunge from his sleeves."
-        },
         {
           "name": "Kusanagi Sword",
           "cost": {
             "colorless": 2
           },
-          "damage": 90,
+          "damage": 60,
           "effect": {
             "type": "status",
             "status": "poison",
@@ -40,13 +31,14 @@
       ],
       "ability": null,
       "weakness": "wind",
-      "retreatCost": 2,
+      "retreatCost": 1,
       "rarity": "rare",
       "isLegendary": false,
       "flavorText": "Ku ku ku... so eager to play.",
       "artPath": "cards/ninja/orochimaru.webp",
       "set": "sound-village",
-      "setNumber": 1
+      "setNumber": 1,
+      "isEx": false
     },
     {
       "id": "sndv-002",
@@ -55,24 +47,15 @@
       "subtitle": "Serpent Sage of Otogakure",
       "stage": 1,
       "evolvesFrom": "sndv-001",
-      "hp": 210,
+      "hp": 170,
       "chakraType": "colorless",
       "attacks": [
-        {
-          "name": "Eight Branches Jutsu",
-          "cost": {
-            "colorless": 4
-          },
-          "damage": 200,
-          "effect": null,
-          "description": "A titanic eight-headed serpent manifests."
-        },
         {
           "name": "Immortality Leech",
           "cost": {
             "colorless": 2
           },
-          "damage": 100,
+          "damage": 110,
           "effect": {
             "type": "heal",
             "amount": 60,
@@ -93,13 +76,14 @@
         }
       },
       "weakness": "wind",
-      "retreatCost": 3,
+      "retreatCost": 1,
       "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "I have a hundred bodies. Kill one \u2014 there is always another.",
       "artPath": "cards/ninja/orochimaru.webp",
       "set": "sound-village",
-      "setNumber": 2
+      "setNumber": 2,
+      "isEx": false
     },
     {
       "id": "sndv-003",
@@ -108,24 +92,15 @@
       "subtitle": "White Snake Sage \u2014 True Form",
       "stage": 2,
       "evolvesFrom": "sndv-002",
-      "hp": 280,
+      "hp": 240,
       "chakraType": "colorless",
       "attacks": [
-        {
-          "name": "Primordial Snake Crush",
-          "cost": {
-            "colorless": 3
-          },
-          "damage": 180,
-          "effect": null,
-          "description": "Colossal serpent jaws clamp shut."
-        },
         {
           "name": "All-Consuming Eight Heads",
           "cost": {
             "colorless": 5
           },
-          "damage": 320,
+          "damage": 150,
           "effect": {
             "type": "bench-damage",
             "target": "opponent-bench",
@@ -148,13 +123,14 @@
         }
       },
       "weakness": "wind",
-      "retreatCost": 4,
+      "retreatCost": 2,
       "rarity": "crown",
       "isLegendary": true,
       "flavorText": "Time is a coil. I slither through it.",
       "artPath": "cards/ninja/orochimaru.webp",
       "set": "sound-village",
-      "setNumber": 3
+      "setNumber": 3,
+      "isEx": false
     },
     {
       "id": "sndv-066",
@@ -163,28 +139,15 @@
       "subtitle": "Eight-Headed Spirit",
       "stage": 3,
       "evolvesFrom": "sndv-003",
-      "hp": 340,
+      "hp": 220,
       "chakraType": "colorless",
       "attacks": [
-        {
-          "name": "Ancient Serpent Coil",
-          "cost": {
-            "colorless": 3
-          },
-          "damage": 210,
-          "effect": {
-            "type": "status",
-            "status": "poison",
-            "target": "opponent-active"
-          },
-          "description": "Infinite coils crush and envenom."
-        },
         {
           "name": "Unbound Eight Heads",
           "cost": {
             "colorless": 5
           },
-          "damage": 360,
+          "damage": 140,
           "effect": {
             "type": "bench-damage",
             "target": "opponent-bench",
@@ -203,13 +166,70 @@
         }
       },
       "weakness": "wind",
-      "retreatCost": 4,
+      "retreatCost": 2,
       "rarity": "secret",
       "isLegendary": true,
       "flavorText": "I am time. I am the serpent eating itself.",
       "artPath": "cards/ninja/orochimaru.webp",
       "set": "sound-village",
-      "setNumber": 4
+      "setNumber": 4,
+      "isEx": false
+    },
+    {
+      "id": "sndv-066-ex",
+      "type": "ninja",
+      "name": "Orochimaru",
+      "subtitle": "Eight-Headed Spirit EX",
+      "stage": 3,
+      "evolvesFrom": null,
+      "hp": 290,
+      "chakraType": "colorless",
+      "attacks": [
+        {
+          "name": "Ancient Serpent Coil",
+          "cost": {
+            "colorless": 3
+          },
+          "damage": 120,
+          "effect": {
+            "type": "status",
+            "status": "poison",
+            "target": "opponent-active"
+          },
+          "description": "Infinite coils crush and envenom."
+        },
+        {
+          "name": "Unbound Eight Heads",
+          "cost": {
+            "colorless": 5
+          },
+          "damage": 190,
+          "effect": {
+            "type": "bench-damage",
+            "target": "opponent-bench",
+            "amount": 60
+          },
+          "description": "Each head strikes a different target."
+        }
+      ],
+      "ability": {
+        "name": "Undying Essence",
+        "description": "This Ninja cannot be KO'd by non-Legendary attacks.",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "legendary-ko-only"
+        }
+      },
+      "weakness": "wind",
+      "retreatCost": 3,
+      "rarity": "secret",
+      "isLegendary": false,
+      "flavorText": "I am time. I am the serpent eating itself.",
+      "artPath": "cards/ninja/orochimaru.webp",
+      "set": "sound-village",
+      "setNumber": 5,
+      "isEx": true
     },
     {
       "id": "sndv-004",
@@ -218,25 +238,16 @@
       "subtitle": "Sound Medic",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 80,
       "chakraType": "water",
       "attacks": [
-        {
-          "name": "Chakra Scalpel",
-          "cost": {
-            "water": 1
-          },
-          "damage": 50,
-          "effect": null,
-          "description": "Severs chakra pathways at the touch."
-        },
         {
           "name": "Medical Counter",
           "cost": {
             "water": 1,
             "colorless": 1
           },
-          "damage": 70,
+          "damage": 40,
           "effect": {
             "type": "heal",
             "amount": 20,
@@ -253,7 +264,8 @@
       "flavorText": "Knowledge is my weapon.",
       "artPath": "cards/ninja/kabuto.webp",
       "set": "sound-village",
-      "setNumber": 5
+      "setNumber": 6,
+      "isEx": false
     },
     {
       "id": "sndv-005",
@@ -262,25 +274,16 @@
       "subtitle": "Sage of Snakes",
       "stage": 1,
       "evolvesFrom": "sndv-004",
-      "hp": 180,
+      "hp": 170,
       "chakraType": "water",
       "attacks": [
-        {
-          "name": "White Rage Technique",
-          "cost": {
-            "water": 2
-          },
-          "damage": 110,
-          "effect": null,
-          "description": "Consumed snake chakra empowers the strike."
-        },
         {
           "name": "Edo Tensei Summon",
           "cost": {
             "water": 3,
             "colorless": 1
           },
-          "damage": 120,
+          "damage": 110,
           "effect": {
             "type": "conditional",
             "condition": "revive-legendary"
@@ -299,13 +302,14 @@
         }
       },
       "weakness": "lightning",
-      "retreatCost": 2,
+      "retreatCost": 1,
       "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "I have absorbed the essence of every Sannin.",
       "artPath": "cards/ninja/kabuto.webp",
       "set": "sound-village",
-      "setNumber": 6
+      "setNumber": 7,
+      "isEx": false
     },
     {
       "id": "sndv-006",
@@ -314,38 +318,30 @@
       "subtitle": "Kaguya Clan Survivor",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 120,
+      "hp": 100,
       "chakraType": "earth",
       "attacks": [
-        {
-          "name": "Dance of the Willow",
-          "cost": {
-            "colorless": 1
-          },
-          "damage": 60,
-          "effect": null,
-          "description": "Bone blades extend from his arms."
-        },
         {
           "name": "Ten-Finger Drilling Bullets",
           "cost": {
             "earth": 1,
             "colorless": 1
           },
-          "damage": 80,
+          "damage": 60,
           "effect": null,
           "description": "Fingertip bone-drill projectiles."
         }
       ],
       "ability": null,
       "weakness": "lightning",
-      "retreatCost": 2,
+      "retreatCost": 1,
       "rarity": "rare",
       "isLegendary": false,
       "flavorText": "My life was Orochimaru's tool.",
       "artPath": "cards/ninja/kimimaro.webp",
       "set": "sound-village",
-      "setNumber": 7
+      "setNumber": 8,
+      "isEx": false
     },
     {
       "id": "sndv-007",
@@ -354,25 +350,15 @@
       "subtitle": "Shikotsumyaku Awakened",
       "stage": 1,
       "evolvesFrom": "sndv-006",
-      "hp": 200,
+      "hp": 170,
       "chakraType": "earth",
       "attacks": [
-        {
-          "name": "Dance of the Clematis",
-          "cost": {
-            "earth": 2,
-            "colorless": 1
-          },
-          "damage": 160,
-          "effect": null,
-          "description": "A colossal bone drill skewers the foe."
-        },
         {
           "name": "Dance of the Seedling Fern",
           "cost": {
             "earth": 3
           },
-          "damage": 200,
+          "damage": 110,
           "effect": {
             "type": "bench-damage",
             "target": "opponent-bench",
@@ -392,13 +378,14 @@
         }
       },
       "weakness": "lightning",
-      "retreatCost": 2,
+      "retreatCost": 1,
       "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "My bones are the last relic of my clan.",
       "artPath": "cards/ninja/kimimaro.webp",
       "set": "sound-village",
-      "setNumber": 8
+      "setNumber": 9,
+      "isEx": false
     },
     {
       "id": "sndv-008",
@@ -407,24 +394,15 @@
       "subtitle": "Twin Demons",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 110,
+      "hp": 100,
       "chakraType": "colorless",
       "attacks": [
-        {
-          "name": "Twin Fist",
-          "cost": {
-            "colorless": 1
-          },
-          "damage": 50,
-          "effect": null,
-          "description": "Two brothers strike as one."
-        },
         {
           "name": "Merge Strike",
           "cost": {
             "colorless": 2
           },
-          "damage": 100,
+          "damage": 60,
           "effect": {
             "type": "heal",
             "amount": 20,
@@ -435,13 +413,14 @@
       ],
       "ability": null,
       "weakness": "wind",
-      "retreatCost": 2,
+      "retreatCost": 1,
       "rarity": "rare",
       "isLegendary": false,
       "flavorText": "We are never alone.",
       "artPath": "cards/ninja/sakon-ukon.webp",
       "set": "sound-village",
-      "setNumber": 9
+      "setNumber": 10,
+      "isEx": false
     },
     {
       "id": "sndv-009",
@@ -450,25 +429,15 @@
       "subtitle": "Cursed Seal Level 2",
       "stage": 1,
       "evolvesFrom": "sndv-008",
-      "hp": 170,
+      "hp": 140,
       "chakraType": "colorless",
       "attacks": [
-        {
-          "name": "Rakasha Merge",
-          "cost": {
-            "colorless": 2,
-            "fire": 1
-          },
-          "damage": 140,
-          "effect": null,
-          "description": "Demonic fused form strikes."
-        },
         {
           "name": "Parasitic Destruction",
           "cost": {
             "colorless": 3
           },
-          "damage": 170,
+          "damage": 90,
           "effect": {
             "type": "status",
             "status": "poison",
@@ -479,13 +448,14 @@
       ],
       "ability": null,
       "weakness": "wind",
-      "retreatCost": 3,
+      "retreatCost": 1,
       "rarity": "ultra-rare",
       "isLegendary": false,
       "flavorText": "Look what the seal did to us.",
       "artPath": "cards/ninja/sakon-ukon.webp",
       "set": "sound-village",
-      "setNumber": 10
+      "setNumber": 11,
+      "isEx": false
     },
     {
       "id": "sndv-010",
@@ -498,25 +468,12 @@
       "chakraType": "earth",
       "attacks": [
         {
-          "name": "Spider Web Trap",
-          "cost": {
-            "earth": 1
-          },
-          "damage": 40,
-          "effect": {
-            "type": "status",
-            "status": "paralyze",
-            "target": "opponent-active"
-          },
-          "description": "Binding chakra webs."
-        },
-        {
           "name": "Spider Bow",
           "cost": {
             "earth": 1,
             "colorless": 1
           },
-          "damage": 80,
+          "damage": 60,
           "effect": null,
           "description": "A living bow fires poison arrows."
         }
@@ -529,7 +486,8 @@
       "flavorText": "I have six arms. I need them all.",
       "artPath": "cards/ninja/kidomaru.webp",
       "set": "sound-village",
-      "setNumber": 11
+      "setNumber": 12,
+      "isEx": false
     },
     {
       "id": "sndv-011",
@@ -538,29 +496,16 @@
       "subtitle": "Chakra Absorber",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 140,
+      "hp": 100,
       "chakraType": "earth",
       "attacks": [
-        {
-          "name": "Earth Prison Dome",
-          "cost": {
-            "earth": 2
-          },
-          "damage": 60,
-          "effect": {
-            "type": "status",
-            "status": "seal",
-            "target": "opponent-active"
-          },
-          "description": "Traps the target in a hollow of earth."
-        },
         {
           "name": "Chakra Drain",
           "cost": {
             "earth": 1,
             "colorless": 1
           },
-          "damage": 70,
+          "damage": 60,
           "effect": {
             "type": "energy-discard",
             "target": "opponent-active",
@@ -571,13 +516,14 @@
       ],
       "ability": null,
       "weakness": "wind",
-      "retreatCost": 3,
+      "retreatCost": 1,
       "rarity": "rare",
       "isLegendary": false,
       "flavorText": "I feed on chakra. You'll do nicely.",
       "artPath": "cards/ninja/jirobo.webp",
       "set": "sound-village",
-      "setNumber": 12
+      "setNumber": 13,
+      "isEx": false
     },
     {
       "id": "sndv-012",
@@ -590,24 +536,11 @@
       "chakraType": "colorless",
       "attacks": [
         {
-          "name": "Melodic Illusion",
-          "cost": {
-            "colorless": 1
-          },
-          "damage": 40,
-          "effect": {
-            "type": "status",
-            "status": "confusion",
-            "target": "opponent-active"
-          },
-          "description": "A genjutsu-laden flute tune."
-        },
-        {
           "name": "Summon Doki",
           "cost": {
             "colorless": 2
           },
-          "damage": 100,
+          "damage": 60,
           "effect": null,
           "description": "Three demon-spirits attack in sequence."
         }
@@ -620,7 +553,8 @@
       "flavorText": "Dance for me. Or die.",
       "artPath": "cards/ninja/tayuya.webp",
       "set": "sound-village",
-      "setNumber": 13
+      "setNumber": 14,
+      "isEx": false
     },
     {
       "id": "sndv-013",
@@ -629,7 +563,7 @@
       "subtitle": "Taka Warrior",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 120,
+      "hp": 100,
       "chakraType": "water",
       "attacks": [
         {
@@ -638,22 +572,9 @@
             "water": 1,
             "colorless": 1
           },
-          "damage": 80,
+          "damage": 60,
           "effect": null,
           "description": "Wields the stolen Executioner's Blade."
-        },
-        {
-          "name": "Hydration Slip",
-          "cost": {
-            "water": 1
-          },
-          "damage": 30,
-          "effect": {
-            "type": "conditional",
-            "condition": "damage-reduction",
-            "amount": 30
-          },
-          "description": "Liquefies briefly to dodge."
         }
       ],
       "ability": null,
@@ -664,7 +585,8 @@
       "flavorText": "I collect all seven blades, one way or another.",
       "artPath": "cards/ninja/suigetsu.webp",
       "set": "sound-village",
-      "setNumber": 14
+      "setNumber": 15,
+      "isEx": false
     },
     {
       "id": "sndv-014",
@@ -673,24 +595,15 @@
       "subtitle": "Cursed Seal Origin",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 130,
+      "hp": 100,
       "chakraType": "colorless",
       "attacks": [
-        {
-          "name": "Transformation Fist",
-          "cost": {
-            "colorless": 1
-          },
-          "damage": 60,
-          "effect": null,
-          "description": "His arm reshapes mid-swing."
-        },
         {
           "name": "Sage Transformation",
           "cost": {
             "colorless": 3
           },
-          "damage": 150,
+          "damage": 60,
           "effect": {
             "type": "self-damage",
             "amount": 30
@@ -709,13 +622,14 @@
         }
       },
       "weakness": "fire",
-      "retreatCost": 2,
+      "retreatCost": 1,
       "rarity": "rare",
       "isLegendary": false,
       "flavorText": "My body is not my own.",
       "artPath": "cards/ninja/jugo.webp",
       "set": "sound-village",
-      "setNumber": 15
+      "setNumber": 16,
+      "isEx": false
     },
     {
       "id": "sndv-015",
@@ -728,20 +642,11 @@
       "chakraType": "colorless",
       "attacks": [
         {
-          "name": "Sensor Slash",
-          "cost": {
-            "colorless": 1
-          },
-          "damage": 40,
-          "effect": null,
-          "description": "Strikes exactly where needed."
-        },
-        {
           "name": "Chakra Chain Bind",
           "cost": {
             "colorless": 2
           },
-          "damage": 60,
+          "damage": 40,
           "effect": {
             "type": "status",
             "status": "seal",
@@ -767,7 +672,8 @@
       "flavorText": "Bite me. No seriously \u2014 it heals.",
       "artPath": null,
       "set": "sound-village",
-      "setNumber": 16
+      "setNumber": 17,
+      "isEx": false
     },
     {
       "id": "sndv-016",
@@ -776,28 +682,15 @@
       "subtitle": "Sound Chunin",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 60,
       "chakraType": "colorless",
       "attacks": [
-        {
-          "name": "Melody Arm",
-          "cost": {
-            "colorless": 1
-          },
-          "damage": 30,
-          "effect": {
-            "type": "status",
-            "status": "confusion",
-            "target": "opponent-active"
-          },
-          "description": "Sonic disruption to inner ear."
-        },
         {
           "name": "Ressonating Echo Speaker",
           "cost": {
             "colorless": 2
           },
-          "damage": 60,
+          "damage": 30,
           "effect": null,
           "description": "Amplified sound rocks the target."
         }
@@ -810,7 +703,8 @@
       "flavorText": "Sound is my weapon.",
       "artPath": "cards/ninja/dosu.webp",
       "set": "sound-village",
-      "setNumber": 17
+      "setNumber": 18,
+      "isEx": false
     },
     {
       "id": "sndv-017",
@@ -819,25 +713,16 @@
       "subtitle": "Sound Genin",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 70,
+      "hp": 60,
       "chakraType": "wind",
       "attacks": [
-        {
-          "name": "Air Cutter",
-          "cost": {
-            "wind": 1
-          },
-          "damage": 40,
-          "effect": null,
-          "description": "Wind-shot from palm holes."
-        },
         {
           "name": "Supersonic Blast",
           "cost": {
             "wind": 1,
             "colorless": 1
           },
-          "damage": 70,
+          "damage": 30,
           "effect": {
             "type": "self-damage",
             "amount": 20
@@ -853,7 +738,8 @@
       "flavorText": "I destroy with sound and air.",
       "artPath": "cards/ninja/zaku.webp",
       "set": "sound-village",
-      "setNumber": 18
+      "setNumber": 19,
+      "isEx": false
     },
     {
       "id": "sndv-018",
@@ -862,28 +748,15 @@
       "subtitle": "Senbon Kunoichi",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 70,
+      "hp": 60,
       "chakraType": "colorless",
       "attacks": [
-        {
-          "name": "Bell Genjutsu",
-          "cost": {
-            "colorless": 1
-          },
-          "damage": 30,
-          "effect": {
-            "type": "status",
-            "status": "confusion",
-            "target": "opponent-active"
-          },
-          "description": "Ringing bells induce illusion."
-        },
         {
           "name": "Senbon Needles",
           "cost": {
             "colorless": 1
           },
-          "damage": 40,
+          "damage": 30,
           "effect": null,
           "description": "Precision needle throw."
         }
@@ -896,7 +769,8 @@
       "flavorText": "My bells guide you... astray.",
       "artPath": "cards/ninja/kin.webp",
       "set": "sound-village",
-      "setNumber": 19
+      "setNumber": 20,
+      "isEx": false
     },
     {
       "id": "sndv-019",
@@ -905,7 +779,7 @@
       "subtitle": "Chakra Absorber",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 90,
+      "hp": 80,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -913,7 +787,7 @@
           "cost": {
             "colorless": 1
           },
-          "damage": 30,
+          "damage": 40,
           "effect": {
             "type": "energy-discard",
             "target": "opponent-active",
@@ -930,7 +804,8 @@
       "flavorText": "Your power becomes mine.",
       "artPath": "cards/ninja/yoroi.webp",
       "set": "sound-village",
-      "setNumber": 20
+      "setNumber": 21,
+      "isEx": false
     },
     {
       "id": "sndv-020",
@@ -939,7 +814,7 @@
       "subtitle": "Rubber Contortionist",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 90,
+      "hp": 80,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -964,7 +839,8 @@
       "flavorText": "I'll wrap you up.",
       "artPath": "cards/ninja/misumi.webp",
       "set": "sound-village",
-      "setNumber": 21
+      "setNumber": 22,
+      "isEx": false
     },
     {
       "id": "sndv-021",
@@ -973,7 +849,7 @@
       "subtitle": "Oto Rookie",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 50,
+      "hp": 60,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -981,7 +857,7 @@
           "cost": {
             "colorless": 1
           },
-          "damage": 20,
+          "damage": 30,
           "effect": null,
           "description": "Basic kunai throw."
         }
@@ -994,7 +870,8 @@
       "flavorText": "Orochimaru-sama has plans for me.",
       "artPath": null,
       "set": "sound-village",
-      "setNumber": 22
+      "setNumber": 23,
+      "isEx": false
     },
     {
       "id": "sndv-023",
@@ -1003,7 +880,7 @@
       "subtitle": "Oto Elite",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 110,
+      "hp": 80,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -1012,20 +889,21 @@
             "colorless": 1,
             "wind": 1
           },
-          "damage": 70,
+          "damage": 40,
           "effect": null,
           "description": "Mixed-element assault."
         }
       ],
       "ability": null,
       "weakness": "wind",
-      "retreatCost": 2,
+      "retreatCost": 1,
       "rarity": "uncommon",
       "isLegendary": false,
       "flavorText": "The Sound stands united.",
       "artPath": null,
       "set": "sound-village",
-      "setNumber": 23
+      "setNumber": 24,
+      "isEx": false
     },
     {
       "id": "sndv-022",
@@ -1034,7 +912,7 @@
       "subtitle": "Snake Guard",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 80,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -1042,7 +920,7 @@
           "cost": {
             "colorless": 1
           },
-          "damage": 60,
+          "damage": 40,
           "effect": null,
           "description": "A stealth assassin's strike."
         }
@@ -1055,7 +933,8 @@
       "flavorText": "I exist to serve.",
       "artPath": null,
       "set": "sound-village",
-      "setNumber": 24
+      "setNumber": 25,
+      "isEx": false
     },
     {
       "id": "sndv-035",
@@ -1069,7 +948,7 @@
       "rarity": "legendary",
       "set": "sound-village",
       "artPath": "cards/jutsu/body-reincarnation.webp",
-      "setNumber": 25
+      "setNumber": 26
     },
     {
       "id": "sndv-027",
@@ -1087,7 +966,7 @@
       "rarity": "legendary",
       "set": "sound-village",
       "artPath": "cards/jutsu/edo-tensei.webp",
-      "setNumber": 26
+      "setNumber": 27
     },
     {
       "id": "sndv-045",
@@ -1102,7 +981,7 @@
       "rarity": "legendary",
       "set": "sound-village",
       "artPath": "cards/jutsu/eight-branches.webp",
-      "setNumber": 27
+      "setNumber": 28
     },
     {
       "id": "sndv-028",
@@ -1116,7 +995,7 @@
       "rarity": "legendary",
       "set": "sound-village",
       "artPath": "cards/jutsu/manda.webp",
-      "setNumber": 28
+      "setNumber": 29
     },
     {
       "id": "sndv-037",
@@ -1135,7 +1014,7 @@
       "rarity": "ultra-rare",
       "set": "sound-village",
       "artPath": "cards/jutsu/cannibalism.webp",
-      "setNumber": 29
+      "setNumber": 30
     },
     {
       "id": "sndv-025",
@@ -1154,7 +1033,7 @@
       "rarity": "ultra-rare",
       "set": "sound-village",
       "artPath": "cards/jutsu/curse-earth.webp",
-      "setNumber": 30
+      "setNumber": 31
     },
     {
       "id": "sndv-024",
@@ -1173,7 +1052,7 @@
       "rarity": "ultra-rare",
       "set": "sound-village",
       "artPath": "cards/jutsu/curse-heaven.webp",
-      "setNumber": 31
+      "setNumber": 32
     },
     {
       "id": "sndv-033",
@@ -1188,7 +1067,7 @@
       "rarity": "ultra-rare",
       "set": "sound-village",
       "artPath": "cards/jutsu/clematis.webp",
-      "setNumber": 32
+      "setNumber": 33
     },
     {
       "id": "sndv-046",
@@ -1202,7 +1081,7 @@
       "rarity": "ultra-rare",
       "set": "sound-village",
       "artPath": "cards/jutsu/mind-control.webp",
-      "setNumber": 33
+      "setNumber": 34
     },
     {
       "id": "sndv-044",
@@ -1221,7 +1100,7 @@
       "rarity": "ultra-rare",
       "set": "sound-village",
       "artPath": "cards/jutsu/white-snake.webp",
-      "setNumber": 34
+      "setNumber": 35
     },
     {
       "id": "sndv-040",
@@ -1235,7 +1114,7 @@
       "rarity": "ultra-rare",
       "set": "sound-village",
       "artPath": "cards/jutsu/sound-invasion.webp",
-      "setNumber": 35
+      "setNumber": 36
     },
     {
       "id": "sndv-043",
@@ -1250,7 +1129,7 @@
       "rarity": "rare",
       "set": "sound-village",
       "artPath": "cards/jutsu/chakra-parasite.webp",
-      "setNumber": 36
+      "setNumber": 37
     },
     {
       "id": "sndv-041",
@@ -1264,7 +1143,7 @@
       "rarity": "rare",
       "set": "sound-village",
       "artPath": "cards/jutsu/curse-creation.webp",
-      "setNumber": 37
+      "setNumber": 38
     },
     {
       "id": "sndv-032",
@@ -1279,7 +1158,7 @@
       "rarity": "rare",
       "set": "sound-village",
       "artPath": "cards/jutsu/willow-dance.webp",
-      "setNumber": 38
+      "setNumber": 39
     },
     {
       "id": "sndv-030",
@@ -1294,7 +1173,7 @@
       "rarity": "rare",
       "set": "sound-village",
       "artPath": "cards/jutsu/flute-genjutsu.webp",
-      "setNumber": 39
+      "setNumber": 40
     },
     {
       "id": "sndv-036",
@@ -1309,7 +1188,7 @@
       "rarity": "rare",
       "set": "sound-village",
       "artPath": "cards/jutsu/hydrification.webp",
-      "setNumber": 40
+      "setNumber": 41
     },
     {
       "id": "sndv-026",
@@ -1323,7 +1202,7 @@
       "rarity": "rare",
       "set": "sound-village",
       "artPath": "cards/jutsu/snake-summon.webp",
-      "setNumber": 41
+      "setNumber": 42
     },
     {
       "id": "sndv-031",
@@ -1343,7 +1222,7 @@
       "rarity": "rare",
       "set": "sound-village",
       "artPath": "cards/jutsu/spider-cocoon.webp",
-      "setNumber": 42
+      "setNumber": 43
     },
     {
       "id": "sndv-034",
@@ -1358,7 +1237,7 @@
       "rarity": "rare",
       "set": "sound-village",
       "artPath": "cards/jutsu/taka-assassin.webp",
-      "setNumber": 43
+      "setNumber": 44
     },
     {
       "id": "sndv-047",
@@ -1373,7 +1252,7 @@
       "rarity": "uncommon",
       "set": "sound-village",
       "artPath": "cards/jutsu/cheese-crush.webp",
-      "setNumber": 44
+      "setNumber": 45
     },
     {
       "id": "sndv-038",
@@ -1389,7 +1268,7 @@
       "rarity": "uncommon",
       "set": "sound-village",
       "artPath": "cards/jutsu/serpent-strangle.webp",
-      "setNumber": 45
+      "setNumber": 46
     },
     {
       "id": "sndv-029",
@@ -1404,7 +1283,7 @@
       "rarity": "uncommon",
       "set": "sound-village",
       "artPath": "cards/jutsu/sound-wave.webp",
-      "setNumber": 46
+      "setNumber": 47
     },
     {
       "id": "sndv-039",
@@ -1420,7 +1299,7 @@
       "rarity": "uncommon",
       "set": "sound-village",
       "artPath": "cards/jutsu/venom-needles.webp",
-      "setNumber": 47
+      "setNumber": 48
     },
     {
       "id": "sndv-042",
@@ -1434,7 +1313,7 @@
       "rarity": "common",
       "set": "sound-village",
       "artPath": "cards/jutsu/shed-skin.webp",
-      "setNumber": 48
+      "setNumber": 49
     },
     {
       "id": "sndv-050",
@@ -1449,7 +1328,7 @@
       "rarity": "legendary",
       "set": "sound-village",
       "artPath": "cards/tools/kusanagi.webp",
-      "setNumber": 49
+      "setNumber": 50
     },
     {
       "id": "sndv-049",
@@ -1463,7 +1342,7 @@
       "rarity": "ultra-rare",
       "set": "sound-village",
       "artPath": "cards/tools/curse-earth-mark.webp",
-      "setNumber": 50
+      "setNumber": 51
     },
     {
       "id": "sndv-048",
@@ -1481,7 +1360,7 @@
       "rarity": "ultra-rare",
       "set": "sound-village",
       "artPath": "cards/tools/curse-heaven-mark.webp",
-      "setNumber": 51
+      "setNumber": 52
     },
     {
       "id": "sndv-058",
@@ -1497,7 +1376,7 @@
       "rarity": "ultra-rare",
       "set": "sound-village",
       "artPath": "cards/tools/sharingan-transplant.webp",
-      "setNumber": 52
+      "setNumber": 53
     },
     {
       "id": "sndv-051",
@@ -1511,7 +1390,7 @@
       "rarity": "ultra-rare",
       "set": "sound-village",
       "artPath": "cards/tools/serpent-scroll.webp",
-      "setNumber": 53
+      "setNumber": 54
     },
     {
       "id": "sndv-056",
@@ -1526,7 +1405,7 @@
       "rarity": "rare",
       "set": "sound-village",
       "artPath": "cards/tools/medical-bag.webp",
-      "setNumber": 54
+      "setNumber": 55
     },
     {
       "id": "sndv-060",
@@ -1540,7 +1419,7 @@
       "rarity": "rare",
       "set": "sound-village",
       "artPath": "cards/tools/shed-skin-scroll.webp",
-      "setNumber": 55
+      "setNumber": 56
     },
     {
       "id": "sndv-052",
@@ -1555,7 +1434,7 @@
       "rarity": "rare",
       "set": "sound-village",
       "artPath": "cards/tools/sound-amplifier.webp",
-      "setNumber": 56
+      "setNumber": 57
     },
     {
       "id": "sndv-054",
@@ -1569,7 +1448,7 @@
       "rarity": "rare",
       "set": "sound-village",
       "artPath": "cards/tools/tayuya-flute.webp",
-      "setNumber": 57
+      "setNumber": 58
     },
     {
       "id": "sndv-055",
@@ -1583,7 +1462,7 @@
       "rarity": "uncommon",
       "set": "sound-village",
       "artPath": "cards/tools/jugo-wings.webp",
-      "setNumber": 58
+      "setNumber": 59
     },
     {
       "id": "sndv-057",
@@ -1598,7 +1477,7 @@
       "rarity": "uncommon",
       "set": "sound-village",
       "artPath": "cards/tools/serpent-scale.webp",
-      "setNumber": 59
+      "setNumber": 60
     },
     {
       "id": "sndv-053",
@@ -1612,7 +1491,7 @@
       "rarity": "common",
       "set": "sound-village",
       "artPath": "cards/tools/oto-headband.webp",
-      "setNumber": 60
+      "setNumber": 61
     },
     {
       "id": "sndv-059",
@@ -1626,7 +1505,7 @@
       "rarity": "common",
       "set": "sound-village",
       "artPath": "cards/tools/sound-gauntlet.webp",
-      "setNumber": 61
+      "setNumber": 62
     },
     {
       "id": "sndv-061",
@@ -1641,7 +1520,7 @@
       "rarity": "legendary",
       "set": "sound-village",
       "artPath": "cards/sensei/orochimaru.webp",
-      "setNumber": 62
+      "setNumber": 63
     },
     {
       "id": "sndv-062",
@@ -1657,7 +1536,7 @@
       "rarity": "ultra-rare",
       "set": "sound-village",
       "artPath": "cards/sensei/kabuto.webp",
-      "setNumber": 63
+      "setNumber": 64
     },
     {
       "id": "sndv-063",
@@ -1672,7 +1551,7 @@
       "rarity": "legendary",
       "set": "sound-village",
       "artPath": "cards/sensei/kimimaro.webp",
-      "setNumber": 64
+      "setNumber": 65
     },
     {
       "id": "sndv-064",
@@ -1687,7 +1566,7 @@
       "rarity": "uncommon",
       "set": "sound-village",
       "artPath": "cards/sensei/sound-elder.webp",
-      "setNumber": 65
+      "setNumber": 66
     },
     {
       "id": "sndv-065",
@@ -1703,7 +1582,7 @@
       "rarity": "rare",
       "set": "sound-village",
       "artPath": "cards/sensei/taka-leader.webp",
-      "setNumber": 66
+      "setNumber": 67
     }
   ],
   "pullRates": {
@@ -1715,5 +1594,5 @@
     "secret": 0.005,
     "crown": 0.002
   },
-  "totalCards": 66
+  "totalCards": 67
 }

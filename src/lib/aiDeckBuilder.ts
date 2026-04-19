@@ -54,7 +54,9 @@ function groupFamilies(ninjas: NinjaCard[]): FamilyTree[] {
     const stages = [...cards].sort((a, b) => a.stage - b.stage);
     const hasBasic = stages.some((s) => s.stage === 0);
     const power = stages.reduce(
-      (sum, s) => sum + s.hp + (s.attacks[0]?.damage ?? 0) + (s.isLegendary ? 120 : 0) + rarityRank(s.rarity) * 20,
+      // Power score — EX is a bigger swing than legendary since it scores
+      // double points on KO. Legendary is still a nice-to-have marker.
+      (sum, s) => sum + s.hp + (s.attacks[0]?.damage ?? 0) + (s.isEx ? 180 : 0) + (s.isLegendary ? 80 : 0) + rarityRank(s.rarity) * 20,
       0
     );
     families.push({ name, stages, hasBasic, power });

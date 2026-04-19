@@ -16,21 +16,12 @@
       "chakraType": "earth",
       "attacks": [
         {
-          "name": "Rock Fist",
-          "cost": {
-            "earth": 1
-          },
-          "damage": 40,
-          "effect": null,
-          "description": "A stone-knuckled punch."
-        },
-        {
           "name": "Levitation Strike",
           "cost": {
             "earth": 1,
             "colorless": 1
           },
-          "damage": 70,
+          "damage": 60,
           "effect": null,
           "description": "Drops from above with stored momentum."
         }
@@ -43,7 +34,8 @@
       "flavorText": "My old bones still know how to fight.",
       "artPath": "cards/ninja/onoki.webp",
       "set": "stone-village",
-      "setNumber": 1
+      "setNumber": 1,
+      "isEx": false
     },
     {
       "id": "stv-002",
@@ -52,25 +44,16 @@
       "subtitle": "Third Tsuchikage \u2014 Dust Release",
       "stage": 1,
       "evolvesFrom": "stv-001",
-      "hp": 190,
+      "hp": 170,
       "chakraType": "earth",
       "attacks": [
-        {
-          "name": "Light Weight Boulder",
-          "cost": {
-            "earth": 2
-          },
-          "damage": 120,
-          "effect": null,
-          "description": "A levitated stone launched at crushing speed."
-        },
         {
           "name": "Dust Release: Detachment",
           "cost": {
             "earth": 3,
             "colorless": 2
           },
-          "damage": 230,
+          "damage": 110,
           "effect": null,
           "description": "A particle-level disintegration field."
         }
@@ -85,13 +68,14 @@
         }
       },
       "weakness": "wind",
-      "retreatCost": 0,
+      "retreatCost": 1,
       "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "I can erase mountains if I choose.",
       "artPath": "cards/ninja/onoki.webp",
       "set": "stone-village",
-      "setNumber": 2
+      "setNumber": 2,
+      "isEx": false
     },
     {
       "id": "stv-066",
@@ -100,21 +84,9 @@
       "subtitle": "Ghost of Iwagakure",
       "stage": 2,
       "evolvesFrom": "stv-002",
-      "hp": 240,
+      "hp": 200,
       "chakraType": "earth",
       "attacks": [
-        {
-          "name": "Dust Disappear",
-          "cost": {
-            "earth": 2
-          },
-          "damage": 130,
-          "effect": {
-            "type": "conditional",
-            "condition": "untargetable-jutsu"
-          },
-          "description": "Dust-level phase."
-        },
         {
           "name": "Primitive Cosmic Release",
           "cost": {
@@ -122,7 +94,7 @@
             "wind": 1,
             "colorless": 1
           },
-          "damage": 260,
+          "damage": 130,
           "effect": null,
           "description": "Dust Release at full mastery."
         }
@@ -138,13 +110,14 @@
         }
       },
       "weakness": "wind",
-      "retreatCost": 0,
+      "retreatCost": 2,
       "rarity": "secret",
       "isLegendary": true,
       "flavorText": "Old bones still dance in the clouds.",
       "artPath": "cards/ninja/onoki.webp",
       "set": "stone-village",
-      "setNumber": 3
+      "setNumber": 3,
+      "isEx": false
     },
     {
       "id": "stv-067",
@@ -153,18 +126,9 @@
       "subtitle": "Dust Release Ascendant",
       "stage": 3,
       "evolvesFrom": "stv-066",
-      "hp": 300,
+      "hp": 260,
       "chakraType": "earth",
       "attacks": [
-        {
-          "name": "Particle Annihilation",
-          "cost": {
-            "earth": 4
-          },
-          "damage": 300,
-          "effect": null,
-          "description": "Target ceases to exist at atomic level."
-        },
         {
           "name": "Ascendant Dust Field",
           "cost": {
@@ -172,7 +136,7 @@
             "wind": 2,
             "colorless": 2
           },
-          "damage": 340,
+          "damage": 160,
           "effect": {
             "type": "bench-damage",
             "target": "all-opponents",
@@ -191,13 +155,68 @@
         }
       },
       "weakness": "wind",
-      "retreatCost": 0,
+      "retreatCost": 2,
       "rarity": "crown",
       "isLegendary": true,
       "flavorText": "I became the Kekkei Tota itself.",
       "artPath": "cards/ninja/onoki.webp",
       "set": "stone-village",
-      "setNumber": 4
+      "setNumber": 4,
+      "isEx": false
+    },
+    {
+      "id": "stv-067-ex",
+      "type": "ninja",
+      "name": "Onoki",
+      "subtitle": "Dust Release Ascendant EX",
+      "stage": 3,
+      "evolvesFrom": null,
+      "hp": 330,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Particle Annihilation",
+          "cost": {
+            "earth": 4
+          },
+          "damage": 140,
+          "effect": null,
+          "description": "Target ceases to exist at atomic level."
+        },
+        {
+          "name": "Ascendant Dust Field",
+          "cost": {
+            "earth": 3,
+            "wind": 2,
+            "colorless": 2
+          },
+          "damage": 210,
+          "effect": {
+            "type": "bench-damage",
+            "target": "all-opponents",
+            "amount": 80
+          },
+          "description": "The battlefield itself disintegrates."
+        }
+      ],
+      "ability": {
+        "name": "Dust Release God",
+        "description": "All your Earth Ninjas attacks ignore damage reduction.",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "bench-pierce"
+        }
+      },
+      "weakness": "wind",
+      "retreatCost": 3,
+      "rarity": "crown",
+      "isLegendary": false,
+      "flavorText": "I became the Kekkei Tota itself.",
+      "artPath": "cards/ninja/onoki.webp",
+      "set": "stone-village",
+      "setNumber": 5,
+      "isEx": true
     },
     {
       "id": "stv-003",
@@ -206,25 +225,15 @@
       "subtitle": "Second Tsuchikage",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 170,
+      "hp": 160,
       "chakraType": "earth",
       "attacks": [
-        {
-          "name": "Dust Release: Primitive World",
-          "cost": {
-            "earth": 2,
-            "colorless": 1
-          },
-          "damage": 140,
-          "effect": null,
-          "description": "Atomizes matter in a conical blast."
-        },
         {
           "name": "Sensor Strike",
           "cost": {
             "colorless": 2
           },
-          "damage": 90,
+          "damage": 100,
           "effect": {
             "type": "draw",
             "amount": 1
@@ -242,13 +251,14 @@
         }
       },
       "weakness": "wind",
-      "retreatCost": 0,
+      "retreatCost": 1,
       "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "Invisible, weightless, unfathomable.",
       "artPath": "cards/ninja/mu.webp",
       "set": "stone-village",
-      "setNumber": 5
+      "setNumber": 6,
+      "isEx": false
     },
     {
       "id": "stv-004",
@@ -257,42 +267,30 @@
       "subtitle": "First Tsuchikage",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 180,
+      "hp": 160,
       "chakraType": "earth",
       "attacks": [
-        {
-          "name": "Founding Wall",
-          "cost": {
-            "earth": 2
-          },
-          "damage": 100,
-          "effect": {
-            "type": "heal",
-            "amount": 30,
-            "target": "self-bench"
-          },
-          "description": "Earthen wall that shields allies."
-        },
         {
           "name": "Village Founder's Will",
           "cost": {
             "earth": 2,
             "colorless": 2
           },
-          "damage": 170,
+          "damage": 100,
           "effect": null,
           "description": "Iwa's foundation reasserts itself."
         }
       ],
       "ability": null,
       "weakness": "wind",
-      "retreatCost": 3,
+      "retreatCost": 1,
       "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "My village was built from this very rock.",
       "artPath": "cards/ninja/ishikawa.webp",
       "set": "stone-village",
-      "setNumber": 6
+      "setNumber": 7,
+      "isEx": false
     },
     {
       "id": "stv-005",
@@ -301,30 +299,16 @@
       "subtitle": "Stone's Pride",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 90,
+      "hp": 80,
       "chakraType": "earth",
       "attacks": [
-        {
-          "name": "Quicklime Jutsu",
-          "cost": {
-            "earth": 1,
-            "fire": 1
-          },
-          "damage": 60,
-          "effect": {
-            "type": "status",
-            "status": "burn",
-            "target": "opponent-active"
-          },
-          "description": "A burning lime-stone paste."
-        },
         {
           "name": "Earth Spear",
           "cost": {
             "earth": 1,
             "colorless": 1
           },
-          "damage": 70,
+          "damage": 40,
           "effect": null,
           "description": "A hardened stone lance."
         }
@@ -337,7 +321,8 @@
       "flavorText": "Grandpa taught me well.",
       "artPath": "cards/ninja/kurotsuchi.webp",
       "set": "stone-village",
-      "setNumber": 7
+      "setNumber": 8,
+      "isEx": false
     },
     {
       "id": "stv-006",
@@ -346,7 +331,7 @@
       "subtitle": "Fourth Tsuchikage",
       "stage": 1,
       "evolvesFrom": "stv-005",
-      "hp": 150,
+      "hp": 110,
       "chakraType": "earth",
       "attacks": [
         {
@@ -355,33 +340,25 @@
             "earth": 2,
             "fire": 1
           },
-          "damage": 120,
+          "damage": 70,
           "effect": {
             "type": "status",
             "status": "burn",
             "target": "opponent-active"
           },
           "description": "Lime that hardens into scorching cement."
-        },
-        {
-          "name": "Water Trumpet",
-          "cost": {
-            "water": 2
-          },
-          "damage": 100,
-          "effect": null,
-          "description": "A conical blast of water."
         }
       ],
       "ability": null,
       "weakness": "wind",
-      "retreatCost": 2,
+      "retreatCost": 1,
       "rarity": "rare",
       "isLegendary": false,
       "flavorText": "I carry the Tsuchikage lineage.",
       "artPath": "cards/ninja/kurotsuchi.webp",
       "set": "stone-village",
-      "setNumber": 8
+      "setNumber": 9,
+      "isEx": false
     },
     {
       "id": "stv-009",
@@ -390,38 +367,30 @@
       "subtitle": "Big Jonin",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 140,
+      "hp": 80,
       "chakraType": "earth",
       "attacks": [
-        {
-          "name": "Earth Fist",
-          "cost": {
-            "earth": 1
-          },
-          "damage": 60,
-          "effect": null,
-          "description": "A stone-encased haymaker."
-        },
         {
           "name": "Rock Golem Summon",
           "cost": {
             "earth": 2,
             "colorless": 1
           },
-          "damage": 110,
+          "damage": 40,
           "effect": null,
           "description": "A humanoid stone ally."
         }
       ],
       "ability": null,
       "weakness": "wind",
-      "retreatCost": 3,
+      "retreatCost": 1,
       "rarity": "uncommon",
       "isLegendary": false,
       "flavorText": "I'm not JUST big.",
       "artPath": "cards/ninja/akatsuchi.webp",
       "set": "stone-village",
-      "setNumber": 9
+      "setNumber": 10,
+      "isEx": false
     },
     {
       "id": "stv-010",
@@ -430,41 +399,30 @@
       "subtitle": "Iwa Commander",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 130,
+      "hp": 100,
       "chakraType": "earth",
       "attacks": [
-        {
-          "name": "Command Strike",
-          "cost": {
-            "colorless": 1
-          },
-          "damage": 40,
-          "effect": {
-            "type": "draw",
-            "amount": 1
-          },
-          "description": "Tactical assault."
-        },
         {
           "name": "Earth Division",
           "cost": {
             "earth": 2,
             "colorless": 1
           },
-          "damage": 110,
+          "damage": 60,
           "effect": null,
           "description": "Splits the ground beneath the target."
         }
       ],
       "ability": null,
       "weakness": "wind",
-      "retreatCost": 2,
+      "retreatCost": 1,
       "rarity": "rare",
       "isLegendary": false,
       "flavorText": "Leadership of the Earth Division.",
       "artPath": "cards/ninja/kitsuchi.webp",
       "set": "stone-village",
-      "setNumber": 10
+      "setNumber": 11,
+      "isEx": false
     },
     {
       "id": "stv-011",
@@ -473,7 +431,7 @@
       "subtitle": "Explosion Release",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 110,
+      "hp": 100,
       "chakraType": "fire",
       "attacks": [
         {
@@ -482,7 +440,7 @@
             "fire": 1,
             "earth": 1
           },
-          "damage": 80,
+          "damage": 60,
           "effect": {
             "type": "self-damage",
             "amount": 20
@@ -492,13 +450,14 @@
       ],
       "ability": null,
       "weakness": "water",
-      "retreatCost": 2,
+      "retreatCost": 1,
       "rarity": "rare",
       "isLegendary": false,
       "flavorText": "A single touch is enough.",
       "artPath": "cards/ninja/gari.webp",
       "set": "stone-village",
-      "setNumber": 11
+      "setNumber": 12,
+      "isEx": false
     },
     {
       "id": "stv-007",
@@ -507,30 +466,16 @@
       "subtitle": "Five-Tails Jinchuriki",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 180,
+      "hp": 130,
       "chakraType": "water",
       "attacks": [
-        {
-          "name": "Steam Punch",
-          "cost": {
-            "water": 1,
-            "fire": 1
-          },
-          "damage": 80,
-          "effect": {
-            "type": "status",
-            "status": "burn",
-            "target": "opponent-active"
-          },
-          "description": "A scalding pressurized blast."
-        },
         {
           "name": "Kokuo's Horn Charge",
           "cost": {
             "water": 2,
             "colorless": 2
           },
-          "damage": 180,
+          "damage": 80,
           "effect": null,
           "description": "Partial transformation into the horned beast."
         }
@@ -546,13 +491,14 @@
         }
       },
       "weakness": "wind",
-      "retreatCost": 3,
+      "retreatCost": 1,
       "rarity": "ultra-rare",
       "isLegendary": false,
       "flavorText": "Heat is a shield.",
       "artPath": "cards/ninja/han.webp",
       "set": "stone-village",
-      "setNumber": 12
+      "setNumber": 13,
+      "isEx": false
     },
     {
       "id": "stv-008",
@@ -561,39 +507,30 @@
       "subtitle": "Four-Tails Jinchuriki",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 160,
+      "hp": 130,
       "chakraType": "fire",
       "attacks": [
-        {
-          "name": "Lava Punch",
-          "cost": {
-            "fire": 1,
-            "earth": 1
-          },
-          "damage": 80,
-          "effect": null,
-          "description": "A molten knuckle."
-        },
         {
           "name": "Son Goku's Wrath",
           "cost": {
             "fire": 2,
             "earth": 2
           },
-          "damage": 170,
+          "damage": 80,
           "effect": null,
           "description": "Channels the ape's fury."
         }
       ],
       "ability": null,
       "weakness": "water",
-      "retreatCost": 3,
+      "retreatCost": 1,
       "rarity": "ultra-rare",
       "isLegendary": false,
       "flavorText": "Son and I have an understanding.",
       "artPath": "cards/ninja/roshi.webp",
       "set": "stone-village",
-      "setNumber": 13
+      "setNumber": 14,
+      "isEx": false
     },
     {
       "id": "stv-012",
@@ -602,7 +539,7 @@
       "subtitle": "Iwa Prodigy",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 70,
+      "hp": 60,
       "chakraType": "earth",
       "attacks": [
         {
@@ -623,7 +560,8 @@
       "flavorText": "Art is born here!",
       "artPath": "cards/ninja/young-deidara.webp",
       "set": "stone-village",
-      "setNumber": 14
+      "setNumber": 15,
+      "isEx": false
     },
     {
       "id": "stv-013",
@@ -632,7 +570,7 @@
       "subtitle": "Stone Assassin",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 90,
+      "hp": 80,
       "chakraType": "earth",
       "attacks": [
         {
@@ -640,7 +578,7 @@
           "cost": {
             "earth": 1
           },
-          "damage": 50,
+          "damage": 40,
           "effect": null,
           "description": "A muted killing blow."
         }
@@ -653,7 +591,8 @@
       "flavorText": "Stone sees all.",
       "artPath": null,
       "set": "stone-village",
-      "setNumber": 15
+      "setNumber": 16,
+      "isEx": false
     },
     {
       "id": "stv-020",
@@ -662,7 +601,7 @@
       "subtitle": "Special Jonin",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 110,
+      "hp": 80,
       "chakraType": "earth",
       "attacks": [
         {
@@ -670,20 +609,21 @@
           "cost": {
             "earth": 2
           },
-          "damage": 90,
+          "damage": 40,
           "effect": null,
           "description": "A heavy blow with stone force."
         }
       ],
       "ability": null,
       "weakness": "wind",
-      "retreatCost": 2,
+      "retreatCost": 1,
       "rarity": "uncommon",
       "isLegendary": false,
       "flavorText": "The elite guard.",
       "artPath": null,
       "set": "stone-village",
-      "setNumber": 16
+      "setNumber": 17,
+      "isEx": false
     },
     {
       "id": "stv-014",
@@ -692,7 +632,7 @@
       "subtitle": "Earth Specialist",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 80,
       "chakraType": "earth",
       "attacks": [
         {
@@ -700,7 +640,7 @@
           "cost": {
             "earth": 1
           },
-          "damage": 50,
+          "damage": 40,
           "effect": null,
           "description": "An earthen duplicate lands the blow."
         }
@@ -713,7 +653,8 @@
       "flavorText": "Our hearts are stone.",
       "artPath": null,
       "set": "stone-village",
-      "setNumber": 17
+      "setNumber": 18,
+      "isEx": false
     },
     {
       "id": "stv-019",
@@ -722,7 +663,7 @@
       "subtitle": "Earth Medic",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 70,
+      "hp": 60,
       "chakraType": "water",
       "attacks": [
         {
@@ -730,7 +671,7 @@
           "cost": {
             "water": 1
           },
-          "damage": 20,
+          "damage": 30,
           "effect": {
             "type": "heal",
             "amount": 40,
@@ -747,7 +688,8 @@
       "flavorText": "The rock heals its own.",
       "artPath": null,
       "set": "stone-village",
-      "setNumber": 18
+      "setNumber": 19,
+      "isEx": false
     },
     {
       "id": "stv-017",
@@ -756,7 +698,7 @@
       "subtitle": "Long Range Specialist",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 60,
       "chakraType": "earth",
       "attacks": [
         {
@@ -764,7 +706,7 @@
           "cost": {
             "earth": 1
           },
-          "damage": 60,
+          "damage": 30,
           "effect": null,
           "description": "A supersonic pebble."
         }
@@ -777,7 +719,8 @@
       "flavorText": "One shot, one kill.",
       "artPath": null,
       "set": "stone-village",
-      "setNumber": 19
+      "setNumber": 20,
+      "isEx": false
     },
     {
       "id": "stv-015",
@@ -786,7 +729,7 @@
       "subtitle": "Academy Student",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 50,
+      "hp": 60,
       "chakraType": "earth",
       "attacks": [
         {
@@ -794,7 +737,7 @@
           "cost": {
             "colorless": 1
           },
-          "damage": 20,
+          "damage": 30,
           "effect": null,
           "description": "A basic projectile."
         }
@@ -807,7 +750,8 @@
       "flavorText": "I'll be a Tsuchikage someday.",
       "artPath": null,
       "set": "stone-village",
-      "setNumber": 20
+      "setNumber": 21,
+      "isEx": false
     },
     {
       "id": "stv-021",
@@ -837,7 +781,8 @@
       "flavorText": "The earth speaks to me.",
       "artPath": null,
       "set": "stone-village",
-      "setNumber": 21
+      "setNumber": 22,
+      "isEx": false
     },
     {
       "id": "stv-018",
@@ -846,7 +791,7 @@
       "subtitle": "Summoned Stone Ally",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 130,
+      "hp": 80,
       "chakraType": "earth",
       "attacks": [
         {
@@ -855,20 +800,21 @@
             "earth": 1,
             "colorless": 1
           },
-          "damage": 80,
+          "damage": 40,
           "effect": null,
           "description": "A sweeping stone arm."
         }
       ],
       "ability": null,
       "weakness": "wind",
-      "retreatCost": 3,
+      "retreatCost": 1,
       "rarity": "uncommon",
       "isLegendary": false,
       "flavorText": "*earth rumbling*",
       "artPath": null,
       "set": "stone-village",
-      "setNumber": 22
+      "setNumber": 23,
+      "isEx": false
     },
     {
       "id": "stv-016",
@@ -877,18 +823,9 @@
       "subtitle": "Kekkei Tota Student",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 110,
+      "hp": 100,
       "chakraType": "earth",
       "attacks": [
-        {
-          "name": "Dust Crack",
-          "cost": {
-            "earth": 2
-          },
-          "damage": 80,
-          "effect": null,
-          "description": "A dust-level particle rupture."
-        },
         {
           "name": "Three-Element Erasure",
           "cost": {
@@ -896,20 +833,21 @@
             "wind": 1,
             "colorless": 1
           },
-          "damage": 160,
+          "damage": 60,
           "effect": null,
           "description": "A fledgling Dust Release."
         }
       ],
       "ability": null,
       "weakness": "wind",
-      "retreatCost": 2,
+      "retreatCost": 1,
       "rarity": "rare",
       "isLegendary": false,
       "flavorText": "The Kekkei Tota chooses me.",
       "artPath": null,
       "set": "stone-village",
-      "setNumber": 23
+      "setNumber": 24,
+      "isEx": false
     },
     {
       "id": "stv-024",
@@ -929,7 +867,7 @@
       "rarity": "legendary",
       "set": "stone-village",
       "artPath": "cards/jutsu/dust-release.webp",
-      "setNumber": 24
+      "setNumber": 25
     },
     {
       "id": "stv-025",
@@ -945,7 +883,7 @@
       "rarity": "ultra-rare",
       "set": "stone-village",
       "artPath": "cards/jutsu/dust-prison.webp",
-      "setNumber": 25
+      "setNumber": 26
     },
     {
       "id": "stv-043",
@@ -965,7 +903,7 @@
       "rarity": "ultra-rare",
       "set": "stone-village",
       "artPath": "cards/jutsu/explosion.webp",
-      "setNumber": 26
+      "setNumber": 27
     },
     {
       "id": "stv-044",
@@ -981,7 +919,7 @@
       "rarity": "ultra-rare",
       "set": "stone-village",
       "artPath": "cards/jutsu/lava-release.webp",
-      "setNumber": 27
+      "setNumber": 28
     },
     {
       "id": "stv-047",
@@ -1001,7 +939,7 @@
       "rarity": "ultra-rare",
       "set": "stone-village",
       "artPath": "cards/jutsu/mountain-splitter.webp",
-      "setNumber": 28
+      "setNumber": 29
     },
     {
       "id": "stv-037",
@@ -1021,7 +959,7 @@
       "rarity": "ultra-rare",
       "set": "stone-village",
       "artPath": "cards/jutsu/mausoleum.webp",
-      "setNumber": 29
+      "setNumber": 30
     },
     {
       "id": "stv-035",
@@ -1035,7 +973,7 @@
       "rarity": "rare",
       "set": "stone-village",
       "artPath": "cards/jutsu/earth-dome.webp",
-      "setNumber": 30
+      "setNumber": 31
     },
     {
       "id": "stv-039",
@@ -1050,7 +988,7 @@
       "rarity": "rare",
       "set": "stone-village",
       "artPath": "cards/jutsu/earth-grudge.webp",
-      "setNumber": 31
+      "setNumber": 32
     },
     {
       "id": "stv-023",
@@ -1065,7 +1003,7 @@
       "rarity": "rare",
       "set": "stone-village",
       "artPath": "cards/jutsu/stone-dragon.webp",
-      "setNumber": 32
+      "setNumber": 33
     },
     {
       "id": "stv-030",
@@ -1080,7 +1018,7 @@
       "rarity": "rare",
       "set": "stone-village",
       "artPath": "cards/jutsu/swamp.webp",
-      "setNumber": 33
+      "setNumber": 34
     },
     {
       "id": "stv-034",
@@ -1095,7 +1033,7 @@
       "rarity": "rare",
       "set": "stone-village",
       "artPath": "cards/jutsu/earthquake.webp",
-      "setNumber": 34
+      "setNumber": 35
     },
     {
       "id": "stv-045",
@@ -1109,7 +1047,7 @@
       "rarity": "rare",
       "set": "stone-village",
       "artPath": "cards/jutsu/stone-block.webp",
-      "setNumber": 35
+      "setNumber": 36
     },
     {
       "id": "stv-029",
@@ -1129,7 +1067,7 @@
       "rarity": "rare",
       "set": "stone-village",
       "artPath": "cards/jutsu/rock-pillar.webp",
-      "setNumber": 36
+      "setNumber": 37
     },
     {
       "id": "stv-032",
@@ -1143,7 +1081,7 @@
       "rarity": "rare",
       "set": "stone-village",
       "artPath": "cards/jutsu/golem-summon.webp",
-      "setNumber": 37
+      "setNumber": 38
     },
     {
       "id": "stv-046",
@@ -1158,7 +1096,7 @@
       "rarity": "rare",
       "set": "stone-village",
       "artPath": "cards/jutsu/stone-needles.webp",
-      "setNumber": 38
+      "setNumber": 39
     },
     {
       "id": "stv-022",
@@ -1173,7 +1111,7 @@
       "rarity": "uncommon",
       "set": "stone-village",
       "artPath": "cards/jutsu/earth-wall.webp",
-      "setNumber": 39
+      "setNumber": 40
     },
     {
       "id": "stv-026",
@@ -1192,7 +1130,7 @@
       "rarity": "uncommon",
       "set": "stone-village",
       "artPath": "cards/jutsu/mud-flow.webp",
-      "setNumber": 40
+      "setNumber": 41
     },
     {
       "id": "stv-036",
@@ -1206,7 +1144,7 @@
       "rarity": "uncommon",
       "set": "stone-village",
       "artPath": "cards/jutsu/mud-wolves.webp",
-      "setNumber": 41
+      "setNumber": 42
     },
     {
       "id": "stv-033",
@@ -1221,7 +1159,7 @@
       "rarity": "uncommon",
       "set": "stone-village",
       "artPath": "cards/jutsu/rising-earth.webp",
-      "setNumber": 42
+      "setNumber": 43
     },
     {
       "id": "stv-027",
@@ -1236,7 +1174,7 @@
       "rarity": "uncommon",
       "set": "stone-village",
       "artPath": "cards/jutsu/stone-bullet.webp",
-      "setNumber": 43
+      "setNumber": 44
     },
     {
       "id": "stv-041",
@@ -1250,7 +1188,7 @@
       "rarity": "uncommon",
       "set": "stone-village",
       "artPath": "cards/jutsu/stone-cocoon.webp",
-      "setNumber": 44
+      "setNumber": 45
     },
     {
       "id": "stv-038",
@@ -1265,7 +1203,7 @@
       "rarity": "uncommon",
       "set": "stone-village",
       "artPath": "cards/jutsu/weight-of-world.webp",
-      "setNumber": 45
+      "setNumber": 46
     },
     {
       "id": "stv-031",
@@ -1280,7 +1218,7 @@
       "rarity": "common",
       "set": "stone-village",
       "artPath": "cards/jutsu/earth-armor.webp",
-      "setNumber": 46
+      "setNumber": 47
     },
     {
       "id": "stv-040",
@@ -1294,7 +1232,7 @@
       "rarity": "common",
       "set": "stone-village",
       "artPath": "cards/jutsu/earth-clone.webp",
-      "setNumber": 47
+      "setNumber": 48
     },
     {
       "id": "stv-042",
@@ -1309,7 +1247,7 @@
       "rarity": "common",
       "set": "stone-village",
       "artPath": "cards/jutsu/earth-spear.webp",
-      "setNumber": 48
+      "setNumber": 49
     },
     {
       "id": "stv-028",
@@ -1324,7 +1262,7 @@
       "rarity": "common",
       "set": "stone-village",
       "artPath": "cards/jutsu/tremor.webp",
-      "setNumber": 49
+      "setNumber": 50
     },
     {
       "id": "stv-057",
@@ -1338,7 +1276,7 @@
       "rarity": "ultra-rare",
       "set": "stone-village",
       "artPath": "cards/tools/earth-ring.webp",
-      "setNumber": 50
+      "setNumber": 51
     },
     {
       "id": "stv-048",
@@ -1352,7 +1290,7 @@
       "rarity": "ultra-rare",
       "set": "stone-village",
       "artPath": "cards/tools/onoki-hat.webp",
-      "setNumber": 51
+      "setNumber": 52
     },
     {
       "id": "stv-053",
@@ -1366,7 +1304,7 @@
       "rarity": "ultra-rare",
       "set": "stone-village",
       "artPath": "cards/tools/red-secret.webp",
-      "setNumber": 52
+      "setNumber": 53
     },
     {
       "id": "stv-050",
@@ -1380,7 +1318,7 @@
       "rarity": "rare",
       "set": "stone-village",
       "artPath": "cards/tools/earth-gauntlets.webp",
-      "setNumber": 53
+      "setNumber": 54
     },
     {
       "id": "stv-054",
@@ -1394,7 +1332,7 @@
       "rarity": "rare",
       "set": "stone-village",
       "artPath": "cards/tools/giant-boulder.webp",
-      "setNumber": 54
+      "setNumber": 55
     },
     {
       "id": "stv-060",
@@ -1409,7 +1347,7 @@
       "rarity": "rare",
       "set": "stone-village",
       "artPath": "cards/tools/golem-arm.webp",
-      "setNumber": 55
+      "setNumber": 56
     },
     {
       "id": "stv-052",
@@ -1423,7 +1361,7 @@
       "rarity": "rare",
       "set": "stone-village",
       "artPath": "cards/tools/fist-weights.webp",
-      "setNumber": 56
+      "setNumber": 57
     },
     {
       "id": "stv-055",
@@ -1438,7 +1376,7 @@
       "rarity": "rare",
       "set": "stone-village",
       "artPath": "cards/tools/kage-staff.webp",
-      "setNumber": 57
+      "setNumber": 58
     },
     {
       "id": "stv-059",
@@ -1453,7 +1391,7 @@
       "rarity": "rare",
       "set": "stone-village",
       "artPath": "cards/tools/lava-amulet.webp",
-      "setNumber": 58
+      "setNumber": 59
     },
     {
       "id": "stv-056",
@@ -1468,7 +1406,7 @@
       "rarity": "uncommon",
       "set": "stone-village",
       "artPath": "cards/tools/mountain-scroll.webp",
-      "setNumber": 59
+      "setNumber": 60
     },
     {
       "id": "stv-058",
@@ -1482,7 +1420,7 @@
       "rarity": "uncommon",
       "set": "stone-village",
       "artPath": "cards/tools/rock-sword.webp",
-      "setNumber": 60
+      "setNumber": 61
     },
     {
       "id": "stv-051",
@@ -1497,7 +1435,7 @@
       "rarity": "uncommon",
       "set": "stone-village",
       "artPath": "cards/tools/stone-shield.webp",
-      "setNumber": 61
+      "setNumber": 62
     },
     {
       "id": "stv-049",
@@ -1511,7 +1449,7 @@
       "rarity": "common",
       "set": "stone-village",
       "artPath": "cards/tools/iwa-headband.webp",
-      "setNumber": 62
+      "setNumber": 63
     },
     {
       "id": "stv-061",
@@ -1526,7 +1464,7 @@
       "rarity": "legendary",
       "set": "stone-village",
       "artPath": "cards/sensei/onoki.webp",
-      "setNumber": 63
+      "setNumber": 64
     },
     {
       "id": "stv-063",
@@ -1542,7 +1480,7 @@
       "rarity": "legendary",
       "set": "stone-village",
       "artPath": "cards/sensei/mu.webp",
-      "setNumber": 64
+      "setNumber": 65
     },
     {
       "id": "stv-062",
@@ -1557,7 +1495,7 @@
       "rarity": "ultra-rare",
       "set": "stone-village",
       "artPath": "cards/sensei/kurotsuchi.webp",
-      "setNumber": 65
+      "setNumber": 66
     },
     {
       "id": "stv-064",
@@ -1574,7 +1512,7 @@
       "rarity": "rare",
       "set": "stone-village",
       "artPath": "cards/sensei/kitsuchi.webp",
-      "setNumber": 66
+      "setNumber": 67
     },
     {
       "id": "stv-065",
@@ -1593,7 +1531,7 @@
       "rarity": "uncommon",
       "set": "stone-village",
       "artPath": "cards/sensei/iwa-elder.webp",
-      "setNumber": 67
+      "setNumber": 68
     }
   ],
   "pullRates": {
@@ -1605,5 +1543,5 @@
     "secret": 0.005,
     "crown": 0.002
   },
-  "totalCards": 67
+  "totalCards": 68
 }

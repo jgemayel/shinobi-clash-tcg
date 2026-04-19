@@ -12,7 +12,7 @@
       "subtitle": "Fourth Raikage",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 120,
+      "hp": 100,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -21,29 +21,21 @@
             "lightning": 1,
             "colorless": 1
           },
-          "damage": 70,
+          "damage": 60,
           "effect": null,
           "description": "A powerful clothesline strike."
-        },
-        {
-          "name": "Elbow Drop",
-          "cost": {
-            "lightning": 1
-          },
-          "damage": 50,
-          "effect": null,
-          "description": "Raikage's signature."
         }
       ],
       "ability": null,
       "weakness": "earth",
-      "retreatCost": 2,
+      "retreatCost": 1,
       "rarity": "rare",
       "isLegendary": false,
       "flavorText": "Power is duty.",
       "artPath": "cards/ninja/a-raikage.webp",
       "set": "cloud-village",
-      "setNumber": 1
+      "setNumber": 1,
+      "isEx": false
     },
     {
       "id": "cv-002",
@@ -52,7 +44,50 @@
       "subtitle": "Fourth Raikage \u2014 Lightning Armor",
       "stage": 1,
       "evolvesFrom": "cv-001",
-      "hp": 220,
+      "hp": 170,
+      "chakraType": "lightning",
+      "attacks": [
+        {
+          "name": "Hell Stab",
+          "cost": {
+            "lightning": 3
+          },
+          "damage": 110,
+          "effect": {
+            "type": "self-damage",
+            "amount": 30
+          },
+          "description": "A piercing strike that tears through armor."
+        }
+      ],
+      "ability": {
+        "name": "Lightning Armor",
+        "description": "This Ninja moves first each turn and takes 20 less damage.",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "first-strike-dr",
+          "amount": 20
+        }
+      },
+      "weakness": "earth",
+      "retreatCost": 1,
+      "rarity": "legendary",
+      "isLegendary": true,
+      "flavorText": "My fist will answer every threat.",
+      "artPath": "cards/ninja/a-raikage.webp",
+      "set": "cloud-village",
+      "setNumber": 2,
+      "isEx": false
+    },
+    {
+      "id": "cv-002-ex",
+      "type": "ninja",
+      "name": "A",
+      "subtitle": "Fourth Raikage \u2014 Lightning Armor EX",
+      "stage": 1,
+      "evolvesFrom": null,
+      "hp": 240,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -61,7 +96,7 @@
             "lightning": 2,
             "colorless": 1
           },
-          "damage": 170,
+          "damage": 110,
           "effect": null,
           "description": "At light-speed, a demolishing lariat."
         },
@@ -70,7 +105,7 @@
           "cost": {
             "lightning": 3
           },
-          "damage": 240,
+          "damage": 160,
           "effect": {
             "type": "self-damage",
             "amount": 30
@@ -91,11 +126,12 @@
       "weakness": "earth",
       "retreatCost": 2,
       "rarity": "legendary",
-      "isLegendary": true,
+      "isLegendary": false,
       "flavorText": "My fist will answer every threat.",
       "artPath": "cards/ninja/a-raikage.webp",
       "set": "cloud-village",
-      "setNumber": 2
+      "setNumber": 3,
+      "isEx": true
     },
     {
       "id": "cv-003",
@@ -104,25 +140,16 @@
       "subtitle": "Unbreakable Shield",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 200,
+      "hp": 160,
       "chakraType": "lightning",
       "attacks": [
-        {
-          "name": "Hell Stab Three Finger",
-          "cost": {
-            "lightning": 2
-          },
-          "damage": 120,
-          "effect": null,
-          "description": "A bone-piercing strike."
-        },
         {
           "name": "Solo Against Ten Thousand",
           "cost": {
             "lightning": 3,
             "colorless": 2
           },
-          "damage": 240,
+          "damage": 100,
           "effect": {
             "type": "self-damage",
             "amount": 60
@@ -141,13 +168,14 @@
         }
       },
       "weakness": "earth",
-      "retreatCost": 3,
+      "retreatCost": 1,
       "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "I held off an army for three days and three nights.",
       "artPath": "cards/ninja/third-raikage.webp",
       "set": "cloud-village",
-      "setNumber": 3
+      "setNumber": 4,
+      "isEx": false
     },
     {
       "id": "cv-006",
@@ -156,26 +184,16 @@
       "subtitle": "Storm Release User",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 110,
+      "hp": 100,
       "chakraType": "lightning",
       "attacks": [
-        {
-          "name": "Lightning Beast",
-          "cost": {
-            "lightning": 1,
-            "colorless": 1
-          },
-          "damage": 60,
-          "effect": null,
-          "description": "A chakra lion leaps from his palm."
-        },
         {
           "name": "Storm Release: Laser Circus",
           "cost": {
             "lightning": 2,
             "water": 1
           },
-          "damage": 120,
+          "damage": 60,
           "effect": {
             "type": "bench-damage",
             "target": "opponent-bench",
@@ -186,13 +204,14 @@
       ],
       "ability": null,
       "weakness": "wind",
-      "retreatCost": 2,
+      "retreatCost": 1,
       "rarity": "rare",
       "isLegendary": false,
       "flavorText": "So dull, right? Let's finish this fast.",
       "artPath": "cards/ninja/darui.webp",
       "set": "cloud-village",
-      "setNumber": 4
+      "setNumber": 5,
+      "isEx": false
     },
     {
       "id": "cv-007",
@@ -205,25 +224,11 @@
       "chakraType": "lightning",
       "attacks": [
         {
-          "name": "Storm Release: Thunder Cloud",
-          "cost": {
-            "lightning": 2,
-            "water": 2
-          },
-          "damage": 160,
-          "effect": {
-            "type": "status",
-            "status": "paralyze",
-            "target": "opponent-active"
-          },
-          "description": "Chases the target with guided lightning."
-        },
-        {
           "name": "Black Lightning",
           "cost": {
             "lightning": 3
           },
-          "damage": 140,
+          "damage": 110,
           "effect": null,
           "description": "Rare forbidden lightning strike."
         }
@@ -239,13 +244,14 @@
         }
       },
       "weakness": "wind",
-      "retreatCost": 2,
+      "retreatCost": 1,
       "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "Leading is dull work. Someone's gotta do it.",
       "artPath": "cards/ninja/darui.webp",
       "set": "cloud-village",
-      "setNumber": 5
+      "setNumber": 6,
+      "isEx": false
     },
     {
       "id": "cv-004",
@@ -254,25 +260,15 @@
       "subtitle": "Eight-Tails Rapper",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 160,
+      "hp": 130,
       "chakraType": "lightning",
       "attacks": [
-        {
-          "name": "Seven Blade Slash",
-          "cost": {
-            "lightning": 1,
-            "colorless": 1
-          },
-          "damage": 70,
-          "effect": null,
-          "description": "Wields all seven swords simultaneously."
-        },
         {
           "name": "Bijuu Tentacle",
           "cost": {
             "lightning": 2
           },
-          "damage": 120,
+          "damage": 80,
           "effect": null,
           "description": "A chakra tentacle erupts from his back."
         }
@@ -287,13 +283,14 @@
         }
       },
       "weakness": "earth",
-      "retreatCost": 2,
+      "retreatCost": 1,
       "rarity": "ultra-rare",
       "isLegendary": false,
       "flavorText": "Check my flow, yo! Eight tails of thunder!",
       "artPath": "cards/ninja/killer-bee.webp",
       "set": "cloud-village",
-      "setNumber": 6
+      "setNumber": 7,
+      "isEx": false
     },
     {
       "id": "cv-005",
@@ -302,7 +299,56 @@
       "subtitle": "Perfect Jinchuriki Union",
       "stage": 1,
       "evolvesFrom": "cv-004",
-      "hp": 260,
+      "hp": 220,
+      "chakraType": "lightning",
+      "attacks": [
+        {
+          "name": "Partner Lariat",
+          "cost": {
+            "lightning": 3,
+            "colorless": 1
+          },
+          "damage": 140,
+          "effect": {
+            "type": "bench-damage",
+            "target": "opponent-bench",
+            "amount": 40
+          },
+          "description": "A lariat carried by Gyuki's colossal tail."
+        }
+      ],
+      "ability": {
+        "name": "Eight-Tails Bond",
+        "description": "Draw 1 extra card each turn. Heal 20 HP each turn.",
+        "trigger": "passive",
+        "effect": {
+          "type": "heal",
+          "amount": 20,
+          "target": "self",
+          "secondaryEffect": {
+            "type": "draw",
+            "amount": 1
+          }
+        }
+      },
+      "weakness": "earth",
+      "retreatCost": 2,
+      "rarity": "crown",
+      "isLegendary": true,
+      "flavorText": "Me and Gyuki \u2014 one beat, one rhyme, unstoppable.",
+      "artPath": "cards/ninja/killer-bee.webp",
+      "set": "cloud-village",
+      "setNumber": 8,
+      "isEx": false
+    },
+    {
+      "id": "cv-005-ex",
+      "type": "ninja",
+      "name": "Killer B",
+      "subtitle": "Perfect Jinchuriki Union EX",
+      "stage": 1,
+      "evolvesFrom": null,
+      "hp": 290,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -311,7 +357,7 @@
             "lightning": 2,
             "colorless": 2
           },
-          "damage": 230,
+          "damage": 140,
           "effect": null,
           "description": "Compressed tailed beast chakra unleashed."
         },
@@ -321,7 +367,7 @@
             "lightning": 3,
             "colorless": 1
           },
-          "damage": 200,
+          "damage": 190,
           "effect": {
             "type": "bench-damage",
             "target": "opponent-bench",
@@ -347,11 +393,12 @@
       "weakness": "earth",
       "retreatCost": 3,
       "rarity": "crown",
-      "isLegendary": true,
+      "isLegendary": false,
       "flavorText": "Me and Gyuki \u2014 one beat, one rhyme, unstoppable.",
       "artPath": "cards/ninja/killer-bee.webp",
       "set": "cloud-village",
-      "setNumber": 7
+      "setNumber": 9,
+      "isEx": true
     },
     {
       "id": "cv-015",
@@ -360,26 +407,16 @@
       "subtitle": "Two-Tails Jinchuriki",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 120,
+      "hp": 100,
       "chakraType": "fire",
       "attacks": [
-        {
-          "name": "Hellcat Claws",
-          "cost": {
-            "fire": 1,
-            "colorless": 1
-          },
-          "damage": 70,
-          "effect": null,
-          "description": "Blue flame-wreathed claws rend deep."
-        },
         {
           "name": "Two-Tails Transformation",
           "cost": {
             "fire": 2,
             "colorless": 1
           },
-          "damage": 140,
+          "damage": 60,
           "effect": {
             "type": "status",
             "status": "burn",
@@ -390,13 +427,14 @@
       ],
       "ability": null,
       "weakness": "water",
-      "retreatCost": 2,
+      "retreatCost": 1,
       "rarity": "rare",
       "isLegendary": false,
       "flavorText": "Matatabi and I are one.",
       "artPath": "cards/ninja/yugito.webp",
       "set": "cloud-village",
-      "setNumber": 8
+      "setNumber": 10,
+      "isEx": false
     },
     {
       "id": "cv-016",
@@ -405,29 +443,15 @@
       "subtitle": "Matatabi Unleashed",
       "stage": 1,
       "evolvesFrom": "cv-015",
-      "hp": 200,
+      "hp": 170,
       "chakraType": "fire",
       "attacks": [
-        {
-          "name": "Matatabi Roar",
-          "cost": {
-            "fire": 2,
-            "colorless": 2
-          },
-          "damage": 180,
-          "effect": {
-            "type": "bench-damage",
-            "target": "opponent-bench",
-            "amount": 30
-          },
-          "description": "A two-tailed phantom cat lashes out."
-        },
         {
           "name": "Hellfire Pounce",
           "cost": {
             "fire": 3
           },
-          "damage": 220,
+          "damage": 110,
           "effect": null,
           "description": "Leaps with blue flame aura."
         }
@@ -442,13 +466,14 @@
         }
       },
       "weakness": "water",
-      "retreatCost": 0,
+      "retreatCost": 1,
       "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "My partner dances in my veins.",
       "artPath": "cards/ninja/yugito.webp",
       "set": "cloud-village",
-      "setNumber": 9
+      "setNumber": 11,
+      "isEx": false
     },
     {
       "id": "cv-022",
@@ -457,38 +482,30 @@
       "subtitle": "Previous Eight-Tails Host",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 170,
+      "hp": 160,
       "chakraType": "lightning",
       "attacks": [
-        {
-          "name": "Gyuki Legacy Lariat",
-          "cost": {
-            "lightning": 2
-          },
-          "damage": 130,
-          "effect": null,
-          "description": "The original partnership with Gyuki."
-        },
         {
           "name": "Horn Guard",
           "cost": {
             "lightning": 2,
             "colorless": 1
           },
-          "damage": 170,
+          "damage": 100,
           "effect": null,
           "description": "A hardened horn-headbutt."
         }
       ],
       "ability": null,
       "weakness": "earth",
-      "retreatCost": 3,
+      "retreatCost": 1,
       "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "Before my brother, it was me.",
       "artPath": "cards/ninja/blue-b.webp",
       "set": "cloud-village",
-      "setNumber": 10
+      "setNumber": 12,
+      "isEx": false
     },
     {
       "id": "cv-008",
@@ -508,18 +525,6 @@
           "damage": 40,
           "effect": null,
           "description": "A conductive pulse."
-        },
-        {
-          "name": "Sensor Probe",
-          "cost": {
-            "colorless": 1
-          },
-          "damage": 20,
-          "effect": {
-            "type": "draw",
-            "amount": 2
-          },
-          "description": "Draw 2 cards."
         }
       ],
       "ability": null,
@@ -530,7 +535,8 @@
       "flavorText": "I can feel every enemy within a mile.",
       "artPath": "cards/ninja/c-sensor.webp",
       "set": "cloud-village",
-      "setNumber": 11
+      "setNumber": 13,
+      "isEx": false
     },
     {
       "id": "cv-009",
@@ -539,25 +545,16 @@
       "subtitle": "Cold Kunoichi",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 80,
       "chakraType": "lightning",
       "attacks": [
-        {
-          "name": "Ice Kunai Throw",
-          "cost": {
-            "colorless": 1
-          },
-          "damage": 40,
-          "effect": null,
-          "description": "A cold, calculated strike."
-        },
         {
           "name": "Lightning Chidori Clone",
           "cost": {
             "lightning": 1,
             "colorless": 1
           },
-          "damage": 80,
+          "damage": 40,
           "effect": null,
           "description": "A Cloud variant of the piercing blade."
         }
@@ -570,7 +567,8 @@
       "flavorText": "Not my type.",
       "artPath": "cards/ninja/samui.webp",
       "set": "cloud-village",
-      "setNumber": 12
+      "setNumber": 14,
+      "isEx": false
     },
     {
       "id": "cv-066",
@@ -583,21 +581,12 @@
       "chakraType": "lightning",
       "attacks": [
         {
-          "name": "Twin Flash Cut",
-          "cost": {
-            "lightning": 2
-          },
-          "damage": 130,
-          "effect": null,
-          "description": "Hot-and-cold blades cross in perfect arc."
-        },
-        {
           "name": "Fire and Ice Duel",
           "cost": {
             "fire": 1,
             "lightning": 2
           },
-          "damage": 200,
+          "damage": 120,
           "effect": {
             "type": "status",
             "status": "burn",
@@ -623,7 +612,8 @@
       "flavorText": "Ice and fire. Sister and brother. Strike as one.",
       "artPath": "cards/ninja/samui.webp",
       "set": "cloud-village",
-      "setNumber": 13
+      "setNumber": 15,
+      "isEx": false
     },
     {
       "id": "cv-010",
@@ -632,7 +622,7 @@
       "subtitle": "Hot-Blooded Twin",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 90,
+      "hp": 80,
       "chakraType": "fire",
       "attacks": [
         {
@@ -640,7 +630,7 @@
           "cost": {
             "fire": 1
           },
-          "damage": 50,
+          "damage": 40,
           "effect": {
             "type": "status",
             "status": "burn",
@@ -657,7 +647,8 @@
       "flavorText": "I'm HOT \u2014 like, literally!",
       "artPath": "cards/ninja/atsui.webp",
       "set": "cloud-village",
-      "setNumber": 14
+      "setNumber": 16,
+      "isEx": false
     },
     {
       "id": "cv-011",
@@ -666,7 +657,7 @@
       "subtitle": "Red-Haired Blade",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 60,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -674,7 +665,7 @@
           "cost": {
             "colorless": 1
           },
-          "damage": 40,
+          "damage": 30,
           "effect": null,
           "description": "A clean diagonal cut."
         }
@@ -687,7 +678,8 @@
       "flavorText": "Hit first, think later.",
       "artPath": "cards/ninja/karui.webp",
       "set": "cloud-village",
-      "setNumber": 15
+      "setNumber": 17,
+      "isEx": false
     },
     {
       "id": "cv-012",
@@ -696,7 +688,7 @@
       "subtitle": "Overthinking Swordsman",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 70,
+      "hp": 60,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -720,7 +712,8 @@
       "flavorText": "Wait, what if... no, wait...",
       "artPath": "cards/ninja/omoi.webp",
       "set": "cloud-village",
-      "setNumber": 16
+      "setNumber": 18,
+      "isEx": false
     },
     {
       "id": "cv-013",
@@ -729,7 +722,7 @@
       "subtitle": "Teleport Specialist",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 70,
+      "hp": 80,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -737,7 +730,7 @@
           "cost": {
             "colorless": 2
           },
-          "damage": 30,
+          "damage": 40,
           "effect": {
             "type": "switch",
             "target": "self-bench"
@@ -753,7 +746,8 @@
       "flavorText": "Moving the Raikage takes precision.",
       "artPath": "cards/ninja/mabui.webp",
       "set": "cloud-village",
-      "setNumber": 17
+      "setNumber": 19,
+      "isEx": false
     },
     {
       "id": "cv-014",
@@ -762,7 +756,7 @@
       "subtitle": "Medical Ninja",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 70,
+      "hp": 60,
       "chakraType": "water",
       "attacks": [
         {
@@ -770,7 +764,7 @@
           "cost": {
             "water": 1
           },
-          "damage": 20,
+          "damage": 30,
           "effect": {
             "type": "heal",
             "amount": 40,
@@ -787,7 +781,8 @@
       "flavorText": "Stand still, I'll patch that up.",
       "artPath": "cards/ninja/c-sensor.webp",
       "set": "cloud-village",
-      "setNumber": 18
+      "setNumber": 20,
+      "isEx": false
     },
     {
       "id": "cv-017",
@@ -796,7 +791,7 @@
       "subtitle": "Rubber Release User",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 90,
+      "hp": 80,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -817,7 +812,8 @@
       "flavorText": "Nothing bounces off me.",
       "artPath": "cards/ninja/dodai.webp",
       "set": "cloud-village",
-      "setNumber": 19
+      "setNumber": 21,
+      "isEx": false
     },
     {
       "id": "cv-018",
@@ -826,7 +822,7 @@
       "subtitle": "Magnet Jonin",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 80,
       "chakraType": "earth",
       "attacks": [
         {
@@ -834,7 +830,7 @@
           "cost": {
             "earth": 1
           },
-          "damage": 50,
+          "damage": 40,
           "effect": null,
           "description": "Homing magnetized shuriken."
         }
@@ -847,7 +843,8 @@
       "flavorText": "My shuriken never miss.",
       "artPath": "cards/ninja/toroi.webp",
       "set": "cloud-village",
-      "setNumber": 20
+      "setNumber": 22,
+      "isEx": false
     },
     {
       "id": "cv-019",
@@ -856,7 +853,7 @@
       "subtitle": "Cloud Elite",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 90,
+      "hp": 80,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -864,7 +861,7 @@
           "cost": {
             "lightning": 1
           },
-          "damage": 50,
+          "damage": 40,
           "effect": null,
           "description": "A silent, sudden shock."
         }
@@ -877,7 +874,8 @@
       "flavorText": "Light speed justice.",
       "artPath": null,
       "set": "cloud-village",
-      "setNumber": 21
+      "setNumber": 23,
+      "isEx": false
     },
     {
       "id": "cv-020",
@@ -886,7 +884,7 @@
       "subtitle": "Thunder Cadet",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 50,
+      "hp": 60,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -894,7 +892,7 @@
           "cost": {
             "colorless": 1
           },
-          "damage": 20,
+          "damage": 30,
           "effect": null,
           "description": "An amateur jolt."
         }
@@ -907,7 +905,8 @@
       "flavorText": "I'll be Raikage one day!",
       "artPath": null,
       "set": "cloud-village",
-      "setNumber": 22
+      "setNumber": 24,
+      "isEx": false
     },
     {
       "id": "cv-021",
@@ -916,7 +915,7 @@
       "subtitle": "Cloud Blade Specialist",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 60,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -924,7 +923,7 @@
           "cost": {
             "lightning": 1
           },
-          "damage": 50,
+          "damage": 30,
           "effect": null,
           "description": "A blade that draws lightning."
         }
@@ -937,7 +936,8 @@
       "flavorText": "This blade sings in the storm.",
       "artPath": null,
       "set": "cloud-village",
-      "setNumber": 23
+      "setNumber": 25,
+      "isEx": false
     },
     {
       "id": "cv-028",
@@ -952,7 +952,7 @@
       "rarity": "legendary",
       "set": "cloud-village",
       "artPath": "cards/jutsu/black-lightning.webp",
-      "setNumber": 24
+      "setNumber": 26
     },
     {
       "id": "cv-047",
@@ -967,7 +967,7 @@
       "rarity": "legendary",
       "set": "cloud-village",
       "artPath": "cards/jutsu/kirin.webp",
-      "setNumber": 25
+      "setNumber": 27
     },
     {
       "id": "cv-031",
@@ -986,7 +986,7 @@
       "rarity": "legendary",
       "set": "cloud-village",
       "artPath": "cards/jutsu/bodyslam.webp",
-      "setNumber": 26
+      "setNumber": 28
     },
     {
       "id": "cv-029",
@@ -1006,7 +1006,7 @@
       "rarity": "ultra-rare",
       "set": "cloud-village",
       "artPath": "cards/jutsu/hell-stab.webp",
-      "setNumber": 27
+      "setNumber": 29
     },
     {
       "id": "cv-026",
@@ -1021,7 +1021,7 @@
       "rarity": "ultra-rare",
       "set": "cloud-village",
       "artPath": "cards/jutsu/liger-bomb.webp",
-      "setNumber": 28
+      "setNumber": 30
     },
     {
       "id": "cv-041",
@@ -1035,7 +1035,7 @@
       "rarity": "ultra-rare",
       "set": "cloud-village",
       "artPath": "cards/jutsu/speed-mode.webp",
-      "setNumber": 29
+      "setNumber": 31
     },
     {
       "id": "cv-027",
@@ -1050,7 +1050,7 @@
       "rarity": "ultra-rare",
       "set": "cloud-village",
       "artPath": "cards/jutsu/laser-circus.webp",
-      "setNumber": 30
+      "setNumber": 32
     },
     {
       "id": "cv-040",
@@ -1065,7 +1065,7 @@
       "rarity": "ultra-rare",
       "set": "cloud-village",
       "artPath": "cards/jutsu/thunder-god.webp",
-      "setNumber": 31
+      "setNumber": 33
     },
     {
       "id": "cv-025",
@@ -1080,7 +1080,7 @@
       "rarity": "rare",
       "set": "cloud-village",
       "artPath": "cards/jutsu/lariat.webp",
-      "setNumber": 32
+      "setNumber": 34
     },
     {
       "id": "cv-036",
@@ -1096,7 +1096,7 @@
       "rarity": "rare",
       "set": "cloud-village",
       "artPath": "cards/jutsu/lightning-beast.webp",
-      "setNumber": 33
+      "setNumber": 35
     },
     {
       "id": "cv-023",
@@ -1111,7 +1111,7 @@
       "rarity": "rare",
       "set": "cloud-village",
       "artPath": "cards/jutsu/false-darkness.webp",
-      "setNumber": 34
+      "setNumber": 36
     },
     {
       "id": "cv-033",
@@ -1125,7 +1125,7 @@
       "rarity": "rare",
       "set": "cloud-village",
       "artPath": "cards/jutsu/teleport.webp",
-      "setNumber": 35
+      "setNumber": 37
     },
     {
       "id": "cv-037",
@@ -1140,7 +1140,7 @@
       "rarity": "rare",
       "set": "cloud-village",
       "artPath": "cards/jutsu/raging-thunder.webp",
-      "setNumber": 36
+      "setNumber": 38
     },
     {
       "id": "cv-039",
@@ -1159,7 +1159,7 @@
       "rarity": "rare",
       "set": "cloud-village",
       "artPath": "cards/jutsu/rap-battle.webp",
-      "setNumber": 37
+      "setNumber": 39
     },
     {
       "id": "cv-044",
@@ -1174,7 +1174,7 @@
       "rarity": "rare",
       "set": "cloud-village",
       "artPath": "cards/jutsu/stormfront.webp",
-      "setNumber": 38
+      "setNumber": 40
     },
     {
       "id": "cv-046",
@@ -1189,7 +1189,7 @@
       "rarity": "rare",
       "set": "cloud-village",
       "artPath": "cards/jutsu/thunder-formation.webp",
-      "setNumber": 39
+      "setNumber": 41
     },
     {
       "id": "cv-032",
@@ -1204,7 +1204,7 @@
       "rarity": "rare",
       "set": "cloud-village",
       "artPath": "cards/jutsu/thunder-arrow.webp",
-      "setNumber": 40
+      "setNumber": 42
     },
     {
       "id": "cv-034",
@@ -1219,7 +1219,7 @@
       "rarity": "uncommon",
       "set": "cloud-village",
       "artPath": "cards/jutsu/sword-dance.webp",
-      "setNumber": 41
+      "setNumber": 43
     },
     {
       "id": "cv-035",
@@ -1233,7 +1233,7 @@
       "rarity": "uncommon",
       "set": "cloud-village",
       "artPath": "cards/jutsu/lightning-clone.webp",
-      "setNumber": 42
+      "setNumber": 44
     },
     {
       "id": "cv-038",
@@ -1248,7 +1248,7 @@
       "rarity": "uncommon",
       "set": "cloud-village",
       "artPath": "cards/jutsu/lightning-field.webp",
-      "setNumber": 43
+      "setNumber": 45
     },
     {
       "id": "cv-030",
@@ -1262,7 +1262,7 @@
       "rarity": "uncommon",
       "set": "cloud-village",
       "artPath": "cards/jutsu/lightning-transfer.webp",
-      "setNumber": 44
+      "setNumber": 46
     },
     {
       "id": "cv-043",
@@ -1277,7 +1277,7 @@
       "rarity": "uncommon",
       "set": "cloud-village",
       "artPath": "cards/jutsu/raiton-conduit.webp",
-      "setNumber": 45
+      "setNumber": 47
     },
     {
       "id": "cv-024",
@@ -1292,7 +1292,7 @@
       "rarity": "uncommon",
       "set": "cloud-village",
       "artPath": "cards/jutsu/thunder-armor.webp",
-      "setNumber": 46
+      "setNumber": 48
     },
     {
       "id": "cv-042",
@@ -1307,7 +1307,7 @@
       "rarity": "common",
       "set": "cloud-village",
       "artPath": "cards/jutsu/cloud-shuriken.webp",
-      "setNumber": 47
+      "setNumber": 49
     },
     {
       "id": "cv-045",
@@ -1322,7 +1322,7 @@
       "rarity": "common",
       "set": "cloud-village",
       "artPath": "cards/jutsu/thunder-prayer.webp",
-      "setNumber": 48
+      "setNumber": 50
     },
     {
       "id": "cv-050",
@@ -1336,7 +1336,7 @@
       "rarity": "legendary",
       "set": "cloud-village",
       "artPath": "cards/tools/seven-swords.webp",
-      "setNumber": 49
+      "setNumber": 51
     },
     {
       "id": "cv-049",
@@ -1350,7 +1350,7 @@
       "rarity": "legendary",
       "set": "cloud-village",
       "artPath": "cards/tools/raijin.webp",
-      "setNumber": 50
+      "setNumber": 52
     },
     {
       "id": "cv-059",
@@ -1365,7 +1365,7 @@
       "rarity": "ultra-rare",
       "set": "cloud-village",
       "artPath": "cards/tools/gyuki-fragment.webp",
-      "setNumber": 51
+      "setNumber": 53
     },
     {
       "id": "cv-055",
@@ -1379,7 +1379,7 @@
       "rarity": "ultra-rare",
       "set": "cloud-village",
       "artPath": "cards/tools/mabui-crystal.webp",
-      "setNumber": 52
+      "setNumber": 54
     },
     {
       "id": "cv-048",
@@ -1393,7 +1393,7 @@
       "rarity": "ultra-rare",
       "set": "cloud-village",
       "artPath": "cards/tools/raikage-gauntlets.webp",
-      "setNumber": 53
+      "setNumber": 55
     },
     {
       "id": "cv-057",
@@ -1407,7 +1407,7 @@
       "rarity": "rare",
       "set": "cloud-village",
       "artPath": "cards/tools/accumulator.webp",
-      "setNumber": 54
+      "setNumber": 56
     },
     {
       "id": "cv-054",
@@ -1422,7 +1422,7 @@
       "rarity": "rare",
       "set": "cloud-village",
       "artPath": "cards/tools/pulse-band.webp",
-      "setNumber": 55
+      "setNumber": 57
     },
     {
       "id": "cv-051",
@@ -1437,7 +1437,7 @@
       "rarity": "rare",
       "set": "cloud-village",
       "artPath": "cards/tools/storm-scroll.webp",
-      "setNumber": 56
+      "setNumber": 58
     },
     {
       "id": "cv-053",
@@ -1451,7 +1451,7 @@
       "rarity": "uncommon",
       "set": "cloud-village",
       "artPath": "cards/tools/cloud-sword.webp",
-      "setNumber": 57
+      "setNumber": 59
     },
     {
       "id": "cv-058",
@@ -1466,7 +1466,7 @@
       "rarity": "uncommon",
       "set": "cloud-village",
       "artPath": "cards/tools/lightning-needle.webp",
-      "setNumber": 58
+      "setNumber": 60
     },
     {
       "id": "cv-052",
@@ -1481,7 +1481,7 @@
       "rarity": "uncommon",
       "set": "cloud-village",
       "artPath": "cards/tools/thunder-beads.webp",
-      "setNumber": 59
+      "setNumber": 61
     },
     {
       "id": "cv-056",
@@ -1495,7 +1495,7 @@
       "rarity": "common",
       "set": "cloud-village",
       "artPath": "cards/tools/kumo-headband.webp",
-      "setNumber": 60
+      "setNumber": 62
     },
     {
       "id": "cv-060",
@@ -1511,7 +1511,7 @@
       "rarity": "legendary",
       "set": "cloud-village",
       "artPath": "cards/sensei/a-raikage.webp",
-      "setNumber": 61
+      "setNumber": 63
     },
     {
       "id": "cv-064",
@@ -1526,7 +1526,7 @@
       "rarity": "legendary",
       "set": "cloud-village",
       "artPath": "cards/sensei/third-raikage.webp",
-      "setNumber": 62
+      "setNumber": 64
     },
     {
       "id": "cv-061",
@@ -1541,7 +1541,7 @@
       "rarity": "ultra-rare",
       "set": "cloud-village",
       "artPath": "cards/sensei/darui.webp",
-      "setNumber": 63
+      "setNumber": 65
     },
     {
       "id": "cv-062",
@@ -1558,7 +1558,7 @@
       "rarity": "legendary",
       "set": "cloud-village",
       "artPath": "cards/sensei/killer-bee.webp",
-      "setNumber": 64
+      "setNumber": 66
     },
     {
       "id": "cv-065",
@@ -1577,7 +1577,7 @@
       "rarity": "uncommon",
       "set": "cloud-village",
       "artPath": "cards/sensei/c-sensor.webp",
-      "setNumber": 65
+      "setNumber": 67
     },
     {
       "id": "cv-063",
@@ -1596,7 +1596,7 @@
       "rarity": "rare",
       "set": "cloud-village",
       "artPath": "cards/sensei/mabui.webp",
-      "setNumber": 66
+      "setNumber": 68
     }
   ],
   "pullRates": {
@@ -1608,5 +1608,5 @@
     "secret": 0.005,
     "crown": 0.002
   },
-  "totalCards": 66
+  "totalCards": 68
 }

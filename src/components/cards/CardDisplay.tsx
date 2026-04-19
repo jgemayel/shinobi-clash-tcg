@@ -72,8 +72,9 @@ export default function CardDisplay({ card, size = 'md', onClick, count, showCou
   const rarityColor = getRarityColor(card.rarity);
   const rarityClass = getRarityClass(card.rarity);
   const isShiny = Boolean(card.isShiny);
-  const isLegendaryTier = LEGENDARY_TIERS.has(card.rarity);
-  const isPremium = PREMIUM_TIERS.has(card.rarity);
+  const isEx = Boolean(ninja?.isEx);
+  const isLegendaryTier = LEGENDARY_TIERS.has(card.rarity) || isEx;
+  const isPremium = PREMIUM_TIERS.has(card.rarity) || isEx;
   const palette = ninja ? ELEMENT_PALETTE[ninja.chakraType] : ELEMENT_PALETTE[ChakraType.Colorless];
 
   // Deterministic ember positions so they don't flicker on re-render
@@ -366,25 +367,28 @@ export default function CardDisplay({ card, size = 'md', onClick, count, showCou
             </div>
           </div>
 
-          {/* Rarity badge (EX/CROWN/SECRET/UR) */}
+          {/* Rarity badge */}
           <div
             className="absolute top-1.5 left-1.5 px-1.5 py-0.5 rounded-sm font-black font-heading tracking-widest z-20"
             style={{
               fontSize: size === 'md' ? '0.55em' : '0.7em',
-              background: card.rarity === Rarity.Crown
-                ? 'linear-gradient(135deg, #fff7d4, #f59e0b)'
-                : card.rarity === Rarity.Secret
-                  ? 'linear-gradient(135deg, #fce7f3, #db2777)'
-                  : card.rarity === Rarity.Legendary
-                    ? 'linear-gradient(135deg, #fde68a, #b45309)'
-                    : `linear-gradient(135deg, ${palette.accent}, ${palette.primary})`,
+              background: ninja?.isEx
+                ? 'linear-gradient(135deg, #fff7d4, #b45309)'
+                : card.rarity === Rarity.Crown
+                  ? 'linear-gradient(135deg, #fff7d4, #f59e0b)'
+                  : card.rarity === Rarity.Secret
+                    ? 'linear-gradient(135deg, #fce7f3, #db2777)'
+                    : card.rarity === Rarity.Legendary
+                      ? 'linear-gradient(135deg, #fde68a, #b45309)'
+                      : `linear-gradient(135deg, ${palette.accent}, ${palette.primary})`,
               color: '#1a0f00',
               boxShadow: '0 2px 6px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.4)',
             }}
           >
-            {card.rarity === Rarity.Crown ? 'CROWN'
+            {ninja?.isEx ? 'EX'
+              : card.rarity === Rarity.Crown ? 'CROWN'
               : card.rarity === Rarity.Secret ? 'SECRET'
-              : card.rarity === Rarity.Legendary ? 'EX'
+              : card.rarity === Rarity.Legendary ? 'LEGEND'
               : 'UR'}
           </div>
 

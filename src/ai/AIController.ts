@@ -169,7 +169,7 @@ function bestStrategy(state: BattleState, actions: BattleAction[]): BattleAction
       const card = active.hand.find((c) => c.id === a.cardId);
       if (!card || !isNinja(card)) continue;
       const ninja = card as NinjaCard;
-      const score = ninja.hp + (ninja.attacks[0]?.damage ?? 0) * 2 + (ninja.isLegendary ? 80 : 0);
+      const score = ninja.hp + (ninja.attacks[0]?.damage ?? 0) * 2 + (ninja.isEx ? 120 : 0) + (ninja.isLegendary ? 40 : 0);
       if (score > bestScore) {
         bestScore = score;
         best = a;

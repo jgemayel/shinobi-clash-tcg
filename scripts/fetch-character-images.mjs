@@ -143,6 +143,20 @@ const CHARACTERS = [
   { key: 'kurama', titles: ['Kurama'] },
   { key: 'juubi', titles: ['Ten-Tails'] },
   { key: 'gedo-mazo', titles: ['Demonic Statue of the Outer Path'] },
+  // Newly added Konoha cast
+  { key: 'yamato', titles: ['Yamato'] },
+  { key: 'sai', titles: ['Sai'] },
+  { key: 'shizune', titles: ['Shizune'] },
+  { key: 'anko', titles: ['Anko Mitarashi'] },
+  { key: 'ibiki', titles: ['Ibiki Morino'] },
+  { key: 'genma', titles: ['Genma Shiranui'] },
+  { key: 'shisui-stage0', titles: ['Shisui Uchiha'] },
+  { key: 'shisui-stage1', titles: ['Shisui Uchiha'] },
+  { key: 'danzo', titles: ['Danzō Shimura', 'Danzō'] },
+  { key: 'mizuki', titles: ['Mizuki'] },
+  // Evolved Hyūga forms
+  { key: 'hinata-stage1', titles: ['Hinata Hyūga'] },
+  { key: 'neji-stage1', titles: ['Neji Hyūga'] },
 ];
 
 const SENSEI_CHARACTERS = [

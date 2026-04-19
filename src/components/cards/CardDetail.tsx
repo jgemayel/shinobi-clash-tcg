@@ -241,11 +241,19 @@ export default function CardDetail({ card, onClose, count }: CardDetailProps) {
           </div>
         )}
 
-        {/* Legendary badge */}
-        {ninja?.isLegendary && (
+        {/* EX badge — EX ninjas are worth 2 points when KO'd */}
+        {ninja?.isEx && (
           <div className="mt-2 text-center">
             <span className="text-xs font-bold text-yellow-400 bg-yellow-400/10 px-3 py-1 rounded-full font-heading">
-              LEGENDARY - Worth 2 Points
+              EX · Worth 2 Points on KO
+            </span>
+          </div>
+        )}
+        {/* Legendary is now a flavor tag — no longer awards bonus points */}
+        {ninja?.isLegendary && !ninja?.isEx && (
+          <div className="mt-2 text-center">
+            <span className="text-xs font-bold text-amber-400 bg-amber-400/10 px-3 py-1 rounded-full font-heading">
+              LEGENDARY
             </span>
           </div>
         )}

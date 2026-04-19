@@ -60,6 +60,12 @@ export interface NinjaCard {
   set: string;
   setNumber?: number;
   isLegendary: boolean;
+  /**
+   * Premium "EX" variant — alternate version of a top-tier ninja with higher
+   * HP and a costlier attack profile. An EX ninja being KO'd awards the
+   * opponent 2 points instead of 1. Legendary no longer grants bonus points.
+   */
+  isEx?: boolean;
   isShiny?: boolean;
   flavorText: string;
   artPath: string | null;

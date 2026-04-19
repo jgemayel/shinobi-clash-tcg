@@ -16,25 +16,12 @@
       "chakraType": "fire",
       "attacks": [
         {
-          "name": "Lava Splash",
-          "cost": {
-            "fire": 1
-          },
-          "damage": 50,
-          "effect": {
-            "type": "status",
-            "status": "burn",
-            "target": "opponent-active"
-          },
-          "description": "A spitting gout of magma."
-        },
-        {
           "name": "Boil Strike",
           "cost": {
             "water": 1,
             "fire": 1
           },
-          "damage": 70,
+          "damage": 60,
           "effect": null,
           "description": "Superheated steam scalds the target."
         }
@@ -47,7 +34,8 @@
       "flavorText": "Don't underestimate me.",
       "artPath": "cards/ninja/mei.webp",
       "set": "mist-village",
-      "setNumber": 1
+      "setNumber": 1,
+      "isEx": false
     },
     {
       "id": "mv-006",
@@ -56,30 +44,16 @@
       "subtitle": "Fifth Mizukage",
       "stage": 1,
       "evolvesFrom": "mv-005",
-      "hp": 180,
+      "hp": 170,
       "chakraType": "fire",
       "attacks": [
-        {
-          "name": "Lava Release: Melting Apparition",
-          "cost": {
-            "fire": 2,
-            "earth": 1
-          },
-          "damage": 150,
-          "effect": {
-            "type": "status",
-            "status": "burn",
-            "target": "opponent-active"
-          },
-          "description": "A river of lava dissolves all."
-        },
         {
           "name": "Boil Release: Skilled Mist",
           "cost": {
             "water": 2,
             "fire": 2
           },
-          "damage": 180,
+          "damage": 110,
           "effect": null,
           "description": "Corrosive steam blankets the battlefield."
         }
@@ -94,13 +68,14 @@
         }
       },
       "weakness": "earth",
-      "retreatCost": 2,
+      "retreatCost": 1,
       "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "The Mist shall bloom again under my rule.",
       "artPath": "cards/ninja/mei.webp",
       "set": "mist-village",
-      "setNumber": 2
+      "setNumber": 2,
+      "isEx": false
     },
     {
       "id": "mv-061",
@@ -109,7 +84,48 @@
       "subtitle": "Lava Queen Radiant",
       "stage": 2,
       "evolvesFrom": "mv-006",
-      "hp": 240,
+      "hp": 200,
+      "chakraType": "fire",
+      "attacks": [
+        {
+          "name": "Boil Release: Skilled Genesis",
+          "cost": {
+            "fire": 2,
+            "water": 2
+          },
+          "damage": 130,
+          "effect": null,
+          "description": "Steam that melts steel."
+        }
+      ],
+      "ability": {
+        "name": "Dual Element Mastery",
+        "description": "Fire and Water attacks cost 1 less Chakra.",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "element-discount",
+          "amount": 1
+        }
+      },
+      "weakness": "earth",
+      "retreatCost": 2,
+      "rarity": "secret",
+      "isLegendary": true,
+      "flavorText": "The Mist flourishes under my sun.",
+      "artPath": "cards/ninja/mei.webp",
+      "set": "mist-village",
+      "setNumber": 3,
+      "isEx": false
+    },
+    {
+      "id": "mv-061-ex",
+      "type": "ninja",
+      "name": "Mei Terumi",
+      "subtitle": "Lava Queen Radiant EX",
+      "stage": 2,
+      "evolvesFrom": null,
+      "hp": 270,
       "chakraType": "fire",
       "attacks": [
         {
@@ -118,7 +134,7 @@
             "fire": 2,
             "earth": 1
           },
-          "damage": 160,
+          "damage": 120,
           "effect": {
             "type": "status",
             "status": "burn",
@@ -132,7 +148,7 @@
             "fire": 2,
             "water": 2
           },
-          "damage": 230,
+          "damage": 180,
           "effect": null,
           "description": "Steam that melts steel."
         }
@@ -150,11 +166,12 @@
       "weakness": "earth",
       "retreatCost": 3,
       "rarity": "secret",
-      "isLegendary": true,
+      "isLegendary": false,
       "flavorText": "The Mist flourishes under my sun.",
       "artPath": "cards/ninja/mei.webp",
       "set": "mist-village",
-      "setNumber": 3
+      "setNumber": 4,
+      "isEx": true
     },
     {
       "id": "mv-007",
@@ -171,7 +188,7 @@
           "cost": {
             "colorless": 1
           },
-          "damage": 30,
+          "damage": 40,
           "effect": null,
           "description": "A defensive slash."
         }
@@ -184,7 +201,8 @@
       "flavorText": "I must live up to the Hiramekarei.",
       "artPath": "cards/ninja/chojuro.webp",
       "set": "mist-village",
-      "setNumber": 4
+      "setNumber": 5,
+      "isEx": false
     },
     {
       "id": "mv-008",
@@ -193,39 +211,30 @@
       "subtitle": "Sixth Mizukage",
       "stage": 1,
       "evolvesFrom": "mv-007",
-      "hp": 150,
+      "hp": 110,
       "chakraType": "water",
       "attacks": [
-        {
-          "name": "Hiramekarei Release",
-          "cost": {
-            "water": 1,
-            "colorless": 2
-          },
-          "damage": 120,
-          "effect": null,
-          "description": "The massive chakra hammer materializes."
-        },
         {
           "name": "Double Edge Chakra Slash",
           "cost": {
             "water": 2,
             "colorless": 1
           },
-          "damage": 140,
+          "damage": 70,
           "effect": null,
           "description": "A chakra-shaped twin sword."
         }
       ],
       "ability": null,
       "weakness": "lightning",
-      "retreatCost": 2,
+      "retreatCost": 1,
       "rarity": "rare",
       "isLegendary": false,
       "flavorText": "I didn't choose this role. I earned it.",
       "artPath": "cards/ninja/chojuro.webp",
       "set": "mist-village",
-      "setNumber": 5
+      "setNumber": 6,
+      "isEx": false
     },
     {
       "id": "mv-062",
@@ -234,26 +243,16 @@
       "subtitle": "Three-Tails Perfect Jinchuriki",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 290,
+      "hp": 210,
       "chakraType": "water",
       "attacks": [
-        {
-          "name": "Coral Crush",
-          "cost": {
-            "water": 2,
-            "colorless": 1
-          },
-          "damage": 170,
-          "effect": null,
-          "description": "Coral armor-plated strike."
-        },
         {
           "name": "Three-Tails Maelstrom",
           "cost": {
             "water": 3,
             "colorless": 3
           },
-          "damage": 310,
+          "damage": 140,
           "effect": {
             "type": "bench-damage",
             "target": "opponent-bench",
@@ -278,13 +277,14 @@
         }
       },
       "weakness": "lightning",
-      "retreatCost": 4,
+      "retreatCost": 2,
       "rarity": "crown",
       "isLegendary": true,
       "flavorText": "The Mizukage and the beast are one.",
       "artPath": "cards/ninja/yagura.webp",
       "set": "mist-village",
-      "setNumber": 6
+      "setNumber": 7,
+      "isEx": false
     },
     {
       "id": "mv-001",
@@ -293,25 +293,16 @@
       "subtitle": "Missing-nin of the Mist",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 110,
+      "hp": 100,
       "chakraType": "water",
       "attacks": [
-        {
-          "name": "Executioner's Slash",
-          "cost": {
-            "colorless": 1
-          },
-          "damage": 40,
-          "effect": null,
-          "description": "A heavy cleaver strike."
-        },
         {
           "name": "Silent Killing",
           "cost": {
             "water": 1,
             "colorless": 1
           },
-          "damage": 80,
+          "damage": 60,
           "effect": {
             "type": "status",
             "status": "confusion",
@@ -322,13 +313,14 @@
       ],
       "ability": null,
       "weakness": "lightning",
-      "retreatCost": 2,
+      "retreatCost": 1,
       "rarity": "rare",
       "isLegendary": false,
       "flavorText": "The Demon of the Hidden Mist.",
       "artPath": "cards/ninja/zabuza.webp",
       "set": "mist-village",
-      "setNumber": 7
+      "setNumber": 8,
+      "isEx": false
     },
     {
       "id": "mv-002",
@@ -337,25 +329,16 @@
       "subtitle": "Demon of the Mist",
       "stage": 1,
       "evolvesFrom": "mv-001",
-      "hp": 170,
+      "hp": 140,
       "chakraType": "water",
       "attacks": [
-        {
-          "name": "Water Dragon Jutsu",
-          "cost": {
-            "water": 2
-          },
-          "damage": 110,
-          "effect": null,
-          "description": "A living serpent of water strikes."
-        },
         {
           "name": "Hidden Mist Execution",
           "cost": {
             "water": 2,
             "colorless": 1
           },
-          "damage": 170,
+          "damage": 90,
           "effect": null,
           "description": "An unseen blow from the fog."
         }
@@ -371,13 +354,14 @@
         }
       },
       "weakness": "lightning",
-      "retreatCost": 3,
+      "retreatCost": 1,
       "rarity": "ultra-rare",
       "isLegendary": false,
       "flavorText": "A true shinobi uses the fog as his blade.",
       "artPath": "cards/ninja/zabuza.webp",
       "set": "mist-village",
-      "setNumber": 8
+      "setNumber": 9,
+      "isEx": false
     },
     {
       "id": "mv-003",
@@ -386,25 +370,16 @@
       "subtitle": "Ice User",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 70,
+      "hp": 60,
       "chakraType": "water",
       "attacks": [
-        {
-          "name": "Senbon Flurry",
-          "cost": {
-            "colorless": 1
-          },
-          "damage": 30,
-          "effect": null,
-          "description": "Needles of bone-numbing cold."
-        },
         {
           "name": "Frozen Strike",
           "cost": {
             "water": 1,
             "colorless": 1
           },
-          "damage": 50,
+          "damage": 30,
           "effect": {
             "type": "status",
             "status": "paralyze",
@@ -421,7 +396,8 @@
       "flavorText": "A tool must prove useful to its master.",
       "artPath": "cards/ninja/haku.webp",
       "set": "mist-village",
-      "setNumber": 9
+      "setNumber": 10,
+      "isEx": false
     },
     {
       "id": "mv-004",
@@ -430,26 +406,16 @@
       "subtitle": "Crystal Ice Mirrors",
       "stage": 1,
       "evolvesFrom": "mv-003",
-      "hp": 130,
+      "hp": 110,
       "chakraType": "water",
       "attacks": [
-        {
-          "name": "Mirror Afterimage",
-          "cost": {
-            "water": 1,
-            "colorless": 1
-          },
-          "damage": 80,
-          "effect": null,
-          "description": "Ice mirrors reflect every direction at once."
-        },
         {
           "name": "Thousand Needles of Death",
           "cost": {
             "water": 2,
             "colorless": 2
           },
-          "damage": 160,
+          "damage": 70,
           "effect": null,
           "description": "Surrounds the target in mirrors and unleashes."
         }
@@ -465,13 +431,14 @@
         }
       },
       "weakness": "fire",
-      "retreatCost": 2,
+      "retreatCost": 1,
       "rarity": "rare",
       "isLegendary": false,
       "flavorText": "I exist to protect the one who gave me purpose.",
       "artPath": "cards/ninja/haku.webp",
       "set": "mist-village",
-      "setNumber": 10
+      "setNumber": 11,
+      "isEx": false
     },
     {
       "id": "mv-009",
@@ -480,25 +447,16 @@
       "subtitle": "Byakugan Bodyguard",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 110,
+      "hp": 100,
       "chakraType": "water",
       "attacks": [
-        {
-          "name": "Sensor Slash",
-          "cost": {
-            "water": 1
-          },
-          "damage": 50,
-          "effect": null,
-          "description": "Locates chakra flow and strikes the weak spot."
-        },
         {
           "name": "Transplanted Byakugan",
           "cost": {
             "water": 1,
             "colorless": 1
           },
-          "damage": 80,
+          "damage": 60,
           "effect": {
             "type": "draw",
             "amount": 1
@@ -508,13 +466,14 @@
       ],
       "ability": null,
       "weakness": "lightning",
-      "retreatCost": 2,
+      "retreatCost": 1,
       "rarity": "rare",
       "isLegendary": false,
       "flavorText": "I've walked three battlefields. This is my fourth.",
       "artPath": "cards/ninja/ao.webp",
       "set": "mist-village",
-      "setNumber": 11
+      "setNumber": 12,
+      "isEx": false
     },
     {
       "id": "mv-010",
@@ -523,28 +482,15 @@
       "subtitle": "Bubble Ninjutsu Master",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 80,
       "chakraType": "water",
       "attacks": [
-        {
-          "name": "Sphere of Bubbles",
-          "cost": {
-            "water": 1
-          },
-          "damage": 40,
-          "effect": {
-            "type": "status",
-            "status": "paralyze",
-            "target": "opponent-active"
-          },
-          "description": "Floating prison of soap."
-        },
         {
           "name": "Corrosive Bubble",
           "cost": {
             "water": 2
           },
-          "damage": 90,
+          "damage": 40,
           "effect": {
             "type": "status",
             "status": "poison",
@@ -561,7 +507,8 @@
       "flavorText": "Drifting, like the wind.",
       "artPath": "cards/ninja/utakata.webp",
       "set": "mist-village",
-      "setNumber": 12
+      "setNumber": 13,
+      "isEx": false
     },
     {
       "id": "mv-016",
@@ -570,25 +517,16 @@
       "subtitle": "Hydrification Fighter",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 90,
+      "hp": 80,
       "chakraType": "water",
       "attacks": [
-        {
-          "name": "Water Punch",
-          "cost": {
-            "water": 1
-          },
-          "damage": 40,
-          "effect": null,
-          "description": "Liquefies his arm mid-strike."
-        },
         {
           "name": "Kubikiribocho Swing",
           "cost": {
             "water": 1,
             "colorless": 2
           },
-          "damage": 100,
+          "damage": 40,
           "effect": null,
           "description": "Wields the Executioner's Blade with ease."
         }
@@ -601,7 +539,8 @@
       "flavorText": "Who needs armor when you ARE the water?",
       "artPath": "cards/ninja/suigetsu.webp",
       "set": "mist-village",
-      "setNumber": 13
+      "setNumber": 14,
+      "isEx": false
     },
     {
       "id": "mv-017",
@@ -610,29 +549,16 @@
       "subtitle": "Perfect Hydration",
       "stage": 1,
       "evolvesFrom": "mv-016",
-      "hp": 160,
+      "hp": 110,
       "chakraType": "water",
       "attacks": [
-        {
-          "name": "Water Form Evasion",
-          "cost": {
-            "water": 1
-          },
-          "damage": 60,
-          "effect": {
-            "type": "conditional",
-            "condition": "damage-reduction",
-            "amount": 30
-          },
-          "description": "Partially liquefies, reducing next attack taken."
-        },
         {
           "name": "Seven Swords Drift",
           "cost": {
             "water": 2,
             "colorless": 2
           },
-          "damage": 150,
+          "damage": 70,
           "effect": null,
           "description": "A flurry of the legendary Mist blades."
         }
@@ -653,7 +579,8 @@
       "flavorText": "I'll collect all seven blades. Watch me.",
       "artPath": "cards/ninja/suigetsu.webp",
       "set": "mist-village",
-      "setNumber": 14
+      "setNumber": 15,
+      "isEx": false
     },
     {
       "id": "mv-011",
@@ -662,39 +589,30 @@
       "subtitle": "Thunder Swordsman",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 120,
+      "hp": 100,
       "chakraType": "lightning",
       "attacks": [
-        {
-          "name": "Lightning Twin Swords",
-          "cost": {
-            "lightning": 1,
-            "colorless": 1
-          },
-          "damage": 60,
-          "effect": null,
-          "description": "Crackling blades cut with raw current."
-        },
         {
           "name": "Thunder Funeral",
           "cost": {
             "lightning": 2,
             "colorless": 1
           },
-          "damage": 130,
+          "damage": 60,
           "effect": null,
           "description": "Dual blades channel a storm."
         }
       ],
       "ability": null,
       "weakness": "earth",
-      "retreatCost": 2,
+      "retreatCost": 1,
       "rarity": "rare",
       "isLegendary": false,
       "flavorText": "Let me send you to your funeral.",
       "artPath": "cards/ninja/raiga.webp",
       "set": "mist-village",
-      "setNumber": 15
+      "setNumber": 16,
+      "isEx": false
     },
     {
       "id": "mv-012",
@@ -707,21 +625,12 @@
       "chakraType": "lightning",
       "attacks": [
         {
-          "name": "Kiba Twin Strike",
-          "cost": {
-            "lightning": 1
-          },
-          "damage": 60,
-          "effect": null,
-          "description": "Twin blades conduct fatal voltage."
-        },
-        {
           "name": "Thunder Valley",
           "cost": {
             "lightning": 2,
             "colorless": 1
           },
-          "damage": 120,
+          "damage": 60,
           "effect": {
             "type": "status",
             "status": "paralyze",
@@ -738,7 +647,8 @@
       "flavorText": "Kiba's fangs never miss.",
       "artPath": "cards/ninja/ameyuri.webp",
       "set": "mist-village",
-      "setNumber": 16
+      "setNumber": 17,
+      "isEx": false
     },
     {
       "id": "mv-013",
@@ -747,29 +657,16 @@
       "subtitle": "Sewing Needle Bearer",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 90,
+      "hp": 100,
       "chakraType": "water",
       "attacks": [
-        {
-          "name": "Needle Thread",
-          "cost": {
-            "colorless": 1
-          },
-          "damage": 40,
-          "effect": {
-            "type": "status",
-            "status": "seal",
-            "target": "opponent-active"
-          },
-          "description": "Sews the target's movements shut."
-        },
         {
           "name": "Cross Stitch",
           "cost": {
             "water": 1,
             "colorless": 1
           },
-          "damage": 80,
+          "damage": 60,
           "effect": null,
           "description": "Rapid threaded strikes."
         }
@@ -782,7 +679,8 @@
       "flavorText": "Every strike, a stitch. Every stitch, a bind.",
       "artPath": "cards/ninja/kushimaru.webp",
       "set": "mist-village",
-      "setNumber": 17
+      "setNumber": 18,
+      "isEx": false
     },
     {
       "id": "mv-014",
@@ -791,39 +689,30 @@
       "subtitle": "Helmet Splitter",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 130,
+      "hp": 100,
       "chakraType": "earth",
       "attacks": [
-        {
-          "name": "Kabutowari Crush",
-          "cost": {
-            "earth": 1,
-            "colorless": 1
-          },
-          "damage": 80,
-          "effect": null,
-          "description": "A hammer-and-axe split defenses."
-        },
         {
           "name": "Bone Break",
           "cost": {
             "earth": 2,
             "colorless": 1
           },
-          "damage": 140,
+          "damage": 60,
           "effect": null,
           "description": "Shatters armor and bone alike."
         }
       ],
       "ability": null,
       "weakness": "wind",
-      "retreatCost": 3,
+      "retreatCost": 1,
       "rarity": "rare",
       "isLegendary": false,
       "flavorText": "Armor is just a thicker skull.",
       "artPath": "cards/ninja/jinin.webp",
       "set": "mist-village",
-      "setNumber": 18
+      "setNumber": 19,
+      "isEx": false
     },
     {
       "id": "mv-015",
@@ -832,25 +721,15 @@
       "subtitle": "Blastsword Bearer",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 110,
+      "hp": 100,
       "chakraType": "fire",
       "attacks": [
-        {
-          "name": "Shibuki Explosive Slash",
-          "cost": {
-            "fire": 1,
-            "colorless": 1
-          },
-          "damage": 90,
-          "effect": null,
-          "description": "A sword lined with paper bombs."
-        },
         {
           "name": "Detonation Wave",
           "cost": {
             "fire": 2
           },
-          "damage": 130,
+          "damage": 60,
           "effect": {
             "type": "self-damage",
             "amount": 20
@@ -860,13 +739,14 @@
       ],
       "ability": null,
       "weakness": "water",
-      "retreatCost": 2,
+      "retreatCost": 1,
       "rarity": "rare",
       "isLegendary": false,
       "flavorText": "Every swing is a message.",
       "artPath": "cards/ninja/jinpachi.webp",
       "set": "mist-village",
-      "setNumber": 19
+      "setNumber": 20,
+      "isEx": false
     },
     {
       "id": "mv-018",
@@ -875,7 +755,7 @@
       "subtitle": "Young Shinobi",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 50,
+      "hp": 60,
       "chakraType": "water",
       "attacks": [
         {
@@ -883,7 +763,7 @@
           "cost": {
             "colorless": 1
           },
-          "damage": 20,
+          "damage": 30,
           "effect": null,
           "description": "A basic throw."
         }
@@ -896,7 +776,8 @@
       "flavorText": "The mist hides my fear.",
       "artPath": null,
       "set": "mist-village",
-      "setNumber": 20
+      "setNumber": 21,
+      "isEx": false
     },
     {
       "id": "mv-060",
@@ -910,7 +791,7 @@
       "rarity": "legendary",
       "set": "mist-village",
       "artPath": "cards/jutsu/blood-mist-ritual.webp",
-      "setNumber": 21
+      "setNumber": 22
     },
     {
       "id": "mv-039",
@@ -925,7 +806,7 @@
       "rarity": "legendary",
       "set": "mist-village",
       "artPath": "cards/jutsu/seven-charge.webp",
-      "setNumber": 22
+      "setNumber": 23
     },
     {
       "id": "mv-027",
@@ -945,7 +826,7 @@
       "rarity": "ultra-rare",
       "set": "mist-village",
       "artPath": "cards/jutsu/boil-mist.webp",
-      "setNumber": 23
+      "setNumber": 24
     },
     {
       "id": "mv-024",
@@ -959,7 +840,7 @@
       "rarity": "ultra-rare",
       "set": "mist-village",
       "artPath": "cards/jutsu/ice-mirrors.webp",
-      "setNumber": 24
+      "setNumber": 25
     },
     {
       "id": "mv-023",
@@ -974,7 +855,7 @@
       "rarity": "ultra-rare",
       "set": "mist-village",
       "artPath": "cards/jutsu/demonic-mirror.webp",
-      "setNumber": 25
+      "setNumber": 26
     },
     {
       "id": "mv-036",
@@ -989,7 +870,7 @@
       "rarity": "ultra-rare",
       "set": "mist-village",
       "artPath": "cards/jutsu/ice-age.webp",
-      "setNumber": 26
+      "setNumber": 27
     },
     {
       "id": "mv-029",
@@ -1009,7 +890,7 @@
       "rarity": "rare",
       "set": "mist-village",
       "artPath": "cards/jutsu/water-vortex.webp",
-      "setNumber": 27
+      "setNumber": 28
     },
     {
       "id": "mv-025",
@@ -1029,7 +910,7 @@
       "rarity": "rare",
       "set": "mist-village",
       "artPath": "cards/jutsu/water-wave.webp",
-      "setNumber": 28
+      "setNumber": 29
     },
     {
       "id": "mv-021",
@@ -1044,7 +925,7 @@
       "rarity": "rare",
       "set": "mist-village",
       "artPath": "cards/jutsu/great-waterfall.webp",
-      "setNumber": 29
+      "setNumber": 30
     },
     {
       "id": "mv-026",
@@ -1059,7 +940,7 @@
       "rarity": "rare",
       "set": "mist-village",
       "artPath": "cards/jutsu/lava-wall.webp",
-      "setNumber": 30
+      "setNumber": 31
     },
     {
       "id": "mv-034",
@@ -1075,7 +956,7 @@
       "rarity": "rare",
       "set": "mist-village",
       "artPath": "cards/jutsu/water-slicer.webp",
-      "setNumber": 31
+      "setNumber": 32
     },
     {
       "id": "mv-037",
@@ -1089,7 +970,7 @@
       "rarity": "rare",
       "set": "mist-village",
       "artPath": "cards/jutsu/mist-barrier.webp",
-      "setNumber": 32
+      "setNumber": 33
     },
     {
       "id": "mv-032",
@@ -1104,7 +985,7 @@
       "rarity": "rare",
       "set": "mist-village",
       "artPath": "cards/jutsu/silent-kill.webp",
-      "setNumber": 33
+      "setNumber": 34
     },
     {
       "id": "mv-020",
@@ -1119,7 +1000,7 @@
       "rarity": "rare",
       "set": "mist-village",
       "artPath": "cards/jutsu/water-dragon.webp",
-      "setNumber": 34
+      "setNumber": 35
     },
     {
       "id": "mv-040",
@@ -1138,7 +1019,7 @@
       "rarity": "uncommon",
       "set": "mist-village",
       "artPath": "cards/jutsu/blood-mist.webp",
-      "setNumber": 35
+      "setNumber": 36
     },
     {
       "id": "mv-031",
@@ -1153,7 +1034,7 @@
       "rarity": "uncommon",
       "set": "mist-village",
       "artPath": "cards/jutsu/bubble-technique.webp",
-      "setNumber": 36
+      "setNumber": 37
     },
     {
       "id": "mv-038",
@@ -1168,7 +1049,7 @@
       "rarity": "uncommon",
       "set": "mist-village",
       "artPath": "cards/jutsu/frozen-lake.webp",
-      "setNumber": 37
+      "setNumber": 38
     },
     {
       "id": "mv-033",
@@ -1182,7 +1063,7 @@
       "rarity": "uncommon",
       "set": "mist-village",
       "artPath": "cards/jutsu/mist-detection.webp",
-      "setNumber": 38
+      "setNumber": 39
     },
     {
       "id": "mv-028",
@@ -1196,7 +1077,7 @@
       "rarity": "uncommon",
       "set": "mist-village",
       "artPath": "cards/jutsu/water-clone.webp",
-      "setNumber": 39
+      "setNumber": 40
     },
     {
       "id": "mv-022",
@@ -1211,7 +1092,7 @@
       "rarity": "uncommon",
       "set": "mist-village",
       "artPath": "cards/jutsu/water-prison.webp",
-      "setNumber": 40
+      "setNumber": 41
     },
     {
       "id": "mv-035",
@@ -1226,7 +1107,7 @@
       "rarity": "uncommon",
       "set": "mist-village",
       "artPath": "cards/jutsu/whirlpool.webp",
-      "setNumber": 41
+      "setNumber": 42
     },
     {
       "id": "mv-019",
@@ -1241,7 +1122,7 @@
       "rarity": "common",
       "set": "mist-village",
       "artPath": "cards/jutsu/hidden-mist.webp",
-      "setNumber": 42
+      "setNumber": 43
     },
     {
       "id": "mv-059",
@@ -1255,7 +1136,7 @@
       "rarity": "common",
       "set": "mist-village",
       "artPath": "cards/jutsu/shroud-recovery.webp",
-      "setNumber": 43
+      "setNumber": 44
     },
     {
       "id": "mv-030",
@@ -1270,7 +1151,7 @@
       "rarity": "common",
       "set": "mist-village",
       "artPath": "cards/jutsu/water-needles.webp",
-      "setNumber": 44
+      "setNumber": 45
     },
     {
       "id": "mv-054",
@@ -1284,7 +1165,7 @@
       "rarity": "legendary",
       "set": "mist-village",
       "artPath": "cards/tools/demonic-mist.webp",
-      "setNumber": 45
+      "setNumber": 46
     },
     {
       "id": "mv-046",
@@ -1299,7 +1180,7 @@
       "rarity": "ultra-rare",
       "set": "mist-village",
       "artPath": "cards/tools/hiramekarei.webp",
-      "setNumber": 46
+      "setNumber": 47
     },
     {
       "id": "mv-041",
@@ -1313,7 +1194,7 @@
       "rarity": "ultra-rare",
       "set": "mist-village",
       "artPath": "cards/tools/kubikiribocho.webp",
-      "setNumber": 47
+      "setNumber": 48
     },
     {
       "id": "mv-047",
@@ -1328,7 +1209,7 @@
       "rarity": "ultra-rare",
       "set": "mist-village",
       "artPath": "cards/tools/samehada-fragment.webp",
-      "setNumber": 48
+      "setNumber": 49
     },
     {
       "id": "mv-055",
@@ -1344,7 +1225,7 @@
       "rarity": "rare",
       "set": "mist-village",
       "artPath": "cards/tools/cursed-tombstone.webp",
-      "setNumber": 49
+      "setNumber": 50
     },
     {
       "id": "mv-044",
@@ -1359,7 +1240,7 @@
       "rarity": "rare",
       "set": "mist-village",
       "artPath": "cards/tools/kabutowari.webp",
-      "setNumber": 50
+      "setNumber": 51
     },
     {
       "id": "mv-042",
@@ -1373,7 +1254,7 @@
       "rarity": "rare",
       "set": "mist-village",
       "artPath": "cards/tools/kiba.webp",
-      "setNumber": 51
+      "setNumber": 52
     },
     {
       "id": "mv-043",
@@ -1388,7 +1269,7 @@
       "rarity": "rare",
       "set": "mist-village",
       "artPath": "cards/tools/nuibari.webp",
-      "setNumber": 52
+      "setNumber": 53
     },
     {
       "id": "mv-052",
@@ -1402,7 +1283,7 @@
       "rarity": "rare",
       "set": "mist-village",
       "artPath": "cards/tools/swordsmen-emblem.webp",
-      "setNumber": 53
+      "setNumber": 54
     },
     {
       "id": "mv-045",
@@ -1416,7 +1297,7 @@
       "rarity": "rare",
       "set": "mist-village",
       "artPath": "cards/tools/shibuki.webp",
-      "setNumber": 54
+      "setNumber": 55
     },
     {
       "id": "mv-048",
@@ -1431,7 +1312,7 @@
       "rarity": "uncommon",
       "set": "mist-village",
       "artPath": "cards/tools/bubble-pipe.webp",
-      "setNumber": 55
+      "setNumber": 56
     },
     {
       "id": "mv-050",
@@ -1445,7 +1326,7 @@
       "rarity": "uncommon",
       "set": "mist-village",
       "artPath": "cards/tools/hozuki-scroll.webp",
-      "setNumber": 56
+      "setNumber": 57
     },
     {
       "id": "mv-053",
@@ -1460,7 +1341,7 @@
       "rarity": "uncommon",
       "set": "mist-village",
       "artPath": "cards/tools/ice-senbon.webp",
-      "setNumber": 57
+      "setNumber": 58
     },
     {
       "id": "mv-051",
@@ -1475,7 +1356,7 @@
       "rarity": "common",
       "set": "mist-village",
       "artPath": "cards/tools/mist-headband.webp",
-      "setNumber": 58
+      "setNumber": 59
     },
     {
       "id": "mv-049",
@@ -1490,7 +1371,7 @@
       "rarity": "common",
       "set": "mist-village",
       "artPath": "cards/tools/water-gourd.webp",
-      "setNumber": 59
+      "setNumber": 60
     },
     {
       "id": "mv-056",
@@ -1507,7 +1388,7 @@
       "rarity": "legendary",
       "set": "mist-village",
       "artPath": "cards/sensei/mei.webp",
-      "setNumber": 60
+      "setNumber": 61
     },
     {
       "id": "mv-057",
@@ -1522,7 +1403,7 @@
       "rarity": "ultra-rare",
       "set": "mist-village",
       "artPath": "cards/sensei/zabuza.webp",
-      "setNumber": 61
+      "setNumber": 62
     },
     {
       "id": "mv-058",
@@ -1537,7 +1418,7 @@
       "rarity": "rare",
       "set": "mist-village",
       "artPath": "cards/sensei/ao.webp",
-      "setNumber": 62
+      "setNumber": 63
     }
   ],
   "pullRates": {
@@ -1549,5 +1430,5 @@
     "secret": 0.005,
     "crown": 0.002
   },
-  "totalCards": 62
+  "totalCards": 63
 }
