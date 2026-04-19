@@ -7,8 +7,18 @@ import { DeckSlice, createDeckSlice } from './slices/deckSlice';
 import { PlayerSlice, createPlayerSlice } from './slices/playerSlice';
 import { PackSlice, createPackSlice } from './slices/packSlice';
 import { SettingsSlice, createSettingsSlice } from './slices/settingsSlice';
+import { BattleSlice, createBattleSlice } from './slices/battleSlice';
+import { getActiveProfileId, getProfileStorageKey } from '@/lib/profileStorage';
 
-export type GameStore = CollectionSlice & DeckSlice & PlayerSlice & PackSlice & SettingsSlice;
+export type GameStore = CollectionSlice & DeckSlice & PlayerSlice & PackSlice & SettingsSlice & BattleSlice;
+
+// Determined once at module load. Switching profiles requires a full page reload
+// because zustand persist binds its storage key at store creation time.
+function computeStorageName(): string {
+  if (typeof window === 'undefined') return 'naruto-tcg-ssr';
+  const id = getActiveProfileId();
+  return id ? getProfileStorageKey(id) : 'naruto-tcg-no-profile';
+}
 
 export const useGameStore = create<GameStore>()(
   persist(
@@ -18,9 +28,10 @@ export const useGameStore = create<GameStore>()(
       ...createPlayerSlice(...a),
       ...createPackSlice(...a),
       ...createSettingsSlice(...a),
+      ...createBattleSlice(...a),
     }),
     {
-      name: 'naruto-tcg-save',
+      name: computeStorageName(),
       partialize: (state) => ({
         ownedCards: state.ownedCards,
         decks: state.decks,
@@ -31,6 +42,8 @@ export const useGameStore = create<GameStore>()(
         sfxVolume: state.sfxVolume,
         musicVolume: state.musicVolume,
         animationSpeed: state.animationSpeed,
+        testMode: state.testMode,
+        hasSeenWelcome: state.hasSeenWelcome,
       }),
     }
   )

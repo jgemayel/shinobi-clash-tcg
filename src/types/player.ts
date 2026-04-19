@@ -3,6 +3,7 @@ import { GameCard } from './card';
 
 export interface PlayerProfile {
   name: string;
+  avatarId: string;
   level: number;
   xp: number;
   xpToNextLevel: number;

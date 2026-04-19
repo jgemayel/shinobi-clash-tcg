@@ -1,4 +1,4 @@
-import { BattlePhase, CardType, ChakraType } from '@/types/enums';
+import { BattlePhase, CardType, ChakraType, StatusEffect } from '@/types/enums';
 import { GameCard, NinjaCard } from '@/types/card';
 import {
   BattleState,
@@ -110,17 +110,34 @@ export function getLegalActions(state: BattleState): BattleAction[] {
 
   switch (state.phase) {
     case BattlePhase.Setup: {
-      // Must select active ninja from hand
-      const ninjas = active.hand.filter((c) => isNinja(c) && (c as NinjaCard).stage === 0);
-      for (const ninja of ninjas) {
-        actions.push({ type: 'select-active', instanceId: ninja.id });
-      }
-      // If no basic ninja, allow any ninja
-      if (actions.length === 0) {
-        const allNinjas = active.hand.filter((c) => isNinja(c));
-        for (const ninja of allNinjas) {
-          actions.push({ type: 'select-active', instanceId: ninja.id });
+      if (!active.active) {
+        // Must select active ninja from hand first. Prefer basic (stage 0).
+        const basics = active.hand.filter((c) => isNinja(c) && (c as NinjaCard).stage === 0);
+        for (const ninja of basics) {
+          actions.push({ type: 'select-active', cardId: ninja.id });
         }
+        // Fallback: if hand has no basic, allow any ninja
+        if (actions.length === 0) {
+          const allNinjas = active.hand.filter((c) => isNinja(c));
+          for (const ninja of allNinjas) {
+            actions.push({ type: 'select-active', cardId: ninja.id });
+          }
+        }
+      } else {
+        // Active is set — optionally place basic ninjas on bench, then finish setup.
+        const emptyBenchSlots = active.bench.reduce((acc, slot, i) => {
+          if (slot === null) acc.push(i);
+          return acc;
+        }, [] as number[]);
+
+        for (const card of active.hand) {
+          if (isNinja(card) && (card as NinjaCard).stage === 0 && emptyBenchSlots.length > 0) {
+            for (const slot of emptyBenchSlots) {
+              actions.push({ type: 'play-ninja', cardId: card.id, toBench: slot });
+            }
+          }
+        }
+        actions.push({ type: 'end-setup' });
       }
       break;
     }
@@ -176,8 +193,8 @@ export function getLegalActions(state: BattleState): BattleAction[] {
         }
       }
 
-      // Attack
-      if (active.active) {
+      // Attack — Pokemon TCGP rule: first player cannot attack on their first turn
+      if (active.active && !state.firstTurn) {
         const ninja = active.active.card as NinjaCard;
         if (isNinja(active.active.card)) {
           ninja.attacks.forEach((atk, i) => {
@@ -210,11 +227,15 @@ export function getLegalActions(state: BattleState): BattleAction[] {
         }
       }
 
-      // Play tool
-      if (active.active) {
-        for (const card of active.hand) {
-          if (card.type === CardType.Tool) {
-            actions.push({ type: 'play-tool', cardId: card.id, targetInstanceId: active.active.instanceId });
+      // Play tool — 1 per Ninja (TCGP rule). Active + any bench slot.
+      const toolCards = active.hand.filter((c) => c.type === CardType.Tool);
+      if (toolCards.length > 0) {
+        const toolable: BattleCardInstance[] = [];
+        if (active.active && active.active.attachedTools.length === 0) toolable.push(active.active);
+        for (const b of active.bench) if (b && b.attachedTools.length === 0) toolable.push(b);
+        for (const card of toolCards) {
+          for (const target of toolable) {
+            actions.push({ type: 'play-tool', cardId: card.id, targetInstanceId: target.instanceId });
           }
         }
       }
@@ -231,7 +252,17 @@ export function getLegalActions(state: BattleState): BattleAction[] {
       break;
   }
 
-  return actions;
+  // Deduplicate: when the hand contains multiple copies of the same card,
+  // inner loops in this function emit structurally identical actions (same
+  // type, cardId and target). They would resolve to the same state change,
+  // so we keep only the first occurrence to avoid cluttering the UI.
+  const seen = new Set<string>();
+  return actions.filter((a) => {
+    const key = JSON.stringify(a);
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
 }
 
 export function processAction(state: BattleState, action: BattleAction): BattleResult {
@@ -241,10 +272,13 @@ export function processAction(state: BattleState, action: BattleAction): BattleR
   switch (action.type) {
     case 'select-active': {
       const active = getActivePlayerState(newState);
-      const cardIndex = active.hand.findIndex((c) => c.id === action.instanceId);
+      if (active.active) break; // already set
+      const cardIndex = active.hand.findIndex((c) => c.id === action.cardId);
       if (cardIndex === -1) break;
 
       const card = active.hand[cardIndex];
+      if (!isNinja(card)) break;
+
       const instance = createCardInstance(card, newState.turn);
       const newHand = active.hand.filter((_, i) => i !== cardIndex);
 
@@ -258,30 +292,20 @@ export function processAction(state: BattleState, action: BattleAction): BattleR
         data: { instanceId: instance.instanceId, cardId: card.id, position: 'active' },
         timestamp: Date.now(),
       });
+      // Stay in Setup so the player can optionally place bench ninjas,
+      // then explicitly call `end-setup` to hand off to the next player.
+      break;
+    }
 
-      // Auto place basic ninjas on bench from hand
-      const updatedActive = getActivePlayerState(newState);
-      let benchUpdated = [...updatedActive.bench];
-      let handUpdated = [...updatedActive.hand];
+    case 'end-setup': {
+      const active = getActivePlayerState(newState);
+      if (!active.active) break; // must have an active ninja to finish
 
-      for (let i = 0; i < benchUpdated.length && handUpdated.length > 0; i++) {
-        if (benchUpdated[i] === null) {
-          const ninjaIdx = handUpdated.findIndex((c) => isNinja(c) && (c as NinjaCard).stage === 0);
-          if (ninjaIdx >= 0) {
-            const benchCard = handUpdated[ninjaIdx];
-            benchUpdated[i] = createCardInstance(benchCard, newState.turn);
-            handUpdated = handUpdated.filter((_, idx) => idx !== ninjaIdx);
-          }
-        }
-      }
-
-      newState = updateActivePlayer(newState, { bench: benchUpdated, hand: handUpdated });
-
-      // Check if both players have set up
       if (newState.activePlayer === 'player') {
+        // Player finished — hand off to opponent for their setup
         newState = { ...newState, activePlayer: 'opponent' };
       } else {
-        // Both players set up, start the game
+        // Both players finished — start turn 1
         newState = {
           ...newState,
           phase: BattlePhase.DrawPhase,
@@ -545,14 +569,22 @@ export function processAction(state: BattleState, action: BattleAction): BattleR
 
       const ninja = active.active.card as NinjaCard;
       const retreatCost = ninja.retreatCost;
+      if (active.active.attachedChakra.length < retreatCost) break;
 
-      const newActive = removeChakra(active.active, retreatCost);
       const benchIndex = active.bench.findIndex((b) => b?.instanceId === action.newActiveInstanceId);
       if (benchIndex === -1) break;
 
+      // Retreating clears "turn-skipping" special conditions (Pokemon TCGP rule).
+      // Keep damage-over-time effects (Burn, Poison).
+      const retired = removeChakra(active.active, retreatCost);
+      const clearedStatus = retired.statusEffects.filter(
+        (s) => s.effect !== StatusEffect.Paralyze && s.effect !== StatusEffect.Confusion && s.effect !== StatusEffect.Seal
+      );
+      const retiredClean = { ...retired, statusEffects: clearedStatus };
+
       const newBenchNinja = active.bench[benchIndex]!;
       const newBench = [...active.bench];
-      newBench[benchIndex] = newActive;
+      newBench[benchIndex] = retiredClean;
 
       newState = updateActivePlayer(newState, {
         active: newBenchNinja,
@@ -621,12 +653,29 @@ export function processAction(state: BattleState, action: BattleAction): BattleR
       const toolCard = active.hand[cardIndex];
       if (toolCard.type !== CardType.Tool) break;
 
-      if (active.active?.instanceId === action.targetInstanceId) {
+      // Pokemon TCGP rule: 1 Tool per Ninja. Reject if target already wears one.
+      const isTargetActive = active.active?.instanceId === action.targetInstanceId;
+      const target = isTargetActive
+        ? active.active
+        : active.bench.find((b) => b?.instanceId === action.targetInstanceId) ?? null;
+      if (!target || target.attachedTools.length > 0) break;
+
+      if (isTargetActive && active.active) {
         newState = updateActivePlayer(newState, {
           active: {
             ...active.active,
             attachedTools: [...active.active.attachedTools, toolCard],
           },
+          hand: active.hand.filter((_, i) => i !== cardIndex),
+        });
+      } else {
+        const newBench = active.bench.map((b) =>
+          b?.instanceId === action.targetInstanceId
+            ? { ...b, attachedTools: [...b.attachedTools, toolCard] }
+            : b
+        );
+        newState = updateActivePlayer(newState, {
+          bench: newBench,
           hand: active.hand.filter((_, i) => i !== cardIndex),
         });
       }
@@ -778,15 +827,22 @@ export function processBetweenTurns(state: BattleState): BattleResult {
   const nextPlayer = newState.activePlayer === 'player' ? 'opponent' : 'player';
   const newTurn = nextPlayer === 'player' ? newState.turn + 1 : newState.turn;
 
-  // Reset per-turn flags
+  // Reset per-turn flags for the player whose turn is STARTING (not ending).
+  // Previously this read `active.active` (the player just finishing) and wrote
+  // it onto the next player — which replaced the next player's active ninja
+  // with the outgoing ninja on every turn transition.
   const nextPlayerState = nextPlayer === 'player' ? newState.player : newState.opponent;
   const resetUpdate: Partial<PlayerBattleState> = {
     senseiUsedThisTurn: false,
     chakraAttachedThisTurn: false,
   };
 
-  if (active.active) {
-    resetUpdate.active = { ...active.active, hasEvolved: false, canAttackThisTurn: true };
+  if (nextPlayerState.active) {
+    resetUpdate.active = {
+      ...nextPlayerState.active,
+      hasEvolved: false,
+      canAttackThisTurn: true,
+    };
   }
 
   newState = {

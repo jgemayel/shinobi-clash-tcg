@@ -14,7 +14,8 @@ export const MAX_TURNS = 30;
 export const BURN_DAMAGE = 20;
 export const POISON_DAMAGE = 10;
 export const CONFUSION_SELF_DAMAGE = 30;
-export const WEAKNESS_MULTIPLIER = 2;
+// Pokemon TCGP weakness is flat +20 damage (not ×2 like Standard TCG).
+export const WEAKNESS_BONUS = 20;
 export const XP_PER_WIN = 50;
 export const XP_PER_LOSS = 10;
 export const XP_PER_PACK = 25;

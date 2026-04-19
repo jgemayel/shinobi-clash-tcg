@@ -1,6 +1,7 @@
-import { Rarity } from '@/types/enums';
+import { Rarity, AIDifficulty } from '@/types/enums';
 import { GameCard, CardSet } from '@/types/card';
 import { CARDS_PER_PACK } from './constants';
+import { rollShiny } from './shinyUtils';
 
 const DEFAULT_PULL_RATES: Record<Rarity, number> = {
   [Rarity.Common]: 0.60,
@@ -38,6 +39,7 @@ function pickRandomCard(cards: GameCard[]): GameCard {
 export function generatePack(cardSet: CardSet): GameCard[] {
   const rates = cardSet.pullRates ?? DEFAULT_PULL_RATES;
   const pack: GameCard[] = [];
+  const finish = (card: GameCard) => rollShiny(card);
 
   // Slots 1-3: weighted toward common/uncommon
   const earlySlotRates = {
@@ -54,10 +56,10 @@ export function generatePack(cardSet: CardSet): GameCard[] {
     const rarity = weightedRandomRarity(normalizedEarly);
     const candidates = getCardsByRarity(cardSet.cards, rarity);
     if (candidates.length > 0) {
-      pack.push(pickRandomCard(candidates));
+      pack.push(finish(pickRandomCard(candidates)));
     } else {
       const commons = getCardsByRarity(cardSet.cards, Rarity.Common);
-      pack.push(pickRandomCard(commons.length > 0 ? commons : cardSet.cards));
+      pack.push(finish(pickRandomCard(commons.length > 0 ? commons : cardSet.cards)));
     }
   }
 
@@ -77,14 +79,44 @@ export function generatePack(cardSet: CardSet): GameCard[] {
     const rarity = weightedRandomRarity(normalizedLate);
     const candidates = getCardsByRarity(cardSet.cards, rarity);
     if (candidates.length > 0) {
-      pack.push(pickRandomCard(candidates));
+      pack.push(finish(pickRandomCard(candidates)));
     } else {
       const uncommons = getCardsByRarity(cardSet.cards, Rarity.Uncommon);
-      pack.push(pickRandomCard(uncommons.length > 0 ? uncommons : cardSet.cards));
+      pack.push(finish(pickRandomCard(uncommons.length > 0 ? uncommons : cardSet.cards)));
     }
   }
 
   return pack;
+}
+
+export function rollBattleReward(cardSet: CardSet, difficulty: AIDifficulty): GameCard {
+  const base = cardSet.pullRates ?? DEFAULT_PULL_RATES;
+  const boostByDifficulty: Record<AIDifficulty, number> = {
+    [AIDifficulty.Academy]: 0,
+    [AIDifficulty.Genin]: 0.4,
+    [AIDifficulty.Chunin]: 0.9,
+    [AIDifficulty.Jonin]: 1.6,
+    [AIDifficulty.Kage]: 2.5,
+  };
+  const boost = boostByDifficulty[difficulty] ?? 0;
+  const weights: Record<string, number> = {
+    [Rarity.Common]: (base[Rarity.Common] ?? 0) * Math.max(0.25, 1 - boost * 0.3),
+    [Rarity.Uncommon]: (base[Rarity.Uncommon] ?? 0) * (1 + boost * 0.2),
+    [Rarity.Rare]: (base[Rarity.Rare] ?? 0) * (1 + boost * 0.6),
+    [Rarity.UltraRare]: (base[Rarity.UltraRare] ?? 0) * (1 + boost * 1.3),
+    [Rarity.Legendary]: (base[Rarity.Legendary] ?? 0) * (1 + boost * 2.2),
+    [Rarity.Secret]: (base[Rarity.Secret] ?? 0) * (1 + boost * 2.8),
+    [Rarity.Crown]: (base[Rarity.Crown] ?? 0) * (1 + boost * 3.5),
+  };
+  const total = Object.values(weights).reduce((a, b) => a + b, 0);
+  const normalized = Object.fromEntries(
+    Object.entries(weights).map(([k, v]) => [k, v / total])
+  );
+  const rarity = weightedRandomRarity(normalized);
+  const candidates = getCardsByRarity(cardSet.cards, rarity);
+  if (candidates.length > 0) return rollShiny(pickRandomCard(candidates));
+  const commons = getCardsByRarity(cardSet.cards, Rarity.Common);
+  return rollShiny(pickRandomCard(commons.length > 0 ? commons : cardSet.cards));
 }
 
 export function getRarityLabel(rarity: Rarity): string {

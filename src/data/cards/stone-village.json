@@ -1,0 +1,1609 @@
+{
+  "setId": "stone-village",
+  "setName": "Stone Village",
+  "releaseOrder": 7,
+  "unlockLevel": 9,
+  "packArt": "packs/stone-village.webp",
+  "cards": [
+    {
+      "id": "stv-001",
+      "type": "ninja",
+      "name": "Onoki",
+      "subtitle": "Old Jonin",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 100,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Rock Fist",
+          "cost": {
+            "earth": 1
+          },
+          "damage": 40,
+          "effect": null,
+          "description": "A stone-knuckled punch."
+        },
+        {
+          "name": "Levitation Strike",
+          "cost": {
+            "earth": 1,
+            "colorless": 1
+          },
+          "damage": 70,
+          "effect": null,
+          "description": "Drops from above with stored momentum."
+        }
+      ],
+      "ability": null,
+      "weakness": "wind",
+      "retreatCost": 1,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "My old bones still know how to fight.",
+      "artPath": "cards/ninja/onoki.webp",
+      "set": "stone-village",
+      "setNumber": 1
+    },
+    {
+      "id": "stv-002",
+      "type": "ninja",
+      "name": "Onoki",
+      "subtitle": "Third Tsuchikage \u2014 Dust Release",
+      "stage": 1,
+      "evolvesFrom": "stv-001",
+      "hp": 190,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Light Weight Boulder",
+          "cost": {
+            "earth": 2
+          },
+          "damage": 120,
+          "effect": null,
+          "description": "A levitated stone launched at crushing speed."
+        },
+        {
+          "name": "Dust Release: Detachment",
+          "cost": {
+            "earth": 3,
+            "colorless": 2
+          },
+          "damage": 230,
+          "effect": null,
+          "description": "A particle-level disintegration field."
+        }
+      ],
+      "ability": {
+        "name": "Dust Release Mastery",
+        "description": "Ignores all target damage reduction.",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "pierce-all"
+        }
+      },
+      "weakness": "wind",
+      "retreatCost": 0,
+      "rarity": "legendary",
+      "isLegendary": true,
+      "flavorText": "I can erase mountains if I choose.",
+      "artPath": "cards/ninja/onoki.webp",
+      "set": "stone-village",
+      "setNumber": 2
+    },
+    {
+      "id": "stv-066",
+      "type": "ninja",
+      "name": "Onoki",
+      "subtitle": "Ghost of Iwagakure",
+      "stage": 2,
+      "evolvesFrom": "stv-002",
+      "hp": 240,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Dust Disappear",
+          "cost": {
+            "earth": 2
+          },
+          "damage": 130,
+          "effect": {
+            "type": "conditional",
+            "condition": "untargetable-jutsu"
+          },
+          "description": "Dust-level phase."
+        },
+        {
+          "name": "Primitive Cosmic Release",
+          "cost": {
+            "earth": 3,
+            "wind": 1,
+            "colorless": 1
+          },
+          "damage": 260,
+          "effect": null,
+          "description": "Dust Release at full mastery."
+        }
+      ],
+      "ability": {
+        "name": "Levitation God",
+        "description": "Retreat cost is 0. Attacks ignore 30 damage reduction.",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "free-retreat-pierce",
+          "amount": 30
+        }
+      },
+      "weakness": "wind",
+      "retreatCost": 0,
+      "rarity": "secret",
+      "isLegendary": true,
+      "flavorText": "Old bones still dance in the clouds.",
+      "artPath": "cards/ninja/onoki.webp",
+      "set": "stone-village",
+      "setNumber": 3
+    },
+    {
+      "id": "stv-067",
+      "type": "ninja",
+      "name": "Onoki",
+      "subtitle": "Dust Release Ascendant",
+      "stage": 3,
+      "evolvesFrom": "stv-066",
+      "hp": 300,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Particle Annihilation",
+          "cost": {
+            "earth": 4
+          },
+          "damage": 300,
+          "effect": null,
+          "description": "Target ceases to exist at atomic level."
+        },
+        {
+          "name": "Ascendant Dust Field",
+          "cost": {
+            "earth": 3,
+            "wind": 2,
+            "colorless": 2
+          },
+          "damage": 340,
+          "effect": {
+            "type": "bench-damage",
+            "target": "all-opponents",
+            "amount": 80
+          },
+          "description": "The battlefield itself disintegrates."
+        }
+      ],
+      "ability": {
+        "name": "Dust Release God",
+        "description": "All your Earth Ninjas attacks ignore damage reduction.",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "bench-pierce"
+        }
+      },
+      "weakness": "wind",
+      "retreatCost": 0,
+      "rarity": "crown",
+      "isLegendary": true,
+      "flavorText": "I became the Kekkei Tota itself.",
+      "artPath": "cards/ninja/onoki.webp",
+      "set": "stone-village",
+      "setNumber": 4
+    },
+    {
+      "id": "stv-003",
+      "type": "ninja",
+      "name": "Mu",
+      "subtitle": "Second Tsuchikage",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 170,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Dust Release: Primitive World",
+          "cost": {
+            "earth": 2,
+            "colorless": 1
+          },
+          "damage": 140,
+          "effect": null,
+          "description": "Atomizes matter in a conical blast."
+        },
+        {
+          "name": "Sensor Strike",
+          "cost": {
+            "colorless": 2
+          },
+          "damage": 90,
+          "effect": {
+            "type": "draw",
+            "amount": 1
+          },
+          "description": "Attacks while sensing \u2014 draw 1 card."
+        }
+      ],
+      "ability": {
+        "name": "Stealth Flight",
+        "description": "This Ninja cannot be targeted by single-target Jutsu Scrolls.",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "untargetable-jutsu"
+        }
+      },
+      "weakness": "wind",
+      "retreatCost": 0,
+      "rarity": "legendary",
+      "isLegendary": true,
+      "flavorText": "Invisible, weightless, unfathomable.",
+      "artPath": "cards/ninja/mu.webp",
+      "set": "stone-village",
+      "setNumber": 5
+    },
+    {
+      "id": "stv-004",
+      "type": "ninja",
+      "name": "Ishikawa",
+      "subtitle": "First Tsuchikage",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 180,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Founding Wall",
+          "cost": {
+            "earth": 2
+          },
+          "damage": 100,
+          "effect": {
+            "type": "heal",
+            "amount": 30,
+            "target": "self-bench"
+          },
+          "description": "Earthen wall that shields allies."
+        },
+        {
+          "name": "Village Founder's Will",
+          "cost": {
+            "earth": 2,
+            "colorless": 2
+          },
+          "damage": 170,
+          "effect": null,
+          "description": "Iwa's foundation reasserts itself."
+        }
+      ],
+      "ability": null,
+      "weakness": "wind",
+      "retreatCost": 3,
+      "rarity": "legendary",
+      "isLegendary": true,
+      "flavorText": "My village was built from this very rock.",
+      "artPath": "cards/ninja/ishikawa.webp",
+      "set": "stone-village",
+      "setNumber": 6
+    },
+    {
+      "id": "stv-005",
+      "type": "ninja",
+      "name": "Kurotsuchi",
+      "subtitle": "Stone's Pride",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 90,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Quicklime Jutsu",
+          "cost": {
+            "earth": 1,
+            "fire": 1
+          },
+          "damage": 60,
+          "effect": {
+            "type": "status",
+            "status": "burn",
+            "target": "opponent-active"
+          },
+          "description": "A burning lime-stone paste."
+        },
+        {
+          "name": "Earth Spear",
+          "cost": {
+            "earth": 1,
+            "colorless": 1
+          },
+          "damage": 70,
+          "effect": null,
+          "description": "A hardened stone lance."
+        }
+      ],
+      "ability": null,
+      "weakness": "wind",
+      "retreatCost": 1,
+      "rarity": "uncommon",
+      "isLegendary": false,
+      "flavorText": "Grandpa taught me well.",
+      "artPath": "cards/ninja/kurotsuchi.webp",
+      "set": "stone-village",
+      "setNumber": 7
+    },
+    {
+      "id": "stv-006",
+      "type": "ninja",
+      "name": "Kurotsuchi",
+      "subtitle": "Fourth Tsuchikage",
+      "stage": 1,
+      "evolvesFrom": "stv-005",
+      "hp": 150,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Lava Quicklime",
+          "cost": {
+            "earth": 2,
+            "fire": 1
+          },
+          "damage": 120,
+          "effect": {
+            "type": "status",
+            "status": "burn",
+            "target": "opponent-active"
+          },
+          "description": "Lime that hardens into scorching cement."
+        },
+        {
+          "name": "Water Trumpet",
+          "cost": {
+            "water": 2
+          },
+          "damage": 100,
+          "effect": null,
+          "description": "A conical blast of water."
+        }
+      ],
+      "ability": null,
+      "weakness": "wind",
+      "retreatCost": 2,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "I carry the Tsuchikage lineage.",
+      "artPath": "cards/ninja/kurotsuchi.webp",
+      "set": "stone-village",
+      "setNumber": 8
+    },
+    {
+      "id": "stv-009",
+      "type": "ninja",
+      "name": "Akatsuchi",
+      "subtitle": "Big Jonin",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 140,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Earth Fist",
+          "cost": {
+            "earth": 1
+          },
+          "damage": 60,
+          "effect": null,
+          "description": "A stone-encased haymaker."
+        },
+        {
+          "name": "Rock Golem Summon",
+          "cost": {
+            "earth": 2,
+            "colorless": 1
+          },
+          "damage": 110,
+          "effect": null,
+          "description": "A humanoid stone ally."
+        }
+      ],
+      "ability": null,
+      "weakness": "wind",
+      "retreatCost": 3,
+      "rarity": "uncommon",
+      "isLegendary": false,
+      "flavorText": "I'm not JUST big.",
+      "artPath": "cards/ninja/akatsuchi.webp",
+      "set": "stone-village",
+      "setNumber": 9
+    },
+    {
+      "id": "stv-010",
+      "type": "ninja",
+      "name": "Kitsuchi",
+      "subtitle": "Iwa Commander",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 130,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Command Strike",
+          "cost": {
+            "colorless": 1
+          },
+          "damage": 40,
+          "effect": {
+            "type": "draw",
+            "amount": 1
+          },
+          "description": "Tactical assault."
+        },
+        {
+          "name": "Earth Division",
+          "cost": {
+            "earth": 2,
+            "colorless": 1
+          },
+          "damage": 110,
+          "effect": null,
+          "description": "Splits the ground beneath the target."
+        }
+      ],
+      "ability": null,
+      "weakness": "wind",
+      "retreatCost": 2,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "Leadership of the Earth Division.",
+      "artPath": "cards/ninja/kitsuchi.webp",
+      "set": "stone-village",
+      "setNumber": 10
+    },
+    {
+      "id": "stv-011",
+      "type": "ninja",
+      "name": "Gari",
+      "subtitle": "Explosion Release",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 110,
+      "chakraType": "fire",
+      "attacks": [
+        {
+          "name": "Explosive Palm",
+          "cost": {
+            "fire": 1,
+            "earth": 1
+          },
+          "damage": 80,
+          "effect": {
+            "type": "self-damage",
+            "amount": 20
+          },
+          "description": "Detonation on contact."
+        }
+      ],
+      "ability": null,
+      "weakness": "water",
+      "retreatCost": 2,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "A single touch is enough.",
+      "artPath": "cards/ninja/gari.webp",
+      "set": "stone-village",
+      "setNumber": 11
+    },
+    {
+      "id": "stv-007",
+      "type": "ninja",
+      "name": "Han",
+      "subtitle": "Five-Tails Jinchuriki",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 180,
+      "chakraType": "water",
+      "attacks": [
+        {
+          "name": "Steam Punch",
+          "cost": {
+            "water": 1,
+            "fire": 1
+          },
+          "damage": 80,
+          "effect": {
+            "type": "status",
+            "status": "burn",
+            "target": "opponent-active"
+          },
+          "description": "A scalding pressurized blast."
+        },
+        {
+          "name": "Kokuo's Horn Charge",
+          "cost": {
+            "water": 2,
+            "colorless": 2
+          },
+          "damage": 180,
+          "effect": null,
+          "description": "Partial transformation into the horned beast."
+        }
+      ],
+      "ability": {
+        "name": "Steam Armor",
+        "description": "Incoming damage reduced by 20.",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "damage-reduction",
+          "amount": 20
+        }
+      },
+      "weakness": "wind",
+      "retreatCost": 3,
+      "rarity": "ultra-rare",
+      "isLegendary": false,
+      "flavorText": "Heat is a shield.",
+      "artPath": "cards/ninja/han.webp",
+      "set": "stone-village",
+      "setNumber": 12
+    },
+    {
+      "id": "stv-008",
+      "type": "ninja",
+      "name": "Roshi",
+      "subtitle": "Four-Tails Jinchuriki",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 160,
+      "chakraType": "fire",
+      "attacks": [
+        {
+          "name": "Lava Punch",
+          "cost": {
+            "fire": 1,
+            "earth": 1
+          },
+          "damage": 80,
+          "effect": null,
+          "description": "A molten knuckle."
+        },
+        {
+          "name": "Son Goku's Wrath",
+          "cost": {
+            "fire": 2,
+            "earth": 2
+          },
+          "damage": 170,
+          "effect": null,
+          "description": "Channels the ape's fury."
+        }
+      ],
+      "ability": null,
+      "weakness": "water",
+      "retreatCost": 3,
+      "rarity": "ultra-rare",
+      "isLegendary": false,
+      "flavorText": "Son and I have an understanding.",
+      "artPath": "cards/ninja/roshi.webp",
+      "set": "stone-village",
+      "setNumber": 13
+    },
+    {
+      "id": "stv-012",
+      "type": "ninja",
+      "name": "Young Deidara",
+      "subtitle": "Iwa Prodigy",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 70,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Mini Bird Bomb",
+          "cost": {
+            "earth": 1
+          },
+          "damage": 30,
+          "effect": null,
+          "description": "A shaped clay explosive."
+        }
+      ],
+      "ability": null,
+      "weakness": "water",
+      "retreatCost": 1,
+      "rarity": "common",
+      "isLegendary": false,
+      "flavorText": "Art is born here!",
+      "artPath": "cards/ninja/young-deidara.webp",
+      "set": "stone-village",
+      "setNumber": 14
+    },
+    {
+      "id": "stv-013",
+      "type": "ninja",
+      "name": "Iwa ANBU",
+      "subtitle": "Stone Assassin",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 90,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Silent Stone Strike",
+          "cost": {
+            "earth": 1
+          },
+          "damage": 50,
+          "effect": null,
+          "description": "A muted killing blow."
+        }
+      ],
+      "ability": null,
+      "weakness": "wind",
+      "retreatCost": 1,
+      "rarity": "uncommon",
+      "isLegendary": false,
+      "flavorText": "Stone sees all.",
+      "artPath": "cards/ninja/iwa-anbu.webp",
+      "set": "stone-village",
+      "setNumber": 15
+    },
+    {
+      "id": "stv-020",
+      "type": "ninja",
+      "name": "Iwa Elite",
+      "subtitle": "Special Jonin",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 110,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Mountain Strike",
+          "cost": {
+            "earth": 2
+          },
+          "damage": 90,
+          "effect": null,
+          "description": "A heavy blow with stone force."
+        }
+      ],
+      "ability": null,
+      "weakness": "wind",
+      "retreatCost": 2,
+      "rarity": "uncommon",
+      "isLegendary": false,
+      "flavorText": "The elite guard.",
+      "artPath": "cards/ninja/iwa-elite.webp",
+      "set": "stone-village",
+      "setNumber": 16
+    },
+    {
+      "id": "stv-014",
+      "type": "ninja",
+      "name": "Iwa Jonin",
+      "subtitle": "Earth Specialist",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 100,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Earth Clone Strike",
+          "cost": {
+            "earth": 1
+          },
+          "damage": 50,
+          "effect": null,
+          "description": "An earthen duplicate lands the blow."
+        }
+      ],
+      "ability": null,
+      "weakness": "wind",
+      "retreatCost": 1,
+      "rarity": "uncommon",
+      "isLegendary": false,
+      "flavorText": "Our hearts are stone.",
+      "artPath": "cards/ninja/iwa-jonin.webp",
+      "set": "stone-village",
+      "setNumber": 17
+    },
+    {
+      "id": "stv-019",
+      "type": "ninja",
+      "name": "Iwa Kunoichi",
+      "subtitle": "Earth Medic",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 70,
+      "chakraType": "water",
+      "attacks": [
+        {
+          "name": "Healing Palm",
+          "cost": {
+            "water": 1
+          },
+          "damage": 20,
+          "effect": {
+            "type": "heal",
+            "amount": 40,
+            "target": "self-bench"
+          },
+          "description": "Heal 40 HP from a Benched ally."
+        }
+      ],
+      "ability": null,
+      "weakness": "lightning",
+      "retreatCost": 1,
+      "rarity": "common",
+      "isLegendary": false,
+      "flavorText": "The rock heals its own.",
+      "artPath": "cards/ninja/iwa-medic.webp",
+      "set": "stone-village",
+      "setNumber": 18
+    },
+    {
+      "id": "stv-017",
+      "type": "ninja",
+      "name": "Iwa Sniper",
+      "subtitle": "Long Range Specialist",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 80,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Stone Bullet",
+          "cost": {
+            "earth": 1
+          },
+          "damage": 60,
+          "effect": null,
+          "description": "A supersonic pebble."
+        }
+      ],
+      "ability": null,
+      "weakness": "wind",
+      "retreatCost": 1,
+      "rarity": "common",
+      "isLegendary": false,
+      "flavorText": "One shot, one kill.",
+      "artPath": "cards/ninja/iwa-sniper.webp",
+      "set": "stone-village",
+      "setNumber": 19
+    },
+    {
+      "id": "stv-015",
+      "type": "ninja",
+      "name": "Stone Cadet",
+      "subtitle": "Academy Student",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 50,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Pebble Throw",
+          "cost": {
+            "colorless": 1
+          },
+          "damage": 20,
+          "effect": null,
+          "description": "A basic projectile."
+        }
+      ],
+      "ability": null,
+      "weakness": "wind",
+      "retreatCost": 1,
+      "rarity": "common",
+      "isLegendary": false,
+      "flavorText": "I'll be a Tsuchikage someday.",
+      "artPath": "cards/ninja/stone-cadet.webp",
+      "set": "stone-village",
+      "setNumber": 20
+    },
+    {
+      "id": "stv-021",
+      "type": "ninja",
+      "name": "Stone Scout",
+      "subtitle": "Reconnaissance",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 60,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Ground Tremor",
+          "cost": {
+            "earth": 1
+          },
+          "damage": 30,
+          "effect": null,
+          "description": "Senses vibrations."
+        }
+      ],
+      "ability": null,
+      "weakness": "wind",
+      "retreatCost": 1,
+      "rarity": "common",
+      "isLegendary": false,
+      "flavorText": "The earth speaks to me.",
+      "artPath": "cards/ninja/stone-scout.webp",
+      "set": "stone-village",
+      "setNumber": 21
+    },
+    {
+      "id": "stv-018",
+      "type": "ninja",
+      "name": "Rock Golem",
+      "subtitle": "Summoned Stone Ally",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 130,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Slam",
+          "cost": {
+            "earth": 1,
+            "colorless": 1
+          },
+          "damage": 80,
+          "effect": null,
+          "description": "A sweeping stone arm."
+        }
+      ],
+      "ability": null,
+      "weakness": "wind",
+      "retreatCost": 3,
+      "rarity": "uncommon",
+      "isLegendary": false,
+      "flavorText": "*earth rumbling*",
+      "artPath": "cards/ninja/rock-golem.webp",
+      "set": "stone-village",
+      "setNumber": 22
+    },
+    {
+      "id": "stv-016",
+      "type": "ninja",
+      "name": "Dust Release Prodigy",
+      "subtitle": "Kekkei Tota Student",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 110,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Dust Crack",
+          "cost": {
+            "earth": 2
+          },
+          "damage": 80,
+          "effect": null,
+          "description": "A dust-level particle rupture."
+        },
+        {
+          "name": "Three-Element Erasure",
+          "cost": {
+            "earth": 2,
+            "wind": 1,
+            "colorless": 1
+          },
+          "damage": 160,
+          "effect": null,
+          "description": "A fledgling Dust Release."
+        }
+      ],
+      "ability": null,
+      "weakness": "wind",
+      "retreatCost": 2,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "The Kekkei Tota chooses me.",
+      "artPath": "cards/ninja/dust-prodigy.webp",
+      "set": "stone-village",
+      "setNumber": 23
+    },
+    {
+      "id": "stv-024",
+      "type": "jutsu-scroll",
+      "name": "Dust Release: Detachment",
+      "description": "Deal 200 damage to the Defender. Discard 3 Chakra.",
+      "effect": {
+        "type": "energy-discard",
+        "target": "self",
+        "amount": 3,
+        "secondaryEffect": {
+          "type": "status",
+          "target": "opponent-active",
+          "amount": 200
+        }
+      },
+      "rarity": "legendary",
+      "set": "stone-village",
+      "artPath": "cards/jutsu/dust-release.webp",
+      "setNumber": 24
+    },
+    {
+      "id": "stv-025",
+      "type": "jutsu-scroll",
+      "name": "Dust Prison",
+      "description": "The Defending Ninja is Sealed. Deal 80 damage.",
+      "effect": {
+        "type": "status",
+        "status": "seal",
+        "target": "opponent-active",
+        "amount": 80
+      },
+      "rarity": "ultra-rare",
+      "set": "stone-village",
+      "artPath": "cards/jutsu/dust-prison.webp",
+      "setNumber": 25
+    },
+    {
+      "id": "stv-043",
+      "type": "jutsu-scroll",
+      "name": "Explosion Release",
+      "description": "Deal 100 damage and 30 to a Benched opponent.",
+      "effect": {
+        "type": "bench-damage",
+        "target": "opponent-bench",
+        "amount": 30,
+        "secondaryEffect": {
+          "type": "status",
+          "target": "opponent-active",
+          "amount": 100
+        }
+      },
+      "rarity": "ultra-rare",
+      "set": "stone-village",
+      "artPath": "cards/jutsu/explosion.webp",
+      "setNumber": 26
+    },
+    {
+      "id": "stv-044",
+      "type": "jutsu-scroll",
+      "name": "Lava Release",
+      "description": "Deal 80 damage and Burn the Defender.",
+      "effect": {
+        "type": "status",
+        "status": "burn",
+        "target": "opponent-active",
+        "amount": 80
+      },
+      "rarity": "ultra-rare",
+      "set": "stone-village",
+      "artPath": "cards/jutsu/lava-release.webp",
+      "setNumber": 27
+    },
+    {
+      "id": "stv-047",
+      "type": "jutsu-scroll",
+      "name": "Mountain Splitting Strike",
+      "description": "Deal 150 damage. Discard 2 Chakra.",
+      "effect": {
+        "type": "energy-discard",
+        "target": "self",
+        "amount": 2,
+        "secondaryEffect": {
+          "type": "status",
+          "target": "opponent-active",
+          "amount": 150
+        }
+      },
+      "rarity": "ultra-rare",
+      "set": "stone-village",
+      "artPath": "cards/jutsu/mountain-splitter.webp",
+      "setNumber": 28
+    },
+    {
+      "id": "stv-037",
+      "type": "jutsu-scroll",
+      "name": "Stone Mausoleum",
+      "description": "Seal all opposing Ninjas. Discard 2 Chakra.",
+      "effect": {
+        "type": "energy-discard",
+        "target": "self",
+        "amount": 2,
+        "secondaryEffect": {
+          "type": "status",
+          "status": "seal",
+          "target": "all-opponents"
+        }
+      },
+      "rarity": "ultra-rare",
+      "set": "stone-village",
+      "artPath": "cards/jutsu/mausoleum.webp",
+      "setNumber": 29
+    },
+    {
+      "id": "stv-035",
+      "type": "jutsu-scroll",
+      "name": "Earth Dome",
+      "description": "Your Active Ninja takes no damage next turn. Cannot attack next turn.",
+      "effect": {
+        "type": "conditional",
+        "condition": "damage-block-turn-no-attack"
+      },
+      "rarity": "rare",
+      "set": "stone-village",
+      "artPath": "cards/jutsu/earth-dome.webp",
+      "setNumber": 30
+    },
+    {
+      "id": "stv-039",
+      "type": "jutsu-scroll",
+      "name": "Earth Grudge Chains",
+      "description": "Bind the Defending Ninja. It cannot retreat or be switched.",
+      "effect": {
+        "type": "status",
+        "status": "seal",
+        "target": "opponent-active"
+      },
+      "rarity": "rare",
+      "set": "stone-village",
+      "artPath": "cards/jutsu/earth-grudge.webp",
+      "setNumber": 31
+    },
+    {
+      "id": "stv-023",
+      "type": "jutsu-scroll",
+      "name": "Earth Release: Stone Dragon",
+      "description": "Deal 100 damage to the Defending Ninja.",
+      "effect": {
+        "type": "status",
+        "target": "opponent-active",
+        "amount": 100
+      },
+      "rarity": "rare",
+      "set": "stone-village",
+      "artPath": "cards/jutsu/stone-dragon.webp",
+      "setNumber": 32
+    },
+    {
+      "id": "stv-030",
+      "type": "jutsu-scroll",
+      "name": "Earth Release: Swamp",
+      "description": "Opposing Ninjas' retreat cost is +2 next turn.",
+      "effect": {
+        "type": "conditional",
+        "condition": "retreat-increase",
+        "amount": 2
+      },
+      "rarity": "rare",
+      "set": "stone-village",
+      "artPath": "cards/jutsu/swamp.webp",
+      "setNumber": 33
+    },
+    {
+      "id": "stv-034",
+      "type": "jutsu-scroll",
+      "name": "Earthquake",
+      "description": "Deal 60 damage to all Ninjas (yours included, exempt Earth-type).",
+      "effect": {
+        "type": "bench-damage",
+        "target": "all-opponents",
+        "amount": 60
+      },
+      "rarity": "rare",
+      "set": "stone-village",
+      "artPath": "cards/jutsu/earthquake.webp",
+      "setNumber": 34
+    },
+    {
+      "id": "stv-045",
+      "type": "jutsu-scroll",
+      "name": "Heavy Stone Block",
+      "description": "Your Ninja gains +60 HP but retreat cost +2.",
+      "effect": {
+        "type": "heal",
+        "amount": 60
+      },
+      "rarity": "rare",
+      "set": "stone-village",
+      "artPath": "cards/jutsu/stone-block.webp",
+      "setNumber": 35
+    },
+    {
+      "id": "stv-029",
+      "type": "jutsu-scroll",
+      "name": "Rock Pillar",
+      "description": "Deal 70 damage and give the attacker +20 HP.",
+      "effect": {
+        "type": "heal",
+        "amount": 20,
+        "target": "self",
+        "secondaryEffect": {
+          "type": "status",
+          "target": "opponent-active",
+          "amount": 70
+        }
+      },
+      "rarity": "rare",
+      "set": "stone-village",
+      "artPath": "cards/jutsu/rock-pillar.webp",
+      "setNumber": 36
+    },
+    {
+      "id": "stv-032",
+      "type": "jutsu-scroll",
+      "name": "Stone Golem Summon",
+      "description": "Summon a Rock Golem to your Bench (130 HP).",
+      "effect": {
+        "type": "conditional",
+        "condition": "spawn-golem"
+      },
+      "rarity": "rare",
+      "set": "stone-village",
+      "artPath": "cards/jutsu/golem-summon.webp",
+      "setNumber": 37
+    },
+    {
+      "id": "stv-046",
+      "type": "jutsu-scroll",
+      "name": "Stone Needle Barrage",
+      "description": "Deal 50 damage to each opposing Ninja.",
+      "effect": {
+        "type": "bench-damage",
+        "target": "all-opponents",
+        "amount": 50
+      },
+      "rarity": "rare",
+      "set": "stone-village",
+      "artPath": "cards/jutsu/stone-needles.webp",
+      "setNumber": 38
+    },
+    {
+      "id": "stv-022",
+      "type": "jutsu-scroll",
+      "name": "Earth Release: Earth Wall",
+      "description": "Prevent the next 40 damage to your Active Ninja.",
+      "effect": {
+        "type": "conditional",
+        "condition": "damage-block",
+        "amount": 40
+      },
+      "rarity": "uncommon",
+      "set": "stone-village",
+      "artPath": "cards/jutsu/earth-wall.webp",
+      "setNumber": 39
+    },
+    {
+      "id": "stv-026",
+      "type": "jutsu-scroll",
+      "name": "Earth Release: Mud Flow",
+      "description": "Deal 60 damage and slow the Defender (+1 retreat cost next turn).",
+      "effect": {
+        "type": "status",
+        "target": "opponent-active",
+        "amount": 60,
+        "secondaryEffect": {
+          "type": "conditional",
+          "condition": "retreat-increase"
+        }
+      },
+      "rarity": "uncommon",
+      "set": "stone-village",
+      "artPath": "cards/jutsu/mud-flow.webp",
+      "setNumber": 40
+    },
+    {
+      "id": "stv-036",
+      "type": "jutsu-scroll",
+      "name": "Mud Wolves",
+      "description": "Summon 3 Mud Wolves (30 HP each, 30 damage attack).",
+      "effect": {
+        "type": "conditional",
+        "condition": "spawn-wolves"
+      },
+      "rarity": "uncommon",
+      "set": "stone-village",
+      "artPath": "cards/jutsu/mud-wolves.webp",
+      "setNumber": 41
+    },
+    {
+      "id": "stv-033",
+      "type": "jutsu-scroll",
+      "name": "Rising Earth",
+      "description": "Deal 80 damage. Bonus 40 if your Ninja has Earth Chakra attached.",
+      "effect": {
+        "type": "damage-boost",
+        "amount": 40,
+        "condition": "earth-chakra"
+      },
+      "rarity": "uncommon",
+      "set": "stone-village",
+      "artPath": "cards/jutsu/rising-earth.webp",
+      "setNumber": 42
+    },
+    {
+      "id": "stv-027",
+      "type": "jutsu-scroll",
+      "name": "Stone Bullet Rain",
+      "description": "Deal 40 damage to each opposing Ninja.",
+      "effect": {
+        "type": "bench-damage",
+        "target": "all-opponents",
+        "amount": 40
+      },
+      "rarity": "uncommon",
+      "set": "stone-village",
+      "artPath": "cards/jutsu/stone-bullet.webp",
+      "setNumber": 43
+    },
+    {
+      "id": "stv-041",
+      "type": "jutsu-scroll",
+      "name": "Stone Cocoon",
+      "description": "Your Active Ninja cannot be targeted by Jutsu next turn.",
+      "effect": {
+        "type": "conditional",
+        "condition": "jutsu-immunity-turn"
+      },
+      "rarity": "uncommon",
+      "set": "stone-village",
+      "artPath": "cards/jutsu/stone-cocoon.webp",
+      "setNumber": 44
+    },
+    {
+      "id": "stv-038",
+      "type": "jutsu-scroll",
+      "name": "Weight of the World",
+      "description": "Increase a target's retreat cost permanently by 2.",
+      "effect": {
+        "type": "conditional",
+        "condition": "permanent-retreat-increase",
+        "amount": 2
+      },
+      "rarity": "uncommon",
+      "set": "stone-village",
+      "artPath": "cards/jutsu/weight-of-world.webp",
+      "setNumber": 45
+    },
+    {
+      "id": "stv-031",
+      "type": "jutsu-scroll",
+      "name": "Earth Armor",
+      "description": "Your Active Ninja gains +40 HP.",
+      "effect": {
+        "type": "heal",
+        "amount": 40,
+        "target": "self"
+      },
+      "rarity": "common",
+      "set": "stone-village",
+      "artPath": "cards/jutsu/earth-armor.webp",
+      "setNumber": 46
+    },
+    {
+      "id": "stv-040",
+      "type": "jutsu-scroll",
+      "name": "Earth Clone Jutsu",
+      "description": "Summon an Earth Clone (70 HP, 40 damage attack).",
+      "effect": {
+        "type": "conditional",
+        "condition": "spawn-earth-clone"
+      },
+      "rarity": "common",
+      "set": "stone-village",
+      "artPath": "cards/jutsu/earth-clone.webp",
+      "setNumber": 47
+    },
+    {
+      "id": "stv-042",
+      "type": "jutsu-scroll",
+      "name": "Earth Spear",
+      "description": "Deal 50 damage. +20 if target is Water-type.",
+      "effect": {
+        "type": "damage-boost",
+        "amount": 20,
+        "condition": "water-target"
+      },
+      "rarity": "common",
+      "set": "stone-village",
+      "artPath": "cards/jutsu/earth-spear.webp",
+      "setNumber": 48
+    },
+    {
+      "id": "stv-028",
+      "type": "jutsu-scroll",
+      "name": "Tremor",
+      "description": "Switch the Defending Ninja and deal 30 damage.",
+      "effect": {
+        "type": "switch",
+        "target": "opponent-active",
+        "amount": 30
+      },
+      "rarity": "common",
+      "set": "stone-village",
+      "artPath": "cards/jutsu/tremor.webp",
+      "setNumber": 49
+    },
+    {
+      "id": "stv-057",
+      "type": "tool",
+      "name": "Earth-Channeling Ring",
+      "description": "The wearer absorbs 1 Earth Chakra per turn.",
+      "effect": {
+        "type": "conditional",
+        "condition": "chakra-gen-earth"
+      },
+      "rarity": "ultra-rare",
+      "set": "stone-village",
+      "artPath": "cards/tools/earth-ring.webp",
+      "setNumber": 50
+    },
+    {
+      "id": "stv-048",
+      "type": "tool",
+      "name": "Onoki's Hat",
+      "description": "The wearer's retreat cost is 0.",
+      "effect": {
+        "type": "conditional",
+        "condition": "free-retreat"
+      },
+      "rarity": "ultra-rare",
+      "set": "stone-village",
+      "artPath": "cards/tools/onoki-hat.webp",
+      "setNumber": 51
+    },
+    {
+      "id": "stv-053",
+      "type": "tool",
+      "name": "Red Secret Technique Scroll",
+      "description": "Attach to a Ninja. Their attacks ignore damage reduction.",
+      "effect": {
+        "type": "conditional",
+        "condition": "pierce"
+      },
+      "rarity": "ultra-rare",
+      "set": "stone-village",
+      "artPath": "cards/tools/red-secret.webp",
+      "setNumber": 52
+    },
+    {
+      "id": "stv-050",
+      "type": "tool",
+      "name": "Earth Gauntlets",
+      "description": "The wearer's Earth attacks deal +20 damage.",
+      "effect": {
+        "type": "damage-boost",
+        "amount": 20
+      },
+      "rarity": "rare",
+      "set": "stone-village",
+      "artPath": "cards/tools/earth-gauntlets.webp",
+      "setNumber": 53
+    },
+    {
+      "id": "stv-054",
+      "type": "tool",
+      "name": "Giant Boulder",
+      "description": "Once per battle, negate all damage from one attack.",
+      "effect": {
+        "type": "conditional",
+        "condition": "damage-block-once"
+      },
+      "rarity": "rare",
+      "set": "stone-village",
+      "artPath": "cards/tools/giant-boulder.webp",
+      "setNumber": 54
+    },
+    {
+      "id": "stv-060",
+      "type": "tool",
+      "name": "Golem Arm",
+      "description": "Reduce damage from taijutsu attacks by 25.",
+      "effect": {
+        "type": "conditional",
+        "condition": "physical-resist",
+        "amount": 25
+      },
+      "rarity": "rare",
+      "set": "stone-village",
+      "artPath": "cards/tools/golem-arm.webp",
+      "setNumber": 55
+    },
+    {
+      "id": "stv-052",
+      "type": "tool",
+      "name": "Jointless Fist Weights",
+      "description": "Deal +40 to taijutsu attacks when removed (discard this).",
+      "effect": {
+        "type": "damage-boost",
+        "amount": 40
+      },
+      "rarity": "rare",
+      "set": "stone-village",
+      "artPath": "cards/tools/fist-weights.webp",
+      "setNumber": 56
+    },
+    {
+      "id": "stv-055",
+      "type": "tool",
+      "name": "Kage's Staff",
+      "description": "The wearer gains +40 HP. Only a Kage can wear this.",
+      "effect": {
+        "type": "heal",
+        "amount": 40,
+        "condition": "kage-only"
+      },
+      "rarity": "rare",
+      "set": "stone-village",
+      "artPath": "cards/tools/kage-staff.webp",
+      "setNumber": 57
+    },
+    {
+      "id": "stv-059",
+      "type": "tool",
+      "name": "Lava Stone Amulet",
+      "description": "The wearer's Fire/Earth attacks also Burn.",
+      "effect": {
+        "type": "status",
+        "status": "burn",
+        "target": "opponent-active"
+      },
+      "rarity": "rare",
+      "set": "stone-village",
+      "artPath": "cards/tools/lava-amulet.webp",
+      "setNumber": 58
+    },
+    {
+      "id": "stv-056",
+      "type": "tool",
+      "name": "Mountain Scroll",
+      "description": "The wearer's Earth Chakra costs are reduced by 1.",
+      "effect": {
+        "type": "conditional",
+        "condition": "earth-cost-reduction",
+        "amount": 1
+      },
+      "rarity": "uncommon",
+      "set": "stone-village",
+      "artPath": "cards/tools/mountain-scroll.webp",
+      "setNumber": 59
+    },
+    {
+      "id": "stv-058",
+      "type": "tool",
+      "name": "Rock Sword",
+      "description": "The wearer's basic attacks deal +15 damage.",
+      "effect": {
+        "type": "damage-boost",
+        "amount": 15
+      },
+      "rarity": "uncommon",
+      "set": "stone-village",
+      "artPath": "cards/tools/rock-sword.webp",
+      "setNumber": 60
+    },
+    {
+      "id": "stv-051",
+      "type": "tool",
+      "name": "Stone Shield",
+      "description": "Reduce incoming damage by 20.",
+      "effect": {
+        "type": "conditional",
+        "condition": "damage-reduction",
+        "amount": 20
+      },
+      "rarity": "uncommon",
+      "set": "stone-village",
+      "artPath": "cards/tools/stone-shield.webp",
+      "setNumber": 61
+    },
+    {
+      "id": "stv-049",
+      "type": "tool",
+      "name": "Iwa Headband",
+      "description": "The wearer gains +10 HP.",
+      "effect": {
+        "type": "heal",
+        "amount": 10
+      },
+      "rarity": "common",
+      "set": "stone-village",
+      "artPath": "cards/tools/iwa-headband.webp",
+      "setNumber": 62
+    },
+    {
+      "id": "stv-061",
+      "type": "sensei",
+      "name": "Onoki",
+      "subtitle": "Third Tsuchikage's Legacy",
+      "description": "Your Earth Ninjas attacks ignore damage reduction this turn.",
+      "effect": {
+        "type": "conditional",
+        "condition": "pierce"
+      },
+      "rarity": "legendary",
+      "set": "stone-village",
+      "artPath": "cards/sensei/onoki.webp",
+      "setNumber": 63
+    },
+    {
+      "id": "stv-063",
+      "type": "sensei",
+      "name": "Mu",
+      "subtitle": "Second Tsuchikage's Silence",
+      "description": "Target opposing Ninja cannot attack next turn.",
+      "effect": {
+        "type": "status",
+        "status": "seal",
+        "target": "opponent-active"
+      },
+      "rarity": "legendary",
+      "set": "stone-village",
+      "artPath": "cards/sensei/mu.webp",
+      "setNumber": 64
+    },
+    {
+      "id": "stv-062",
+      "type": "sensei",
+      "name": "Kurotsuchi",
+      "subtitle": "Fourth Tsuchikage's Strategy",
+      "description": "Search your deck for an Earth Ninja and add it to your hand.",
+      "effect": {
+        "type": "conditional",
+        "condition": "tutor-earth"
+      },
+      "rarity": "ultra-rare",
+      "set": "stone-village",
+      "artPath": "cards/sensei/kurotsuchi.webp",
+      "setNumber": 65
+    },
+    {
+      "id": "stv-064",
+      "type": "sensei",
+      "name": "Kitsuchi",
+      "subtitle": "Division Commander",
+      "description": "Heal 40 HP from all your Earth Ninjas.",
+      "effect": {
+        "type": "heal",
+        "amount": 40,
+        "target": "self-bench",
+        "condition": "earth-ninja-only"
+      },
+      "rarity": "rare",
+      "set": "stone-village",
+      "artPath": "cards/sensei/kitsuchi.webp",
+      "setNumber": 66
+    },
+    {
+      "id": "stv-065",
+      "type": "sensei",
+      "name": "Iwa Elder",
+      "subtitle": "Stone Tradition",
+      "description": "Draw 3 cards. Discard 1.",
+      "effect": {
+        "type": "draw",
+        "amount": 3,
+        "secondaryEffect": {
+          "type": "discard",
+          "amount": 1
+        }
+      },
+      "rarity": "uncommon",
+      "set": "stone-village",
+      "artPath": "cards/sensei/iwa-elder.webp",
+      "setNumber": 67
+    }
+  ],
+  "pullRates": {
+    "common": 0.48,
+    "uncommon": 0.27,
+    "rare": 0.15,
+    "ultra-rare": 0.065,
+    "legendary": 0.028,
+    "secret": 0.005,
+    "crown": 0.002
+  },
+  "totalCards": 67
+}

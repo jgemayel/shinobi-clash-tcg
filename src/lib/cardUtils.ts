@@ -13,21 +13,10 @@ export function canPayChakraCost(
   cost: ChakraCost,
   attachedChakra: ChakraType[]
 ): boolean {
-  const pool = [...attachedChakra];
-
-  // First satisfy typed costs
-  for (const [type, amount] of Object.entries(cost)) {
-    if (type === 'colorless' || !amount) continue;
-    for (let i = 0; i < amount; i++) {
-      const idx = pool.indexOf(type as ChakraType);
-      if (idx === -1) return false;
-      pool.splice(idx, 1);
-    }
-  }
-
-  // Then satisfy colorless with remaining
-  const colorlessNeeded = cost.colorless ?? 0;
-  return pool.length >= colorlessNeeded;
+  // Simplified: chakra is adaptive. Any attached chakra satisfies any cost.
+  // Attacks check total attached count versus total cost.
+  const total = getTotalChakraCost(cost);
+  return attachedChakra.length >= total;
 }
 
 export function sortCards(cards: GameCard[], sortBy: 'name' | 'rarity' | 'type' | 'hp'): GameCard[] {

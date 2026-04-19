@@ -1,0 +1,1710 @@
+{
+  "setId": "sand-village",
+  "setName": "Sand Village",
+  "releaseOrder": 2,
+  "unlockLevel": 3,
+  "packArt": "packs/sand-village.webp",
+  "cards": [
+    {
+      "id": "sv-001",
+      "type": "ninja",
+      "name": "Gaara",
+      "subtitle": "Son of Shukaku",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 80,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Desert Wave",
+          "cost": {
+            "earth": 1
+          },
+          "damage": 20,
+          "effect": null,
+          "description": "A swell of sand crashes into the target."
+        },
+        {
+          "name": "Sand Shuriken",
+          "cost": {
+            "earth": 1,
+            "colorless": 1
+          },
+          "damage": 40,
+          "effect": null,
+          "description": "Sand whips into blades."
+        }
+      ],
+      "ability": {
+        "name": "Sand Armor",
+        "description": "Reduce incoming damage by 10.",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "damage-reduction",
+          "amount": 10
+        }
+      },
+      "weakness": "wind",
+      "retreatCost": 2,
+      "rarity": "common",
+      "isLegendary": false,
+      "flavorText": "Mother\u2026 protect me.",
+      "artPath": "cards/ninja/gaara-stage0.webp",
+      "set": "sand-village",
+      "setNumber": 1
+    },
+    {
+      "id": "sv-002",
+      "type": "ninja",
+      "name": "Gaara",
+      "subtitle": "Kazekage of the Sand",
+      "stage": 1,
+      "evolvesFrom": "sv-001",
+      "hp": 130,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Sand Coffin",
+          "cost": {
+            "earth": 2
+          },
+          "damage": 70,
+          "effect": {
+            "type": "status",
+            "status": "paralyze",
+            "target": "opponent-active"
+          },
+          "description": "Sand wraps and crushes the target."
+        },
+        {
+          "name": "Sand Tsunami",
+          "cost": {
+            "earth": 2,
+            "colorless": 1
+          },
+          "damage": 100,
+          "effect": null,
+          "description": "A tidal wave of desert sand."
+        }
+      ],
+      "ability": {
+        "name": "Absolute Defense",
+        "description": "Once per turn, prevent the first damage dealt to this Ninja.",
+        "trigger": "once-per-turn",
+        "effect": {
+          "type": "conditional",
+          "condition": "damage-block"
+        }
+      },
+      "weakness": "wind",
+      "retreatCost": 2,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "I will protect my village with my life.",
+      "artPath": "cards/ninja/gaara-stage1.webp",
+      "set": "sand-village",
+      "setNumber": 2
+    },
+    {
+      "id": "sv-003",
+      "type": "ninja",
+      "name": "Gaara",
+      "subtitle": "Shukaku Unleashed",
+      "stage": 2,
+      "evolvesFrom": "sv-002",
+      "hp": 190,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Desert Burial",
+          "cost": {
+            "earth": 2,
+            "colorless": 1
+          },
+          "damage": 120,
+          "effect": null,
+          "description": "The entire desert becomes his weapon."
+        },
+        {
+          "name": "One-Tailed Imperfect Jinchuriki",
+          "cost": {
+            "earth": 3,
+            "colorless": 2
+          },
+          "damage": 200,
+          "effect": {
+            "type": "self-damage",
+            "amount": 40
+          },
+          "description": "Partial Shukaku transformation. Loses control."
+        }
+      ],
+      "ability": {
+        "name": "Shield of Sand",
+        "description": "At the start of your turn, recover 20 HP.",
+        "trigger": "passive",
+        "effect": {
+          "type": "heal",
+          "amount": 20,
+          "target": "self"
+        }
+      },
+      "weakness": "wind",
+      "retreatCost": 3,
+      "rarity": "legendary",
+      "isLegendary": true,
+      "flavorText": "I exist to destroy everyone but myself.",
+      "artPath": "cards/ninja/gaara-stage1.webp",
+      "set": "sand-village",
+      "setNumber": 3
+    },
+    {
+      "id": "sv-061",
+      "type": "ninja",
+      "name": "Gaara",
+      "subtitle": "Sand Shroud Valor",
+      "stage": 2,
+      "evolvesFrom": "sv-002",
+      "hp": 200,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Mother Sand Wall",
+          "cost": {
+            "earth": 2
+          },
+          "damage": 110,
+          "effect": {
+            "type": "heal",
+            "amount": 30,
+            "target": "self-bench"
+          },
+          "description": "Sand shields allies."
+        },
+        {
+          "name": "Sand Avalanche",
+          "cost": {
+            "earth": 3,
+            "colorless": 1
+          },
+          "damage": 220,
+          "effect": null,
+          "description": "A desert tidal wave."
+        }
+      ],
+      "ability": {
+        "name": "Valor of the Kazekage",
+        "description": "Your Sand Ninjas take 20 less damage.",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "sand-dr",
+          "amount": 20
+        }
+      },
+      "weakness": "wind",
+      "retreatCost": 3,
+      "rarity": "secret",
+      "isLegendary": true,
+      "flavorText": "I fight for the village that once shunned me.",
+      "artPath": "cards/ninja/gaara-stage1.webp",
+      "set": "sand-village",
+      "setNumber": 4
+    },
+    {
+      "id": "sv-004",
+      "type": "ninja",
+      "name": "Temari",
+      "subtitle": "Wind Mistress",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 70,
+      "chakraType": "wind",
+      "attacks": [
+        {
+          "name": "Fan Slash",
+          "cost": {
+            "wind": 1
+          },
+          "damage": 30,
+          "effect": null,
+          "description": "A swift cut from her war fan."
+        },
+        {
+          "name": "Cyclone Scythe",
+          "cost": {
+            "wind": 1,
+            "colorless": 1
+          },
+          "damage": 50,
+          "effect": null,
+          "description": "A slicing gale of wind."
+        }
+      ],
+      "ability": null,
+      "weakness": "lightning",
+      "retreatCost": 1,
+      "rarity": "common",
+      "isLegendary": false,
+      "flavorText": "This is how a real ninja fights.",
+      "artPath": "cards/ninja/temari.webp",
+      "set": "sand-village",
+      "setNumber": 5
+    },
+    {
+      "id": "sv-005",
+      "type": "ninja",
+      "name": "Temari",
+      "subtitle": "Jonin of the Sand",
+      "stage": 1,
+      "evolvesFrom": "sv-004",
+      "hp": 110,
+      "chakraType": "wind",
+      "attacks": [
+        {
+          "name": "Wind Scythe Jutsu",
+          "cost": {
+            "wind": 2
+          },
+          "damage": 70,
+          "effect": null,
+          "description": "A crescent of cutting wind."
+        },
+        {
+          "name": "Summoning: Kamatari",
+          "cost": {
+            "wind": 2,
+            "colorless": 1
+          },
+          "damage": 110,
+          "effect": {
+            "type": "bench-damage",
+            "target": "opponent-bench",
+            "amount": 20
+          },
+          "description": "Summons a one-eyed weasel to ravage the field."
+        }
+      ],
+      "ability": {
+        "name": "Storm Reader",
+        "description": "While active, your other Wind Ninjas' attacks deal +10 damage.",
+        "trigger": "passive",
+        "effect": {
+          "type": "damage-boost",
+          "amount": 10,
+          "condition": "bench-synergy"
+        }
+      },
+      "weakness": "lightning",
+      "retreatCost": 1,
+      "rarity": "uncommon",
+      "isLegendary": false,
+      "flavorText": "Three moons. The wind is with me.",
+      "artPath": "cards/ninja/temari.webp",
+      "set": "sand-village",
+      "setNumber": 6
+    },
+    {
+      "id": "sv-006",
+      "type": "ninja",
+      "name": "Kankuro",
+      "subtitle": "Apprentice Puppeteer",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 70,
+      "chakraType": "colorless",
+      "attacks": [
+        {
+          "name": "Hidden Strings",
+          "cost": {
+            "colorless": 1
+          },
+          "damage": 20,
+          "effect": null,
+          "description": "Invisible chakra threads strike."
+        },
+        {
+          "name": "Crow Ambush",
+          "cost": {
+            "colorless": 2
+          },
+          "damage": 50,
+          "effect": {
+            "type": "status",
+            "status": "poison",
+            "target": "opponent-active"
+          },
+          "description": "His Crow puppet lunges with poisoned blades."
+        }
+      ],
+      "ability": null,
+      "weakness": "wind",
+      "retreatCost": 1,
+      "rarity": "common",
+      "isLegendary": false,
+      "flavorText": "These ain't toys.",
+      "artPath": "cards/ninja/kankuro.webp",
+      "set": "sand-village",
+      "setNumber": 7
+    },
+    {
+      "id": "sv-007",
+      "type": "ninja",
+      "name": "Kankuro",
+      "subtitle": "Puppet Master",
+      "stage": 1,
+      "evolvesFrom": "sv-006",
+      "hp": 120,
+      "chakraType": "colorless",
+      "attacks": [
+        {
+          "name": "Black Ant Seal",
+          "cost": {
+            "colorless": 2
+          },
+          "damage": 70,
+          "effect": {
+            "type": "status",
+            "status": "seal",
+            "target": "opponent-active"
+          },
+          "description": "The Black Ant traps the target in its hollow body."
+        },
+        {
+          "name": "Salamander Shield Strike",
+          "cost": {
+            "colorless": 3
+          },
+          "damage": 110,
+          "effect": null,
+          "description": "Salamander's crushing pincers."
+        }
+      ],
+      "ability": {
+        "name": "Three Puppets",
+        "description": "Once per turn, you may attach a Tool card from your hand to this Ninja without paying its cost.",
+        "trigger": "once-per-turn",
+        "effect": {
+          "type": "conditional",
+          "condition": "free-attach-tool"
+        }
+      },
+      "weakness": "wind",
+      "retreatCost": 2,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "Three bodies, one will. Let's dance.",
+      "artPath": "cards/ninja/kankuro.webp",
+      "set": "sand-village",
+      "setNumber": 8
+    },
+    {
+      "id": "sv-009",
+      "type": "ninja",
+      "name": "Rasa",
+      "subtitle": "Fourth Kazekage",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 170,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Gold Dust Wave",
+          "cost": {
+            "earth": 2
+          },
+          "damage": 90,
+          "effect": null,
+          "description": "Commands a torrent of magnetized gold."
+        },
+        {
+          "name": "Sand Gold Burial",
+          "cost": {
+            "earth": 3,
+            "colorless": 1
+          },
+          "damage": 180,
+          "effect": {
+            "type": "status",
+            "status": "seal",
+            "target": "opponent-active"
+          },
+          "description": "Crushing gold sand entombs the target."
+        }
+      ],
+      "ability": {
+        "name": "Magnet Release",
+        "description": "Opponent's Tools deal no bonus damage against this Ninja.",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "tool-immunity"
+        }
+      },
+      "weakness": "wind",
+      "retreatCost": 3,
+      "rarity": "legendary",
+      "isLegendary": true,
+      "flavorText": "My son became a weapon. It was necessary.",
+      "artPath": "cards/ninja/rasa.webp",
+      "set": "sand-village",
+      "setNumber": 9
+    },
+    {
+      "id": "sv-008",
+      "type": "ninja",
+      "name": "Baki",
+      "subtitle": "Sand Jonin Squad Leader",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 100,
+      "chakraType": "wind",
+      "attacks": [
+        {
+          "name": "Blade of Wind",
+          "cost": {
+            "wind": 1,
+            "colorless": 1
+          },
+          "damage": 50,
+          "effect": null,
+          "description": "An invisible wind blade slices."
+        },
+        {
+          "name": "Forced Execution",
+          "cost": {
+            "wind": 2,
+            "colorless": 1
+          },
+          "damage": 90,
+          "effect": null,
+          "description": "A soldier's decisive killing technique."
+        }
+      ],
+      "ability": null,
+      "weakness": "lightning",
+      "retreatCost": 2,
+      "rarity": "uncommon",
+      "isLegendary": false,
+      "flavorText": "Duty first. Always.",
+      "artPath": "cards/ninja/baki.webp",
+      "set": "sand-village",
+      "setNumber": 10
+    },
+    {
+      "id": "sv-011",
+      "type": "ninja",
+      "name": "Chiyo",
+      "subtitle": "Honored Elder",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 90,
+      "chakraType": "colorless",
+      "attacks": [
+        {
+          "name": "Chikamatsu Puppet",
+          "cost": {
+            "colorless": 1
+          },
+          "damage": 40,
+          "effect": null,
+          "description": "A lifelike puppet strikes."
+        },
+        {
+          "name": "Antidote Toss",
+          "cost": {
+            "colorless": 2
+          },
+          "damage": 50,
+          "effect": {
+            "type": "heal",
+            "amount": 30,
+            "target": "self"
+          },
+          "description": "Cures herself while attacking."
+        }
+      ],
+      "ability": null,
+      "weakness": "wind",
+      "retreatCost": 1,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "Our village's future rests on the young.",
+      "artPath": "cards/ninja/chiyo.webp",
+      "set": "sand-village",
+      "setNumber": 11
+    },
+    {
+      "id": "sv-012",
+      "type": "ninja",
+      "name": "Chiyo",
+      "subtitle": "Ten Puppets Maestro",
+      "stage": 1,
+      "evolvesFrom": "sv-011",
+      "hp": 140,
+      "chakraType": "colorless",
+      "attacks": [
+        {
+          "name": "Collection of Ten",
+          "cost": {
+            "colorless": 3
+          },
+          "damage": 130,
+          "effect": null,
+          "description": "Controls Chikamatsu's ten puppets in lethal formation."
+        },
+        {
+          "name": "Transmigration of the Soul",
+          "cost": {
+            "colorless": 2,
+            "water": 1
+          },
+          "damage": 0,
+          "effect": {
+            "type": "heal",
+            "amount": 120,
+            "target": "self-bench"
+          },
+          "description": "Restores a Benched KO'd Ninja to play at half HP. This attack does no damage."
+        }
+      ],
+      "ability": {
+        "name": "Puppet Legacy",
+        "description": "Tools attached to your Ninjas give +10 HP instead of normal bonuses.",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "tool-hp-bonus"
+        }
+      },
+      "weakness": "wind",
+      "retreatCost": 2,
+      "rarity": "ultra-rare",
+      "isLegendary": false,
+      "flavorText": "An old hand still knows the strings.",
+      "artPath": "cards/ninja/chiyo.webp",
+      "set": "sand-village",
+      "setNumber": 12
+    },
+    {
+      "id": "sv-013",
+      "type": "ninja",
+      "name": "Ebizo",
+      "subtitle": "Elder Brother",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 80,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Battle Strategy",
+          "cost": {
+            "colorless": 1
+          },
+          "damage": 10,
+          "effect": {
+            "type": "draw",
+            "amount": 2
+          },
+          "description": "Draw 2 cards."
+        },
+        {
+          "name": "Wise Strike",
+          "cost": {
+            "earth": 1,
+            "colorless": 1
+          },
+          "damage": 50,
+          "effect": null,
+          "description": "An unassuming but perfectly-placed blow."
+        }
+      ],
+      "ability": null,
+      "weakness": "wind",
+      "retreatCost": 1,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "My sister and I have seen many wars.",
+      "artPath": "cards/ninja/ebizo.webp",
+      "set": "sand-village",
+      "setNumber": 13
+    },
+    {
+      "id": "sv-010",
+      "type": "ninja",
+      "name": "Yashamaru",
+      "subtitle": "Medic of the Sand",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 80,
+      "chakraType": "water",
+      "attacks": [
+        {
+          "name": "Mystical Palm",
+          "cost": {
+            "water": 1
+          },
+          "damage": 20,
+          "effect": {
+            "type": "heal",
+            "amount": 20,
+            "target": "self-bench"
+          },
+          "description": "Heal a Benched Ninja for 20 HP."
+        },
+        {
+          "name": "Explosive Tag Farewell",
+          "cost": {
+            "water": 1,
+            "colorless": 1
+          },
+          "damage": 80,
+          "effect": {
+            "type": "self-damage",
+            "amount": 40
+          },
+          "description": "Detonates paper bombs at close range."
+        }
+      ],
+      "ability": null,
+      "weakness": "lightning",
+      "retreatCost": 1,
+      "rarity": "uncommon",
+      "isLegendary": false,
+      "flavorText": "I did love you, Gaara. Truly.",
+      "artPath": "cards/ninja/yashamaru.webp",
+      "set": "sand-village",
+      "setNumber": 14
+    },
+    {
+      "id": "sv-014",
+      "type": "ninja",
+      "name": "Pakura",
+      "subtitle": "Scorch Release User",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 100,
+      "chakraType": "fire",
+      "attacks": [
+        {
+          "name": "Scorch Orb",
+          "cost": {
+            "fire": 1,
+            "colorless": 1
+          },
+          "damage": 60,
+          "effect": {
+            "type": "status",
+            "status": "burn",
+            "target": "opponent-active"
+          },
+          "description": "A floating sphere evaporates the target's moisture."
+        },
+        {
+          "name": "Scorch Release: Murder",
+          "cost": {
+            "fire": 2,
+            "water": 1
+          },
+          "damage": 110,
+          "effect": null,
+          "description": "An incinerating spiral."
+        }
+      ],
+      "ability": null,
+      "weakness": "water",
+      "retreatCost": 2,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "The hero of the Sand, betrayed by the Sand.",
+      "artPath": "cards/ninja/pakura.webp",
+      "set": "sand-village",
+      "setNumber": 15
+    },
+    {
+      "id": "sv-015",
+      "type": "ninja",
+      "name": "Matsuri",
+      "subtitle": "Gaara's Student",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 60,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Chain Whip",
+          "cost": {
+            "colorless": 1
+          },
+          "damage": 30,
+          "effect": null,
+          "description": "Twirls a bladed chain."
+        }
+      ],
+      "ability": null,
+      "weakness": "wind",
+      "retreatCost": 1,
+      "rarity": "common",
+      "isLegendary": false,
+      "flavorText": "I'll protect others too, Gaara-sensei.",
+      "artPath": "cards/ninja/matsuri.webp",
+      "set": "sand-village",
+      "setNumber": 16
+    },
+    {
+      "id": "sv-016",
+      "type": "ninja",
+      "name": "Sari",
+      "subtitle": "Sand Genin",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 60,
+      "chakraType": "water",
+      "attacks": [
+        {
+          "name": "Water Needles",
+          "cost": {
+            "water": 1
+          },
+          "damage": 30,
+          "effect": null,
+          "description": "Shoots needles of condensed water."
+        }
+      ],
+      "ability": null,
+      "weakness": "lightning",
+      "retreatCost": 1,
+      "rarity": "common",
+      "isLegendary": false,
+      "flavorText": "I'm still training.",
+      "artPath": "cards/ninja/sari.webp",
+      "set": "sand-village",
+      "setNumber": 17
+    },
+    {
+      "id": "sv-017",
+      "type": "ninja",
+      "name": "Yukata",
+      "subtitle": "Sand Genin",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 60,
+      "chakraType": "wind",
+      "attacks": [
+        {
+          "name": "Kunai Toss",
+          "cost": {
+            "colorless": 1
+          },
+          "damage": 20,
+          "effect": null,
+          "description": "A standard throw."
+        },
+        {
+          "name": "Wind Breath",
+          "cost": {
+            "wind": 1
+          },
+          "damage": 40,
+          "effect": null,
+          "description": "A sharp gust exhaled."
+        }
+      ],
+      "ability": null,
+      "weakness": "lightning",
+      "retreatCost": 1,
+      "rarity": "common",
+      "isLegendary": false,
+      "flavorText": "Watch and learn.",
+      "artPath": "cards/ninja/yukata.webp",
+      "set": "sand-village",
+      "setNumber": 18
+    },
+    {
+      "id": "sv-018",
+      "type": "ninja",
+      "name": "Shira",
+      "subtitle": "Taijutsu Specialist",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 90,
+      "chakraType": "colorless",
+      "attacks": [
+        {
+          "name": "Leaf Gale (Sand Style)",
+          "cost": {
+            "colorless": 1
+          },
+          "damage": 40,
+          "effect": null,
+          "description": "A sweeping low kick."
+        },
+        {
+          "name": "Gate of the Sand",
+          "cost": {
+            "colorless": 2
+          },
+          "damage": 90,
+          "effect": {
+            "type": "self-damage",
+            "amount": 20
+          },
+          "description": "A Sand variant of the Gate technique."
+        }
+      ],
+      "ability": null,
+      "weakness": "fire",
+      "retreatCost": 1,
+      "rarity": "uncommon",
+      "isLegendary": false,
+      "flavorText": "The desert made me strong.",
+      "artPath": "cards/ninja/shira.webp",
+      "set": "sand-village",
+      "setNumber": 19
+    },
+    {
+      "id": "sv-051",
+      "type": "ninja",
+      "name": "Third Kazekage",
+      "subtitle": "Magnet Release Legend",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 160,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Iron Sand Spears",
+          "cost": {
+            "earth": 2
+          },
+          "damage": 100,
+          "effect": null,
+          "description": "Sharpened iron sand piercings."
+        },
+        {
+          "name": "Iron Sand World Method",
+          "cost": {
+            "earth": 3,
+            "colorless": 1
+          },
+          "damage": 180,
+          "effect": {
+            "type": "bench-damage",
+            "target": "opponent-bench",
+            "amount": 40
+          },
+          "description": "Unleashes the ultimate Magnet Release form."
+        }
+      ],
+      "ability": {
+        "name": "Magnet Dominance",
+        "description": "Opposing Tools on the Defending Ninja are disabled.",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "tool-disable"
+        }
+      },
+      "weakness": "wind",
+      "retreatCost": 3,
+      "rarity": "legendary",
+      "isLegendary": true,
+      "flavorText": "The strongest of all Kazekage \u2014 until he wasn't.",
+      "artPath": "cards/ninja/third-kazekage.webp",
+      "set": "sand-village",
+      "setNumber": 20
+    },
+    {
+      "id": "sv-052",
+      "type": "ninja",
+      "name": "Second Kazekage",
+      "subtitle": "Sealing Master",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 120,
+      "chakraType": "colorless",
+      "attacks": [
+        {
+          "name": "Sealing Palm",
+          "cost": {
+            "colorless": 1
+          },
+          "damage": 40,
+          "effect": {
+            "type": "status",
+            "status": "seal",
+            "target": "opponent-active"
+          },
+          "description": "A sealing tag on each fingertip."
+        },
+        {
+          "name": "Five-Point Seal",
+          "cost": {
+            "colorless": 3
+          },
+          "damage": 110,
+          "effect": {
+            "type": "energy-discard",
+            "target": "opponent-active",
+            "amount": 2
+          },
+          "description": "Severs chakra flow \u2014 discard 2 Chakra."
+        }
+      ],
+      "ability": null,
+      "weakness": "wind",
+      "retreatCost": 2,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "The Sand remembers its founders.",
+      "artPath": "cards/ninja/second-kazekage.webp",
+      "set": "sand-village",
+      "setNumber": 21
+    },
+    {
+      "id": "sv-053",
+      "type": "ninja",
+      "name": "First Kazekage",
+      "subtitle": "Sand's Founder",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 140,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Desert Blade",
+          "cost": {
+            "earth": 1,
+            "colorless": 1
+          },
+          "damage": 60,
+          "effect": null,
+          "description": "A blade of compressed sand."
+        },
+        {
+          "name": "Village Founder's Will",
+          "cost": {
+            "earth": 2,
+            "colorless": 2
+          },
+          "damage": 140,
+          "effect": {
+            "type": "heal",
+            "amount": 30,
+            "target": "self-bench"
+          },
+          "description": "Rallies the Sand \u2014 heal 30 HP to all your Benched Ninjas."
+        }
+      ],
+      "ability": null,
+      "weakness": "wind",
+      "retreatCost": 3,
+      "rarity": "ultra-rare",
+      "isLegendary": false,
+      "flavorText": "I built this village with my two hands.",
+      "artPath": "cards/ninja/first-kazekage.webp",
+      "set": "sand-village",
+      "setNumber": 22
+    },
+    {
+      "id": "sv-054",
+      "type": "ninja",
+      "name": "Fifth Kazekage Student",
+      "subtitle": "New Generation",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 60,
+      "chakraType": "wind",
+      "attacks": [
+        {
+          "name": "Training Strike",
+          "cost": {
+            "colorless": 1
+          },
+          "damage": 20,
+          "effect": null,
+          "description": "Standard academy form."
+        }
+      ],
+      "ability": null,
+      "weakness": "fire",
+      "retreatCost": 1,
+      "rarity": "common",
+      "isLegendary": false,
+      "flavorText": "Gaara-sensei taught me this.",
+      "artPath": "cards/ninja/sand-student.webp",
+      "set": "sand-village",
+      "setNumber": 23
+    },
+    {
+      "id": "sv-062",
+      "type": "ninja",
+      "name": "Shukaku",
+      "subtitle": "Gaara Perfect Bond",
+      "stage": 2,
+      "evolvesFrom": "sv-002",
+      "hp": 280,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "One-Tail Tailed Beast Ball",
+          "cost": {
+            "earth": 3,
+            "colorless": 1
+          },
+          "damage": 220,
+          "effect": null,
+          "description": "Compressed chakra orb of destruction."
+        },
+        {
+          "name": "Sand Imperial Funeral",
+          "cost": {
+            "earth": 4,
+            "colorless": 2
+          },
+          "damage": 320,
+          "effect": {
+            "type": "bench-damage",
+            "target": "opponent-bench",
+            "amount": 60
+          },
+          "description": "The desert consumes all."
+        }
+      ],
+      "ability": {
+        "name": "Perfect Bond",
+        "description": "Cannot be KO'd by status effects. Heal 40 HP each turn.",
+        "trigger": "passive",
+        "effect": {
+          "type": "heal",
+          "amount": 40,
+          "target": "self"
+        }
+      },
+      "weakness": "wind",
+      "retreatCost": 4,
+      "rarity": "crown",
+      "isLegendary": true,
+      "flavorText": "Shukaku and I fight as brothers.",
+      "artPath": "cards/ninja/shukaku.webp",
+      "set": "sand-village",
+      "setNumber": 24
+    },
+    {
+      "id": "sv-029",
+      "type": "jutsu-scroll",
+      "name": "Iron Sand World Method",
+      "description": "Deal 140 damage to the Defending Ninja and 30 to each Benched opponent.",
+      "effect": {
+        "type": "bench-damage",
+        "target": "all-opponents",
+        "amount": 140,
+        "secondaryEffect": {
+          "type": "bench-damage",
+          "target": "opponent-bench",
+          "amount": 30
+        }
+      },
+      "rarity": "legendary",
+      "set": "sand-village",
+      "artPath": "cards/jutsu/iron-sand.webp",
+      "setNumber": 25
+    },
+    {
+      "id": "sv-027",
+      "type": "jutsu-scroll",
+      "name": "Red Secret Technique: Machine Triad",
+      "description": "Deal 150 damage to the Defending Ninja. You must have a Puppet Master Ninja in play.",
+      "effect": {
+        "type": "conditional",
+        "condition": "puppet-master-required",
+        "amount": 150
+      },
+      "rarity": "legendary",
+      "set": "sand-village",
+      "artPath": "cards/jutsu/machine-triad.webp",
+      "setNumber": 26
+    },
+    {
+      "id": "sv-020",
+      "type": "jutsu-scroll",
+      "name": "Desert Funeral",
+      "description": "Deal 120 damage to the Defending Ninja. Discard 2 Chakra from your active Ninja.",
+      "effect": {
+        "type": "energy-discard",
+        "target": "self",
+        "amount": 2,
+        "secondaryEffect": {
+          "type": "status",
+          "target": "opponent-active",
+          "amount": 120
+        }
+      },
+      "rarity": "ultra-rare",
+      "set": "sand-village",
+      "artPath": "cards/jutsu/desert-funeral.webp",
+      "setNumber": 27
+    },
+    {
+      "id": "sv-058",
+      "type": "jutsu-scroll",
+      "name": "Puppet Formation Dance",
+      "description": "Attach up to 3 Tool cards from your hand to your Ninjas for free this turn.",
+      "effect": {
+        "type": "conditional",
+        "condition": "free-attach",
+        "amount": 3
+      },
+      "rarity": "ultra-rare",
+      "set": "sand-village",
+      "artPath": "cards/jutsu/puppet-formation.webp",
+      "setNumber": 28
+    },
+    {
+      "id": "sv-028",
+      "type": "jutsu-scroll",
+      "name": "Extremely Steaming Murder",
+      "description": "Deal 100 damage to the Defending Ninja. Burn it.",
+      "effect": {
+        "type": "status",
+        "status": "burn",
+        "target": "opponent-active",
+        "amount": 100
+      },
+      "rarity": "rare",
+      "set": "sand-village",
+      "artPath": "cards/jutsu/steaming-murder.webp",
+      "setNumber": 29
+    },
+    {
+      "id": "sv-033",
+      "type": "jutsu-scroll",
+      "name": "Magnet Release: Sand Armor",
+      "description": "Your Earth Ninjas take 20 less damage next turn.",
+      "effect": {
+        "type": "conditional",
+        "condition": "damage-reduction",
+        "amount": 20,
+        "target": "self-bench"
+      },
+      "rarity": "rare",
+      "set": "sand-village",
+      "artPath": "cards/jutsu/sand-armor.webp",
+      "setNumber": 30
+    },
+    {
+      "id": "sv-056",
+      "type": "jutsu-scroll",
+      "name": "Mother Sand Prison",
+      "description": "Seal the Defending Ninja. It cannot retreat or use an Ability next turn.",
+      "effect": {
+        "type": "status",
+        "status": "seal",
+        "target": "opponent-active"
+      },
+      "rarity": "rare",
+      "set": "sand-village",
+      "artPath": "cards/jutsu/mother-sand.webp",
+      "setNumber": 31
+    },
+    {
+      "id": "sv-019",
+      "type": "jutsu-scroll",
+      "name": "Sand Coffin",
+      "description": "Deal 60 damage to the Defending Ninja and Paralyze it.",
+      "effect": {
+        "type": "status",
+        "status": "paralyze",
+        "target": "opponent-active",
+        "amount": 60
+      },
+      "rarity": "rare",
+      "set": "sand-village",
+      "artPath": "cards/jutsu/sand-coffin.webp",
+      "setNumber": 32
+    },
+    {
+      "id": "sv-022",
+      "type": "jutsu-scroll",
+      "name": "Sand Tsunami",
+      "description": "Deal 60 damage to the Defending Ninja and 20 damage to each Benched opponent.",
+      "effect": {
+        "type": "bench-damage",
+        "target": "all-opponents",
+        "amount": 60,
+        "secondaryEffect": {
+          "type": "bench-damage",
+          "target": "opponent-bench",
+          "amount": 20
+        }
+      },
+      "rarity": "rare",
+      "set": "sand-village",
+      "artPath": "cards/jutsu/sand-tsunami.webp",
+      "setNumber": 33
+    },
+    {
+      "id": "sv-030",
+      "type": "jutsu-scroll",
+      "name": "Wind Release: Great Breakthrough",
+      "description": "Deal 70 damage to the Defending Ninja.",
+      "effect": {
+        "type": "status",
+        "target": "opponent-active",
+        "amount": 70
+      },
+      "rarity": "rare",
+      "set": "sand-village",
+      "artPath": "cards/jutsu/great-breakthrough.webp",
+      "setNumber": 34
+    },
+    {
+      "id": "sv-057",
+      "type": "jutsu-scroll",
+      "name": "Wind Release: Infinite Sand Cloud",
+      "description": "All opposing Ninjas' attacks cost 1 more Colorless Chakra this turn.",
+      "effect": {
+        "type": "conditional",
+        "condition": "opponent-cost-increase",
+        "amount": 1
+      },
+      "rarity": "rare",
+      "set": "sand-village",
+      "artPath": "cards/jutsu/infinite-sand.webp",
+      "setNumber": 35
+    },
+    {
+      "id": "sv-025",
+      "type": "jutsu-scroll",
+      "name": "Desert Suspension",
+      "description": "Your Earth Ninjas gain +20 HP until end of turn.",
+      "effect": {
+        "type": "heal",
+        "amount": 20,
+        "target": "self-bench"
+      },
+      "rarity": "uncommon",
+      "set": "sand-village",
+      "artPath": "cards/jutsu/desert-suspension.webp",
+      "setNumber": 36
+    },
+    {
+      "id": "sv-035",
+      "type": "jutsu-scroll",
+      "name": "Human-Shaped Wood Bullet",
+      "description": "Deal 40 damage. Discard 1 card from your hand.",
+      "effect": {
+        "type": "discard",
+        "amount": 1,
+        "secondaryEffect": {
+          "type": "status",
+          "target": "opponent-active",
+          "amount": 40
+        }
+      },
+      "rarity": "uncommon",
+      "set": "sand-village",
+      "artPath": "cards/jutsu/wood-bullet.webp",
+      "setNumber": 37
+    },
+    {
+      "id": "sv-023",
+      "type": "jutsu-scroll",
+      "name": "Quicksand Waterfall",
+      "description": "Deal 50 damage to the Defending Ninja. The opponent must switch their Active Ninja.",
+      "effect": {
+        "type": "switch",
+        "target": "opponent-active",
+        "amount": 50
+      },
+      "rarity": "uncommon",
+      "set": "sand-village",
+      "artPath": "cards/jutsu/quicksand.webp",
+      "setNumber": 38
+    },
+    {
+      "id": "sv-034",
+      "type": "jutsu-scroll",
+      "name": "Sand Binding Coffin",
+      "description": "Seal the Defending Ninja. It cannot retreat next turn.",
+      "effect": {
+        "type": "status",
+        "status": "seal",
+        "target": "opponent-active"
+      },
+      "rarity": "uncommon",
+      "set": "sand-village",
+      "artPath": "cards/jutsu/binding-coffin.webp",
+      "setNumber": 39
+    },
+    {
+      "id": "sv-055",
+      "type": "jutsu-scroll",
+      "name": "Sandstorm Shroud",
+      "description": "Your Active Ninja takes 30 less damage next turn.",
+      "effect": {
+        "type": "conditional",
+        "condition": "damage-reduction",
+        "amount": 30
+      },
+      "rarity": "uncommon",
+      "set": "sand-village",
+      "artPath": "cards/jutsu/sandstorm-shroud.webp",
+      "setNumber": 40
+    },
+    {
+      "id": "sv-026",
+      "type": "jutsu-scroll",
+      "name": "Sickening Spiral",
+      "description": "Deal 40 damage to the Defending Ninja and Poison it.",
+      "effect": {
+        "type": "status",
+        "status": "poison",
+        "target": "opponent-active",
+        "amount": 40
+      },
+      "rarity": "uncommon",
+      "set": "sand-village",
+      "artPath": "cards/jutsu/sickening-spiral.webp",
+      "setNumber": 41
+    },
+    {
+      "id": "sv-032",
+      "type": "jutsu-scroll",
+      "name": "Third Eye",
+      "description": "Look at the opponent's hand. Draw 1 card.",
+      "effect": {
+        "type": "draw",
+        "amount": 1
+      },
+      "rarity": "uncommon",
+      "set": "sand-village",
+      "artPath": "cards/jutsu/third-eye.webp",
+      "setNumber": 42
+    },
+    {
+      "id": "sv-031",
+      "type": "jutsu-scroll",
+      "name": "Wind Release: Cast Net",
+      "description": "Deal 40 damage to all opposing Ninjas.",
+      "effect": {
+        "type": "bench-damage",
+        "target": "all-opponents",
+        "amount": 40
+      },
+      "rarity": "uncommon",
+      "set": "sand-village",
+      "artPath": "cards/jutsu/cast-net.webp",
+      "setNumber": 43
+    },
+    {
+      "id": "sv-036",
+      "type": "jutsu-scroll",
+      "name": "Desert Hand",
+      "description": "Reattach all Chakra from your Active Ninja to a Benched Ninja.",
+      "effect": {
+        "type": "energy-discard",
+        "target": "self",
+        "amount": 2
+      },
+      "rarity": "common",
+      "set": "sand-village",
+      "artPath": "cards/jutsu/desert-hand.webp",
+      "setNumber": 44
+    },
+    {
+      "id": "sv-021",
+      "type": "jutsu-scroll",
+      "name": "Desert Spear",
+      "description": "Deal 30 damage to the Defending Ninja.",
+      "effect": {
+        "type": "status",
+        "target": "opponent-active",
+        "amount": 30
+      },
+      "rarity": "common",
+      "set": "sand-village",
+      "artPath": "cards/jutsu/desert-spear.webp",
+      "setNumber": 45
+    },
+    {
+      "id": "sv-024",
+      "type": "jutsu-scroll",
+      "name": "Dust Storm",
+      "description": "Flip a coin. On heads, the Defending Ninja is Confused.",
+      "effect": {
+        "type": "status",
+        "status": "confusion",
+        "target": "opponent-active"
+      },
+      "rarity": "common",
+      "set": "sand-village",
+      "artPath": "cards/jutsu/dust-storm.webp",
+      "setNumber": 46
+    },
+    {
+      "id": "sv-042",
+      "type": "tool",
+      "name": "Mother and Father",
+      "description": "Chiyo's signature puppet pair. While attached, attacks from this Ninja deal +30 damage. Only Chiyo may wear this.",
+      "effect": {
+        "type": "damage-boost",
+        "amount": 30,
+        "condition": "chiyo-only"
+      },
+      "rarity": "legendary",
+      "set": "sand-village",
+      "artPath": "cards/tools/mother-father.webp",
+      "setNumber": 47
+    },
+    {
+      "id": "sv-041",
+      "type": "tool",
+      "name": "Third Kazekage's Iron Sand",
+      "description": "The wearer's Earth attacks deal +20 damage.",
+      "effect": {
+        "type": "damage-boost",
+        "amount": 20
+      },
+      "rarity": "ultra-rare",
+      "set": "sand-village",
+      "artPath": "cards/tools/iron-sand.webp",
+      "setNumber": 48
+    },
+    {
+      "id": "sv-037",
+      "type": "tool",
+      "name": "Gaara's Gourd",
+      "description": "The Ninja wearing this takes 10 less damage from attacks. At the end of your turn, recover 10 HP.",
+      "effect": {
+        "type": "conditional",
+        "condition": "damage-reduction",
+        "amount": 10,
+        "secondaryEffect": {
+          "type": "heal",
+          "amount": 10,
+          "target": "self"
+        }
+      },
+      "rarity": "rare",
+      "set": "sand-village",
+      "artPath": "cards/tools/gaara-gourd.webp",
+      "setNumber": 49
+    },
+    {
+      "id": "sv-044",
+      "type": "tool",
+      "name": "Gold Dust Cloak",
+      "description": "The wearer takes 20 less damage from Colorless attacks.",
+      "effect": {
+        "type": "conditional",
+        "condition": "colorless-resistance",
+        "amount": 20
+      },
+      "rarity": "rare",
+      "set": "sand-village",
+      "artPath": "cards/tools/gold-dust.webp",
+      "setNumber": 50
+    },
+    {
+      "id": "sv-059",
+      "type": "tool",
+      "name": "Kazekage's Robe",
+      "description": "The wearer gains +30 HP. Only a Kage can wear this.",
+      "effect": {
+        "type": "heal",
+        "amount": 30,
+        "condition": "kage-only"
+      },
+      "rarity": "rare",
+      "set": "sand-village",
+      "artPath": "cards/tools/kazekage-robe.webp",
+      "setNumber": 51
+    },
+    {
+      "id": "sv-047",
+      "type": "tool",
+      "name": "Salamander Puppet",
+      "description": "While equipped, the wearer takes 20 less damage. Destroyed if the wearer is KO'd.",
+      "effect": {
+        "type": "conditional",
+        "condition": "damage-reduction",
+        "amount": 20
+      },
+      "rarity": "rare",
+      "set": "sand-village",
+      "artPath": "cards/tools/salamander.webp",
+      "setNumber": 52
+    },
+    {
+      "id": "sv-038",
+      "type": "tool",
+      "name": "Temari's War Fan",
+      "description": "The wearer's Wind attacks cost 1 less Colorless Chakra.",
+      "effect": {
+        "type": "conditional",
+        "condition": "cost-reduction",
+        "amount": 1
+      },
+      "rarity": "rare",
+      "set": "sand-village",
+      "artPath": "cards/tools/temari-fan.webp",
+      "setNumber": 53
+    },
+    {
+      "id": "sv-045",
+      "type": "tool",
+      "name": "Black Ant Puppet",
+      "description": "While equipped, attacks from this Ninja also Seal the Defender.",
+      "effect": {
+        "type": "status",
+        "status": "seal",
+        "target": "opponent-active"
+      },
+      "rarity": "uncommon",
+      "set": "sand-village",
+      "artPath": "cards/tools/black-ant.webp",
+      "setNumber": 54
+    },
+    {
+      "id": "sv-046",
+      "type": "tool",
+      "name": "Crow Puppet",
+      "description": "While equipped, the wearer's attacks may Poison the Defender.",
+      "effect": {
+        "type": "status",
+        "status": "poison",
+        "target": "opponent-active"
+      },
+      "rarity": "uncommon",
+      "set": "sand-village",
+      "artPath": "cards/tools/crow-puppet.webp",
+      "setNumber": 55
+    },
+    {
+      "id": "sv-040",
+      "type": "tool",
+      "name": "Poisoned Senbon",
+      "description": "Attach to a Ninja. Attacks from this Ninja also Poison the Defender.",
+      "effect": {
+        "type": "status",
+        "status": "poison",
+        "target": "opponent-active"
+      },
+      "rarity": "uncommon",
+      "set": "sand-village",
+      "artPath": "cards/tools/poisoned-senbon.webp",
+      "setNumber": 56
+    },
+    {
+      "id": "sv-043",
+      "type": "tool",
+      "name": "Puppet Chakra Blade",
+      "description": "The wearer's basic attacks deal +10 damage.",
+      "effect": {
+        "type": "damage-boost",
+        "amount": 10
+      },
+      "rarity": "uncommon",
+      "set": "sand-village",
+      "artPath": "cards/tools/chakra-blade.webp",
+      "setNumber": 57
+    },
+    {
+      "id": "sv-060",
+      "type": "tool",
+      "name": "Sand Hourglass",
+      "description": "At the end of your turn, this Ninja recovers 15 HP.",
+      "effect": {
+        "type": "heal",
+        "amount": 15,
+        "target": "self"
+      },
+      "rarity": "uncommon",
+      "set": "sand-village",
+      "artPath": "cards/tools/sand-hourglass.webp",
+      "setNumber": 58
+    },
+    {
+      "id": "sv-039",
+      "type": "tool",
+      "name": "Puppet Strings",
+      "description": "Once per turn, switch a Benched opponent Ninja with their Active Ninja.",
+      "effect": {
+        "type": "switch",
+        "target": "opponent-active"
+      },
+      "rarity": "common",
+      "set": "sand-village",
+      "artPath": "cards/tools/puppet-strings.webp",
+      "setNumber": 59
+    },
+    {
+      "id": "sv-050",
+      "type": "sensei",
+      "name": "Rasa",
+      "subtitle": "Kazekage's Decree",
+      "description": "Look at the top 5 cards of your deck. Take an Earth Ninja and add it to your hand. Shuffle the rest back.",
+      "effect": {
+        "type": "draw",
+        "amount": 1,
+        "condition": "earth-ninja-search"
+      },
+      "rarity": "legendary",
+      "set": "sand-village",
+      "artPath": "cards/sensei/rasa.webp",
+      "setNumber": 60
+    },
+    {
+      "id": "sv-048",
+      "type": "sensei",
+      "name": "Baki",
+      "subtitle": "Team Leader of the Sand",
+      "description": "Draw 2 cards. If you have a Sand Ninja in play, draw 1 more.",
+      "effect": {
+        "type": "draw",
+        "amount": 2,
+        "secondaryEffect": {
+          "type": "draw",
+          "amount": 1,
+          "condition": "sand-ninja-in-play"
+        }
+      },
+      "rarity": "rare",
+      "set": "sand-village",
+      "artPath": "cards/sensei/baki.webp",
+      "setNumber": 61
+    },
+    {
+      "id": "sv-049",
+      "type": "sensei",
+      "name": "Chiyo",
+      "subtitle": "Honored Puppet Master",
+      "description": "Heal 40 HP from one of your Ninjas. If it's Gaara, heal 80 instead.",
+      "effect": {
+        "type": "heal",
+        "amount": 40,
+        "secondaryEffect": {
+          "type": "heal",
+          "amount": 80,
+          "condition": "gaara-target"
+        }
+      },
+      "rarity": "ultra-rare",
+      "set": "sand-village",
+      "artPath": "cards/sensei/chiyo.webp",
+      "setNumber": 62
+    }
+  ],
+  "pullRates": {
+    "common": 0.48,
+    "uncommon": 0.27,
+    "rare": 0.15,
+    "ultra-rare": 0.065,
+    "legendary": 0.028,
+    "secret": 0.005,
+    "crown": 0.002
+  },
+  "totalCards": 62
+}

@@ -1,6 +1,7 @@
 import { StateCreator } from 'zustand';
 import { PlayerProfile } from '@/types/player';
 import { XP_PER_WIN, XP_PER_LOSS, XP_PER_PACK } from '@/lib/constants';
+import { DEFAULT_AVATAR_ID } from '@/lib/avatars';
 
 function xpForLevel(level: number): number {
   return Math.floor(100 * Math.pow(1.3, level - 1));
@@ -13,11 +14,14 @@ export interface PlayerSlice {
   recordLoss: () => void;
   recordDraw: () => void;
   addAchievement: (achievementId: string) => void;
+  setName: (name: string) => void;
+  setAvatar: (avatarId: string) => void;
 }
 
 export const createPlayerSlice: StateCreator<PlayerSlice> = (set, get) => ({
   profile: {
     name: 'Ninja',
+    avatarId: DEFAULT_AVATAR_ID,
     level: 1,
     xp: 0,
     xpToNextLevel: xpForLevel(1),
@@ -71,4 +75,14 @@ export const createPlayerSlice: StateCreator<PlayerSlice> = (set, get) => ({
         },
       };
     }),
+
+  setName: (name: string) =>
+    set((state) => ({
+      profile: { ...state.profile, name },
+    })),
+
+  setAvatar: (avatarId: string) =>
+    set((state) => ({
+      profile: { ...state.profile, avatarId },
+    })),
 });

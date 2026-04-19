@@ -1,0 +1,1386 @@
+{
+  "setId": "otsutsuki-legacy",
+  "setName": "Otsutsuki Legacy",
+  "releaseOrder": 10,
+  "unlockLevel": 1,
+  "packArt": "packs/otsutsuki-legacy.webp",
+  "cards": [
+    {
+      "id": "otl-001",
+      "type": "ninja",
+      "name": "Kaguya Otsutsuki",
+      "subtitle": "Rabbit Goddess",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 280,
+      "chakraType": "colorless",
+      "attacks": [
+        {
+          "name": "All-Killing Ash Bone",
+          "cost": {
+            "colorless": 2
+          },
+          "damage": 160,
+          "effect": {
+            "type": "status",
+            "status": "seal",
+            "target": "opponent-active"
+          },
+          "description": "Ashen bone dust dissolves all it touches."
+        },
+        {
+          "name": "Expansive Truth-Seeking Ball",
+          "cost": {
+            "colorless": 4
+          },
+          "damage": 300,
+          "effect": null,
+          "description": "The Truth-Seeking Orb grows to swallow a battlefield."
+        }
+      ],
+      "ability": {
+        "name": "Yin-Yang Release",
+        "description": "This Ninja is immune to all status effects.",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "all-status-immunity"
+        }
+      },
+      "weakness": "wind",
+      "retreatCost": 4,
+      "rarity": "crown",
+      "isLegendary": true,
+      "flavorText": "This world is my garden. You are the weeds.",
+      "artPath": "cards/ninja/kaguya.webp",
+      "set": "otsutsuki-legacy",
+      "setNumber": 1
+    },
+    {
+      "id": "otl-002",
+      "type": "ninja",
+      "name": "Kaguya Otsutsuki",
+      "subtitle": "Rabbit Moon Form",
+      "stage": 1,
+      "evolvesFrom": "otl-001",
+      "hp": 360,
+      "chakraType": "colorless",
+      "attacks": [
+        {
+          "name": "Infinite Tsukuyomi",
+          "cost": {
+            "colorless": 4
+          },
+          "damage": 200,
+          "effect": {
+            "type": "status",
+            "status": "paralyze",
+            "target": "all-opponents"
+          },
+          "description": "The moon's eye ensnares every living thing."
+        },
+        {
+          "name": "Dimensional Rift",
+          "cost": {
+            "colorless": 5
+          },
+          "damage": 380,
+          "effect": null,
+          "description": "Tears open a pocket dimension to consume the target."
+        }
+      ],
+      "ability": {
+        "name": "Primordial Chakra Well",
+        "description": "Your Ninjas' Legendary attacks cost 1 less Chakra.",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "legendary-discount",
+          "amount": 1
+        }
+      },
+      "weakness": "wind",
+      "retreatCost": 5,
+      "rarity": "secret",
+      "isLegendary": true,
+      "flavorText": "My children play at being gods.",
+      "artPath": "cards/ninja/kaguya.webp",
+      "set": "otsutsuki-legacy",
+      "setNumber": 2
+    },
+    {
+      "id": "otl-003",
+      "type": "ninja",
+      "name": "Hagoromo Otsutsuki",
+      "subtitle": "Sage of Six Paths",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 300,
+      "chakraType": "colorless",
+      "attacks": [
+        {
+          "name": "Creation of All Things",
+          "cost": {
+            "colorless": 3
+          },
+          "damage": 180,
+          "effect": {
+            "type": "heal",
+            "amount": 80,
+            "target": "self-bench"
+          },
+          "description": "His Yin-Yang chakra heals and harms."
+        },
+        {
+          "name": "Six Paths Sage Art",
+          "cost": {
+            "colorless": 4
+          },
+          "damage": 290,
+          "effect": null,
+          "description": "The founding technique of all ninjutsu."
+        }
+      ],
+      "ability": {
+        "name": "Father of Ninjutsu",
+        "description": "All your Ninjas' max HP is +30.",
+        "trigger": "passive",
+        "effect": {
+          "type": "heal",
+          "amount": 30,
+          "target": "self-bench"
+        }
+      },
+      "weakness": "wind",
+      "retreatCost": 4,
+      "rarity": "crown",
+      "isLegendary": true,
+      "flavorText": "I brought chakra to this world. Use it wisely.",
+      "artPath": "cards/ninja/hagoromo.webp",
+      "set": "otsutsuki-legacy",
+      "setNumber": 3
+    },
+    {
+      "id": "otl-009",
+      "type": "ninja",
+      "name": "Young Hagoromo",
+      "subtitle": "Otsutsuki Heir",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 110,
+      "chakraType": "colorless",
+      "attacks": [
+        {
+          "name": "Chakra Apprentice Strike",
+          "cost": {
+            "colorless": 1
+          },
+          "damage": 50,
+          "effect": null,
+          "description": "Young but prodigious."
+        }
+      ],
+      "ability": null,
+      "weakness": "wind",
+      "retreatCost": 1,
+      "rarity": "uncommon",
+      "isLegendary": false,
+      "flavorText": "One day I will teach humans.",
+      "artPath": "cards/ninja/hagoromo.webp",
+      "set": "otsutsuki-legacy",
+      "setNumber": 4
+    },
+    {
+      "id": "otl-004",
+      "type": "ninja",
+      "name": "Hamura Otsutsuki",
+      "subtitle": "Moon's Guardian",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 240,
+      "chakraType": "wind",
+      "attacks": [
+        {
+          "name": "Tenseigan Pulse",
+          "cost": {
+            "wind": 2
+          },
+          "damage": 140,
+          "effect": null,
+          "description": "Eyes of the moon unleash chakra pressure."
+        },
+        {
+          "name": "Lunar Execution",
+          "cost": {
+            "wind": 2,
+            "colorless": 2
+          },
+          "damage": 240,
+          "effect": {
+            "type": "status",
+            "status": "paralyze",
+            "target": "opponent-active"
+          },
+          "description": "A pinpoint strike from the heavens."
+        }
+      ],
+      "ability": null,
+      "weakness": "earth",
+      "retreatCost": 3,
+      "rarity": "legendary",
+      "isLegendary": true,
+      "flavorText": "I watch from the moon. I judge from above.",
+      "artPath": "cards/ninja/hamura.webp",
+      "set": "otsutsuki-legacy",
+      "setNumber": 5
+    },
+    {
+      "id": "otl-010",
+      "type": "ninja",
+      "name": "Young Hamura",
+      "subtitle": "Moon Initiate",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 90,
+      "chakraType": "wind",
+      "attacks": [
+        {
+          "name": "Tenseigan Flicker",
+          "cost": {
+            "wind": 1
+          },
+          "damage": 40,
+          "effect": null,
+          "description": "Early glimpse of the moon's eye."
+        }
+      ],
+      "ability": null,
+      "weakness": "earth",
+      "retreatCost": 1,
+      "rarity": "common",
+      "isLegendary": false,
+      "flavorText": "My brother will be greater than me.",
+      "artPath": "cards/ninja/hamura.webp",
+      "set": "otsutsuki-legacy",
+      "setNumber": 6
+    },
+    {
+      "id": "otl-006",
+      "type": "ninja",
+      "name": "Indra Otsutsuki",
+      "subtitle": "Uchiha Ancestor",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 230,
+      "chakraType": "lightning",
+      "attacks": [
+        {
+          "name": "Mangekyo Gaze",
+          "cost": {
+            "colorless": 1
+          },
+          "damage": 60,
+          "effect": {
+            "type": "status",
+            "status": "confusion",
+            "target": "opponent-active"
+          },
+          "description": "First Sharingan genjutsu."
+        },
+        {
+          "name": "Indra's Arrow",
+          "cost": {
+            "lightning": 3,
+            "colorless": 2
+          },
+          "damage": 260,
+          "effect": null,
+          "description": "The original Chidori-Susanoo lance."
+        }
+      ],
+      "ability": {
+        "name": "Born Genius",
+        "description": "Attacks ignore 20 points of damage reduction.",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "pierce",
+          "amount": 20
+        }
+      },
+      "weakness": "wind",
+      "retreatCost": 2,
+      "rarity": "legendary",
+      "isLegendary": true,
+      "flavorText": "Brother, you never understood power.",
+      "artPath": "cards/ninja/indra.webp",
+      "set": "otsutsuki-legacy",
+      "setNumber": 7
+    },
+    {
+      "id": "otl-005",
+      "type": "ninja",
+      "name": "Ashura Otsutsuki",
+      "subtitle": "Senju Ancestor",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 220,
+      "chakraType": "water",
+      "attacks": [
+        {
+          "name": "Willpower Fist",
+          "cost": {
+            "colorless": 2
+          },
+          "damage": 120,
+          "effect": null,
+          "description": "Raw determination crushes defenses."
+        },
+        {
+          "name": "Heavenly Sage Mode",
+          "cost": {
+            "water": 2,
+            "colorless": 2
+          },
+          "damage": 220,
+          "effect": {
+            "type": "heal",
+            "amount": 40,
+            "target": "self"
+          },
+          "description": "Ashura's sage chakra reshapes his body."
+        }
+      ],
+      "ability": {
+        "name": "Talent of Hard Work",
+        "description": "When this Ninja is damaged, draw 1 card.",
+        "trigger": "passive",
+        "effect": {
+          "type": "draw",
+          "amount": 1
+        }
+      },
+      "weakness": "lightning",
+      "retreatCost": 3,
+      "rarity": "legendary",
+      "isLegendary": true,
+      "flavorText": "Strength is earned, not born.",
+      "artPath": "cards/ninja/ashura.webp",
+      "set": "otsutsuki-legacy",
+      "setNumber": 8
+    },
+    {
+      "id": "otl-007",
+      "type": "ninja",
+      "name": "Madara Uchiha",
+      "subtitle": "Rikudo Sage Mode",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 280,
+      "chakraType": "fire",
+      "attacks": [
+        {
+          "name": "Limbo: Border Jail",
+          "cost": {
+            "colorless": 2
+          },
+          "damage": 140,
+          "effect": null,
+          "description": "Shadow versions strike from hidden dimensions."
+        },
+        {
+          "name": "Perfect Susanoo Eruption",
+          "cost": {
+            "fire": 3,
+            "colorless": 2
+          },
+          "damage": 290,
+          "effect": {
+            "type": "bench-damage",
+            "target": "opponent-bench",
+            "amount": 50
+          },
+          "description": "The spectral warrior at full power."
+        }
+      ],
+      "ability": {
+        "name": "Rinnegan Mastery",
+        "description": "Once per turn, switch with any Benched Ninja for free.",
+        "trigger": "once-per-turn",
+        "effect": {
+          "type": "switch",
+          "target": "self-bench"
+        }
+      },
+      "weakness": "wind",
+      "retreatCost": 4,
+      "rarity": "crown",
+      "isLegendary": true,
+      "flavorText": "I am the god of this world.",
+      "artPath": "cards/ninja/madara.webp",
+      "set": "otsutsuki-legacy",
+      "setNumber": 9
+    },
+    {
+      "id": "otl-008",
+      "type": "ninja",
+      "name": "Madara Uchiha",
+      "subtitle": "Ten-Tails Jinchuriki",
+      "stage": 1,
+      "evolvesFrom": "otl-007",
+      "hp": 380,
+      "chakraType": "fire",
+      "attacks": [
+        {
+          "name": "Truth-Seeking Ball Array",
+          "cost": {
+            "colorless": 3
+          },
+          "damage": 220,
+          "effect": null,
+          "description": "Black orbs orbit and strike."
+        },
+        {
+          "name": "God-Tree Obliteration",
+          "cost": {
+            "fire": 3,
+            "colorless": 4
+          },
+          "damage": 400,
+          "effect": {
+            "type": "bench-damage",
+            "target": "all-opponents",
+            "amount": 100
+          },
+          "description": "The Divine Tree erupts through the battlefield."
+        }
+      ],
+      "ability": {
+        "name": "Juubi Jinchuriki",
+        "description": "Cannot be Paralyzed or Sealed. All attacks deal +40 damage.",
+        "trigger": "passive",
+        "effect": {
+          "type": "damage-boost",
+          "amount": 40
+        }
+      },
+      "weakness": "wind",
+      "retreatCost": 5,
+      "rarity": "crown",
+      "isLegendary": true,
+      "flavorText": "With the Ten-Tails within me, I am the final evolution.",
+      "artPath": "cards/ninja/juubi.webp",
+      "set": "otsutsuki-legacy",
+      "setNumber": 10
+    },
+    {
+      "id": "otl-017",
+      "type": "ninja",
+      "name": "Shin Uchiha",
+      "subtitle": "Cloned Uchiha Hive",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 120,
+      "chakraType": "fire",
+      "attacks": [
+        {
+          "name": "Swarm Clone Strike",
+          "cost": {
+            "fire": 1,
+            "colorless": 1
+          },
+          "damage": 80,
+          "effect": null,
+          "description": "Countless clones attack together."
+        }
+      ],
+      "ability": null,
+      "weakness": "water",
+      "retreatCost": 1,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "We are many. We are one.",
+      "artPath": "cards/ninja/shin-uchiha.webp",
+      "set": "otsutsuki-legacy",
+      "setNumber": 11
+    },
+    {
+      "id": "otl-012",
+      "type": "ninja",
+      "name": "Otsutsuki Acolyte",
+      "subtitle": "Chakra Fruit Initiate",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 80,
+      "chakraType": "colorless",
+      "attacks": [
+        {
+          "name": "Chakra Drain Touch",
+          "cost": {
+            "colorless": 1
+          },
+          "damage": 40,
+          "effect": {
+            "type": "energy-discard",
+            "target": "opponent-active",
+            "amount": 1
+          },
+          "description": "Extracts chakra from the target."
+        }
+      ],
+      "ability": null,
+      "weakness": "wind",
+      "retreatCost": 1,
+      "rarity": "uncommon",
+      "isLegendary": false,
+      "flavorText": "Power is to be taken.",
+      "artPath": "cards/ninja/otsutsuki-acolyte.webp",
+      "set": "otsutsuki-legacy",
+      "setNumber": 12
+    },
+    {
+      "id": "otl-016",
+      "type": "ninja",
+      "name": "Otsutsuki Knight",
+      "subtitle": "Celestial Champion",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 150,
+      "chakraType": "colorless",
+      "attacks": [
+        {
+          "name": "Heavenly Slash",
+          "cost": {
+            "colorless": 2
+          },
+          "damage": 100,
+          "effect": null,
+          "description": "A cut that spans stars."
+        }
+      ],
+      "ability": null,
+      "weakness": "wind",
+      "retreatCost": 2,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "For the Goddess. For the Tree.",
+      "artPath": "cards/ninja/otsutsuki-knight.webp",
+      "set": "otsutsuki-legacy",
+      "setNumber": 13
+    },
+    {
+      "id": "otl-011",
+      "type": "ninja",
+      "name": "Otsutsuki Priestess",
+      "subtitle": "Chakra Devotee",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 70,
+      "chakraType": "water",
+      "attacks": [
+        {
+          "name": "Sacred Chant",
+          "cost": {
+            "water": 1
+          },
+          "damage": 30,
+          "effect": {
+            "type": "heal",
+            "amount": 20,
+            "target": "self-bench"
+          },
+          "description": "A prayer restores allies."
+        }
+      ],
+      "ability": null,
+      "weakness": "lightning",
+      "retreatCost": 1,
+      "rarity": "common",
+      "isLegendary": false,
+      "flavorText": "We serve the Goddess.",
+      "artPath": "cards/ninja/otsutsuki-priestess.webp",
+      "set": "otsutsuki-legacy",
+      "setNumber": 14
+    },
+    {
+      "id": "otl-013",
+      "type": "ninja",
+      "name": "Otsutsuki Warrior",
+      "subtitle": "Ancient Soldier",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 100,
+      "chakraType": "colorless",
+      "attacks": [
+        {
+          "name": "Celestial Spear",
+          "cost": {
+            "colorless": 2
+          },
+          "damage": 70,
+          "effect": null,
+          "description": "A weapon forged before time."
+        }
+      ],
+      "ability": null,
+      "weakness": "wind",
+      "retreatCost": 1,
+      "rarity": "uncommon",
+      "isLegendary": false,
+      "flavorText": "I have served a thousand years.",
+      "artPath": "cards/ninja/otsutsuki-warrior.webp",
+      "set": "otsutsuki-legacy",
+      "setNumber": 15
+    },
+    {
+      "id": "otl-014",
+      "type": "ninja",
+      "name": "Chakra Fruit Guardian",
+      "subtitle": "God-Tree Sentinel",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 130,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Rooted Smash",
+          "cost": {
+            "earth": 1,
+            "colorless": 1
+          },
+          "damage": 70,
+          "effect": null,
+          "description": "Branches of living wood lash out."
+        }
+      ],
+      "ability": null,
+      "weakness": "fire",
+      "retreatCost": 2,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "The Tree must bear fruit.",
+      "artPath": "cards/ninja/fruit-guardian.webp",
+      "set": "otsutsuki-legacy",
+      "setNumber": 16
+    },
+    {
+      "id": "otl-018",
+      "type": "ninja",
+      "name": "Divine Tree Root",
+      "subtitle": "Living Weapon",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 90,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Chakra Drain Root",
+          "cost": {
+            "earth": 1
+          },
+          "damage": 40,
+          "effect": {
+            "type": "energy-discard",
+            "target": "opponent-active",
+            "amount": 1
+          },
+          "description": "Absorbs a Chakra from the target."
+        }
+      ],
+      "ability": null,
+      "weakness": "fire",
+      "retreatCost": 1,
+      "rarity": "uncommon",
+      "isLegendary": false,
+      "flavorText": "All chakra returns to the Tree.",
+      "artPath": "cards/ninja/tree-root.webp",
+      "set": "otsutsuki-legacy",
+      "setNumber": 17
+    },
+    {
+      "id": "otl-015",
+      "type": "ninja",
+      "name": "Rabbit-Eared Scout",
+      "subtitle": "Kaguya's Eye",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 60,
+      "chakraType": "colorless",
+      "attacks": [
+        {
+          "name": "Silent Hop",
+          "cost": {
+            "colorless": 1
+          },
+          "damage": 20,
+          "effect": {
+            "type": "draw",
+            "amount": 1
+          },
+          "description": "Moves unseen \u2014 draw 1 card."
+        }
+      ],
+      "ability": null,
+      "weakness": "wind",
+      "retreatCost": 1,
+      "rarity": "common",
+      "isLegendary": false,
+      "flavorText": "The Goddess sees through me.",
+      "artPath": "cards/ninja/rabbit-scout.webp",
+      "set": "otsutsuki-legacy",
+      "setNumber": 18
+    },
+    {
+      "id": "otl-041",
+      "type": "jutsu-scroll",
+      "name": "Celestial Meteor Strike",
+      "description": "Deal 200 damage to all opposing Ninjas.",
+      "effect": {
+        "type": "bench-damage",
+        "target": "all-opponents",
+        "amount": 200
+      },
+      "rarity": "legendary",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/jutsu/meteor.webp",
+      "setNumber": 19
+    },
+    {
+      "id": "otl-036",
+      "type": "jutsu-scroll",
+      "name": "Chibaku Tensei (Otsutsuki)",
+      "description": "Deal 180 damage and force Defender switch.",
+      "effect": {
+        "type": "switch",
+        "target": "opponent-active",
+        "amount": 180
+      },
+      "rarity": "legendary",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/jutsu/chibaku-ots.webp",
+      "setNumber": 20
+    },
+    {
+      "id": "otl-021",
+      "type": "jutsu-scroll",
+      "name": "Eighty Gods Vacuum Attack",
+      "description": "Deal 260 damage. Requires a Legendary Ninja in play.",
+      "effect": {
+        "type": "conditional",
+        "condition": "legendary-required",
+        "amount": 260
+      },
+      "rarity": "legendary",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/jutsu/eighty-gods.webp",
+      "setNumber": 21
+    },
+    {
+      "id": "otl-025",
+      "type": "jutsu-scroll",
+      "name": "Expansive Truth-Seeking Ball",
+      "description": "Deal 280 damage to the Defender. Discard 3 Chakra.",
+      "effect": {
+        "type": "energy-discard",
+        "target": "self",
+        "amount": 3,
+        "secondaryEffect": {
+          "type": "status",
+          "target": "opponent-active",
+          "amount": 280
+        }
+      },
+      "rarity": "legendary",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/jutsu/expansive-orb.webp",
+      "setNumber": 22
+    },
+    {
+      "id": "otl-019",
+      "type": "jutsu-scroll",
+      "name": "Infinite Tsukuyomi",
+      "description": "Paralyze all opposing Ninjas for 2 turns.",
+      "effect": {
+        "type": "status",
+        "status": "paralyze",
+        "target": "all-opponents"
+      },
+      "rarity": "legendary",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/jutsu/infinite-tsukuyomi.webp",
+      "setNumber": 23
+    },
+    {
+      "id": "otl-029",
+      "type": "jutsu-scroll",
+      "name": "Rinne Sharingan Gaze",
+      "description": "Take control of the Defender next turn.",
+      "effect": {
+        "type": "conditional",
+        "condition": "mind-control"
+      },
+      "rarity": "legendary",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/jutsu/rinne-sharingan.webp",
+      "setNumber": 24
+    },
+    {
+      "id": "otl-039",
+      "type": "jutsu-scroll",
+      "name": "Sage Art: Six Paths Creation",
+      "description": "Summon any Ninja from your deck to your Bench for free.",
+      "effect": {
+        "type": "conditional",
+        "condition": "free-summon"
+      },
+      "rarity": "legendary",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/jutsu/six-paths-create.webp",
+      "setNumber": 25
+    },
+    {
+      "id": "otl-040",
+      "type": "jutsu-scroll",
+      "name": "Banbutsu Sozo",
+      "description": "Create any Jutsu Scroll effect (opponent chooses).",
+      "effect": {
+        "type": "conditional",
+        "condition": "wild-card"
+      },
+      "rarity": "secret",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/jutsu/banbutsu.webp",
+      "setNumber": 26
+    },
+    {
+      "id": "otl-042",
+      "type": "jutsu-scroll",
+      "name": "Dimensional Warp",
+      "description": "Swap one of your Ninjas with any opponent's Ninja.",
+      "effect": {
+        "type": "conditional",
+        "condition": "steal-ninja"
+      },
+      "rarity": "secret",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/jutsu/dim-warp.webp",
+      "setNumber": 27
+    },
+    {
+      "id": "otl-035",
+      "type": "jutsu-scroll",
+      "name": "God-Tree Revival",
+      "description": "Revive all your KO'd Ninjas from this battle at 50 HP. Once per battle.",
+      "effect": {
+        "type": "conditional",
+        "condition": "revive-all-once"
+      },
+      "rarity": "crown",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/jutsu/tree-revival.webp",
+      "setNumber": 28
+    },
+    {
+      "id": "otl-028",
+      "type": "jutsu-scroll",
+      "name": "Rinnegan Rebirth",
+      "description": "Revive a KO'd Legendary Ninja from discard at full HP. Discard 4 Chakra.",
+      "effect": {
+        "type": "energy-discard",
+        "target": "self",
+        "amount": 4,
+        "secondaryEffect": {
+          "type": "conditional",
+          "condition": "revive-legendary-full"
+        }
+      },
+      "rarity": "crown",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/jutsu/rinnegan-rebirth.webp",
+      "setNumber": 29
+    },
+    {
+      "id": "otl-038",
+      "type": "jutsu-scroll",
+      "name": "Rinnegan Shinra Tensei God",
+      "description": "Deal 120 damage to all opposing Ninjas and force all to Bench.",
+      "effect": {
+        "type": "bench-damage",
+        "target": "all-opponents",
+        "amount": 120
+      },
+      "rarity": "crown",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/jutsu/shinra-god.webp",
+      "setNumber": 30
+    },
+    {
+      "id": "otl-026",
+      "type": "jutsu-scroll",
+      "name": "All-Killing Ash Bone",
+      "description": "Seal the Defending Ninja. Deal 120 damage.",
+      "effect": {
+        "type": "status",
+        "status": "seal",
+        "target": "opponent-active",
+        "amount": 120
+      },
+      "rarity": "ultra-rare",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/jutsu/ash-bone.webp",
+      "setNumber": 31
+    },
+    {
+      "id": "otl-030",
+      "type": "jutsu-scroll",
+      "name": "Eternal Mangekyo Activate",
+      "description": "The wearer's next 3 attacks are guaranteed criticals (+50% damage).",
+      "effect": {
+        "type": "damage-boost",
+        "amount": 999,
+        "condition": "crit-3-attacks"
+      },
+      "rarity": "ultra-rare",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/jutsu/eternal-mangekyo.webp",
+      "setNumber": 32
+    },
+    {
+      "id": "otl-032",
+      "type": "jutsu-scroll",
+      "name": "Limbo: Border Jail",
+      "description": "Summon a Limbo Clone (invisible, 50 HP, 80 damage attack).",
+      "effect": {
+        "type": "conditional",
+        "condition": "spawn-limbo"
+      },
+      "rarity": "ultra-rare",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/jutsu/limbo.webp",
+      "setNumber": 33
+    },
+    {
+      "id": "otl-031",
+      "type": "jutsu-scroll",
+      "name": "Susanoo God Form",
+      "description": "Your Active Ninja gains +100 HP and +50 damage for 3 turns.",
+      "effect": {
+        "type": "heal",
+        "amount": 100,
+        "target": "self",
+        "secondaryEffect": {
+          "type": "damage-boost",
+          "amount": 50
+        }
+      },
+      "rarity": "ultra-rare",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/jutsu/susanoo-god.webp",
+      "setNumber": 34
+    },
+    {
+      "id": "otl-020",
+      "type": "jutsu-scroll",
+      "name": "Truth-Seeking Orb Barrage",
+      "description": "Deal 100 damage to the Defender and 40 to each Benched opponent.",
+      "effect": {
+        "type": "bench-damage",
+        "target": "all-opponents",
+        "amount": 100,
+        "secondaryEffect": {
+          "type": "bench-damage",
+          "target": "opponent-bench",
+          "amount": 40
+        }
+      },
+      "rarity": "ultra-rare",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/jutsu/truth-orb.webp",
+      "setNumber": 35
+    },
+    {
+      "id": "otl-024",
+      "type": "jutsu-scroll",
+      "name": "Yin-Yang Release",
+      "description": "Transfer damage from your Active Ninja to an opponent.",
+      "effect": {
+        "type": "conditional",
+        "condition": "damage-transfer"
+      },
+      "rarity": "ultra-rare",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/jutsu/yinyang.webp",
+      "setNumber": 36
+    },
+    {
+      "id": "otl-033",
+      "type": "jutsu-scroll",
+      "name": "Divine Tree Seed",
+      "description": "Plant a seed on the Defender. They take 40 damage per turn.",
+      "effect": {
+        "type": "status",
+        "status": "poison",
+        "target": "opponent-active"
+      },
+      "rarity": "rare",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/jutsu/tree-seed.webp",
+      "setNumber": 37
+    },
+    {
+      "id": "otl-037",
+      "type": "jutsu-scroll",
+      "name": "Shadow Release Manifest",
+      "description": "Steal a Tool from the Defender for this turn.",
+      "effect": {
+        "type": "conditional",
+        "condition": "steal-tool"
+      },
+      "rarity": "rare",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/jutsu/shadow-manifest.webp",
+      "setNumber": 38
+    },
+    {
+      "id": "otl-023",
+      "type": "jutsu-scroll",
+      "name": "Yang Release: Life Spark",
+      "description": "Heal all your Ninjas by 60 HP.",
+      "effect": {
+        "type": "heal",
+        "amount": 60,
+        "target": "self-bench"
+      },
+      "rarity": "rare",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/jutsu/yang-spark.webp",
+      "setNumber": 39
+    },
+    {
+      "id": "otl-022",
+      "type": "jutsu-scroll",
+      "name": "Yin Release: Shadow Manifest",
+      "description": "Summon a Shadow Clone of your Active Ninja (same HP, same attacks).",
+      "effect": {
+        "type": "conditional",
+        "condition": "clone-active"
+      },
+      "rarity": "rare",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/jutsu/yin-shadow.webp",
+      "setNumber": 40
+    },
+    {
+      "id": "otl-027",
+      "type": "jutsu-scroll",
+      "name": "Byakugan Awakening",
+      "description": "Look at opponent's hand, Bench, and top 3 deck cards. Draw 1.",
+      "effect": {
+        "type": "draw",
+        "amount": 1
+      },
+      "rarity": "uncommon",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/jutsu/byakugan-awake.webp",
+      "setNumber": 41
+    },
+    {
+      "id": "otl-034",
+      "type": "jutsu-scroll",
+      "name": "Celestial Path",
+      "description": "Move any number of Chakra between your Ninjas freely.",
+      "effect": {
+        "type": "conditional",
+        "condition": "chakra-free-shuffle"
+      },
+      "rarity": "uncommon",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/jutsu/celestial-path.webp",
+      "setNumber": 42
+    },
+    {
+      "id": "otl-045",
+      "type": "tool",
+      "name": "Gunbai War Fan",
+      "description": "Attach to Madara. Reflect the next single-target Jutsu back at its caster.",
+      "effect": {
+        "type": "conditional",
+        "condition": "jutsu-reflect"
+      },
+      "rarity": "legendary",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/tools/gunbai.webp",
+      "setNumber": 43
+    },
+    {
+      "id": "otl-044",
+      "type": "tool",
+      "name": "Six Paths Staff",
+      "description": "The wearer's Colorless attacks deal +40 damage.",
+      "effect": {
+        "type": "damage-boost",
+        "amount": 40
+      },
+      "rarity": "legendary",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/tools/six-paths-staff.webp",
+      "setNumber": 44
+    },
+    {
+      "id": "otl-048",
+      "type": "tool",
+      "name": "Truth-Seeking Orb",
+      "description": "The wearer may use Colorless Chakra as any element.",
+      "effect": {
+        "type": "conditional",
+        "condition": "chakra-any"
+      },
+      "rarity": "legendary",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/tools/truth-orb.webp",
+      "setNumber": 45
+    },
+    {
+      "id": "otl-043",
+      "type": "tool",
+      "name": "Kaguya's Lunar Mirror",
+      "description": "Attach to Kaguya. She becomes immune to all single-target Jutsu.",
+      "effect": {
+        "type": "conditional",
+        "condition": "kaguya-only-jutsu-immune"
+      },
+      "rarity": "crown",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/tools/lunar-mirror.webp",
+      "setNumber": 46
+    },
+    {
+      "id": "otl-047",
+      "type": "tool",
+      "name": "Ashura's Armor",
+      "description": "The wearer gains +50 HP.",
+      "effect": {
+        "type": "heal",
+        "amount": 50
+      },
+      "rarity": "ultra-rare",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/tools/ashura-armor.webp",
+      "setNumber": 47
+    },
+    {
+      "id": "otl-050",
+      "type": "tool",
+      "name": "Chakra Fruit",
+      "description": "Once per battle, fully heal the wearer.",
+      "effect": {
+        "type": "heal",
+        "amount": 999,
+        "target": "self",
+        "condition": "once-per-battle"
+      },
+      "rarity": "ultra-rare",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/tools/chakra-fruit.webp",
+      "setNumber": 48
+    },
+    {
+      "id": "otl-046",
+      "type": "tool",
+      "name": "Indra's Arrow Crystal",
+      "description": "The wearer's Lightning attacks ignore damage reduction.",
+      "effect": {
+        "type": "conditional",
+        "condition": "pierce-lightning"
+      },
+      "rarity": "ultra-rare",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/tools/indra-crystal.webp",
+      "setNumber": 49
+    },
+    {
+      "id": "otl-051",
+      "type": "tool",
+      "name": "Otsutsuki Crown",
+      "description": "Legendary Ninjas you control deal +20 damage.",
+      "effect": {
+        "type": "damage-boost",
+        "amount": 20,
+        "condition": "legendary-boost"
+      },
+      "rarity": "rare",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/tools/otsutsuki-crown.webp",
+      "setNumber": 50
+    },
+    {
+      "id": "otl-049",
+      "type": "tool",
+      "name": "Otsutsuki Horn",
+      "description": "The wearer's max HP is +30. Cannot be dispelled.",
+      "effect": {
+        "type": "heal",
+        "amount": 30
+      },
+      "rarity": "rare",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/tools/otsutsuki-horn.webp",
+      "setNumber": 51
+    },
+    {
+      "id": "otl-053",
+      "type": "tool",
+      "name": "Rinne Mirror Shard",
+      "description": "The wearer ignores 20 damage reduction on their attacks.",
+      "effect": {
+        "type": "conditional",
+        "condition": "pierce",
+        "amount": 20
+      },
+      "rarity": "rare",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/tools/rinne-shard.webp",
+      "setNumber": 52
+    },
+    {
+      "id": "otl-052",
+      "type": "tool",
+      "name": "Celestial Cloak",
+      "description": "The wearer takes 20 less damage from all Jutsu Scrolls.",
+      "effect": {
+        "type": "conditional",
+        "condition": "jutsu-dr",
+        "amount": 20
+      },
+      "rarity": "uncommon",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/tools/celestial-cloak.webp",
+      "setNumber": 53
+    },
+    {
+      "id": "otl-054",
+      "type": "tool",
+      "name": "God-Tree Bark",
+      "description": "Reduce incoming damage by 15.",
+      "effect": {
+        "type": "conditional",
+        "condition": "damage-reduction",
+        "amount": 15
+      },
+      "rarity": "common",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/tools/tree-bark.webp",
+      "setNumber": 54
+    },
+    {
+      "id": "otl-055",
+      "type": "tool",
+      "name": "Otsutsuki Ring",
+      "description": "Gain +5 HP. Holds 1 extra Chakra.",
+      "effect": {
+        "type": "heal",
+        "amount": 5
+      },
+      "rarity": "common",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/tools/otsutsuki-ring.webp",
+      "setNumber": 55
+    },
+    {
+      "id": "otl-057",
+      "type": "sensei",
+      "name": "Kaguya Otsutsuki",
+      "subtitle": "Progenitor's Will",
+      "description": "All your Ninjas' status effects are cleansed. Draw 3 cards.",
+      "effect": {
+        "type": "draw",
+        "amount": 3,
+        "secondaryEffect": {
+          "type": "conditional",
+          "condition": "cleanse-all"
+        }
+      },
+      "rarity": "crown",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/sensei/kaguya.webp",
+      "setNumber": 56
+    },
+    {
+      "id": "otl-056",
+      "type": "sensei",
+      "name": "Hagoromo Otsutsuki",
+      "subtitle": "Sage of Six Paths",
+      "description": "Revive any KO'd Ninja at full HP from your discard pile.",
+      "effect": {
+        "type": "conditional",
+        "condition": "revive-any-full"
+      },
+      "rarity": "crown",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/sensei/hagoromo.webp",
+      "setNumber": 57
+    },
+    {
+      "id": "otl-059",
+      "type": "sensei",
+      "name": "Hamura Otsutsuki",
+      "subtitle": "Moon Guardian's Gaze",
+      "description": "Look at opponent's hand and top 5 deck cards.",
+      "effect": {
+        "type": "conditional",
+        "condition": "full-scout"
+      },
+      "rarity": "ultra-rare",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/sensei/hamura.webp",
+      "setNumber": 58
+    },
+    {
+      "id": "otl-060",
+      "type": "sensei",
+      "name": "Ashura and Indra",
+      "subtitle": "Eternal Brothers",
+      "description": "Heal all your Ninjas by 40 HP and draw 2 cards.",
+      "effect": {
+        "type": "heal",
+        "amount": 40,
+        "target": "self-bench",
+        "secondaryEffect": {
+          "type": "draw",
+          "amount": 2
+        }
+      },
+      "rarity": "legendary",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/sensei/ashura-indra.webp",
+      "setNumber": 59
+    },
+    {
+      "id": "otl-058",
+      "type": "sensei",
+      "name": "Madara Uchiha",
+      "subtitle": "God of Ninjutsu",
+      "description": "All your Legendary Ninjas deal +40 damage this turn.",
+      "effect": {
+        "type": "damage-boost",
+        "amount": 40,
+        "condition": "legendary-only",
+        "target": "self-bench"
+      },
+      "rarity": "legendary",
+      "set": "otsutsuki-legacy",
+      "artPath": "cards/sensei/madara.webp",
+      "setNumber": 60
+    }
+  ],
+  "pullRates": {
+    "common": 0.4,
+    "uncommon": 0.25,
+    "rare": 0.18,
+    "ultra-rare": 0.09,
+    "legendary": 0.05,
+    "secret": 0.008,
+    "crown": 0.002
+  },
+  "totalCards": 60
+}

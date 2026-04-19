@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="32%" r="85%">
+      <stop offset="0%" stop-color="#1f2a40"/>
+      <stop offset="55%" stop-color="#0b1018"/>
+      <stop offset="100%" stop-color="#04050a"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#ff9a33" stop-opacity="0.65"/>
+      <stop offset="55%" stop-color="#ff6a00" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ff6a00" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#ffe4a6"/>
+      <stop offset="35%" stop-color="#ffb347"/>
+      <stop offset="70%" stop-color="#ff7a1a"/>
+      <stop offset="100%" stop-color="#d94400"/>
+    </linearGradient>
+    <linearGradient id="frameGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff9a33" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#ff6a00" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ff9a33" stop-opacity="0.55"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5"/>
+      <feOffset dx="0" dy="3" result="offsetblur"/>
+      <feFlood flood-color="#000" flood-opacity="0.55"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="inner-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6"/>
+      <feComposite in="SourceGraphic" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" fill="url(#bg)"/>
+
+  <!-- Diagonal hash pattern evoking card back -->
+  <g opacity="0.055" stroke="#ff8c1a" stroke-width="1.2" fill="none">
+    <path d="M-40 120 L560 -480 M-40 200 L560 -400 M-40 280 L560 -320 M-40 360 L560 -240 M-40 440 L560 -160 M-40 520 L560 -80 M-40 600 L560 0 M-40 680 L560 80 M-40 760 L560 160 M-40 840 L560 240 M-40 920 L560 320 M-40 1000 L560 400 M-40 1080 L560 480"/>
+  </g>
+
+  <!-- Outer glow halo -->
+  <circle cx="256" cy="256" r="167.70000000000002" fill="url(#glow)"/>
+
+  
+
+  <!-- Konoha-inspired spiral -->
+  <g filter="url(#shadow)">
+    <path d="M 256.00,137.44 L 270.44,139.24 L 284.44,142.78 L 297.79,147.97 L 310.31,154.72 L 321.80,162.89 L 332.12,172.35 L 341.12,182.92 L 348.69,194.42 L 354.73,206.67 L 359.18,219.46 L 362.00,232.60 L 363.16,245.87 L 362.69,259.07 L 360.60,272.01 L 356.97,284.48 L 351.87,296.30 L 345.41,307.31 L 337.71,317.35 L 328.91,326.28 L 319.16,333.99 L 308.63,340.38 L 297.49,345.38 L 285.93,348.93 L 274.12,351.01 L 262.27,351.60 L 250.54,350.74 L 239.11,348.46 L 228.17,344.82 L 217.85,339.90 L 208.32,333.81 L 199.69,326.66 L 192.10,318.58 L 185.62,309.71 L 180.35,300.21 L 176.33,290.23 L 173.61,279.94 L 172.19,269.50 L 172.08,259.08 L 173.24,248.83 L 175.64,238.92 L 179.20,229.48 L 183.85,220.66 L 189.50,212.57 L 196.03,205.32 L 203.32,199.01 L 211.24,193.71 L 219.66,189.49 L 228.43,186.38 L 237.42,184.40 L 246.46,183.57 L 255.43,183.85 L 264.19,185.23 L 272.60,187.66 L 280.54,191.06 L 287.90,195.37 L 294.58,200.49 L 300.49,206.32 L 305.57,212.76 L 309.75,219.68 L 312.99,226.96 L 315.27,234.49 L 316.57,242.13 L 316.91,249.76 L 316.31,257.26 L 314.80,264.52 L 312.43,271.44 L 309.26,277.90 L 305.38,283.82 L 300.86,289.13 L 295.79,293.76 L 290.28,297.66 L 284.42,300.78 L 278.32,303.11 L 272.08,304.63 L 265.81,305.34 L 259.62,305.27 L 253.59,304.43 L 247.82,302.87 L 242.39,300.64 L 237.39,297.80 L 232.87,294.42 L 228.89,290.58 L 225.49,286.35 L 222.72,281.82 L 220.58,277.07 L 219.10,272.20 L 218.26,267.29 L 218.06,262.42 L 218.47,257.67 L 219.45,253.12 L 220.97,248.84 L 222.98,244.89 L 225.41,241.31 L 228.21,238.16 L 231.31,235.47 L 234.64,233.26 L 238.13,231.54 L 241.71,230.33 L 245.31,229.61 L 248.87,229.38 L 252.31,229.61 L 255.60,230.26 L 258.66,231.31 L 261.46,232.71 L 263.96,234.41 L 266.14,236.36 L 267.96,238.51 L 269.41,240.79 L 270.50,243.15 L 271.21,245.54 L 271.57,247.91 L 271.60,250.20 L 271.30,252.37 L 270.73,254.37 L 269.91,256.18 L 268.88,257.76 L 267.69,259.10 L 266.37,260.17 L 264.99,260.97 L 263.57,261.50"
+          stroke="url(#orange)"
+          stroke-width="31.200000000000003"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          fill="none"/>
+  </g>
+
+  <!-- Center dot highlight -->
+  <circle cx="256" cy="256" r="4.68" fill="#fff7e0" opacity="0.92"/>
+
+  <!-- Shuriken-card corner accents (top-left, bottom-right) -->
+  
+</svg>

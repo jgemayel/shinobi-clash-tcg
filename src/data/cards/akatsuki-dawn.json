@@ -1,0 +1,2139 @@
+{
+  "setId": "akatsuki-dawn",
+  "setName": "Akatsuki: Dawn",
+  "releaseOrder": 3,
+  "unlockLevel": 8,
+  "packArt": "packs/akatsuki-dawn.webp",
+  "cards": [
+    {
+      "id": "akd-020",
+      "type": "ninja",
+      "name": "Pain (Animal Path)",
+      "subtitle": "Summoner",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 120,
+      "chakraType": "colorless",
+      "attacks": [
+        {
+          "name": "Giant Centipede",
+          "cost": {
+            "colorless": 2
+          },
+          "damage": 70,
+          "effect": null,
+          "description": "Summons a titanic centipede."
+        },
+        {
+          "name": "Rhino Charge",
+          "cost": {
+            "colorless": 3
+          },
+          "damage": 110,
+          "effect": {
+            "type": "switch",
+            "target": "opponent-active"
+          },
+          "description": "An armored rhinoceros bulldozes the field."
+        }
+      ],
+      "ability": null,
+      "weakness": "wind",
+      "retreatCost": 2,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "Come forth, servants of the Rinnegan.",
+      "artPath": "cards/ninja/pain-deva.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 1
+    },
+    {
+      "id": "akd-018",
+      "type": "ninja",
+      "name": "Pain (Asura Path)",
+      "subtitle": "Machine Body",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 130,
+      "chakraType": "lightning",
+      "attacks": [
+        {
+          "name": "Missile Barrage",
+          "cost": {
+            "colorless": 2
+          },
+          "damage": 80,
+          "effect": null,
+          "description": "Fires concealed ballistic weapons."
+        },
+        {
+          "name": "Soul Cannon",
+          "cost": {
+            "lightning": 1,
+            "colorless": 2
+          },
+          "damage": 130,
+          "effect": null,
+          "description": "A soul-rending beam."
+        }
+      ],
+      "ability": null,
+      "weakness": "earth",
+      "retreatCost": 2,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "Judgment is mechanical.",
+      "artPath": "cards/ninja/pain-deva.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 2
+    },
+    {
+      "id": "akd-017",
+      "type": "ninja",
+      "name": "Pain (Deva Path)",
+      "subtitle": "God of Amegakure",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 180,
+      "chakraType": "colorless",
+      "attacks": [
+        {
+          "name": "Shinra Tensei",
+          "cost": {
+            "colorless": 2
+          },
+          "damage": 110,
+          "effect": {
+            "type": "switch",
+            "target": "opponent-active"
+          },
+          "description": "Almighty Push \u2014 hurls the target back."
+        },
+        {
+          "name": "Chibaku Tensei",
+          "cost": {
+            "colorless": 4
+          },
+          "damage": 200,
+          "effect": null,
+          "description": "Compresses the battlefield into a gravity sphere."
+        }
+      ],
+      "ability": {
+        "name": "God's Domain",
+        "description": "Each time a Pain Path is Benched or played, gain 1 Colorless Chakra.",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "path-synergy"
+        }
+      },
+      "weakness": "wind",
+      "retreatCost": 3,
+      "rarity": "legendary",
+      "isLegendary": true,
+      "flavorText": "Know pain. Know peace.",
+      "artPath": "cards/ninja/pain-deva.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 3
+    },
+    {
+      "id": "akd-019",
+      "type": "ninja",
+      "name": "Pain (Human Path)",
+      "subtitle": "Soul Reader",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 100,
+      "chakraType": "colorless",
+      "attacks": [
+        {
+          "name": "Mind Read",
+          "cost": {
+            "colorless": 1
+          },
+          "damage": 30,
+          "effect": {
+            "type": "draw",
+            "amount": 1
+          },
+          "description": "Pulls insight from the target."
+        },
+        {
+          "name": "Soul Rip",
+          "cost": {
+            "colorless": 3
+          },
+          "damage": 120,
+          "effect": null,
+          "description": "Extracts the soul \u2014 lethal to those with weak will."
+        }
+      ],
+      "ability": null,
+      "weakness": "wind",
+      "retreatCost": 1,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "Your mind is mine.",
+      "artPath": "cards/ninja/pain-deva.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 4
+    },
+    {
+      "id": "akd-022",
+      "type": "ninja",
+      "name": "Pain (Naraka Path)",
+      "subtitle": "King of Hell",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 120,
+      "chakraType": "colorless",
+      "attacks": [
+        {
+          "name": "Interrogate",
+          "cost": {
+            "colorless": 1
+          },
+          "damage": 30,
+          "effect": null,
+          "description": "Forces truth from the target."
+        },
+        {
+          "name": "King of Hell Revive",
+          "cost": {
+            "colorless": 3
+          },
+          "damage": 50,
+          "effect": {
+            "type": "heal",
+            "amount": 150,
+            "target": "self-bench"
+          },
+          "description": "Heal a Benched Pain Path by 150 HP."
+        }
+      ],
+      "ability": null,
+      "weakness": "wind",
+      "retreatCost": 2,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "All paths lead back to me.",
+      "artPath": "cards/ninja/pain-deva.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 5
+    },
+    {
+      "id": "akd-021",
+      "type": "ninja",
+      "name": "Pain (Preta Path)",
+      "subtitle": "Chakra Absorber",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 110,
+      "chakraType": "colorless",
+      "attacks": [
+        {
+          "name": "Blocking Barrier",
+          "cost": {
+            "colorless": 1
+          },
+          "damage": 20,
+          "effect": {
+            "type": "conditional",
+            "condition": "next-attack-nullified"
+          },
+          "description": "Absorbs the next attack's chakra."
+        },
+        {
+          "name": "Chakra Drain",
+          "cost": {
+            "colorless": 2
+          },
+          "damage": 70,
+          "effect": {
+            "type": "energy-discard",
+            "target": "opponent-active",
+            "amount": 2
+          },
+          "description": "Siphons two Chakra from the target."
+        }
+      ],
+      "ability": null,
+      "weakness": "wind",
+      "retreatCost": 2,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "Your jutsu feeds me.",
+      "artPath": "cards/ninja/pain-deva.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 6
+    },
+    {
+      "id": "akd-023",
+      "type": "ninja",
+      "name": "Nagato",
+      "subtitle": "The Original Rinnegan",
+      "stage": 1,
+      "evolvesFrom": "akd-017",
+      "hp": 240,
+      "chakraType": "colorless",
+      "attacks": [
+        {
+          "name": "Planetary Devastation",
+          "cost": {
+            "colorless": 4
+          },
+          "damage": 230,
+          "effect": null,
+          "description": "Tears rock from the earth to form a moon above the enemy."
+        },
+        {
+          "name": "Outer Path Rebirth",
+          "cost": {
+            "colorless": 3
+          },
+          "damage": 0,
+          "effect": {
+            "type": "heal",
+            "amount": 150,
+            "target": "self-bench"
+          },
+          "description": "Brings a KO'd Benched Ninja back to play."
+        }
+      ],
+      "ability": {
+        "name": "Six Paths Rinnegan",
+        "description": "You may play any Pain Path card for free (no Chakra needed).",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "free-pain-paths"
+        }
+      },
+      "weakness": "wind",
+      "retreatCost": 4,
+      "rarity": "crown",
+      "isLegendary": true,
+      "flavorText": "I am the child of prophecy.",
+      "artPath": "cards/ninja/nagato.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 7
+    },
+    {
+      "id": "akd-010",
+      "type": "ninja",
+      "name": "Konan",
+      "subtitle": "Paper User",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 80,
+      "chakraType": "water",
+      "attacks": [
+        {
+          "name": "Paper Shuriken",
+          "cost": {
+            "colorless": 1
+          },
+          "damage": 30,
+          "effect": null,
+          "description": "Razor origami blades."
+        },
+        {
+          "name": "Paper Flutter",
+          "cost": {
+            "water": 1,
+            "colorless": 1
+          },
+          "damage": 50,
+          "effect": null,
+          "description": "Swarms of origami rain down."
+        }
+      ],
+      "ability": null,
+      "weakness": "fire",
+      "retreatCost": 1,
+      "rarity": "common",
+      "isLegendary": false,
+      "flavorText": "Angels do not fall \u2014 they rise.",
+      "artPath": "cards/ninja/konan.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 8
+    },
+    {
+      "id": "akd-011",
+      "type": "ninja",
+      "name": "Konan",
+      "subtitle": "Paper God Technique",
+      "stage": 1,
+      "evolvesFrom": "akd-010",
+      "hp": 160,
+      "chakraType": "water",
+      "attacks": [
+        {
+          "name": "Paper Clone Battalion",
+          "cost": {
+            "water": 2
+          },
+          "damage": 90,
+          "effect": null,
+          "description": "Armies of paper clones swarm."
+        },
+        {
+          "name": "Paper Person of God",
+          "cost": {
+            "water": 2,
+            "colorless": 2
+          },
+          "damage": 180,
+          "effect": {
+            "type": "self-damage",
+            "amount": 50
+          },
+          "description": "Six hundred billion explosive tags burn the sky."
+        }
+      ],
+      "ability": {
+        "name": "Angel's Wings",
+        "description": "Retreat cost is 0.",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "free-retreat"
+        }
+      },
+      "weakness": "fire",
+      "retreatCost": 0,
+      "rarity": "legendary",
+      "isLegendary": true,
+      "flavorText": "This is the miracle Nagato died for.",
+      "artPath": "cards/ninja/konan.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 9
+    },
+    {
+      "id": "akd-026",
+      "type": "ninja",
+      "name": "Yahiko",
+      "subtitle": "Akatsuki's Founder",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 90,
+      "chakraType": "water",
+      "attacks": [
+        {
+          "name": "Rally",
+          "cost": {
+            "colorless": 1
+          },
+          "damage": 20,
+          "effect": {
+            "type": "draw",
+            "amount": 1
+          },
+          "description": "Draw 1 card."
+        },
+        {
+          "name": "Unyielding Will",
+          "cost": {
+            "water": 1,
+            "colorless": 1
+          },
+          "damage": 60,
+          "effect": null,
+          "description": "A strike fueled by conviction."
+        }
+      ],
+      "ability": null,
+      "weakness": "lightning",
+      "retreatCost": 1,
+      "rarity": "uncommon",
+      "isLegendary": false,
+      "flavorText": "A world without war \u2014 that was our dream.",
+      "artPath": "cards/ninja/yahiko.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 10
+    },
+    {
+      "id": "akd-001",
+      "type": "ninja",
+      "name": "Itachi Uchiha",
+      "subtitle": "Prodigy of the Uchiha",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 130,
+      "chakraType": "fire",
+      "attacks": [
+        {
+          "name": "Shuriken Cascade",
+          "cost": {
+            "colorless": 1
+          },
+          "damage": 40,
+          "effect": null,
+          "description": "A flurry of shuriken with uncanny precision."
+        },
+        {
+          "name": "Fireball Jutsu",
+          "cost": {
+            "fire": 1,
+            "colorless": 1
+          },
+          "damage": 70,
+          "effect": {
+            "type": "status",
+            "status": "burn",
+            "target": "opponent-active"
+          },
+          "description": "The Uchiha's trademark."
+        }
+      ],
+      "ability": {
+        "name": "Sharingan",
+        "description": "At the start of your turn, look at the top card of your opponent's deck.",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "reveal-top"
+        }
+      },
+      "weakness": "water",
+      "retreatCost": 2,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "Those who abandon their friends are worse than scum.",
+      "artPath": "cards/ninja/itachi.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 11
+    },
+    {
+      "id": "akd-002",
+      "type": "ninja",
+      "name": "Itachi Uchiha",
+      "subtitle": "Mangekyo Susanoo",
+      "stage": 1,
+      "evolvesFrom": "akd-001",
+      "hp": 200,
+      "chakraType": "fire",
+      "attacks": [
+        {
+          "name": "Amaterasu",
+          "cost": {
+            "fire": 2
+          },
+          "damage": 100,
+          "effect": {
+            "type": "status",
+            "status": "burn",
+            "target": "opponent-active"
+          },
+          "description": "Inextinguishable black flames."
+        },
+        {
+          "name": "Totsuka Susanoo",
+          "cost": {
+            "fire": 2,
+            "colorless": 2
+          },
+          "damage": 190,
+          "effect": {
+            "type": "status",
+            "status": "seal",
+            "target": "opponent-active"
+          },
+          "description": "The spectral sword Seals its victim."
+        }
+      ],
+      "ability": {
+        "name": "Tsukuyomi",
+        "description": "Once per turn, Paralyze the Defending Ninja.",
+        "trigger": "once-per-turn",
+        "effect": {
+          "type": "status",
+          "status": "paralyze",
+          "target": "opponent-active"
+        }
+      },
+      "weakness": "water",
+      "retreatCost": 3,
+      "rarity": "legendary",
+      "isLegendary": true,
+      "flavorText": "Forgive me, Sasuke. This is the last time.",
+      "artPath": "cards/ninja/itachi.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 12
+    },
+    {
+      "id": "akd-071",
+      "type": "ninja",
+      "name": "Itachi Uchiha",
+      "subtitle": "Crow's Eternal Promise",
+      "stage": 2,
+      "evolvesFrom": "akd-002",
+      "hp": 260,
+      "chakraType": "fire",
+      "attacks": [
+        {
+          "name": "Amaterasu Pillars",
+          "cost": {
+            "fire": 3
+          },
+          "damage": 180,
+          "effect": {
+            "type": "status",
+            "status": "burn",
+            "target": "opponent-active"
+          },
+          "description": "Black flames rise as walls."
+        },
+        {
+          "name": "Perfect Susanoo: Yata Totsuka",
+          "cost": {
+            "fire": 3,
+            "colorless": 3
+          },
+          "damage": 340,
+          "effect": {
+            "type": "status",
+            "status": "seal",
+            "target": "opponent-active"
+          },
+          "description": "Mirror, Sword, and Avatar united."
+        }
+      ],
+      "ability": {
+        "name": "Izanami Bind",
+        "description": "Once per battle, prevent all damage and Paralyze the attacker.",
+        "trigger": "once-per-battle",
+        "effect": {
+          "type": "status",
+          "status": "paralyze",
+          "target": "opponent-active"
+        }
+      },
+      "weakness": "water",
+      "retreatCost": 3,
+      "rarity": "secret",
+      "isLegendary": true,
+      "flavorText": "Forgive me, Sasuke. This time \u2014 forever.",
+      "artPath": "cards/ninja/itachi.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 13
+    },
+    {
+      "id": "akd-003",
+      "type": "ninja",
+      "name": "Kisame Hoshigaki",
+      "subtitle": "Monster of the Mist",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 120,
+      "chakraType": "water",
+      "attacks": [
+        {
+          "name": "Samehada Strike",
+          "cost": {
+            "water": 1
+          },
+          "damage": 40,
+          "effect": null,
+          "description": "His living sword scrapes and shaves."
+        },
+        {
+          "name": "Chakra Drain",
+          "cost": {
+            "water": 1,
+            "colorless": 1
+          },
+          "damage": 60,
+          "effect": {
+            "type": "energy-discard",
+            "target": "opponent-active",
+            "amount": 1
+          },
+          "description": "Drains one Chakra from the Defender."
+        }
+      ],
+      "ability": null,
+      "weakness": "lightning",
+      "retreatCost": 2,
+      "rarity": "uncommon",
+      "isLegendary": false,
+      "flavorText": "Let's see how much blood I can taste today.",
+      "artPath": "cards/ninja/kisame.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 14
+    },
+    {
+      "id": "akd-004",
+      "type": "ninja",
+      "name": "Kisame Hoshigaki",
+      "subtitle": "Samehada Fusion",
+      "stage": 1,
+      "evolvesFrom": "akd-003",
+      "hp": 190,
+      "chakraType": "water",
+      "attacks": [
+        {
+          "name": "Thousand Feeding Sharks",
+          "cost": {
+            "water": 2,
+            "colorless": 1
+          },
+          "damage": 130,
+          "effect": null,
+          "description": "A tidal school of chakra sharks."
+        },
+        {
+          "name": "Great Exploding Water Shockwave",
+          "cost": {
+            "water": 3,
+            "colorless": 1
+          },
+          "damage": 180,
+          "effect": null,
+          "description": "Reshapes the battlefield into an ocean."
+        }
+      ],
+      "ability": {
+        "name": "Chakra Siphon",
+        "description": "When this Ninja takes damage, if you have 0 Chakra attached, draw 1 card.",
+        "trigger": "passive",
+        "effect": {
+          "type": "draw",
+          "amount": 1,
+          "condition": "no-chakra"
+        }
+      },
+      "weakness": "lightning",
+      "retreatCost": 3,
+      "rarity": "legendary",
+      "isLegendary": true,
+      "flavorText": "The tailless tailed beast.",
+      "artPath": "cards/ninja/kisame.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 15
+    },
+    {
+      "id": "akd-005",
+      "type": "ninja",
+      "name": "Deidara",
+      "subtitle": "Clay Bomber",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 90,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "C1: Mini Bird",
+          "cost": {
+            "earth": 1
+          },
+          "damage": 30,
+          "effect": null,
+          "description": "A small sculpted bird detonates."
+        },
+        {
+          "name": "C2: Dragon",
+          "cost": {
+            "earth": 2
+          },
+          "damage": 80,
+          "effect": {
+            "type": "bench-damage",
+            "target": "opponent-bench",
+            "amount": 20
+          },
+          "description": "A flying clay dragon spews fire. Splash damage."
+        }
+      ],
+      "ability": null,
+      "weakness": "water",
+      "retreatCost": 1,
+      "rarity": "common",
+      "isLegendary": false,
+      "flavorText": "Art... is an EXPLOSION!",
+      "artPath": "cards/ninja/deidara.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 16
+    },
+    {
+      "id": "akd-006",
+      "type": "ninja",
+      "name": "Deidara",
+      "subtitle": "C4: Karura",
+      "stage": 1,
+      "evolvesFrom": "akd-005",
+      "hp": 150,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "C3 Bombardment",
+          "cost": {
+            "earth": 2,
+            "colorless": 1
+          },
+          "damage": 100,
+          "effect": null,
+          "description": "Drops an artillery-sized clay bomb."
+        },
+        {
+          "name": "C4: Karura",
+          "cost": {
+            "earth": 3,
+            "colorless": 2
+          },
+          "damage": 220,
+          "effect": {
+            "type": "self-damage",
+            "amount": 60,
+            "secondaryEffect": {
+              "type": "bench-damage",
+              "target": "all-opponents",
+              "amount": 60
+            }
+          },
+          "description": "Microscopic explosives consume everything in range. This Ninja takes 60 damage and all Benched opponents take 60."
+        }
+      ],
+      "ability": {
+        "name": "Fleeting Beauty",
+        "description": "When this Ninja is KO'd, deal 40 damage to the opposing Active Ninja.",
+        "trigger": "passive",
+        "effect": {
+          "type": "bench-damage",
+          "target": "opponent-active",
+          "amount": 40,
+          "condition": "on-ko"
+        }
+      },
+      "weakness": "water",
+      "retreatCost": 2,
+      "rarity": "ultra-rare",
+      "isLegendary": false,
+      "flavorText": "True art lasts only a moment. Witness it!",
+      "artPath": "cards/ninja/deidara.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 17
+    },
+    {
+      "id": "akd-007",
+      "type": "ninja",
+      "name": "Sasori",
+      "subtitle": "Third Kazekage's Killer",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 100,
+      "chakraType": "colorless",
+      "attacks": [
+        {
+          "name": "Poisoned Needles",
+          "cost": {
+            "colorless": 1
+          },
+          "damage": 40,
+          "effect": {
+            "type": "status",
+            "status": "poison",
+            "target": "opponent-active"
+          },
+          "description": "Swift puppet senbon coated in venom."
+        },
+        {
+          "name": "Iron Sand",
+          "cost": {
+            "colorless": 2
+          },
+          "damage": 70,
+          "effect": null,
+          "description": "Commands the Third Kazekage's magnetized iron."
+        }
+      ],
+      "ability": null,
+      "weakness": "fire",
+      "retreatCost": 2,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "Everyone is a puppet if you pull the right strings.",
+      "artPath": "cards/ninja/sasori.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 18
+    },
+    {
+      "id": "akd-008",
+      "type": "ninja",
+      "name": "Sasori",
+      "subtitle": "Hiruko Puppet Mode",
+      "stage": 1,
+      "evolvesFrom": "akd-007",
+      "hp": 160,
+      "chakraType": "colorless",
+      "attacks": [
+        {
+          "name": "Armored Tail Strike",
+          "cost": {
+            "colorless": 2
+          },
+          "damage": 90,
+          "effect": {
+            "type": "status",
+            "status": "poison",
+            "target": "opponent-active"
+          },
+          "description": "Hiruko's barbed tail stings through defenses."
+        },
+        {
+          "name": "Hidden Weapon Barrage",
+          "cost": {
+            "colorless": 3
+          },
+          "damage": 140,
+          "effect": null,
+          "description": "The hollow shell unloads countless concealed weapons."
+        }
+      ],
+      "ability": {
+        "name": "Puppet Shell",
+        "description": "Reduce all incoming damage by 20.",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "damage-reduction",
+          "amount": 20
+        }
+      },
+      "weakness": "fire",
+      "retreatCost": 3,
+      "rarity": "ultra-rare",
+      "isLegendary": false,
+      "flavorText": "I cannot be killed. I already died.",
+      "artPath": "cards/ninja/sasori.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 19
+    },
+    {
+      "id": "akd-009",
+      "type": "ninja",
+      "name": "Sasori",
+      "subtitle": "Hundred Puppets Master",
+      "stage": 2,
+      "evolvesFrom": "akd-008",
+      "hp": 210,
+      "chakraType": "colorless",
+      "attacks": [
+        {
+          "name": "Performance of a Hundred",
+          "cost": {
+            "colorless": 4
+          },
+          "damage": 200,
+          "effect": null,
+          "description": "Unleashes his army of human puppets in a single devastating dance."
+        },
+        {
+          "name": "Chakra Heart Overdrive",
+          "cost": {
+            "colorless": 2
+          },
+          "damage": 110,
+          "effect": {
+            "type": "heal",
+            "amount": 30,
+            "target": "self"
+          },
+          "description": "Forces his own chakra core to overclock."
+        }
+      ],
+      "ability": {
+        "name": "Eternal Youth",
+        "description": "When this Ninja would be KO'd, once per game heal 100 HP instead.",
+        "trigger": "passive",
+        "effect": {
+          "type": "heal",
+          "amount": 100,
+          "target": "self",
+          "condition": "once-per-game-on-ko"
+        }
+      },
+      "weakness": "fire",
+      "retreatCost": 4,
+      "rarity": "legendary",
+      "isLegendary": true,
+      "flavorText": "Art is eternal beauty.",
+      "artPath": "cards/ninja/sasori.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 20
+    },
+    {
+      "id": "akd-012",
+      "type": "ninja",
+      "name": "Hidan",
+      "subtitle": "Jashinist Immortal",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 150,
+      "chakraType": "colorless",
+      "attacks": [
+        {
+          "name": "Scythe Swing",
+          "cost": {
+            "colorless": 2
+          },
+          "damage": 80,
+          "effect": null,
+          "description": "A heavy triple-bladed scythe arc."
+        },
+        {
+          "name": "Curse: Blood Bond",
+          "cost": {
+            "colorless": 3
+          },
+          "damage": 160,
+          "effect": {
+            "type": "self-damage",
+            "amount": 40,
+            "secondaryEffect": {
+              "type": "status",
+              "status": "poison",
+              "target": "opponent-active"
+            }
+          },
+          "description": "Links his pain to his target's."
+        }
+      ],
+      "ability": {
+        "name": "Immortal",
+        "description": "This Ninja cannot be KO'd by damage \u2014 instead, its HP stays at 10 once per battle.",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "once-per-battle-survive"
+        }
+      },
+      "weakness": "fire",
+      "retreatCost": 3,
+      "rarity": "legendary",
+      "isLegendary": true,
+      "flavorText": "Pain is my prayer. Jashin-sama rewards the faithful.",
+      "artPath": "cards/ninja/hidan.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 21
+    },
+    {
+      "id": "akd-013",
+      "type": "ninja",
+      "name": "Kakuzu",
+      "subtitle": "Earth Grudge User",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 120,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Iron Thread Strangle",
+          "cost": {
+            "colorless": 1
+          },
+          "damage": 40,
+          "effect": null,
+          "description": "Strangling chakra threads."
+        },
+        {
+          "name": "Hard Fist",
+          "cost": {
+            "earth": 1,
+            "colorless": 1
+          },
+          "damage": 70,
+          "effect": null,
+          "description": "Earth-reinforced punch."
+        }
+      ],
+      "ability": null,
+      "weakness": "wind",
+      "retreatCost": 2,
+      "rarity": "uncommon",
+      "isLegendary": false,
+      "flavorText": "Money first. Bodies later.",
+      "artPath": "cards/ninja/kakuzu.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 22
+    },
+    {
+      "id": "akd-014",
+      "type": "ninja",
+      "name": "Kakuzu",
+      "subtitle": "Five Hearts Unleashed",
+      "stage": 1,
+      "evolvesFrom": "akd-013",
+      "hp": 230,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Fire Release: Searing Migraine",
+          "cost": {
+            "fire": 2
+          },
+          "damage": 110,
+          "effect": {
+            "type": "status",
+            "status": "burn",
+            "target": "opponent-active"
+          },
+          "description": "Fires a jet of flame from a spare heart."
+        },
+        {
+          "name": "Earth Grudge Fear",
+          "cost": {
+            "earth": 2,
+            "lightning": 1,
+            "colorless": 1
+          },
+          "damage": 190,
+          "effect": null,
+          "description": "All five masks fire in concert."
+        }
+      ],
+      "ability": {
+        "name": "Extra Hearts",
+        "description": "The first four times this Ninja would be KO'd, instead heal it to 40 HP. (Each use consumes one heart.)",
+        "trigger": "passive",
+        "effect": {
+          "type": "heal",
+          "amount": 40,
+          "target": "self",
+          "condition": "four-lives"
+        }
+      },
+      "weakness": "wind",
+      "retreatCost": 4,
+      "rarity": "legendary",
+      "isLegendary": true,
+      "flavorText": "My bounty is my purpose.",
+      "artPath": "cards/ninja/kakuzu.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 23
+    },
+    {
+      "id": "akd-024",
+      "type": "ninja",
+      "name": "Obito Uchiha",
+      "subtitle": "Tobi the Masked Man",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 170,
+      "chakraType": "fire",
+      "attacks": [
+        {
+          "name": "Kamui Warp",
+          "cost": {
+            "colorless": 1
+          },
+          "damage": 0,
+          "effect": {
+            "type": "conditional",
+            "condition": "phase-shift-next-turn"
+          },
+          "description": "This Ninja takes no damage until your next turn."
+        },
+        {
+          "name": "Intangible Strike",
+          "cost": {
+            "fire": 1,
+            "colorless": 2
+          },
+          "damage": 140,
+          "effect": null,
+          "description": "Phases through defenses to strike."
+        }
+      ],
+      "ability": {
+        "name": "Kamui Phase",
+        "description": "Once per turn, prevent damage from one attack.",
+        "trigger": "once-per-turn",
+        "effect": {
+          "type": "conditional",
+          "condition": "prevent-damage"
+        }
+      },
+      "weakness": "water",
+      "retreatCost": 1,
+      "rarity": "legendary",
+      "isLegendary": true,
+      "flavorText": "This reality is broken. I will fix it.",
+      "artPath": "cards/ninja/obito.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 24
+    },
+    {
+      "id": "akd-025",
+      "type": "ninja",
+      "name": "Obito Uchiha",
+      "subtitle": "Ten-Tails Jinchuriki",
+      "stage": 1,
+      "evolvesFrom": "akd-024",
+      "hp": 280,
+      "chakraType": "fire",
+      "attacks": [
+        {
+          "name": "Truth-Seeking Orbs",
+          "cost": {
+            "colorless": 2
+          },
+          "damage": 130,
+          "effect": null,
+          "description": "Black spheres that erase what they touch."
+        },
+        {
+          "name": "Ten-Tails Judgment",
+          "cost": {
+            "fire": 2,
+            "colorless": 3
+          },
+          "damage": 260,
+          "effect": {
+            "type": "bench-damage",
+            "target": "opponent-bench",
+            "amount": 40
+          },
+          "description": "The Jinchuriki's will devastates the field."
+        }
+      ],
+      "ability": {
+        "name": "Will of the Sage",
+        "description": "This Ninja cannot be Paralyzed, Poisoned, or Sealed.",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "status-immunity"
+        }
+      },
+      "weakness": "water",
+      "retreatCost": 4,
+      "rarity": "crown",
+      "isLegendary": true,
+      "flavorText": "I will become the god of this broken world.",
+      "artPath": "cards/ninja/juubi.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 25
+    },
+    {
+      "id": "akd-016",
+      "type": "ninja",
+      "name": "Black Zetsu",
+      "subtitle": "Will of Kaguya",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 90,
+      "chakraType": "colorless",
+      "attacks": [
+        {
+          "name": "Shadow Bind",
+          "cost": {
+            "colorless": 1
+          },
+          "damage": 30,
+          "effect": {
+            "type": "status",
+            "status": "paralyze",
+            "target": "opponent-active"
+          },
+          "description": "A tendril of pure will."
+        },
+        {
+          "name": "Manipulate",
+          "cost": {
+            "colorless": 2
+          },
+          "damage": 70,
+          "effect": null,
+          "description": "Bends the target's chakra flow to his design."
+        }
+      ],
+      "ability": {
+        "name": "Millennial Plan",
+        "description": "When this Ninja is in play, your Otsutsuki-related cards cost 1 less Colorless Chakra.",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "cost-reduction-otsutsuki",
+          "amount": 1
+        }
+      },
+      "weakness": "wind",
+      "retreatCost": 1,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "I have waited a thousand years for this moment.",
+      "artPath": "cards/ninja/black-zetsu.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 26
+    },
+    {
+      "id": "akd-015",
+      "type": "ninja",
+      "name": "White Zetsu",
+      "subtitle": "Plant Clone",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 60,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Merge",
+          "cost": {
+            "earth": 1
+          },
+          "damage": 0,
+          "effect": {
+            "type": "heal",
+            "amount": 40,
+            "target": "self"
+          },
+          "description": "Sinks into terrain to mend."
+        },
+        {
+          "name": "Vine Snare",
+          "cost": {
+            "earth": 1,
+            "colorless": 1
+          },
+          "damage": 50,
+          "effect": null,
+          "description": "Chakra vines ensnare the target."
+        }
+      ],
+      "ability": null,
+      "weakness": "fire",
+      "retreatCost": 1,
+      "rarity": "uncommon",
+      "isLegendary": false,
+      "flavorText": "I am the mother's child.",
+      "artPath": "cards/ninja/white-zetsu.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 27
+    },
+    {
+      "id": "akd-028",
+      "type": "ninja",
+      "name": "Kabuto Yakushi",
+      "subtitle": "Akatsuki Informant",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 100,
+      "chakraType": "water",
+      "attacks": [
+        {
+          "name": "Chakra Scalpel",
+          "cost": {
+            "water": 1
+          },
+          "damage": 40,
+          "effect": null,
+          "description": "Severs chakra pathways."
+        },
+        {
+          "name": "Dead Soul Jutsu",
+          "cost": {
+            "water": 1,
+            "colorless": 1
+          },
+          "damage": 60,
+          "effect": null,
+          "description": "A corpse rises to fight."
+        }
+      ],
+      "ability": null,
+      "weakness": "lightning",
+      "retreatCost": 1,
+      "rarity": "uncommon",
+      "isLegendary": false,
+      "flavorText": "Knowledge is the only true power.",
+      "artPath": "cards/ninja/kabuto.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 28
+    },
+    {
+      "id": "akd-029",
+      "type": "ninja",
+      "name": "Kabuto Yakushi",
+      "subtitle": "Akatsuki Sage Apprentice",
+      "stage": 1,
+      "evolvesFrom": "akd-028",
+      "hp": 190,
+      "chakraType": "water",
+      "attacks": [
+        {
+          "name": "Sage Snake Strike",
+          "cost": {
+            "water": 2
+          },
+          "damage": 110,
+          "effect": null,
+          "description": "A white snake lunges with Sage chakra."
+        },
+        {
+          "name": "Edo Tensei Unleash",
+          "cost": {
+            "water": 2,
+            "colorless": 2
+          },
+          "damage": 170,
+          "effect": null,
+          "description": "Resurrects a slain warrior to fight alongside."
+        }
+      ],
+      "ability": {
+        "name": "White Snake Sage",
+        "description": "This Ninja heals 20 HP at the start of your turn.",
+        "trigger": "passive",
+        "effect": {
+          "type": "heal",
+          "amount": 20,
+          "target": "self"
+        }
+      },
+      "weakness": "lightning",
+      "retreatCost": 2,
+      "rarity": "legendary",
+      "isLegendary": true,
+      "flavorText": "I am the sum of everyone I have consumed.",
+      "artPath": "cards/ninja/kabuto.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 29
+    },
+    {
+      "id": "akd-027",
+      "type": "ninja",
+      "name": "Hanzo",
+      "subtitle": "Salamander of the Mist",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 180,
+      "chakraType": "water",
+      "attacks": [
+        {
+          "name": "Kusarigama Slash",
+          "cost": {
+            "colorless": 2
+          },
+          "damage": 90,
+          "effect": {
+            "type": "status",
+            "status": "poison",
+            "target": "opponent-active"
+          },
+          "description": "His sickle-chain weapon dripping with venom."
+        },
+        {
+          "name": "Summoning: Ibuse",
+          "cost": {
+            "water": 2,
+            "colorless": 1
+          },
+          "damage": 170,
+          "effect": {
+            "type": "status",
+            "status": "poison",
+            "target": "opponent-active"
+          },
+          "description": "The giant salamander spews poison mist."
+        }
+      ],
+      "ability": {
+        "name": "Poison Sac",
+        "description": "This Ninja is immune to Poison.",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "poison-immunity"
+        }
+      },
+      "weakness": "lightning",
+      "retreatCost": 3,
+      "rarity": "legendary",
+      "isLegendary": true,
+      "flavorText": "Power answers only to power.",
+      "artPath": "cards/ninja/hanzo.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 30
+    },
+    {
+      "id": "akd-053",
+      "type": "jutsu-scroll",
+      "name": "Akatsuki Edo Tensei",
+      "description": "Bring back a KO'd Legendary Ninja from your discard pile with 50 HP. You take 30 damage.",
+      "effect": {
+        "type": "self-damage",
+        "amount": 30,
+        "secondaryEffect": {
+          "type": "heal",
+          "amount": 50,
+          "target": "self-bench",
+          "condition": "legendary-revive"
+        }
+      },
+      "rarity": "legendary",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/jutsu/edo-tensei.webp",
+      "setNumber": 31
+    },
+    {
+      "id": "akd-045",
+      "type": "jutsu-scroll",
+      "name": "Almighty Push (Shinra Tensei)",
+      "description": "Deal 100 damage and switch the Defending Ninja with a Benched one.",
+      "effect": {
+        "type": "switch",
+        "target": "opponent-active",
+        "amount": 100
+      },
+      "rarity": "legendary",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/jutsu/shinra-tensei.webp",
+      "setNumber": 32
+    },
+    {
+      "id": "akd-030",
+      "type": "jutsu-scroll",
+      "name": "Amaterasu",
+      "description": "Deal 120 damage to the Defending Ninja and Burn it.",
+      "effect": {
+        "type": "status",
+        "status": "burn",
+        "target": "opponent-active",
+        "amount": 120
+      },
+      "rarity": "legendary",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/jutsu/amaterasu.webp",
+      "setNumber": 33
+    },
+    {
+      "id": "akd-046",
+      "type": "jutsu-scroll",
+      "name": "Chibaku Tensei",
+      "description": "Deal 150 damage to the Defending Ninja.",
+      "effect": {
+        "type": "status",
+        "target": "opponent-active",
+        "amount": 150
+      },
+      "rarity": "legendary",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/jutsu/chibaku.webp",
+      "setNumber": 34
+    },
+    {
+      "id": "akd-044",
+      "type": "jutsu-scroll",
+      "name": "Earth Grudge Fear",
+      "description": "Steal one Chakra from the Defender and attach it to your Ninja. Deal 80 damage.",
+      "effect": {
+        "type": "energy-discard",
+        "target": "opponent-active",
+        "amount": 1,
+        "secondaryEffect": {
+          "type": "status",
+          "target": "opponent-active",
+          "amount": 80
+        }
+      },
+      "rarity": "legendary",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/jutsu/earth-grudge.webp",
+      "setNumber": 35
+    },
+    {
+      "id": "akd-051",
+      "type": "jutsu-scroll",
+      "name": "Izanagi",
+      "description": "If your Ninja would be KO'd this turn, instead heal it to full HP. Discard 1 Chakra.",
+      "effect": {
+        "type": "heal",
+        "amount": 999,
+        "target": "self",
+        "condition": "on-ko",
+        "secondaryEffect": {
+          "type": "energy-discard",
+          "target": "self",
+          "amount": 1
+        }
+      },
+      "rarity": "legendary",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/jutsu/izanagi.webp",
+      "setNumber": 36
+    },
+    {
+      "id": "akd-052",
+      "type": "jutsu-scroll",
+      "name": "Izanami",
+      "description": "The Defending Ninja is Paralyzed until it repeats its last action.",
+      "effect": {
+        "type": "status",
+        "status": "paralyze",
+        "target": "opponent-active"
+      },
+      "rarity": "legendary",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/jutsu/izanami.webp",
+      "setNumber": 37
+    },
+    {
+      "id": "akd-041",
+      "type": "jutsu-scroll",
+      "name": "Performance of a Hundred Puppets",
+      "description": "Deal 180 damage to the Defending Ninja. You must have Sasori in play.",
+      "effect": {
+        "type": "conditional",
+        "condition": "sasori-required",
+        "amount": 180
+      },
+      "rarity": "legendary",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/jutsu/hundred-puppets.webp",
+      "setNumber": 38
+    },
+    {
+      "id": "akd-049",
+      "type": "jutsu-scroll",
+      "name": "Six Paths of Pain Summon",
+      "description": "Put a Pain Path card from your deck into play on your Bench. Shuffle your deck.",
+      "effect": {
+        "type": "conditional",
+        "condition": "pain-path-search"
+      },
+      "rarity": "legendary",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/jutsu/six-paths.webp",
+      "setNumber": 39
+    },
+    {
+      "id": "akd-031",
+      "type": "jutsu-scroll",
+      "name": "Tsukuyomi",
+      "description": "Paralyze the Defending Ninja for 3 turns. You must have an Uchiha Ninja in play.",
+      "effect": {
+        "type": "status",
+        "status": "paralyze",
+        "target": "opponent-active",
+        "condition": "uchiha-required"
+      },
+      "rarity": "legendary",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/jutsu/tsukuyomi.webp",
+      "setNumber": 40
+    },
+    {
+      "id": "akd-054",
+      "type": "jutsu-scroll",
+      "name": "Gedo Mazo Statue",
+      "description": "Deal 50 damage to all opposing Ninjas. Extract 1 Chakra from each.",
+      "effect": {
+        "type": "bench-damage",
+        "target": "all-opponents",
+        "amount": 50,
+        "secondaryEffect": {
+          "type": "energy-discard",
+          "target": "opponent-active",
+          "amount": 1
+        }
+      },
+      "rarity": "crown",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/jutsu/gedo.webp",
+      "setNumber": 41
+    },
+    {
+      "id": "akd-040",
+      "type": "jutsu-scroll",
+      "name": "C4: Karura",
+      "description": "Deal 200 damage to the Defending Ninja. Discard this card and all your Chakra.",
+      "effect": {
+        "type": "energy-discard",
+        "target": "self",
+        "amount": 99,
+        "secondaryEffect": {
+          "type": "status",
+          "target": "opponent-active",
+          "amount": 200
+        }
+      },
+      "rarity": "ultra-rare",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/jutsu/c4.webp",
+      "setNumber": 42
+    },
+    {
+      "id": "akd-043",
+      "type": "jutsu-scroll",
+      "name": "Jashin Ritual",
+      "description": "Deal 80 damage to the Defending Ninja. You also take 40 damage.",
+      "effect": {
+        "type": "self-damage",
+        "amount": 40,
+        "secondaryEffect": {
+          "type": "status",
+          "target": "opponent-active",
+          "amount": 80
+        }
+      },
+      "rarity": "ultra-rare",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/jutsu/jashin.webp",
+      "setNumber": 43
+    },
+    {
+      "id": "akd-050",
+      "type": "jutsu-scroll",
+      "name": "Kamui Warp",
+      "description": "Prevent all damage to your Active Ninja this turn. You must have Obito in play.",
+      "effect": {
+        "type": "conditional",
+        "condition": "obito-required-damage-block"
+      },
+      "rarity": "ultra-rare",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/jutsu/kamui-warp.webp",
+      "setNumber": 44
+    },
+    {
+      "id": "akd-032",
+      "type": "jutsu-scroll",
+      "name": "Susanoo",
+      "description": "Your Active Ninja takes 50 less damage until end of next turn.",
+      "effect": {
+        "type": "conditional",
+        "condition": "damage-reduction",
+        "amount": 50
+      },
+      "rarity": "ultra-rare",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/jutsu/susanoo.webp",
+      "setNumber": 45
+    },
+    {
+      "id": "akd-036",
+      "type": "jutsu-scroll",
+      "name": "Thousand Feeding Sharks",
+      "description": "Deal 140 damage to the Defending Ninja.",
+      "effect": {
+        "type": "status",
+        "target": "opponent-active",
+        "amount": 140
+      },
+      "rarity": "ultra-rare",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/jutsu/feeding-sharks.webp",
+      "setNumber": 46
+    },
+    {
+      "id": "akd-033",
+      "type": "jutsu-scroll",
+      "name": "Totsuka Blade",
+      "description": "Seal the Defending Ninja \u2014 it cannot attack next turn. Deal 60 damage.",
+      "effect": {
+        "type": "status",
+        "status": "seal",
+        "target": "opponent-active",
+        "amount": 60
+      },
+      "rarity": "ultra-rare",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/jutsu/totsuka.webp",
+      "setNumber": 47
+    },
+    {
+      "id": "akd-034",
+      "type": "jutsu-scroll",
+      "name": "Yata Mirror",
+      "description": "Prevent all damage to your Active Ninja this turn.",
+      "effect": {
+        "type": "conditional",
+        "condition": "damage-block-turn"
+      },
+      "rarity": "ultra-rare",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/jutsu/yata.webp",
+      "setNumber": 48
+    },
+    {
+      "id": "akd-038",
+      "type": "jutsu-scroll",
+      "name": "C2: Dragon Bomb",
+      "description": "Deal 70 damage to the Defender and 20 to each Benched opponent.",
+      "effect": {
+        "type": "bench-damage",
+        "target": "all-opponents",
+        "amount": 70,
+        "secondaryEffect": {
+          "type": "bench-damage",
+          "target": "opponent-bench",
+          "amount": 20
+        }
+      },
+      "rarity": "rare",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/jutsu/c2-dragon.webp",
+      "setNumber": 49
+    },
+    {
+      "id": "akd-039",
+      "type": "jutsu-scroll",
+      "name": "C3: City Bomb",
+      "description": "Deal 100 damage to ALL opposing Ninjas.",
+      "effect": {
+        "type": "bench-damage",
+        "target": "all-opponents",
+        "amount": 100
+      },
+      "rarity": "rare",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/jutsu/c3-bomb.webp",
+      "setNumber": 50
+    },
+    {
+      "id": "akd-035",
+      "type": "jutsu-scroll",
+      "name": "Great Exploding Water Shockwave",
+      "description": "Deal 80 damage to the Defender and 30 to each Benched opponent.",
+      "effect": {
+        "type": "bench-damage",
+        "target": "all-opponents",
+        "amount": 80,
+        "secondaryEffect": {
+          "type": "bench-damage",
+          "target": "opponent-bench",
+          "amount": 30
+        }
+      },
+      "rarity": "rare",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/jutsu/water-shockwave.webp",
+      "setNumber": 51
+    },
+    {
+      "id": "akd-042",
+      "type": "jutsu-scroll",
+      "name": "Paper Flower Bomb",
+      "description": "Deal 60 damage to each opposing Ninja.",
+      "effect": {
+        "type": "bench-damage",
+        "target": "all-opponents",
+        "amount": 60
+      },
+      "rarity": "rare",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/jutsu/paper-flower.webp",
+      "setNumber": 52
+    },
+    {
+      "id": "akd-048",
+      "type": "jutsu-scroll",
+      "name": "Preta Path: Chakra Absorb",
+      "description": "Nullify the next jutsu your opponent uses this turn. Draw 1 card.",
+      "effect": {
+        "type": "draw",
+        "amount": 1,
+        "secondaryEffect": {
+          "type": "conditional",
+          "condition": "jutsu-nullify"
+        }
+      },
+      "rarity": "rare",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/jutsu/preta.webp",
+      "setNumber": 53
+    },
+    {
+      "id": "akd-047",
+      "type": "jutsu-scroll",
+      "name": "Soul Rip",
+      "description": "The Defender discards its top 2 Chakra.",
+      "effect": {
+        "type": "energy-discard",
+        "target": "opponent-active",
+        "amount": 2
+      },
+      "rarity": "rare",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/jutsu/soul-rip.webp",
+      "setNumber": 54
+    },
+    {
+      "id": "akd-037",
+      "type": "jutsu-scroll",
+      "name": "C1: Explosive Clay Bird",
+      "description": "Deal 30 damage to any opposing Ninja.",
+      "effect": {
+        "type": "status",
+        "target": "opponent-active",
+        "amount": 30
+      },
+      "rarity": "common",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/jutsu/c1-bird.webp",
+      "setNumber": 55
+    },
+    {
+      "id": "akd-055",
+      "type": "tool",
+      "name": "Samehada",
+      "description": "Attach to a Water Ninja. Their attacks absorb 10 HP from the Defender.",
+      "effect": {
+        "type": "heal",
+        "amount": 10,
+        "target": "self"
+      },
+      "rarity": "legendary",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/tools/samehada.webp",
+      "setNumber": 56
+    },
+    {
+      "id": "akd-059",
+      "type": "tool",
+      "name": "Scythe of Jashin",
+      "description": "Attach to Hidan. Attacks ignore the Defender's damage reduction.",
+      "effect": {
+        "type": "conditional",
+        "condition": "hidan-only-pierce"
+      },
+      "rarity": "legendary",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/tools/jashin-scythe.webp",
+      "setNumber": 57
+    },
+    {
+      "id": "akd-064",
+      "type": "tool",
+      "name": "Hiruko Puppet Shell",
+      "description": "Attach to Sasori. Reduce damage taken by 30.",
+      "effect": {
+        "type": "conditional",
+        "condition": "sasori-only-dr",
+        "amount": 30
+      },
+      "rarity": "ultra-rare",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/tools/hiruko.webp",
+      "setNumber": 58
+    },
+    {
+      "id": "akd-056",
+      "type": "tool",
+      "name": "Itachi's Crow",
+      "description": "Attach to an Uchiha. Once per battle, escape a KO \u2014 heal to 50 HP instead.",
+      "effect": {
+        "type": "heal",
+        "amount": 50,
+        "target": "self",
+        "condition": "once-per-battle"
+      },
+      "rarity": "ultra-rare",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/tools/itachi-crow.webp",
+      "setNumber": 59
+    },
+    {
+      "id": "akd-061",
+      "type": "tool",
+      "name": "Rinnegan Pendant",
+      "description": "The wearer gains access to all Chakra types at cost +1.",
+      "effect": {
+        "type": "conditional",
+        "condition": "chakra-flexible"
+      },
+      "rarity": "ultra-rare",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/tools/rinnegan-pendant.webp",
+      "setNumber": 60
+    },
+    {
+      "id": "akd-060",
+      "type": "tool",
+      "name": "Konan's Paper Wings",
+      "description": "The wearer takes no damage from Fire attacks for one turn.",
+      "effect": {
+        "type": "conditional",
+        "condition": "fire-immunity-one-turn"
+      },
+      "rarity": "rare",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/tools/paper-wings.webp",
+      "setNumber": 61
+    },
+    {
+      "id": "akd-062",
+      "type": "tool",
+      "name": "Ten Rings of Akatsuki",
+      "description": "Draw 1 extra card each turn while this is attached.",
+      "effect": {
+        "type": "draw",
+        "amount": 1
+      },
+      "rarity": "rare",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/tools/ten-rings.webp",
+      "setNumber": 62
+    },
+    {
+      "id": "akd-058",
+      "type": "tool",
+      "name": "Akatsuki Ring",
+      "description": "The wearer gains +10 HP per Akatsuki Ninja on your Bench.",
+      "effect": {
+        "type": "conditional",
+        "condition": "akatsuki-synergy"
+      },
+      "rarity": "uncommon",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/tools/akatsuki-ring.webp",
+      "setNumber": 63
+    },
+    {
+      "id": "akd-057",
+      "type": "tool",
+      "name": "Akatsuki Cloak",
+      "description": "The wearer's retreat cost is reduced by 1.",
+      "effect": {
+        "type": "conditional",
+        "condition": "retreat-reduction",
+        "amount": 1
+      },
+      "rarity": "common",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/tools/akatsuki-cloak.webp",
+      "setNumber": 64
+    },
+    {
+      "id": "akd-063",
+      "type": "tool",
+      "name": "Explosive Clay",
+      "description": "Attach to Deidara. His attacks deal +20 damage.",
+      "effect": {
+        "type": "damage-boost",
+        "amount": 20,
+        "condition": "deidara-only"
+      },
+      "rarity": "common",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/tools/explosive-clay.webp",
+      "setNumber": 65
+    },
+    {
+      "id": "akd-065",
+      "type": "sensei",
+      "name": "Pain",
+      "subtitle": "Leader of Akatsuki",
+      "description": "Discard your hand. Draw 5 cards.",
+      "effect": {
+        "type": "draw",
+        "amount": 5,
+        "secondaryEffect": {
+          "type": "discard",
+          "amount": 99
+        }
+      },
+      "rarity": "legendary",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/sensei/pain.webp",
+      "setNumber": 66
+    },
+    {
+      "id": "akd-066",
+      "type": "sensei",
+      "name": "Konan",
+      "subtitle": "Guardian of Amegakure",
+      "description": "Search your deck for any Jutsu Scroll and add it to your hand.",
+      "effect": {
+        "type": "conditional",
+        "condition": "tutor-jutsu"
+      },
+      "rarity": "ultra-rare",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/sensei/konan.webp",
+      "setNumber": 67
+    },
+    {
+      "id": "akd-067",
+      "type": "sensei",
+      "name": "Itachi Uchiha",
+      "subtitle": "Will of Fire",
+      "description": "Heal one of your Ninjas to full HP and give it Sage Insight (look at top 3 cards each turn).",
+      "effect": {
+        "type": "heal",
+        "amount": 999,
+        "target": "self",
+        "secondaryEffect": {
+          "type": "conditional",
+          "condition": "reveal-top-3"
+        }
+      },
+      "rarity": "legendary",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/sensei/itachi.webp",
+      "setNumber": 68
+    },
+    {
+      "id": "akd-068",
+      "type": "sensei",
+      "name": "Kisame Hoshigaki",
+      "subtitle": "Monster at Your Back",
+      "description": "Switch your Active Ninja with a Benched Water Ninja. Draw 2 cards.",
+      "effect": {
+        "type": "switch",
+        "target": "self-bench",
+        "secondaryEffect": {
+          "type": "draw",
+          "amount": 2
+        }
+      },
+      "rarity": "rare",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/sensei/kisame.webp",
+      "setNumber": 69
+    },
+    {
+      "id": "akd-069",
+      "type": "sensei",
+      "name": "Sasori",
+      "subtitle": "Art of the Puppeteer",
+      "description": "Search your deck for any Tool card and attach it to one of your Ninjas.",
+      "effect": {
+        "type": "conditional",
+        "condition": "tutor-tool"
+      },
+      "rarity": "ultra-rare",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/sensei/sasori.webp",
+      "setNumber": 70
+    },
+    {
+      "id": "akd-070",
+      "type": "sensei",
+      "name": "Obito Uchiha",
+      "subtitle": "The Masked Truth",
+      "description": "Look at your opponent's hand. Discard 1 card of your choice.",
+      "effect": {
+        "type": "discard",
+        "target": "opponent-active",
+        "amount": 1
+      },
+      "rarity": "legendary",
+      "set": "akatsuki-dawn",
+      "artPath": "cards/sensei/obito.webp",
+      "setNumber": 71
+    }
+  ],
+  "pullRates": {
+    "common": 0.48,
+    "uncommon": 0.27,
+    "rare": 0.15,
+    "ultra-rare": 0.065,
+    "legendary": 0.028,
+    "secret": 0.005,
+    "crown": 0.002
+  },
+  "totalCards": 71
+}

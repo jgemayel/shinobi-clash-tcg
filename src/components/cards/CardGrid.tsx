@@ -1,5 +1,6 @@
 'use client';
 
+import { motion } from 'motion/react';
 import { GameCard } from '@/types/card';
 import CardDisplay from './CardDisplay';
 
@@ -36,15 +37,21 @@ export default function CardGrid({
 
   return (
     <div className={`grid ${gridClass[size]}`}>
-      {cards.map((card) => (
-        <CardDisplay
+      {cards.map((card, i) => (
+        <motion.div
           key={card.id}
-          card={card}
-          size={size}
-          onClick={() => onCardClick?.(card)}
-          count={cardCounts?.[card.id]}
-          showCount={showCounts}
-        />
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: Math.min(i * 0.03, 0.6), duration: 0.3 }}
+        >
+          <CardDisplay
+            card={card}
+            size={size}
+            onClick={() => onCardClick?.(card)}
+            count={cardCounts?.[card.id]}
+            showCount={showCounts}
+          />
+        </motion.div>
       ))}
     </div>
   );

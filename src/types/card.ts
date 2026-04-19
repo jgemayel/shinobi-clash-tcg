@@ -58,7 +58,9 @@ export interface NinjaCard {
   retreatCost: number;
   rarity: Rarity;
   set: string;
+  setNumber?: number;
   isLegendary: boolean;
+  isShiny?: boolean;
   flavorText: string;
   artPath: string;
 }
@@ -71,6 +73,8 @@ export interface JutsuScrollCard {
   effect: AttackEffect;
   rarity: Rarity;
   set: string;
+  setNumber?: number;
+  isShiny?: boolean;
   artPath: string;
 }
 
@@ -82,6 +86,8 @@ export interface ToolCard {
   effect: AttackEffect;
   rarity: Rarity;
   set: string;
+  setNumber?: number;
+  isShiny?: boolean;
   artPath: string;
 }
 
@@ -94,6 +100,8 @@ export interface SenseiCard {
   effect: AttackEffect;
   rarity: Rarity;
   set: string;
+  setNumber?: number;
+  isShiny?: boolean;
   artPath: string;
 }
 
@@ -107,4 +115,5 @@ export interface CardSet {
   packArt: string;
   cards: GameCard[];
   pullRates: Record<Rarity, number>;
+  totalCards?: number;
 }

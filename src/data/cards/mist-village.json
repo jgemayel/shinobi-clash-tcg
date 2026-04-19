@@ -1,0 +1,1553 @@
+{
+  "setId": "mist-village",
+  "setName": "Mist Village",
+  "releaseOrder": 5,
+  "unlockLevel": 5,
+  "packArt": "packs/mist-village.webp",
+  "cards": [
+    {
+      "id": "mv-005",
+      "type": "ninja",
+      "name": "Mei Terumi",
+      "subtitle": "Lava Jonin",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 100,
+      "chakraType": "fire",
+      "attacks": [
+        {
+          "name": "Lava Splash",
+          "cost": {
+            "fire": 1
+          },
+          "damage": 50,
+          "effect": {
+            "type": "status",
+            "status": "burn",
+            "target": "opponent-active"
+          },
+          "description": "A spitting gout of magma."
+        },
+        {
+          "name": "Boil Strike",
+          "cost": {
+            "water": 1,
+            "fire": 1
+          },
+          "damage": 70,
+          "effect": null,
+          "description": "Superheated steam scalds the target."
+        }
+      ],
+      "ability": null,
+      "weakness": "earth",
+      "retreatCost": 1,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "Don't underestimate me.",
+      "artPath": "cards/ninja/mei.webp",
+      "set": "mist-village",
+      "setNumber": 1
+    },
+    {
+      "id": "mv-006",
+      "type": "ninja",
+      "name": "Mei Terumi",
+      "subtitle": "Fifth Mizukage",
+      "stage": 1,
+      "evolvesFrom": "mv-005",
+      "hp": 180,
+      "chakraType": "fire",
+      "attacks": [
+        {
+          "name": "Lava Release: Melting Apparition",
+          "cost": {
+            "fire": 2,
+            "earth": 1
+          },
+          "damage": 150,
+          "effect": {
+            "type": "status",
+            "status": "burn",
+            "target": "opponent-active"
+          },
+          "description": "A river of lava dissolves all."
+        },
+        {
+          "name": "Boil Release: Skilled Mist",
+          "cost": {
+            "water": 2,
+            "fire": 2
+          },
+          "damage": 180,
+          "effect": null,
+          "description": "Corrosive steam blankets the battlefield."
+        }
+      ],
+      "ability": {
+        "name": "Dual Kekkei Genkai",
+        "description": "This Ninja may use Fire and Water attacks interchangeably.",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "dual-chakra"
+        }
+      },
+      "weakness": "earth",
+      "retreatCost": 2,
+      "rarity": "legendary",
+      "isLegendary": true,
+      "flavorText": "The Mist shall bloom again under my rule.",
+      "artPath": "cards/ninja/mei.webp",
+      "set": "mist-village",
+      "setNumber": 2
+    },
+    {
+      "id": "mv-061",
+      "type": "ninja",
+      "name": "Mei Terumi",
+      "subtitle": "Lava Queen Radiant",
+      "stage": 2,
+      "evolvesFrom": "mv-006",
+      "hp": 240,
+      "chakraType": "fire",
+      "attacks": [
+        {
+          "name": "Molten Sovereign",
+          "cost": {
+            "fire": 2,
+            "earth": 1
+          },
+          "damage": 160,
+          "effect": {
+            "type": "status",
+            "status": "burn",
+            "target": "opponent-active"
+          },
+          "description": "Lava forms a crown of flame."
+        },
+        {
+          "name": "Boil Release: Skilled Genesis",
+          "cost": {
+            "fire": 2,
+            "water": 2
+          },
+          "damage": 230,
+          "effect": null,
+          "description": "Steam that melts steel."
+        }
+      ],
+      "ability": {
+        "name": "Dual Element Mastery",
+        "description": "Fire and Water attacks cost 1 less Chakra.",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "element-discount",
+          "amount": 1
+        }
+      },
+      "weakness": "earth",
+      "retreatCost": 3,
+      "rarity": "secret",
+      "isLegendary": true,
+      "flavorText": "The Mist flourishes under my sun.",
+      "artPath": "cards/ninja/mei.webp",
+      "set": "mist-village",
+      "setNumber": 3
+    },
+    {
+      "id": "mv-007",
+      "type": "ninja",
+      "name": "Chojuro",
+      "subtitle": "Seven Swordsmen Apprentice",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 80,
+      "chakraType": "water",
+      "attacks": [
+        {
+          "name": "Blade Guard",
+          "cost": {
+            "colorless": 1
+          },
+          "damage": 30,
+          "effect": null,
+          "description": "A defensive slash."
+        }
+      ],
+      "ability": null,
+      "weakness": "lightning",
+      "retreatCost": 1,
+      "rarity": "uncommon",
+      "isLegendary": false,
+      "flavorText": "I must live up to the Hiramekarei.",
+      "artPath": "cards/ninja/chojuro.webp",
+      "set": "mist-village",
+      "setNumber": 4
+    },
+    {
+      "id": "mv-008",
+      "type": "ninja",
+      "name": "Chojuro",
+      "subtitle": "Sixth Mizukage",
+      "stage": 1,
+      "evolvesFrom": "mv-007",
+      "hp": 150,
+      "chakraType": "water",
+      "attacks": [
+        {
+          "name": "Hiramekarei Release",
+          "cost": {
+            "water": 1,
+            "colorless": 2
+          },
+          "damage": 120,
+          "effect": null,
+          "description": "The massive chakra hammer materializes."
+        },
+        {
+          "name": "Double Edge Chakra Slash",
+          "cost": {
+            "water": 2,
+            "colorless": 1
+          },
+          "damage": 140,
+          "effect": null,
+          "description": "A chakra-shaped twin sword."
+        }
+      ],
+      "ability": null,
+      "weakness": "lightning",
+      "retreatCost": 2,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "I didn't choose this role. I earned it.",
+      "artPath": "cards/ninja/chojuro.webp",
+      "set": "mist-village",
+      "setNumber": 5
+    },
+    {
+      "id": "mv-062",
+      "type": "ninja",
+      "name": "Yagura",
+      "subtitle": "Three-Tails Perfect Jinchuriki",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 290,
+      "chakraType": "water",
+      "attacks": [
+        {
+          "name": "Coral Crush",
+          "cost": {
+            "water": 2,
+            "colorless": 1
+          },
+          "damage": 170,
+          "effect": null,
+          "description": "Coral armor-plated strike."
+        },
+        {
+          "name": "Three-Tails Maelstrom",
+          "cost": {
+            "water": 3,
+            "colorless": 3
+          },
+          "damage": 310,
+          "effect": {
+            "type": "bench-damage",
+            "target": "opponent-bench",
+            "amount": 50
+          },
+          "description": "A tidal vortex engulfs the field."
+        }
+      ],
+      "ability": {
+        "name": "Isobu Shell",
+        "description": "Reduce all incoming damage by 30. Heal 30 HP per turn.",
+        "trigger": "passive",
+        "effect": {
+          "type": "heal",
+          "amount": 30,
+          "target": "self",
+          "secondaryEffect": {
+            "type": "conditional",
+            "condition": "damage-reduction",
+            "amount": 30
+          }
+        }
+      },
+      "weakness": "lightning",
+      "retreatCost": 4,
+      "rarity": "crown",
+      "isLegendary": true,
+      "flavorText": "The Mizukage and the beast are one.",
+      "artPath": "cards/ninja/yagura.webp",
+      "set": "mist-village",
+      "setNumber": 6
+    },
+    {
+      "id": "mv-001",
+      "type": "ninja",
+      "name": "Zabuza Momochi",
+      "subtitle": "Missing-nin of the Mist",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 110,
+      "chakraType": "water",
+      "attacks": [
+        {
+          "name": "Executioner's Slash",
+          "cost": {
+            "colorless": 1
+          },
+          "damage": 40,
+          "effect": null,
+          "description": "A heavy cleaver strike."
+        },
+        {
+          "name": "Silent Killing",
+          "cost": {
+            "water": 1,
+            "colorless": 1
+          },
+          "damage": 80,
+          "effect": {
+            "type": "status",
+            "status": "confusion",
+            "target": "opponent-active"
+          },
+          "description": "Attacks from hidden mist."
+        }
+      ],
+      "ability": null,
+      "weakness": "lightning",
+      "retreatCost": 2,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "The Demon of the Hidden Mist.",
+      "artPath": "cards/ninja/zabuza.webp",
+      "set": "mist-village",
+      "setNumber": 7
+    },
+    {
+      "id": "mv-002",
+      "type": "ninja",
+      "name": "Zabuza Momochi",
+      "subtitle": "Demon of the Mist",
+      "stage": 1,
+      "evolvesFrom": "mv-001",
+      "hp": 170,
+      "chakraType": "water",
+      "attacks": [
+        {
+          "name": "Water Dragon Jutsu",
+          "cost": {
+            "water": 2
+          },
+          "damage": 110,
+          "effect": null,
+          "description": "A living serpent of water strikes."
+        },
+        {
+          "name": "Hidden Mist Execution",
+          "cost": {
+            "water": 2,
+            "colorless": 1
+          },
+          "damage": 170,
+          "effect": null,
+          "description": "An unseen blow from the fog."
+        }
+      ],
+      "ability": {
+        "name": "Hidden in Mist",
+        "description": "This Ninja takes 10 less damage while Active.",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "damage-reduction",
+          "amount": 10
+        }
+      },
+      "weakness": "lightning",
+      "retreatCost": 3,
+      "rarity": "ultra-rare",
+      "isLegendary": false,
+      "flavorText": "A true shinobi uses the fog as his blade.",
+      "artPath": "cards/ninja/zabuza.webp",
+      "set": "mist-village",
+      "setNumber": 8
+    },
+    {
+      "id": "mv-003",
+      "type": "ninja",
+      "name": "Haku",
+      "subtitle": "Ice User",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 70,
+      "chakraType": "water",
+      "attacks": [
+        {
+          "name": "Senbon Flurry",
+          "cost": {
+            "colorless": 1
+          },
+          "damage": 30,
+          "effect": null,
+          "description": "Needles of bone-numbing cold."
+        },
+        {
+          "name": "Frozen Strike",
+          "cost": {
+            "water": 1,
+            "colorless": 1
+          },
+          "damage": 50,
+          "effect": {
+            "type": "status",
+            "status": "paralyze",
+            "target": "opponent-active"
+          },
+          "description": "A glass-sharp ice blade."
+        }
+      ],
+      "ability": null,
+      "weakness": "fire",
+      "retreatCost": 1,
+      "rarity": "common",
+      "isLegendary": false,
+      "flavorText": "A tool must prove useful to its master.",
+      "artPath": "cards/ninja/haku.webp",
+      "set": "mist-village",
+      "setNumber": 9
+    },
+    {
+      "id": "mv-004",
+      "type": "ninja",
+      "name": "Haku",
+      "subtitle": "Crystal Ice Mirrors",
+      "stage": 1,
+      "evolvesFrom": "mv-003",
+      "hp": 130,
+      "chakraType": "water",
+      "attacks": [
+        {
+          "name": "Mirror Afterimage",
+          "cost": {
+            "water": 1,
+            "colorless": 1
+          },
+          "damage": 80,
+          "effect": null,
+          "description": "Ice mirrors reflect every direction at once."
+        },
+        {
+          "name": "Thousand Needles of Death",
+          "cost": {
+            "water": 2,
+            "colorless": 2
+          },
+          "damage": 160,
+          "effect": null,
+          "description": "Surrounds the target in mirrors and unleashes."
+        }
+      ],
+      "ability": {
+        "name": "Ice Mirrors",
+        "description": "Once per turn, prevent 40 damage to this Ninja.",
+        "trigger": "once-per-turn",
+        "effect": {
+          "type": "conditional",
+          "condition": "damage-reduction",
+          "amount": 40
+        }
+      },
+      "weakness": "fire",
+      "retreatCost": 2,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "I exist to protect the one who gave me purpose.",
+      "artPath": "cards/ninja/haku.webp",
+      "set": "mist-village",
+      "setNumber": 10
+    },
+    {
+      "id": "mv-009",
+      "type": "ninja",
+      "name": "Ao",
+      "subtitle": "Byakugan Bodyguard",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 110,
+      "chakraType": "water",
+      "attacks": [
+        {
+          "name": "Sensor Slash",
+          "cost": {
+            "water": 1
+          },
+          "damage": 50,
+          "effect": null,
+          "description": "Locates chakra flow and strikes the weak spot."
+        },
+        {
+          "name": "Transplanted Byakugan",
+          "cost": {
+            "water": 1,
+            "colorless": 1
+          },
+          "damage": 80,
+          "effect": {
+            "type": "draw",
+            "amount": 1
+          },
+          "description": "Sees through illusions. Draw 1 card."
+        }
+      ],
+      "ability": null,
+      "weakness": "lightning",
+      "retreatCost": 2,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "I've walked three battlefields. This is my fourth.",
+      "artPath": "cards/ninja/ao.webp",
+      "set": "mist-village",
+      "setNumber": 11
+    },
+    {
+      "id": "mv-010",
+      "type": "ninja",
+      "name": "Utakata",
+      "subtitle": "Bubble Ninjutsu Master",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 100,
+      "chakraType": "water",
+      "attacks": [
+        {
+          "name": "Sphere of Bubbles",
+          "cost": {
+            "water": 1
+          },
+          "damage": 40,
+          "effect": {
+            "type": "status",
+            "status": "paralyze",
+            "target": "opponent-active"
+          },
+          "description": "Floating prison of soap."
+        },
+        {
+          "name": "Corrosive Bubble",
+          "cost": {
+            "water": 2
+          },
+          "damage": 90,
+          "effect": {
+            "type": "status",
+            "status": "poison",
+            "target": "opponent-active"
+          },
+          "description": "A caustic bubble bursts on the target."
+        }
+      ],
+      "ability": null,
+      "weakness": "lightning",
+      "retreatCost": 1,
+      "rarity": "uncommon",
+      "isLegendary": false,
+      "flavorText": "Drifting, like the wind.",
+      "artPath": "cards/ninja/utakata.webp",
+      "set": "mist-village",
+      "setNumber": 12
+    },
+    {
+      "id": "mv-016",
+      "type": "ninja",
+      "name": "Suigetsu Hozuki",
+      "subtitle": "Hydrification Fighter",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 90,
+      "chakraType": "water",
+      "attacks": [
+        {
+          "name": "Water Punch",
+          "cost": {
+            "water": 1
+          },
+          "damage": 40,
+          "effect": null,
+          "description": "Liquefies his arm mid-strike."
+        },
+        {
+          "name": "Kubikiribocho Swing",
+          "cost": {
+            "water": 1,
+            "colorless": 2
+          },
+          "damage": 100,
+          "effect": null,
+          "description": "Wields the Executioner's Blade with ease."
+        }
+      ],
+      "ability": null,
+      "weakness": "lightning",
+      "retreatCost": 1,
+      "rarity": "uncommon",
+      "isLegendary": false,
+      "flavorText": "Who needs armor when you ARE the water?",
+      "artPath": "cards/ninja/suigetsu.webp",
+      "set": "mist-village",
+      "setNumber": 13
+    },
+    {
+      "id": "mv-017",
+      "type": "ninja",
+      "name": "Suigetsu Hozuki",
+      "subtitle": "Perfect Hydration",
+      "stage": 1,
+      "evolvesFrom": "mv-016",
+      "hp": 160,
+      "chakraType": "water",
+      "attacks": [
+        {
+          "name": "Water Form Evasion",
+          "cost": {
+            "water": 1
+          },
+          "damage": 60,
+          "effect": {
+            "type": "conditional",
+            "condition": "damage-reduction",
+            "amount": 30
+          },
+          "description": "Partially liquefies, reducing next attack taken."
+        },
+        {
+          "name": "Seven Swords Drift",
+          "cost": {
+            "water": 2,
+            "colorless": 2
+          },
+          "damage": 150,
+          "effect": null,
+          "description": "A flurry of the legendary Mist blades."
+        }
+      ],
+      "ability": {
+        "name": "Liquid Body",
+        "description": "Immune to direct damage boosts from Tool effects.",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "tool-damage-immunity"
+        }
+      },
+      "weakness": "lightning",
+      "retreatCost": 1,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "I'll collect all seven blades. Watch me.",
+      "artPath": "cards/ninja/suigetsu.webp",
+      "set": "mist-village",
+      "setNumber": 14
+    },
+    {
+      "id": "mv-011",
+      "type": "ninja",
+      "name": "Raiga Kurosuki",
+      "subtitle": "Thunder Swordsman",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 120,
+      "chakraType": "lightning",
+      "attacks": [
+        {
+          "name": "Lightning Twin Swords",
+          "cost": {
+            "lightning": 1,
+            "colorless": 1
+          },
+          "damage": 60,
+          "effect": null,
+          "description": "Crackling blades cut with raw current."
+        },
+        {
+          "name": "Thunder Funeral",
+          "cost": {
+            "lightning": 2,
+            "colorless": 1
+          },
+          "damage": 130,
+          "effect": null,
+          "description": "Dual blades channel a storm."
+        }
+      ],
+      "ability": null,
+      "weakness": "earth",
+      "retreatCost": 2,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "Let me send you to your funeral.",
+      "artPath": "cards/ninja/raiga.webp",
+      "set": "mist-village",
+      "setNumber": 15
+    },
+    {
+      "id": "mv-012",
+      "type": "ninja",
+      "name": "Ameyuri Ringo",
+      "subtitle": "Lightning Twin Blades",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 100,
+      "chakraType": "lightning",
+      "attacks": [
+        {
+          "name": "Kiba Twin Strike",
+          "cost": {
+            "lightning": 1
+          },
+          "damage": 60,
+          "effect": null,
+          "description": "Twin blades conduct fatal voltage."
+        },
+        {
+          "name": "Thunder Valley",
+          "cost": {
+            "lightning": 2,
+            "colorless": 1
+          },
+          "damage": 120,
+          "effect": {
+            "type": "status",
+            "status": "paralyze",
+            "target": "opponent-active"
+          },
+          "description": "Lightning arcs between blades and target."
+        }
+      ],
+      "ability": null,
+      "weakness": "earth",
+      "retreatCost": 1,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "Kiba's fangs never miss.",
+      "artPath": "cards/ninja/ameyuri.webp",
+      "set": "mist-village",
+      "setNumber": 16
+    },
+    {
+      "id": "mv-013",
+      "type": "ninja",
+      "name": "Kushimaru Kuriarare",
+      "subtitle": "Sewing Needle Bearer",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 90,
+      "chakraType": "water",
+      "attacks": [
+        {
+          "name": "Needle Thread",
+          "cost": {
+            "colorless": 1
+          },
+          "damage": 40,
+          "effect": {
+            "type": "status",
+            "status": "seal",
+            "target": "opponent-active"
+          },
+          "description": "Sews the target's movements shut."
+        },
+        {
+          "name": "Cross Stitch",
+          "cost": {
+            "water": 1,
+            "colorless": 1
+          },
+          "damage": 80,
+          "effect": null,
+          "description": "Rapid threaded strikes."
+        }
+      ],
+      "ability": null,
+      "weakness": "lightning",
+      "retreatCost": 1,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "Every strike, a stitch. Every stitch, a bind.",
+      "artPath": "cards/ninja/kushimaru.webp",
+      "set": "mist-village",
+      "setNumber": 17
+    },
+    {
+      "id": "mv-014",
+      "type": "ninja",
+      "name": "Jinin Akebino",
+      "subtitle": "Helmet Splitter",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 130,
+      "chakraType": "earth",
+      "attacks": [
+        {
+          "name": "Kabutowari Crush",
+          "cost": {
+            "earth": 1,
+            "colorless": 1
+          },
+          "damage": 80,
+          "effect": null,
+          "description": "A hammer-and-axe split defenses."
+        },
+        {
+          "name": "Bone Break",
+          "cost": {
+            "earth": 2,
+            "colorless": 1
+          },
+          "damage": 140,
+          "effect": null,
+          "description": "Shatters armor and bone alike."
+        }
+      ],
+      "ability": null,
+      "weakness": "wind",
+      "retreatCost": 3,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "Armor is just a thicker skull.",
+      "artPath": "cards/ninja/jinin.webp",
+      "set": "mist-village",
+      "setNumber": 18
+    },
+    {
+      "id": "mv-015",
+      "type": "ninja",
+      "name": "Jinpachi Munashi",
+      "subtitle": "Blastsword Bearer",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 110,
+      "chakraType": "fire",
+      "attacks": [
+        {
+          "name": "Shibuki Explosive Slash",
+          "cost": {
+            "fire": 1,
+            "colorless": 1
+          },
+          "damage": 90,
+          "effect": null,
+          "description": "A sword lined with paper bombs."
+        },
+        {
+          "name": "Detonation Wave",
+          "cost": {
+            "fire": 2
+          },
+          "damage": 130,
+          "effect": {
+            "type": "self-damage",
+            "amount": 20
+          },
+          "description": "Triggers a chain explosion."
+        }
+      ],
+      "ability": null,
+      "weakness": "water",
+      "retreatCost": 2,
+      "rarity": "rare",
+      "isLegendary": false,
+      "flavorText": "Every swing is a message.",
+      "artPath": "cards/ninja/jinpachi.webp",
+      "set": "mist-village",
+      "setNumber": 19
+    },
+    {
+      "id": "mv-018",
+      "type": "ninja",
+      "name": "Mist Academy Student",
+      "subtitle": "Young Shinobi",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 50,
+      "chakraType": "water",
+      "attacks": [
+        {
+          "name": "Mist Kunai",
+          "cost": {
+            "colorless": 1
+          },
+          "damage": 20,
+          "effect": null,
+          "description": "A basic throw."
+        }
+      ],
+      "ability": null,
+      "weakness": "lightning",
+      "retreatCost": 1,
+      "rarity": "common",
+      "isLegendary": false,
+      "flavorText": "The mist hides my fear.",
+      "artPath": "cards/ninja/mist-student.webp",
+      "set": "mist-village",
+      "setNumber": 20
+    },
+    {
+      "id": "mv-060",
+      "type": "jutsu-scroll",
+      "name": "Blood Mist Ritual",
+      "description": "Your Mist Ninjas ignore 'once per battle' restrictions this turn.",
+      "effect": {
+        "type": "conditional",
+        "condition": "unlock-restrictions"
+      },
+      "rarity": "legendary",
+      "set": "mist-village",
+      "artPath": "cards/jutsu/blood-mist-ritual.webp",
+      "setNumber": 21
+    },
+    {
+      "id": "mv-039",
+      "type": "jutsu-scroll",
+      "name": "Seven Swordsmen Charge",
+      "description": "If you have 3 or more Mist Swordsmen in play, deal 200 damage to the Defender.",
+      "effect": {
+        "type": "conditional",
+        "condition": "three-swordsmen-required",
+        "amount": 200
+      },
+      "rarity": "legendary",
+      "set": "mist-village",
+      "artPath": "cards/jutsu/seven-charge.webp",
+      "setNumber": 22
+    },
+    {
+      "id": "mv-027",
+      "type": "jutsu-scroll",
+      "name": "Boil Release: Unrivaled Skilled Mist",
+      "description": "Deal 40 damage to all opposing Ninjas and Burn them.",
+      "effect": {
+        "type": "bench-damage",
+        "target": "all-opponents",
+        "amount": 40,
+        "secondaryEffect": {
+          "type": "status",
+          "status": "burn",
+          "target": "all-opponents"
+        }
+      },
+      "rarity": "ultra-rare",
+      "set": "mist-village",
+      "artPath": "cards/jutsu/boil-mist.webp",
+      "setNumber": 23
+    },
+    {
+      "id": "mv-024",
+      "type": "jutsu-scroll",
+      "name": "Crystal Ice Mirrors",
+      "description": "Prevent all damage to your Active Ninja this turn. You must have Haku in play.",
+      "effect": {
+        "type": "conditional",
+        "condition": "haku-required-damage-block"
+      },
+      "rarity": "ultra-rare",
+      "set": "mist-village",
+      "artPath": "cards/jutsu/ice-mirrors.webp",
+      "setNumber": 24
+    },
+    {
+      "id": "mv-023",
+      "type": "jutsu-scroll",
+      "name": "Demonic Mirror Genjutsu",
+      "description": "The Defending Ninja is Confused.",
+      "effect": {
+        "type": "status",
+        "status": "confusion",
+        "target": "opponent-active"
+      },
+      "rarity": "ultra-rare",
+      "set": "mist-village",
+      "artPath": "cards/jutsu/demonic-mirror.webp",
+      "setNumber": 25
+    },
+    {
+      "id": "mv-036",
+      "type": "jutsu-scroll",
+      "name": "Ice Age Freeze",
+      "description": "Paralyze all opposing Ninjas.",
+      "effect": {
+        "type": "status",
+        "status": "paralyze",
+        "target": "all-opponents"
+      },
+      "rarity": "ultra-rare",
+      "set": "mist-village",
+      "artPath": "cards/jutsu/ice-age.webp",
+      "setNumber": 26
+    },
+    {
+      "id": "mv-029",
+      "type": "jutsu-scroll",
+      "name": "Giant Water Vortex",
+      "description": "Deal 70 damage and discard 1 Chakra from the Defender.",
+      "effect": {
+        "type": "energy-discard",
+        "target": "opponent-active",
+        "amount": 1,
+        "secondaryEffect": {
+          "type": "status",
+          "target": "opponent-active",
+          "amount": 70
+        }
+      },
+      "rarity": "rare",
+      "set": "mist-village",
+      "artPath": "cards/jutsu/water-vortex.webp",
+      "setNumber": 27
+    },
+    {
+      "id": "mv-025",
+      "type": "jutsu-scroll",
+      "name": "Great Exploding Water Wave",
+      "description": "Deal 80 damage to the Defender and 30 to each Benched opponent.",
+      "effect": {
+        "type": "bench-damage",
+        "target": "all-opponents",
+        "amount": 80,
+        "secondaryEffect": {
+          "type": "bench-damage",
+          "target": "opponent-bench",
+          "amount": 30
+        }
+      },
+      "rarity": "rare",
+      "set": "mist-village",
+      "artPath": "cards/jutsu/water-wave.webp",
+      "setNumber": 28
+    },
+    {
+      "id": "mv-021",
+      "type": "jutsu-scroll",
+      "name": "Great Waterfall Jutsu",
+      "description": "Deal 120 damage and switch the Defender.",
+      "effect": {
+        "type": "switch",
+        "target": "opponent-active",
+        "amount": 120
+      },
+      "rarity": "rare",
+      "set": "mist-village",
+      "artPath": "cards/jutsu/great-waterfall.webp",
+      "setNumber": 29
+    },
+    {
+      "id": "mv-026",
+      "type": "jutsu-scroll",
+      "name": "Lava Release: Wall of Stone",
+      "description": "Your Fire Ninjas gain +40 HP this turn.",
+      "effect": {
+        "type": "heal",
+        "amount": 40,
+        "target": "self-bench"
+      },
+      "rarity": "rare",
+      "set": "mist-village",
+      "artPath": "cards/jutsu/lava-wall.webp",
+      "setNumber": 30
+    },
+    {
+      "id": "mv-034",
+      "type": "jutsu-scroll",
+      "name": "Rising Water Slicer",
+      "description": "Deal 80 damage with 50% chance to Paralyze.",
+      "effect": {
+        "type": "status",
+        "status": "paralyze",
+        "target": "opponent-active",
+        "amount": 80
+      },
+      "rarity": "rare",
+      "set": "mist-village",
+      "artPath": "cards/jutsu/water-slicer.webp",
+      "setNumber": 31
+    },
+    {
+      "id": "mv-037",
+      "type": "jutsu-scroll",
+      "name": "Sealing: Mist Barrier",
+      "description": "Opponents cannot play Jutsu Scrolls next turn.",
+      "effect": {
+        "type": "conditional",
+        "condition": "opponent-jutsu-lock"
+      },
+      "rarity": "rare",
+      "set": "mist-village",
+      "artPath": "cards/jutsu/mist-barrier.webp",
+      "setNumber": 32
+    },
+    {
+      "id": "mv-032",
+      "type": "jutsu-scroll",
+      "name": "Silent Kill",
+      "description": "If this Jutsu would KO the Defender, ignore their Ability.",
+      "effect": {
+        "type": "status",
+        "target": "opponent-active",
+        "amount": 60
+      },
+      "rarity": "rare",
+      "set": "mist-village",
+      "artPath": "cards/jutsu/silent-kill.webp",
+      "setNumber": 33
+    },
+    {
+      "id": "mv-020",
+      "type": "jutsu-scroll",
+      "name": "Water Dragon Jutsu",
+      "description": "Deal 100 damage to the Defending Ninja.",
+      "effect": {
+        "type": "status",
+        "target": "opponent-active",
+        "amount": 100
+      },
+      "rarity": "rare",
+      "set": "mist-village",
+      "artPath": "cards/jutsu/water-dragon.webp",
+      "setNumber": 34
+    },
+    {
+      "id": "mv-040",
+      "type": "jutsu-scroll",
+      "name": "Blood Mist Curse",
+      "description": "Both players discard 1 card from their hand.",
+      "effect": {
+        "type": "discard",
+        "amount": 1,
+        "secondaryEffect": {
+          "type": "discard",
+          "target": "opponent-active",
+          "amount": 1
+        }
+      },
+      "rarity": "uncommon",
+      "set": "mist-village",
+      "artPath": "cards/jutsu/blood-mist.webp",
+      "setNumber": 35
+    },
+    {
+      "id": "mv-031",
+      "type": "jutsu-scroll",
+      "name": "Bubble Technique",
+      "description": "The Defending Ninja is Paralyzed.",
+      "effect": {
+        "type": "status",
+        "status": "paralyze",
+        "target": "opponent-active"
+      },
+      "rarity": "uncommon",
+      "set": "mist-village",
+      "artPath": "cards/jutsu/bubble-technique.webp",
+      "setNumber": 36
+    },
+    {
+      "id": "mv-038",
+      "type": "jutsu-scroll",
+      "name": "Frozen Lake Field",
+      "description": "All Ninjas have +1 retreat cost this turn.",
+      "effect": {
+        "type": "conditional",
+        "condition": "retreat-increase",
+        "amount": 1
+      },
+      "rarity": "uncommon",
+      "set": "mist-village",
+      "artPath": "cards/jutsu/frozen-lake.webp",
+      "setNumber": 37
+    },
+    {
+      "id": "mv-033",
+      "type": "jutsu-scroll",
+      "name": "Mist Chakra Detection",
+      "description": "Look at the opponent's hand and Bench. Draw 2 cards.",
+      "effect": {
+        "type": "draw",
+        "amount": 2
+      },
+      "rarity": "uncommon",
+      "set": "mist-village",
+      "artPath": "cards/jutsu/mist-detection.webp",
+      "setNumber": 38
+    },
+    {
+      "id": "mv-028",
+      "type": "jutsu-scroll",
+      "name": "Water Clone Technique",
+      "description": "Put a Water Clone onto your Bench (50 HP, 20 damage attack).",
+      "effect": {
+        "type": "conditional",
+        "condition": "spawn-water-clone"
+      },
+      "rarity": "uncommon",
+      "set": "mist-village",
+      "artPath": "cards/jutsu/water-clone.webp",
+      "setNumber": 39
+    },
+    {
+      "id": "mv-022",
+      "type": "jutsu-scroll",
+      "name": "Water Prison Jutsu",
+      "description": "The Defending Ninja cannot retreat next turn.",
+      "effect": {
+        "type": "status",
+        "status": "seal",
+        "target": "opponent-active"
+      },
+      "rarity": "uncommon",
+      "set": "mist-village",
+      "artPath": "cards/jutsu/water-prison.webp",
+      "setNumber": 40
+    },
+    {
+      "id": "mv-035",
+      "type": "jutsu-scroll",
+      "name": "Whirlpool Jutsu",
+      "description": "Switch the Defending Ninja. Deal 50 damage.",
+      "effect": {
+        "type": "switch",
+        "target": "opponent-active",
+        "amount": 50
+      },
+      "rarity": "uncommon",
+      "set": "mist-village",
+      "artPath": "cards/jutsu/whirlpool.webp",
+      "setNumber": 41
+    },
+    {
+      "id": "mv-019",
+      "type": "jutsu-scroll",
+      "name": "Hidden Mist Jutsu",
+      "description": "All opposing Ninjas have -20 damage until your next turn.",
+      "effect": {
+        "type": "conditional",
+        "condition": "opponent-damage-debuff",
+        "amount": 20
+      },
+      "rarity": "common",
+      "set": "mist-village",
+      "artPath": "cards/jutsu/hidden-mist.webp",
+      "setNumber": 42
+    },
+    {
+      "id": "mv-059",
+      "type": "jutsu-scroll",
+      "name": "Mist Shroud Recovery",
+      "description": "Heal 40 HP from one of your Water Ninjas.",
+      "effect": {
+        "type": "heal",
+        "amount": 40
+      },
+      "rarity": "common",
+      "set": "mist-village",
+      "artPath": "cards/jutsu/shroud-recovery.webp",
+      "setNumber": 43
+    },
+    {
+      "id": "mv-030",
+      "type": "jutsu-scroll",
+      "name": "Water Needles",
+      "description": "Deal 20 damage to each opposing Ninja.",
+      "effect": {
+        "type": "bench-damage",
+        "target": "all-opponents",
+        "amount": 20
+      },
+      "rarity": "common",
+      "set": "mist-village",
+      "artPath": "cards/jutsu/water-needles.webp",
+      "setNumber": 44
+    },
+    {
+      "id": "mv-054",
+      "type": "tool",
+      "name": "Demonic Mist Cloak",
+      "description": "When this Ninja is KO'd, opponent draws no bonus point.",
+      "effect": {
+        "type": "conditional",
+        "condition": "no-ko-bonus"
+      },
+      "rarity": "legendary",
+      "set": "mist-village",
+      "artPath": "cards/tools/demonic-mist.webp",
+      "setNumber": 45
+    },
+    {
+      "id": "mv-046",
+      "type": "tool",
+      "name": "Hiramekarei",
+      "description": "Attach to Chojuro. His attacks deal +50 damage.",
+      "effect": {
+        "type": "damage-boost",
+        "amount": 50,
+        "condition": "chojuro-only"
+      },
+      "rarity": "ultra-rare",
+      "set": "mist-village",
+      "artPath": "cards/tools/hiramekarei.webp",
+      "setNumber": 46
+    },
+    {
+      "id": "mv-041",
+      "type": "tool",
+      "name": "Kubikirib\u014dch\u014d",
+      "description": "Attach to a Water Ninja. Their attacks deal +40 damage. Heals +10 when wearer deals damage.",
+      "effect": {
+        "type": "damage-boost",
+        "amount": 40
+      },
+      "rarity": "ultra-rare",
+      "set": "mist-village",
+      "artPath": "cards/tools/kubikiribocho.webp",
+      "setNumber": 47
+    },
+    {
+      "id": "mv-047",
+      "type": "tool",
+      "name": "Samehada Fragment",
+      "description": "The wearer's attacks absorb 10 HP.",
+      "effect": {
+        "type": "heal",
+        "amount": 10,
+        "target": "self"
+      },
+      "rarity": "ultra-rare",
+      "set": "mist-village",
+      "artPath": "cards/tools/samehada-fragment.webp",
+      "setNumber": 48
+    },
+    {
+      "id": "mv-055",
+      "type": "tool",
+      "name": "Cursed Tombstone",
+      "description": "Attach to a Ninja. When it's KO'd, deal 60 damage to the attacker.",
+      "effect": {
+        "type": "bench-damage",
+        "target": "opponent-active",
+        "amount": 60,
+        "condition": "on-ko"
+      },
+      "rarity": "rare",
+      "set": "mist-village",
+      "artPath": "cards/tools/cursed-tombstone.webp",
+      "setNumber": 49
+    },
+    {
+      "id": "mv-044",
+      "type": "tool",
+      "name": "Kabutowari",
+      "description": "The wearer's attacks ignore 20 points of damage reduction.",
+      "effect": {
+        "type": "conditional",
+        "condition": "pierce",
+        "amount": 20
+      },
+      "rarity": "rare",
+      "set": "mist-village",
+      "artPath": "cards/tools/kabutowari.webp",
+      "setNumber": 50
+    },
+    {
+      "id": "mv-042",
+      "type": "tool",
+      "name": "Kiba Twin Swords",
+      "description": "The wearer's Lightning attacks deal +30 damage.",
+      "effect": {
+        "type": "damage-boost",
+        "amount": 30
+      },
+      "rarity": "rare",
+      "set": "mist-village",
+      "artPath": "cards/tools/kiba.webp",
+      "setNumber": 51
+    },
+    {
+      "id": "mv-043",
+      "type": "tool",
+      "name": "Nuibari Needle",
+      "description": "The wearer's attacks also Seal the Defender.",
+      "effect": {
+        "type": "status",
+        "status": "seal",
+        "target": "opponent-active"
+      },
+      "rarity": "rare",
+      "set": "mist-village",
+      "artPath": "cards/tools/nuibari.webp",
+      "setNumber": 52
+    },
+    {
+      "id": "mv-052",
+      "type": "tool",
+      "name": "Seven Swordsmen Emblem",
+      "description": "The wearer's Sword-named Tools deal +20 damage each.",
+      "effect": {
+        "type": "damage-boost",
+        "amount": 20
+      },
+      "rarity": "rare",
+      "set": "mist-village",
+      "artPath": "cards/tools/swordsmen-emblem.webp",
+      "setNumber": 53
+    },
+    {
+      "id": "mv-045",
+      "type": "tool",
+      "name": "Shibuki Blastsword",
+      "description": "The wearer's Fire attacks deal +30 damage and cost +1.",
+      "effect": {
+        "type": "damage-boost",
+        "amount": 30
+      },
+      "rarity": "rare",
+      "set": "mist-village",
+      "artPath": "cards/tools/shibuki.webp",
+      "setNumber": 54
+    },
+    {
+      "id": "mv-048",
+      "type": "tool",
+      "name": "Bubble Pipe",
+      "description": "Attach to Utakata. His attacks have 100% chance to Paralyze.",
+      "effect": {
+        "type": "status",
+        "status": "paralyze",
+        "target": "opponent-active"
+      },
+      "rarity": "uncommon",
+      "set": "mist-village",
+      "artPath": "cards/tools/bubble-pipe.webp",
+      "setNumber": 55
+    },
+    {
+      "id": "mv-050",
+      "type": "tool",
+      "name": "Hozuki Clan Scroll",
+      "description": "The wearer can use Water attacks with Colorless Chakra.",
+      "effect": {
+        "type": "conditional",
+        "condition": "water-colorless-sub"
+      },
+      "rarity": "uncommon",
+      "set": "mist-village",
+      "artPath": "cards/tools/hozuki-scroll.webp",
+      "setNumber": 56
+    },
+    {
+      "id": "mv-053",
+      "type": "tool",
+      "name": "Ice Senbon Set",
+      "description": "The wearer's attacks Paralyze on a successful hit.",
+      "effect": {
+        "type": "status",
+        "status": "paralyze",
+        "target": "opponent-active"
+      },
+      "rarity": "uncommon",
+      "set": "mist-village",
+      "artPath": "cards/tools/ice-senbon.webp",
+      "setNumber": 57
+    },
+    {
+      "id": "mv-051",
+      "type": "tool",
+      "name": "Mist Headband",
+      "description": "The wearer takes 10 less damage from Jutsu Scrolls.",
+      "effect": {
+        "type": "conditional",
+        "condition": "jutsu-damage-reduction",
+        "amount": 10
+      },
+      "rarity": "common",
+      "set": "mist-village",
+      "artPath": "cards/tools/mist-headband.webp",
+      "setNumber": 58
+    },
+    {
+      "id": "mv-049",
+      "type": "tool",
+      "name": "Water Gourd",
+      "description": "The wearer heals 10 HP at the end of each turn.",
+      "effect": {
+        "type": "heal",
+        "amount": 10,
+        "target": "self"
+      },
+      "rarity": "common",
+      "set": "mist-village",
+      "artPath": "cards/tools/water-gourd.webp",
+      "setNumber": 59
+    },
+    {
+      "id": "mv-056",
+      "type": "sensei",
+      "name": "Mei Terumi",
+      "subtitle": "Fifth Mizukage's Judgment",
+      "description": "Deal 60 damage to the Defending Ninja and Burn it.",
+      "effect": {
+        "type": "status",
+        "status": "burn",
+        "target": "opponent-active",
+        "amount": 60
+      },
+      "rarity": "legendary",
+      "set": "mist-village",
+      "artPath": "cards/sensei/mei.webp",
+      "setNumber": 60
+    },
+    {
+      "id": "mv-057",
+      "type": "sensei",
+      "name": "Zabuza Momochi",
+      "subtitle": "Demon's Memory",
+      "description": "Search your deck for a Mist Sword Tool and attach it to a Ninja.",
+      "effect": {
+        "type": "conditional",
+        "condition": "tutor-sword"
+      },
+      "rarity": "ultra-rare",
+      "set": "mist-village",
+      "artPath": "cards/sensei/zabuza.webp",
+      "setNumber": 61
+    },
+    {
+      "id": "mv-058",
+      "type": "sensei",
+      "name": "Ao",
+      "subtitle": "Sensor Overwatch",
+      "description": "Look at the opponent's entire hand and top 3 deck cards.",
+      "effect": {
+        "type": "conditional",
+        "condition": "full-reveal"
+      },
+      "rarity": "rare",
+      "set": "mist-village",
+      "artPath": "cards/sensei/ao.webp",
+      "setNumber": 62
+    }
+  ],
+  "pullRates": {
+    "common": 0.48,
+    "uncommon": 0.27,
+    "rare": 0.15,
+    "ultra-rare": 0.065,
+    "legendary": 0.028,
+    "secret": 0.005,
+    "crown": 0.002
+  },
+  "totalCards": 62
+}

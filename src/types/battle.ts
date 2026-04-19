@@ -39,7 +39,7 @@ export interface BattleState {
   activePlayer: 'player' | 'opponent';
   player: PlayerBattleState;
   opponent: PlayerBattleState;
-  chakraOptions: [ChakraType, ChakraType];
+  chakraOptions: ChakraType[];
   turnLog: BattleEvent[];
   winner: 'player' | 'opponent' | 'draw' | null;
   firstTurn: boolean;
@@ -56,7 +56,8 @@ export type BattleAction =
   | { type: 'play-tool'; cardId: string; targetInstanceId: string }
   | { type: 'use-sensei' }
   | { type: 'end-turn' }
-  | { type: 'select-active'; instanceId: string };
+  | { type: 'select-active'; cardId: string }
+  | { type: 'end-setup' };
 
 export interface BattleEvent {
   type: string;

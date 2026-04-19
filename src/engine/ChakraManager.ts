@@ -1,28 +1,12 @@
 import { ChakraType } from '@/types/enums';
-import { NinjaCard, GameCard } from '@/types/card';
-import { isNinja } from '@/lib/cardUtils';
+import { GameCard } from '@/types/card';
 import { BattleCardInstance } from '@/types/battle';
 
-export function generateChakraOptions(deck: GameCard[]): [ChakraType, ChakraType] {
-  // Determine the 2 most common types in the deck
-  const typeCounts: Record<string, number> = {};
-  for (const card of deck) {
-    if (isNinja(card)) {
-      const ninja = card as NinjaCard;
-      typeCounts[ninja.chakraType] = (typeCounts[ninja.chakraType] ?? 0) + 1;
-    }
-  }
-
-  const sorted = Object.entries(typeCounts)
-    .sort((a, b) => b[1] - a[1])
-    .map(([type]) => type as ChakraType);
-
-  if (sorted.length >= 2) {
-    return [sorted[0], sorted[1]];
-  } else if (sorted.length === 1) {
-    return [sorted[0], ChakraType.Colorless];
-  }
-  return [ChakraType.Colorless, ChakraType.Colorless];
+// Simplified chakra: a single "colorless" power-up that adapts to any cost.
+// Ninjas can have different elements, but the chakra energy itself is
+// type-agnostic so deck building stays flexible.
+export function generateChakraOptions(_deck: GameCard[]): ChakraType[] {
+  return [ChakraType.Colorless];
 }
 
 export function attachChakra(
