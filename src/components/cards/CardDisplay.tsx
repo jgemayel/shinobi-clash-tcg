@@ -18,8 +18,8 @@ interface CardDisplayProps {
   showCount?: boolean;
 }
 
-const LEGENDARY_TIERS = new Set([Rarity.Legendary, Rarity.Crown, Rarity.Secret]);
-const PREMIUM_TIERS = new Set([Rarity.UltraRare, Rarity.Legendary, Rarity.Secret, Rarity.Crown]);
+const LEGENDARY_TIERS = new Set<Rarity>([Rarity.Legendary]);
+const PREMIUM_TIERS = new Set<Rarity>([Rarity.Legendary]);
 
 // Pokemon-style element palette: bright primary + deep secondary + accent highlight
 const ELEMENT_PALETTE: Record<ChakraType, { primary: string; secondary: string; accent: string; rays: string }> = {
@@ -33,12 +33,8 @@ const ELEMENT_PALETTE: Record<ChakraType, { primary: string; secondary: string; 
 
 function getRarityClass(rarity: Rarity): string {
   switch (rarity) {
-    case Rarity.Uncommon: return 'rarity-uncommon';
     case Rarity.Rare: return 'rarity-rare';
-    case Rarity.UltraRare: return 'rarity-ultra-rare';
     case Rarity.Legendary: return 'rarity-legendary';
-    case Rarity.Secret: return 'rarity-secret';
-    case Rarity.Crown: return 'rarity-crown';
     default: return '';
   }
 }
@@ -81,14 +77,14 @@ export default function CardDisplay({ card, size = 'md', onClick, count, showCou
   const embers = useMemo(() => {
     if (!isLegendaryTier || size === 'sm') return [];
     const seed = card.name.length + card.id.length;
-    const count = card.rarity === Rarity.Crown ? 10 : 6;
+    const count = isEx ? 10 : 6;
     return Array.from({ length: count }, (_, i) => ({
       left: `${((seed * (i + 1) * 37) % 80) + 10}%`,
       delay: `${(i * 0.3) % 2.4}s`,
       duration: `${2.2 + ((i * 7) % 10) * 0.1}s`,
       size: `${2 + (i % 3)}px`,
     }));
-  }, [card.id, card.name, card.rarity, isLegendaryTier, size]);
+  }, [card.id, card.name, card.rarity, isLegendaryTier, isEx, size]);
 
   const handleMouseMove = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
     if (size === 'sm' || !cardRef.current) return;
@@ -108,13 +104,11 @@ export default function CardDisplay({ card, size = 'md', onClick, count, showCou
 
   const nameTextStyle: React.CSSProperties | undefined = isPremium && ninja
     ? {
-        background: card.rarity === Rarity.Crown
-          ? 'linear-gradient(180deg, #fff7d4 0%, #fde047 40%, #f59e0b 100%)'
-          : card.rarity === Rarity.Secret
-            ? 'linear-gradient(180deg, #fce7f3 0%, #f9a8d4 40%, #db2777 100%)'
-            : card.rarity === Rarity.Legendary
-              ? 'linear-gradient(180deg, #fde68a 0%, #fbbf24 40%, #b45309 100%)'
-              : `linear-gradient(180deg, #ffffff 0%, ${palette.accent} 50%, ${palette.primary} 100%)`,
+        background: isEx
+          ? 'linear-gradient(180deg, #fff7d4 0%, #fde047 40%, #b45309 100%)'
+          : card.rarity === Rarity.Legendary
+            ? 'linear-gradient(180deg, #fde68a 0%, #fbbf24 40%, #b45309 100%)'
+            : `linear-gradient(180deg, #ffffff 0%, ${palette.accent} 50%, ${palette.primary} 100%)`,
         WebkitBackgroundClip: 'text',
         WebkitTextFillColor: 'transparent',
         backgroundClip: 'text',
@@ -123,13 +117,13 @@ export default function CardDisplay({ card, size = 'md', onClick, count, showCou
       }
     : undefined;
 
-  const borderColor = isLegendaryTier
-    ? (card.rarity === Rarity.Crown ? 'rgba(251, 191, 36, 0.95)'
-       : card.rarity === Rarity.Secret ? 'rgba(236, 72, 153, 0.8)'
-       : 'rgba(251, 191, 36, 0.8)')
-    : isPremium
-      ? `${palette.primary}cc`
-      : `${typeColor}55`;
+  const borderColor = isEx
+    ? 'rgba(251, 191, 36, 0.95)'
+    : isLegendaryTier
+      ? 'rgba(251, 191, 36, 0.8)'
+      : isPremium
+        ? `${palette.primary}cc`
+        : `${typeColor}55`;
 
   // PREMIUM LAYOUT — full-art, Pokemon-inspired (UR/Legendary/Secret/Crown)
   if (isPremium && ninja && size !== 'sm') {
@@ -374,22 +368,16 @@ export default function CardDisplay({ card, size = 'md', onClick, count, showCou
               fontSize: size === 'md' ? '0.55em' : '0.7em',
               background: ninja?.isEx
                 ? 'linear-gradient(135deg, #fff7d4, #b45309)'
-                : card.rarity === Rarity.Crown
-                  ? 'linear-gradient(135deg, #fff7d4, #f59e0b)'
-                  : card.rarity === Rarity.Secret
-                    ? 'linear-gradient(135deg, #fce7f3, #db2777)'
-                    : card.rarity === Rarity.Legendary
-                      ? 'linear-gradient(135deg, #fde68a, #b45309)'
-                      : `linear-gradient(135deg, ${palette.accent}, ${palette.primary})`,
+                : card.rarity === Rarity.Legendary
+                  ? 'linear-gradient(135deg, #fde68a, #b45309)'
+                  : `linear-gradient(135deg, ${palette.accent}, ${palette.primary})`,
               color: '#1a0f00',
               boxShadow: '0 2px 6px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.4)',
             }}
           >
             {ninja?.isEx ? 'EX'
-              : card.rarity === Rarity.Crown ? 'CROWN'
-              : card.rarity === Rarity.Secret ? 'SECRET'
               : card.rarity === Rarity.Legendary ? 'LEGEND'
-              : 'UR'}
+              : 'RARE'}
           </div>
 
           {isShiny && (

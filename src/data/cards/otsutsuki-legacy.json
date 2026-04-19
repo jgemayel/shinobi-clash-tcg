@@ -12,7 +12,7 @@
       "subtitle": "Rabbit Goddess",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 210,
+      "hp": 190,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -20,7 +20,7 @@
           "cost": {
             "colorless": 4
           },
-          "damage": 140,
+          "damage": 130,
           "effect": null,
           "description": "The Truth-Seeking Orb grows to swallow a battlefield."
         }
@@ -35,8 +35,8 @@
         }
       },
       "weakness": "wind",
-      "retreatCost": 2,
-      "rarity": "crown",
+      "retreatCost": 1,
+      "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "This world is my garden. You are the weeds.",
       "artPath": "cards/ninja/kaguya.webp",
@@ -51,7 +51,7 @@
       "subtitle": "Rabbit Moon Form",
       "stage": 1,
       "evolvesFrom": "otl-001",
-      "hp": 190,
+      "hp": 180,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -59,7 +59,7 @@
           "cost": {
             "colorless": 5
           },
-          "damage": 120,
+          "damage": 140,
           "effect": null,
           "description": "Tears open a pocket dimension to consume the target."
         }
@@ -75,8 +75,8 @@
         }
       },
       "weakness": "wind",
-      "retreatCost": 2,
-      "rarity": "secret",
+      "retreatCost": 1,
+      "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "My children play at being gods.",
       "artPath": "cards/ninja/kaguya.webp",
@@ -91,7 +91,7 @@
       "subtitle": "Rabbit Moon Form EX",
       "stage": 1,
       "evolvesFrom": null,
-      "hp": 260,
+      "hp": 320,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -99,7 +99,7 @@
           "cost": {
             "colorless": 4
           },
-          "damage": 120,
+          "damage": 160,
           "effect": {
             "type": "status",
             "status": "paralyze",
@@ -112,7 +112,7 @@
           "cost": {
             "colorless": 5
           },
-          "damage": 170,
+          "damage": 200,
           "effect": null,
           "description": "Tears open a pocket dimension to consume the target."
         }
@@ -128,9 +128,9 @@
         }
       },
       "weakness": "wind",
-      "retreatCost": 2,
-      "rarity": "secret",
-      "isLegendary": false,
+      "retreatCost": 3,
+      "rarity": "legendary",
+      "isLegendary": true,
       "flavorText": "My children play at being gods.",
       "artPath": "cards/ninja/kaguya.webp",
       "set": "otsutsuki-legacy",
@@ -144,7 +144,7 @@
       "subtitle": "Sage of Six Paths",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 210,
+      "hp": 190,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -168,8 +168,8 @@
         }
       },
       "weakness": "wind",
-      "retreatCost": 2,
-      "rarity": "crown",
+      "retreatCost": 1,
+      "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "I brought chakra to this world. Use it wisely.",
       "artPath": "cards/ninja/hagoromo.webp",
@@ -184,7 +184,7 @@
       "subtitle": "Sage of Six Paths EX",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 280,
+      "hp": 290,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -192,7 +192,7 @@
           "cost": {
             "colorless": 3
           },
-          "damage": 140,
+          "damage": 170,
           "effect": {
             "type": "heal",
             "amount": 80,
@@ -205,7 +205,7 @@
           "cost": {
             "colorless": 4
           },
-          "damage": 180,
+          "damage": 200,
           "effect": null,
           "description": "The founding technique of all ninjutsu."
         }
@@ -221,9 +221,9 @@
         }
       },
       "weakness": "wind",
-      "retreatCost": 3,
-      "rarity": "crown",
-      "isLegendary": false,
+      "retreatCost": 2,
+      "rarity": "legendary",
+      "isLegendary": true,
       "flavorText": "I brought chakra to this world. Use it wisely.",
       "artPath": "cards/ninja/hagoromo.webp",
       "set": "otsutsuki-legacy",
@@ -245,7 +245,7 @@
           "cost": {
             "colorless": 1
           },
-          "damage": 40,
+          "damage": 30,
           "effect": null,
           "description": "Young but prodigious."
         }
@@ -253,7 +253,7 @@
       "ability": null,
       "weakness": "wind",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "One day I will teach humans.",
       "artPath": "cards/ninja/hagoromo.webp",
@@ -268,7 +268,7 @@
       "subtitle": "Moon's Guardian",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 160,
+      "hp": 190,
       "chakraType": "wind",
       "attacks": [
         {
@@ -277,7 +277,7 @@
             "wind": 2,
             "colorless": 2
           },
-          "damage": 100,
+          "damage": 140,
           "effect": {
             "type": "status",
             "status": "paralyze",
@@ -304,7 +304,7 @@
       "subtitle": "Moon Initiate",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 80,
       "chakraType": "wind",
       "attacks": [
         {
@@ -312,7 +312,7 @@
           "cost": {
             "wind": 1
           },
-          "damage": 30,
+          "damage": 40,
           "effect": null,
           "description": "Early glimpse of the moon's eye."
         }
@@ -335,7 +335,7 @@
       "subtitle": "Uchiha Ancestor",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 160,
+      "hp": 190,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -376,7 +376,7 @@
       "subtitle": "Senju Ancestor",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 160,
+      "hp": 190,
       "chakraType": "water",
       "attacks": [
         {
@@ -385,7 +385,7 @@
             "water": 2,
             "colorless": 2
           },
-          "damage": 100,
+          "damage": 140,
           "effect": {
             "type": "heal",
             "amount": 40,
@@ -429,7 +429,7 @@
             "fire": 3,
             "colorless": 2
           },
-          "damage": 140,
+          "damage": 100,
           "effect": {
             "type": "bench-damage",
             "target": "opponent-bench",
@@ -449,7 +449,7 @@
       },
       "weakness": "wind",
       "retreatCost": 2,
-      "rarity": "crown",
+      "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "I am the god of this world.",
       "artPath": "cards/ninja/madara.webp",
@@ -464,7 +464,7 @@
       "subtitle": "Ten-Tails Jinchuriki",
       "stage": 1,
       "evolvesFrom": "otl-007",
-      "hp": 220,
+      "hp": 170,
       "chakraType": "fire",
       "attacks": [
         {
@@ -473,7 +473,7 @@
             "fire": 3,
             "colorless": 4
           },
-          "damage": 140,
+          "damage": 120,
           "effect": {
             "type": "bench-damage",
             "target": "all-opponents",
@@ -492,8 +492,8 @@
         }
       },
       "weakness": "wind",
-      "retreatCost": 2,
-      "rarity": "crown",
+      "retreatCost": 1,
+      "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "With the Ten-Tails within me, I am the final evolution.",
       "artPath": "cards/ninja/juubi.webp",
@@ -508,7 +508,7 @@
       "subtitle": "Ten-Tails Jinchuriki EX",
       "stage": 1,
       "evolvesFrom": null,
-      "hp": 290,
+      "hp": 320,
       "chakraType": "fire",
       "attacks": [
         {
@@ -516,7 +516,7 @@
           "cost": {
             "colorless": 3
           },
-          "damage": 140,
+          "damage": 150,
           "effect": null,
           "description": "Black orbs orbit and strike."
         },
@@ -546,8 +546,8 @@
       },
       "weakness": "wind",
       "retreatCost": 3,
-      "rarity": "crown",
-      "isLegendary": false,
+      "rarity": "legendary",
+      "isLegendary": true,
       "flavorText": "With the Ten-Tails within me, I am the final evolution.",
       "artPath": "cards/ninja/juubi.webp",
       "set": "otsutsuki-legacy",
@@ -561,7 +561,7 @@
       "subtitle": "Cloned Uchiha Hive",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 150,
       "chakraType": "fire",
       "attacks": [
         {
@@ -570,7 +570,7 @@
             "fire": 1,
             "colorless": 1
           },
-          "damage": 60,
+          "damage": 80,
           "effect": null,
           "description": "Countless clones attack together."
         }
@@ -601,7 +601,7 @@
           "cost": {
             "colorless": 1
           },
-          "damage": 40,
+          "damage": 30,
           "effect": {
             "type": "energy-discard",
             "target": "opponent-active",
@@ -613,7 +613,7 @@
       "ability": null,
       "weakness": "wind",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "Power is to be taken.",
       "artPath": null,
@@ -628,7 +628,7 @@
       "subtitle": "Celestial Champion",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 140,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -636,7 +636,7 @@
           "cost": {
             "colorless": 2
           },
-          "damage": 60,
+          "damage": 80,
           "effect": null,
           "description": "A cut that spans stars."
         }
@@ -659,7 +659,7 @@
       "subtitle": "Chakra Devotee",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 70,
       "chakraType": "water",
       "attacks": [
         {
@@ -667,7 +667,7 @@
           "cost": {
             "water": 1
           },
-          "damage": 30,
+          "damage": 40,
           "effect": {
             "type": "heal",
             "amount": 20,
@@ -710,7 +710,7 @@
       "ability": null,
       "weakness": "wind",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "I have served a thousand years.",
       "artPath": null,
@@ -725,7 +725,7 @@
       "subtitle": "God-Tree Sentinel",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 130,
       "chakraType": "earth",
       "attacks": [
         {
@@ -734,7 +734,7 @@
             "earth": 1,
             "colorless": 1
           },
-          "damage": 60,
+          "damage": 70,
           "effect": null,
           "description": "Branches of living wood lash out."
         }
@@ -757,7 +757,7 @@
       "subtitle": "Living Weapon",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 90,
       "chakraType": "earth",
       "attacks": [
         {
@@ -765,7 +765,7 @@
           "cost": {
             "earth": 1
           },
-          "damage": 40,
+          "damage": 20,
           "effect": {
             "type": "energy-discard",
             "target": "opponent-active",
@@ -777,7 +777,7 @@
       "ability": null,
       "weakness": "fire",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "All chakra returns to the Tree.",
       "artPath": null,
@@ -792,7 +792,7 @@
       "subtitle": "Kaguya's Eye",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 70,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -800,7 +800,7 @@
           "cost": {
             "colorless": 1
           },
-          "damage": 30,
+          "damage": 50,
           "effect": {
             "type": "draw",
             "amount": 1
@@ -936,7 +936,7 @@
         "type": "conditional",
         "condition": "wild-card"
       },
-      "rarity": "secret",
+      "rarity": "legendary",
       "set": "otsutsuki-legacy",
       "artPath": "cards/jutsu/banbutsu.webp",
       "setNumber": 29
@@ -950,7 +950,7 @@
         "type": "conditional",
         "condition": "steal-ninja"
       },
-      "rarity": "secret",
+      "rarity": "legendary",
       "set": "otsutsuki-legacy",
       "artPath": "cards/jutsu/dim-warp.webp",
       "setNumber": 30
@@ -964,7 +964,7 @@
         "type": "conditional",
         "condition": "revive-all-once"
       },
-      "rarity": "crown",
+      "rarity": "legendary",
       "set": "otsutsuki-legacy",
       "artPath": "cards/jutsu/tree-revival.webp",
       "setNumber": 31
@@ -983,7 +983,7 @@
           "condition": "revive-legendary-full"
         }
       },
-      "rarity": "crown",
+      "rarity": "legendary",
       "set": "otsutsuki-legacy",
       "artPath": "cards/jutsu/rinnegan-rebirth.webp",
       "setNumber": 32
@@ -998,7 +998,7 @@
         "target": "all-opponents",
         "amount": 120
       },
-      "rarity": "crown",
+      "rarity": "legendary",
       "set": "otsutsuki-legacy",
       "artPath": "cards/jutsu/shinra-god.webp",
       "setNumber": 33
@@ -1014,7 +1014,7 @@
         "target": "opponent-active",
         "amount": 120
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "otsutsuki-legacy",
       "artPath": "cards/jutsu/ash-bone.webp",
       "setNumber": 34
@@ -1029,7 +1029,7 @@
         "amount": 999,
         "condition": "crit-3-attacks"
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "otsutsuki-legacy",
       "artPath": "cards/jutsu/eternal-mangekyo.webp",
       "setNumber": 35
@@ -1043,7 +1043,7 @@
         "type": "conditional",
         "condition": "spawn-limbo"
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "otsutsuki-legacy",
       "artPath": "cards/jutsu/limbo.webp",
       "setNumber": 36
@@ -1062,7 +1062,7 @@
           "amount": 50
         }
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "otsutsuki-legacy",
       "artPath": "cards/jutsu/susanoo-god.webp",
       "setNumber": 37
@@ -1082,7 +1082,7 @@
           "amount": 40
         }
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "otsutsuki-legacy",
       "artPath": "cards/jutsu/truth-orb.webp",
       "setNumber": 38
@@ -1096,7 +1096,7 @@
         "type": "conditional",
         "condition": "damage-transfer"
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "otsutsuki-legacy",
       "artPath": "cards/jutsu/yinyang.webp",
       "setNumber": 39
@@ -1168,7 +1168,7 @@
         "type": "draw",
         "amount": 1
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "otsutsuki-legacy",
       "artPath": "cards/jutsu/byakugan-awake.webp",
       "setNumber": 44
@@ -1182,7 +1182,7 @@
         "type": "conditional",
         "condition": "chakra-free-shuffle"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "otsutsuki-legacy",
       "artPath": "cards/jutsu/celestial-path.webp",
       "setNumber": 45
@@ -1238,7 +1238,7 @@
         "type": "conditional",
         "condition": "kaguya-only-jutsu-immune"
       },
-      "rarity": "crown",
+      "rarity": "legendary",
       "set": "otsutsuki-legacy",
       "artPath": "cards/tools/lunar-mirror.webp",
       "setNumber": 49
@@ -1252,7 +1252,7 @@
         "type": "heal",
         "amount": 50
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "otsutsuki-legacy",
       "artPath": "cards/tools/ashura-armor.webp",
       "setNumber": 50
@@ -1268,7 +1268,7 @@
         "target": "self",
         "condition": "once-per-battle"
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "otsutsuki-legacy",
       "artPath": "cards/tools/chakra-fruit.webp",
       "setNumber": 51
@@ -1282,7 +1282,7 @@
         "type": "conditional",
         "condition": "pierce-lightning"
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "otsutsuki-legacy",
       "artPath": "cards/tools/indra-crystal.webp",
       "setNumber": 52
@@ -1341,7 +1341,7 @@
         "condition": "jutsu-dr",
         "amount": 20
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "otsutsuki-legacy",
       "artPath": "cards/tools/celestial-cloak.webp",
       "setNumber": 56
@@ -1389,7 +1389,7 @@
           "condition": "cleanse-all"
         }
       },
-      "rarity": "crown",
+      "rarity": "legendary",
       "set": "otsutsuki-legacy",
       "artPath": "cards/sensei/kaguya.webp",
       "setNumber": 59
@@ -1404,7 +1404,7 @@
         "type": "conditional",
         "condition": "revive-any-full"
       },
-      "rarity": "crown",
+      "rarity": "legendary",
       "set": "otsutsuki-legacy",
       "artPath": "cards/sensei/hagoromo.webp",
       "setNumber": 60
@@ -1419,7 +1419,7 @@
         "type": "conditional",
         "condition": "full-scout"
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "otsutsuki-legacy",
       "artPath": "cards/sensei/hamura.webp",
       "setNumber": 61
@@ -1463,13 +1463,9 @@
     }
   ],
   "pullRates": {
-    "common": 0.4,
-    "uncommon": 0.25,
-    "rare": 0.18,
-    "ultra-rare": 0.09,
-    "legendary": 0.05,
-    "secret": 0.008,
-    "crown": 0.002
+    "common": 0.62,
+    "rare": 0.29,
+    "legendary": 0.09
   },
   "totalCards": 63
 }

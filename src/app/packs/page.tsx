@@ -18,7 +18,7 @@ import { soundManager } from '@/lib/sounds';
 
 type PackState = 'select' | 'tearing' | 'reveal' | 'done';
 
-const RARE_RARITIES = [Rarity.Rare, Rarity.UltraRare, Rarity.Legendary, Rarity.Secret, Rarity.Crown];
+const RARE_RARITIES = [Rarity.Rare, Rarity.Legendary];
 
 function formatTime(ms: number): string {
   const totalSeconds = Math.floor(ms / 1000);

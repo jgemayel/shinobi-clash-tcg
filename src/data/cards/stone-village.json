@@ -12,7 +12,7 @@
       "subtitle": "Old Jonin",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 140,
       "chakraType": "earth",
       "attacks": [
         {
@@ -21,7 +21,7 @@
             "earth": 1,
             "colorless": 1
           },
-          "damage": 60,
+          "damage": 90,
           "effect": null,
           "description": "Drops from above with stored momentum."
         }
@@ -44,7 +44,7 @@
       "subtitle": "Third Tsuchikage \u2014 Dust Release",
       "stage": 1,
       "evolvesFrom": "stv-001",
-      "hp": 170,
+      "hp": 180,
       "chakraType": "earth",
       "attacks": [
         {
@@ -53,7 +53,7 @@
             "earth": 3,
             "colorless": 2
           },
-          "damage": 110,
+          "damage": 120,
           "effect": null,
           "description": "A particle-level disintegration field."
         }
@@ -111,7 +111,7 @@
       },
       "weakness": "wind",
       "retreatCost": 2,
-      "rarity": "secret",
+      "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "Old bones still dance in the clouds.",
       "artPath": "cards/ninja/onoki.webp",
@@ -126,7 +126,7 @@
       "subtitle": "Dust Release Ascendant",
       "stage": 3,
       "evolvesFrom": "stv-066",
-      "hp": 260,
+      "hp": 210,
       "chakraType": "earth",
       "attacks": [
         {
@@ -136,7 +136,7 @@
             "wind": 2,
             "colorless": 2
           },
-          "damage": 160,
+          "damage": 120,
           "effect": {
             "type": "bench-damage",
             "target": "all-opponents",
@@ -156,7 +156,7 @@
       },
       "weakness": "wind",
       "retreatCost": 2,
-      "rarity": "crown",
+      "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "I became the Kekkei Tota itself.",
       "artPath": "cards/ninja/onoki.webp",
@@ -171,7 +171,7 @@
       "subtitle": "Dust Release Ascendant EX",
       "stage": 3,
       "evolvesFrom": null,
-      "hp": 330,
+      "hp": 290,
       "chakraType": "earth",
       "attacks": [
         {
@@ -179,7 +179,7 @@
           "cost": {
             "earth": 4
           },
-          "damage": 140,
+          "damage": 150,
           "effect": null,
           "description": "Target ceases to exist at atomic level."
         },
@@ -209,9 +209,9 @@
         }
       },
       "weakness": "wind",
-      "retreatCost": 3,
-      "rarity": "crown",
-      "isLegendary": false,
+      "retreatCost": 2,
+      "rarity": "legendary",
+      "isLegendary": true,
       "flavorText": "I became the Kekkei Tota itself.",
       "artPath": "cards/ninja/onoki.webp",
       "set": "stone-village",
@@ -225,7 +225,7 @@
       "subtitle": "Second Tsuchikage",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 160,
+      "hp": 180,
       "chakraType": "earth",
       "attacks": [
         {
@@ -267,7 +267,7 @@
       "subtitle": "First Tsuchikage",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 160,
+      "hp": 200,
       "chakraType": "earth",
       "attacks": [
         {
@@ -276,14 +276,14 @@
             "earth": 2,
             "colorless": 2
           },
-          "damage": 100,
+          "damage": 130,
           "effect": null,
           "description": "Iwa's foundation reasserts itself."
         }
       ],
       "ability": null,
       "weakness": "wind",
-      "retreatCost": 1,
+      "retreatCost": 2,
       "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "My village was built from this very rock.",
@@ -316,7 +316,7 @@
       "ability": null,
       "weakness": "wind",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "Grandpa taught me well.",
       "artPath": "cards/ninja/kurotsuchi.webp",
@@ -331,7 +331,7 @@
       "subtitle": "Fourth Tsuchikage",
       "stage": 1,
       "evolvesFrom": "stv-005",
-      "hp": 110,
+      "hp": 130,
       "chakraType": "earth",
       "attacks": [
         {
@@ -340,7 +340,7 @@
             "earth": 2,
             "fire": 1
           },
-          "damage": 70,
+          "damage": 80,
           "effect": {
             "type": "status",
             "status": "burn",
@@ -376,7 +376,7 @@
             "earth": 2,
             "colorless": 1
           },
-          "damage": 40,
+          "damage": 30,
           "effect": null,
           "description": "A humanoid stone ally."
         }
@@ -384,7 +384,7 @@
       "ability": null,
       "weakness": "wind",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "I'm not JUST big.",
       "artPath": "cards/ninja/akatsuchi.webp",
@@ -399,7 +399,7 @@
       "subtitle": "Iwa Commander",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 140,
       "chakraType": "earth",
       "attacks": [
         {
@@ -408,7 +408,7 @@
             "earth": 2,
             "colorless": 1
           },
-          "damage": 60,
+          "damage": 70,
           "effect": null,
           "description": "Splits the ground beneath the target."
         }
@@ -431,7 +431,7 @@
       "subtitle": "Explosion Release",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 140,
       "chakraType": "fire",
       "attacks": [
         {
@@ -440,7 +440,7 @@
             "fire": 1,
             "earth": 1
           },
-          "damage": 60,
+          "damage": 90,
           "effect": {
             "type": "self-damage",
             "amount": 20
@@ -466,7 +466,7 @@
       "subtitle": "Five-Tails Jinchuriki",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 130,
+      "hp": 120,
       "chakraType": "water",
       "attacks": [
         {
@@ -475,7 +475,7 @@
             "water": 2,
             "colorless": 2
           },
-          "damage": 80,
+          "damage": 70,
           "effect": null,
           "description": "Partial transformation into the horned beast."
         }
@@ -492,7 +492,7 @@
       },
       "weakness": "wind",
       "retreatCost": 1,
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "isLegendary": false,
       "flavorText": "Heat is a shield.",
       "artPath": "cards/ninja/han.webp",
@@ -507,7 +507,7 @@
       "subtitle": "Four-Tails Jinchuriki",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 130,
+      "hp": 140,
       "chakraType": "fire",
       "attacks": [
         {
@@ -516,7 +516,7 @@
             "fire": 2,
             "earth": 2
           },
-          "damage": 80,
+          "damage": 70,
           "effect": null,
           "description": "Channels the ape's fury."
         }
@@ -524,7 +524,7 @@
       "ability": null,
       "weakness": "water",
       "retreatCost": 1,
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "isLegendary": false,
       "flavorText": "Son and I have an understanding.",
       "artPath": "cards/ninja/roshi.webp",
@@ -539,7 +539,7 @@
       "subtitle": "Iwa Prodigy",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 80,
       "chakraType": "earth",
       "attacks": [
         {
@@ -547,7 +547,7 @@
           "cost": {
             "earth": 1
           },
-          "damage": 30,
+          "damage": 40,
           "effect": null,
           "description": "A shaped clay explosive."
         }
@@ -578,7 +578,7 @@
           "cost": {
             "earth": 1
           },
-          "damage": 40,
+          "damage": 30,
           "effect": null,
           "description": "A muted killing blow."
         }
@@ -586,7 +586,7 @@
       "ability": null,
       "weakness": "wind",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "Stone sees all.",
       "artPath": null,
@@ -609,7 +609,7 @@
           "cost": {
             "earth": 2
           },
-          "damage": 40,
+          "damage": 30,
           "effect": null,
           "description": "A heavy blow with stone force."
         }
@@ -617,7 +617,7 @@
       "ability": null,
       "weakness": "wind",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "The elite guard.",
       "artPath": null,
@@ -648,7 +648,7 @@
       "ability": null,
       "weakness": "wind",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "Our hearts are stone.",
       "artPath": null,
@@ -663,7 +663,7 @@
       "subtitle": "Earth Medic",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 50,
       "chakraType": "water",
       "attacks": [
         {
@@ -698,7 +698,7 @@
       "subtitle": "Long Range Specialist",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 80,
       "chakraType": "earth",
       "attacks": [
         {
@@ -706,7 +706,7 @@
           "cost": {
             "earth": 1
           },
-          "damage": 30,
+          "damage": 40,
           "effect": null,
           "description": "A supersonic pebble."
         }
@@ -737,7 +737,7 @@
           "cost": {
             "colorless": 1
           },
-          "damage": 30,
+          "damage": 20,
           "effect": null,
           "description": "A basic projectile."
         }
@@ -760,7 +760,7 @@
       "subtitle": "Reconnaissance",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 90,
       "chakraType": "earth",
       "attacks": [
         {
@@ -768,7 +768,7 @@
           "cost": {
             "earth": 1
           },
-          "damage": 30,
+          "damage": 50,
           "effect": null,
           "description": "Senses vibrations."
         }
@@ -791,7 +791,7 @@
       "subtitle": "Summoned Stone Ally",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 60,
       "chakraType": "earth",
       "attacks": [
         {
@@ -800,7 +800,7 @@
             "earth": 1,
             "colorless": 1
           },
-          "damage": 40,
+          "damage": 50,
           "effect": null,
           "description": "A sweeping stone arm."
         }
@@ -808,7 +808,7 @@
       "ability": null,
       "weakness": "wind",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "*earth rumbling*",
       "artPath": null,
@@ -833,7 +833,7 @@
             "wind": 1,
             "colorless": 1
           },
-          "damage": 60,
+          "damage": 70,
           "effect": null,
           "description": "A fledgling Dust Release."
         }
@@ -880,7 +880,7 @@
         "target": "opponent-active",
         "amount": 80
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "stone-village",
       "artPath": "cards/jutsu/dust-prison.webp",
       "setNumber": 26
@@ -900,7 +900,7 @@
           "amount": 100
         }
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "stone-village",
       "artPath": "cards/jutsu/explosion.webp",
       "setNumber": 27
@@ -916,7 +916,7 @@
         "target": "opponent-active",
         "amount": 80
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "stone-village",
       "artPath": "cards/jutsu/lava-release.webp",
       "setNumber": 28
@@ -936,7 +936,7 @@
           "amount": 150
         }
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "stone-village",
       "artPath": "cards/jutsu/mountain-splitter.webp",
       "setNumber": 29
@@ -956,7 +956,7 @@
           "target": "all-opponents"
         }
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "stone-village",
       "artPath": "cards/jutsu/mausoleum.webp",
       "setNumber": 30
@@ -1108,7 +1108,7 @@
         "condition": "damage-block",
         "amount": 40
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "stone-village",
       "artPath": "cards/jutsu/earth-wall.webp",
       "setNumber": 40
@@ -1127,7 +1127,7 @@
           "condition": "retreat-increase"
         }
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "stone-village",
       "artPath": "cards/jutsu/mud-flow.webp",
       "setNumber": 41
@@ -1141,7 +1141,7 @@
         "type": "conditional",
         "condition": "spawn-wolves"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "stone-village",
       "artPath": "cards/jutsu/mud-wolves.webp",
       "setNumber": 42
@@ -1156,7 +1156,7 @@
         "amount": 40,
         "condition": "earth-chakra"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "stone-village",
       "artPath": "cards/jutsu/rising-earth.webp",
       "setNumber": 43
@@ -1171,7 +1171,7 @@
         "target": "all-opponents",
         "amount": 40
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "stone-village",
       "artPath": "cards/jutsu/stone-bullet.webp",
       "setNumber": 44
@@ -1185,7 +1185,7 @@
         "type": "conditional",
         "condition": "jutsu-immunity-turn"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "stone-village",
       "artPath": "cards/jutsu/stone-cocoon.webp",
       "setNumber": 45
@@ -1200,7 +1200,7 @@
         "condition": "permanent-retreat-increase",
         "amount": 2
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "stone-village",
       "artPath": "cards/jutsu/weight-of-world.webp",
       "setNumber": 46
@@ -1273,7 +1273,7 @@
         "type": "conditional",
         "condition": "chakra-gen-earth"
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "stone-village",
       "artPath": "cards/tools/earth-ring.webp",
       "setNumber": 51
@@ -1287,7 +1287,7 @@
         "type": "conditional",
         "condition": "free-retreat"
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "stone-village",
       "artPath": "cards/tools/onoki-hat.webp",
       "setNumber": 52
@@ -1301,7 +1301,7 @@
         "type": "conditional",
         "condition": "pierce"
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "stone-village",
       "artPath": "cards/tools/red-secret.webp",
       "setNumber": 53
@@ -1403,7 +1403,7 @@
         "condition": "earth-cost-reduction",
         "amount": 1
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "stone-village",
       "artPath": "cards/tools/mountain-scroll.webp",
       "setNumber": 60
@@ -1417,7 +1417,7 @@
         "type": "damage-boost",
         "amount": 15
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "stone-village",
       "artPath": "cards/tools/rock-sword.webp",
       "setNumber": 61
@@ -1432,7 +1432,7 @@
         "condition": "damage-reduction",
         "amount": 20
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "stone-village",
       "artPath": "cards/tools/stone-shield.webp",
       "setNumber": 62
@@ -1492,7 +1492,7 @@
         "type": "conditional",
         "condition": "tutor-earth"
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "stone-village",
       "artPath": "cards/sensei/kurotsuchi.webp",
       "setNumber": 66
@@ -1528,20 +1528,16 @@
           "amount": 1
         }
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "stone-village",
       "artPath": "cards/sensei/iwa-elder.webp",
       "setNumber": 68
     }
   ],
   "pullRates": {
-    "common": 0.48,
-    "uncommon": 0.27,
-    "rare": 0.15,
-    "ultra-rare": 0.065,
-    "legendary": 0.028,
-    "secret": 0.005,
-    "crown": 0.002
+    "common": 0.62,
+    "rare": 0.29,
+    "legendary": 0.09
   },
   "totalCards": 68
 }

@@ -12,7 +12,7 @@
       "subtitle": "Academy Student",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 70,
       "chakraType": "wind",
       "attacks": [
         {
@@ -44,7 +44,7 @@
       "subtitle": "Genin of the Leaf",
       "stage": 1,
       "evolvesFrom": "hlo-001",
-      "hp": 80,
+      "hp": 90,
       "chakraType": "wind",
       "attacks": [
         {
@@ -53,7 +53,7 @@
             "wind": 2,
             "colorless": 1
           },
-          "damage": 50,
+          "damage": 30,
           "effect": null,
           "description": "A spiraling sphere of compressed chakra slams into the target."
         }
@@ -61,7 +61,7 @@
       "ability": null,
       "weakness": "fire",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "I never go back on my word. That's my nindo!",
       "artPath": "cards/ninja/naruto-stage1.webp",
@@ -76,7 +76,7 @@
       "subtitle": "Sage Mode",
       "stage": 2,
       "evolvesFrom": "hlo-002",
-      "hp": 150,
+      "hp": 140,
       "chakraType": "wind",
       "attacks": [
         {
@@ -85,7 +85,7 @@
             "wind": 3,
             "colorless": 1
           },
-          "damage": 100,
+          "damage": 90,
           "effect": {
             "type": "self-damage",
             "amount": 20
@@ -99,8 +99,8 @@
       },
       "weakness": "fire",
       "retreatCost": 1,
-      "rarity": "ultra-rare",
-      "isLegendary": true,
+      "rarity": "rare",
+      "isLegendary": false,
       "flavorText": "The power of nature flows through me.",
       "artPath": "cards/ninja/naruto-stage2.webp",
       "set": "hidden-leaf-origins",
@@ -114,7 +114,7 @@
       "subtitle": "Six Paths Sage Mode",
       "stage": 3,
       "evolvesFrom": "hlo-003",
-      "hp": 260,
+      "hp": 190,
       "chakraType": "wind",
       "attacks": [
         {
@@ -123,7 +123,7 @@
             "wind": 3,
             "colorless": 2
           },
-          "damage": 160,
+          "damage": 130,
           "effect": {
             "type": "bench-damage",
             "target": "opponent-bench",
@@ -143,8 +143,8 @@
         }
       },
       "weakness": "lightning",
-      "retreatCost": 2,
-      "rarity": "crown",
+      "retreatCost": 1,
+      "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "I'm not Naruto Uzumaki \u2014 I'm the hope of the Shinobi world.",
       "artPath": "cards/ninja/naruto-stage2.webp",
@@ -159,7 +159,7 @@
       "subtitle": "Six Paths Sage Mode EX",
       "stage": 3,
       "evolvesFrom": null,
-      "hp": 330,
+      "hp": 320,
       "chakraType": "wind",
       "attacks": [
         {
@@ -168,7 +168,7 @@
             "wind": 2,
             "colorless": 1
           },
-          "damage": 140,
+          "damage": 170,
           "effect": null,
           "description": "A black orb of the five elements plus Yin-Yang. Pierces defenses."
         },
@@ -178,7 +178,7 @@
             "wind": 3,
             "colorless": 2
           },
-          "damage": 210,
+          "damage": 190,
           "effect": {
             "type": "bench-damage",
             "target": "opponent-bench",
@@ -199,8 +199,8 @@
       },
       "weakness": "lightning",
       "retreatCost": 3,
-      "rarity": "crown",
-      "isLegendary": false,
+      "rarity": "legendary",
+      "isLegendary": true,
       "flavorText": "I'm not Naruto Uzumaki \u2014 I'm the hope of the Shinobi world.",
       "artPath": "cards/ninja/naruto-stage2.webp",
       "set": "hidden-leaf-origins",
@@ -214,7 +214,7 @@
       "subtitle": "Academy Student",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 90,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -223,7 +223,7 @@
             "lightning": 1,
             "colorless": 1
           },
-          "damage": 30,
+          "damage": 40,
           "effect": null,
           "description": "Sasuke unleashes a fireball learned from the Uchiha clan."
         }
@@ -255,7 +255,7 @@
             "lightning": 2,
             "colorless": 1
           },
-          "damage": 50,
+          "damage": 30,
           "effect": {
             "type": "status",
             "status": "paralyze",
@@ -268,7 +268,7 @@
       "ability": null,
       "weakness": "wind",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "I have to obtain power, no matter what.",
       "artPath": "cards/ninja/sasuke-stage1.webp",
@@ -283,7 +283,7 @@
       "subtitle": "Mangekyo Awakened",
       "stage": 2,
       "evolvesFrom": "hlo-005",
-      "hp": 150,
+      "hp": 140,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -292,7 +292,7 @@
             "lightning": 3,
             "colorless": 1
           },
-          "damage": 100,
+          "damage": 80,
           "effect": {
             "type": "status",
             "status": "burn",
@@ -307,8 +307,8 @@
       },
       "weakness": "wind",
       "retreatCost": 1,
-      "rarity": "ultra-rare",
-      "isLegendary": true,
+      "rarity": "rare",
+      "isLegendary": false,
       "flavorText": "These eyes see the truth of all creation.",
       "artPath": "cards/ninja/sasuke-stage2.webp",
       "set": "hidden-leaf-origins",
@@ -322,7 +322,7 @@
       "subtitle": "Cursed Seal Level 2",
       "stage": 2,
       "evolvesFrom": "hlo-005",
-      "hp": 150,
+      "hp": 140,
       "chakraType": "fire",
       "attacks": [
         {
@@ -332,7 +332,7 @@
             "fire": 1,
             "colorless": 1
           },
-          "damage": 100,
+          "damage": 90,
           "effect": {
             "type": "self-damage",
             "amount": 30
@@ -352,7 +352,7 @@
       },
       "weakness": "lightning",
       "retreatCost": 1,
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "isLegendary": false,
       "flavorText": "The power Orochimaru gave me... I'll use every drop of it.",
       "artPath": "cards/ninja/sasuke-stage2.webp",
@@ -367,7 +367,7 @@
       "subtitle": "Rinnegan Awakened",
       "stage": 3,
       "evolvesFrom": "hlo-006",
-      "hp": 200,
+      "hp": 190,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -377,7 +377,65 @@
             "fire": 1,
             "colorless": 2
           },
-          "damage": 120,
+          "damage": 130,
+          "effect": {
+            "type": "energy-discard",
+            "amount": 1,
+            "target": "self"
+          },
+          "description": "A chidori-bladed arrow wreathed in Susanoo. Discard 1 Chakra from this Ninja."
+        }
+      ],
+      "ability": {
+        "name": "Shinra Tensei",
+        "description": "Once per turn, force your opponent to switch their Active Ninja with one from their Bench.",
+        "trigger": "once-per-turn",
+        "effect": {
+          "type": "switch",
+          "target": "opponent-active"
+        }
+      },
+      "weakness": "wind",
+      "retreatCost": 1,
+      "rarity": "legendary",
+      "isLegendary": true,
+      "flavorText": "I see all paths, past and future.",
+      "artPath": "cards/ninja/sasuke-stage2.webp",
+      "set": "hidden-leaf-origins",
+      "setNumber": 10,
+      "isEx": false
+    },
+    {
+      "id": "hlo-083-ex",
+      "type": "ninja",
+      "name": "Sasuke Uchiha",
+      "subtitle": "Rinnegan Awakened EX",
+      "stage": 3,
+      "evolvesFrom": null,
+      "hp": 290,
+      "chakraType": "lightning",
+      "attacks": [
+        {
+          "name": "Amaterasu Flames",
+          "cost": {
+            "fire": 2
+          },
+          "damage": 170,
+          "effect": {
+            "type": "status",
+            "status": "burn",
+            "target": "opponent-active"
+          },
+          "description": "Black flames that cannot be extinguished."
+        },
+        {
+          "name": "Indra's Arrow",
+          "cost": {
+            "lightning": 2,
+            "fire": 1,
+            "colorless": 2
+          },
+          "damage": 210,
           "effect": {
             "type": "energy-discard",
             "amount": 1,
@@ -399,64 +457,6 @@
       "retreatCost": 2,
       "rarity": "legendary",
       "isLegendary": true,
-      "flavorText": "I see all paths, past and future.",
-      "artPath": "cards/ninja/sasuke-stage2.webp",
-      "set": "hidden-leaf-origins",
-      "setNumber": 10,
-      "isEx": false
-    },
-    {
-      "id": "hlo-083-ex",
-      "type": "ninja",
-      "name": "Sasuke Uchiha",
-      "subtitle": "Rinnegan Awakened EX",
-      "stage": 3,
-      "evolvesFrom": null,
-      "hp": 270,
-      "chakraType": "lightning",
-      "attacks": [
-        {
-          "name": "Amaterasu Flames",
-          "cost": {
-            "fire": 2
-          },
-          "damage": 110,
-          "effect": {
-            "type": "status",
-            "status": "burn",
-            "target": "opponent-active"
-          },
-          "description": "Black flames that cannot be extinguished."
-        },
-        {
-          "name": "Indra's Arrow",
-          "cost": {
-            "lightning": 2,
-            "fire": 1,
-            "colorless": 2
-          },
-          "damage": 180,
-          "effect": {
-            "type": "energy-discard",
-            "amount": 1,
-            "target": "self"
-          },
-          "description": "A chidori-bladed arrow wreathed in Susanoo. Discard 1 Chakra from this Ninja."
-        }
-      ],
-      "ability": {
-        "name": "Shinra Tensei",
-        "description": "Once per turn, force your opponent to switch their Active Ninja with one from their Bench.",
-        "trigger": "once-per-turn",
-        "effect": {
-          "type": "switch",
-          "target": "opponent-active"
-        }
-      },
-      "weakness": "wind",
-      "retreatCost": 3,
-      "rarity": "legendary",
-      "isLegendary": false,
       "flavorText": "I see all paths, past and future.",
       "artPath": "cards/ninja/sasuke-stage2.webp",
       "set": "hidden-leaf-origins",
@@ -479,7 +479,7 @@
             "fire": 3,
             "colorless": 2
           },
-          "damage": 140,
+          "damage": 120,
           "effect": null,
           "description": "Triple magatama orbs spiral."
         }
@@ -496,7 +496,7 @@
       },
       "weakness": "wind",
       "retreatCost": 2,
-      "rarity": "secret",
+      "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "My brother's power flows through me.",
       "artPath": "cards/ninja/sasuke-stage2.webp",
@@ -519,7 +519,7 @@
           "cost": {
             "colorless": 1
           },
-          "damage": 30,
+          "damage": 50,
           "effect": null,
           "description": "Sakura strikes with precision learned from her studies."
         }
@@ -542,7 +542,7 @@
       "subtitle": "Medical Ninja",
       "stage": 1,
       "evolvesFrom": "hlo-007",
-      "hp": 80,
+      "hp": 90,
       "chakraType": "water",
       "attacks": [
         {
@@ -559,7 +559,7 @@
       "ability": null,
       "weakness": "earth",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "Tsunade-sama taught me everything I know.",
       "artPath": "cards/ninja/sakura-stage1.webp",
@@ -574,7 +574,7 @@
       "subtitle": "Byakugou Unleashed",
       "stage": 2,
       "evolvesFrom": "hlo-008",
-      "hp": 120,
+      "hp": 130,
       "chakraType": "water",
       "attacks": [
         {
@@ -583,7 +583,7 @@
             "water": 2,
             "colorless": 1
           },
-          "damage": 80,
+          "damage": 90,
           "effect": null,
           "description": "A monstrous punch that shatters the earth."
         }
@@ -609,7 +609,7 @@
       "subtitle": "Byakugou Unleashed EX",
       "stage": 2,
       "evolvesFrom": null,
-      "hp": 220,
+      "hp": 330,
       "chakraType": "water",
       "attacks": [
         {
@@ -618,7 +618,7 @@
             "water": 2,
             "colorless": 1
           },
-          "damage": 90,
+          "damage": 160,
           "effect": null,
           "description": "A monstrous punch that shatters the earth."
         },
@@ -627,7 +627,7 @@
           "cost": {
             "water": 3
           },
-          "damage": 140,
+          "damage": 200,
           "effect": {
             "type": "heal",
             "amount": 60,
@@ -641,8 +641,8 @@
         "description": "Once per turn, heal 10 damage from this Ninja."
       },
       "weakness": "earth",
-      "retreatCost": 2,
-      "rarity": "ultra-rare",
+      "retreatCost": 3,
+      "rarity": "rare",
       "isLegendary": false,
       "flavorText": "I've finally caught up to them.",
       "artPath": "cards/ninja/sakura-stage2.webp",
@@ -657,7 +657,7 @@
       "subtitle": "Young Prodigy",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 70,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -666,7 +666,7 @@
             "lightning": 1,
             "colorless": 1
           },
-          "damage": 30,
+          "damage": 40,
           "effect": null,
           "description": "Kakashi's father's signature technique, inherited by the son."
         }
@@ -689,7 +689,7 @@
       "subtitle": "Jonin Captain",
       "stage": 1,
       "evolvesFrom": "hlo-010",
-      "hp": 110,
+      "hp": 140,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -721,7 +721,7 @@
       "subtitle": "Sharingan Master",
       "stage": 2,
       "evolvesFrom": "hlo-011",
-      "hp": 150,
+      "hp": 120,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -730,7 +730,7 @@
             "lightning": 3,
             "colorless": 1
           },
-          "damage": 100,
+          "damage": 90,
           "effect": {
             "type": "self-damage",
             "amount": 20
@@ -744,8 +744,8 @@
       },
       "weakness": "wind",
       "retreatCost": 1,
-      "rarity": "ultra-rare",
-      "isLegendary": true,
+      "rarity": "rare",
+      "isLegendary": false,
       "flavorText": "The man who has copied over 1,000 jutsu.",
       "artPath": "cards/ninja/kakashi-stage2.webp",
       "set": "hidden-leaf-origins",
@@ -759,7 +759,7 @@
       "subtitle": "Kamui Susanoo",
       "stage": 3,
       "evolvesFrom": "hlo-012",
-      "hp": 200,
+      "hp": 220,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -768,7 +768,7 @@
             "lightning": 3,
             "colorless": 1
           },
-          "damage": 120,
+          "damage": 140,
           "effect": null,
           "description": "Launches a spear of pure chakra from a spectral avatar."
         }
@@ -799,7 +799,7 @@
       "subtitle": "Kamui Susanoo EX",
       "stage": 3,
       "evolvesFrom": null,
-      "hp": 270,
+      "hp": 310,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -808,7 +808,7 @@
             "lightning": 2,
             "colorless": 1
           },
-          "damage": 110,
+          "damage": 170,
           "effect": {
             "type": "energy-discard",
             "amount": 1,
@@ -822,7 +822,7 @@
             "lightning": 3,
             "colorless": 1
           },
-          "damage": 180,
+          "damage": 200,
           "effect": null,
           "description": "Launches a spear of pure chakra from a spectral avatar."
         }
@@ -839,7 +839,7 @@
       "weakness": "earth",
       "retreatCost": 3,
       "rarity": "legendary",
-      "isLegendary": false,
+      "isLegendary": true,
       "flavorText": "I was bequeathed a second eye by a friend. I won't let his gift go to waste.",
       "artPath": "cards/ninja/kakashi-stage2.webp",
       "set": "hidden-leaf-origins",
@@ -853,7 +853,7 @@
       "subtitle": "Wood Release Captain",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 120,
       "chakraType": "earth",
       "attacks": [
         {
@@ -862,7 +862,7 @@
             "earth": 2,
             "colorless": 1
           },
-          "damage": 60,
+          "damage": 70,
           "effect": null,
           "description": "Summon a house of wood to crush the target."
         }
@@ -885,7 +885,7 @@
       "subtitle": "Ink Artist of Root",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 60,
       "chakraType": "water",
       "attacks": [
         {
@@ -894,7 +894,7 @@
             "water": 1,
             "colorless": 1
           },
-          "damage": 40,
+          "damage": 30,
           "effect": null,
           "description": "Painted beasts leap off the scroll."
         }
@@ -902,7 +902,7 @@
       "ability": null,
       "weakness": "lightning",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "Trained by Root to have no emotions \u2014 until he met Team 7.",
       "artPath": "cards/ninja/sai.webp",
@@ -917,7 +917,7 @@
       "subtitle": "Noble Beast of the Leaf",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 120,
       "chakraType": "fire",
       "attacks": [
         {
@@ -926,7 +926,7 @@
             "fire": 2,
             "colorless": 1
           },
-          "damage": 60,
+          "damage": 80,
           "effect": {
             "type": "self-damage",
             "amount": 10
@@ -955,7 +955,7 @@
       "subtitle": "Taijutsu Specialist",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 80,
       "chakraType": "earth",
       "attacks": [
         {
@@ -964,7 +964,7 @@
             "earth": 1,
             "colorless": 1
           },
-          "damage": 30,
+          "damage": 50,
           "effect": null,
           "description": "Lee leaps in with a powerful flying kick."
         }
@@ -996,7 +996,7 @@
             "earth": 2,
             "colorless": 1
           },
-          "damage": 70,
+          "damage": 80,
           "effect": {
             "type": "self-damage",
             "amount": 30
@@ -1025,7 +1025,7 @@
       "subtitle": "Eighth Gate: Death",
       "stage": 2,
       "evolvesFrom": "hlo-014",
-      "hp": 180,
+      "hp": 190,
       "chakraType": "wind",
       "attacks": [
         {
@@ -1052,7 +1052,7 @@
         }
       },
       "weakness": "fire",
-      "retreatCost": 2,
+      "retreatCost": 1,
       "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "If I cannot do it, I will die trying. That is my way of the ninja!",
@@ -1068,7 +1068,7 @@
       "subtitle": "Branch House Genius",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 60,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -1077,7 +1077,7 @@
             "lightning": 1,
             "colorless": 2
           },
-          "damage": 40,
+          "damage": 30,
           "effect": {
             "type": "status",
             "status": "seal",
@@ -1093,7 +1093,7 @@
       },
       "weakness": "wind",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "You are within the range of my divination.",
       "artPath": "cards/ninja/neji.webp",
@@ -1140,7 +1140,7 @@
       "subtitle": "Weapon Specialist",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 50,
       "chakraType": "earth",
       "attacks": [
         {
@@ -1149,7 +1149,7 @@
             "earth": 1,
             "colorless": 1
           },
-          "damage": 30,
+          "damage": 50,
           "effect": {
             "type": "bench-damage",
             "amount": 10,
@@ -1176,7 +1176,7 @@
       "subtitle": "Lazy Genius",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 90,
       "chakraType": "earth",
       "attacks": [
         {
@@ -1185,7 +1185,7 @@
             "earth": 1,
             "colorless": 1
           },
-          "damage": 30,
+          "damage": 50,
           "effect": null,
           "description": "The shadow tightens around the target."
         }
@@ -1208,7 +1208,7 @@
       "subtitle": "Jonin Strategist",
       "stage": 1,
       "evolvesFrom": "hlo-017",
-      "hp": 80,
+      "hp": 60,
       "chakraType": "earth",
       "attacks": [
         {
@@ -1217,7 +1217,7 @@
             "earth": 2,
             "colorless": 1
           },
-          "damage": 50,
+          "damage": 40,
           "effect": {
             "type": "draw",
             "amount": 2
@@ -1231,7 +1231,7 @@
       },
       "weakness": "lightning",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "I've already thought 200 moves ahead.",
       "artPath": "cards/ninja/shikamaru-stage1.webp",
@@ -1246,7 +1246,7 @@
       "subtitle": "Mind Walker",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 50,
       "chakraType": "water",
       "attacks": [
         {
@@ -1278,7 +1278,7 @@
       "subtitle": "Expansion Fighter",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 70,
       "chakraType": "earth",
       "attacks": [
         {
@@ -1287,7 +1287,7 @@
             "earth": 1,
             "colorless": 1
           },
-          "damage": 30,
+          "damage": 50,
           "effect": null,
           "description": "Choji rolls into the opponent at full speed."
         }
@@ -1310,7 +1310,7 @@
       "subtitle": "Gentle Warrior",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 80,
       "chakraType": "water",
       "attacks": [
         {
@@ -1319,7 +1319,7 @@
             "water": 1,
             "colorless": 1
           },
-          "damage": 30,
+          "damage": 40,
           "effect": {
             "type": "heal",
             "amount": 10,
@@ -1349,7 +1349,7 @@
       "subtitle": "Twin Lion Fists",
       "stage": 1,
       "evolvesFrom": "hlo-021",
-      "hp": 110,
+      "hp": 130,
       "chakraType": "water",
       "attacks": [
         {
@@ -1358,7 +1358,7 @@
             "water": 1,
             "colorless": 2
           },
-          "damage": 70,
+          "damage": 80,
           "effect": null,
           "description": "Two chakra lions hammer the target."
         }
@@ -1381,7 +1381,7 @@
       "subtitle": "Fang Warrior",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 90,
       "chakraType": "earth",
       "attacks": [
         {
@@ -1390,7 +1390,7 @@
             "earth": 1,
             "colorless": 1
           },
-          "damage": 30,
+          "damage": 40,
           "effect": null,
           "description": "Kiba and Akamaru spin in a devastating dual drilling attack."
         }
@@ -1413,7 +1413,7 @@
       "subtitle": "Insect User",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 80,
       "chakraType": "earth",
       "attacks": [
         {
@@ -1445,7 +1445,7 @@
       "subtitle": "Toad Sage",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 110,
       "chakraType": "fire",
       "attacks": [
         {
@@ -1480,7 +1480,7 @@
       "subtitle": "Toad Sage Mode",
       "stage": 1,
       "evolvesFrom": "hlo-038",
-      "hp": 170,
+      "hp": 180,
       "chakraType": "earth",
       "attacks": [
         {
@@ -1491,7 +1491,7 @@
             "earth": 1,
             "colorless": 1
           },
-          "damage": 110,
+          "damage": 120,
           "effect": {
             "type": "energy-discard",
             "amount": 1,
@@ -1526,7 +1526,7 @@
       "subtitle": "Toad Sage Mode EX",
       "stage": 1,
       "evolvesFrom": null,
-      "hp": 240,
+      "hp": 300,
       "chakraType": "earth",
       "attacks": [
         {
@@ -1535,7 +1535,7 @@
             "earth": 1,
             "colorless": 1
           },
-          "damage": 110,
+          "damage": 160,
           "effect": {
             "type": "heal",
             "amount": 20,
@@ -1551,7 +1551,7 @@
             "earth": 1,
             "colorless": 1
           },
-          "damage": 160,
+          "damage": 190,
           "effect": {
             "type": "energy-discard",
             "amount": 1,
@@ -1570,9 +1570,9 @@
         }
       },
       "weakness": "lightning",
-      "retreatCost": 2,
+      "retreatCost": 3,
       "rarity": "legendary",
-      "isLegendary": false,
+      "isLegendary": true,
       "flavorText": "I am the Toad Sage of My\u014dboku Mountain \u2014 the Gallant Jiraiya!",
       "artPath": "cards/ninja/jiraiya.webp",
       "set": "hidden-leaf-origins",
@@ -1586,7 +1586,7 @@
       "subtitle": "Legendary Healer",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 140,
       "chakraType": "water",
       "attacks": [
         {
@@ -1621,7 +1621,7 @@
       "subtitle": "Legendary Healer EX",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 200,
+      "hp": 260,
       "chakraType": "water",
       "attacks": [
         {
@@ -1630,7 +1630,7 @@
             "water": 1,
             "colorless": 1
           },
-          "damage": 90,
+          "damage": 140,
           "effect": null,
           "description": "A single finger flick with monstrous strength."
         },
@@ -1640,7 +1640,7 @@
             "water": 2,
             "colorless": 1
           },
-          "damage": 120,
+          "damage": 210,
           "effect": {
             "type": "heal",
             "amount": 60,
@@ -1655,7 +1655,7 @@
       },
       "weakness": "earth",
       "retreatCost": 2,
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "isLegendary": false,
       "flavorText": "I am the Fifth Hokage, Tsunade!",
       "artPath": "cards/ninja/tsunade.webp",
@@ -1670,7 +1670,7 @@
       "subtitle": "Legendary Sannin",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 120,
       "chakraType": "water",
       "attacks": [
         {
@@ -1679,7 +1679,7 @@
             "water": 2,
             "colorless": 1
           },
-          "damage": 60,
+          "damage": 70,
           "effect": null,
           "description": "The legendary grass-cutting sword strikes the opponent."
         }
@@ -1705,7 +1705,7 @@
       "subtitle": "Legendary Sannin EX",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 200,
+      "hp": 320,
       "chakraType": "water",
       "attacks": [
         {
@@ -1714,7 +1714,7 @@
             "water": 1,
             "colorless": 1
           },
-          "damage": 90,
+          "damage": 160,
           "effect": {
             "type": "status",
             "status": "poison",
@@ -1728,7 +1728,7 @@
             "water": 2,
             "colorless": 1
           },
-          "damage": 120,
+          "damage": 200,
           "effect": null,
           "description": "The legendary grass-cutting sword strikes the opponent."
         }
@@ -1738,8 +1738,8 @@
         "description": "The first time this Ninja would be knocked out, flip a coin. If heads, it survives with 10 HP instead."
       },
       "weakness": "earth",
-      "retreatCost": 2,
-      "rarity": "ultra-rare",
+      "retreatCost": 3,
+      "rarity": "rare",
       "isLegendary": false,
       "flavorText": "I want to obtain all the jutsu in the world.",
       "artPath": "cards/ninja/orochimaru.webp",
@@ -1754,7 +1754,7 @@
       "subtitle": "First Hokage",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 130,
       "chakraType": "earth",
       "attacks": [
         {
@@ -1763,7 +1763,7 @@
             "earth": 2,
             "colorless": 1
           },
-          "damage": 60,
+          "damage": 80,
           "effect": {
             "type": "bench-damage",
             "amount": 10,
@@ -1793,7 +1793,7 @@
       "subtitle": "First Hokage EX",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 200,
+      "hp": 330,
       "chakraType": "earth",
       "attacks": [
         {
@@ -1802,7 +1802,7 @@
             "earth": 1,
             "colorless": 1
           },
-          "damage": 90,
+          "damage": 170,
           "effect": {
             "type": "status",
             "status": "paralyze",
@@ -1817,7 +1817,7 @@
             "earth": 2,
             "colorless": 1
           },
-          "damage": 120,
+          "damage": 210,
           "effect": {
             "type": "bench-damage",
             "amount": 10,
@@ -1831,8 +1831,8 @@
         "description": "Once per turn, heal 10 damage from each of your Benched Ninja."
       },
       "weakness": "lightning",
-      "retreatCost": 2,
-      "rarity": "ultra-rare",
+      "retreatCost": 3,
+      "rarity": "rare",
       "isLegendary": false,
       "flavorText": "The true strength of a ninja lies in protecting those who matter most.",
       "artPath": "cards/ninja/hashirama.webp",
@@ -1847,7 +1847,7 @@
       "subtitle": "Second Hokage",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 120,
       "chakraType": "water",
       "attacks": [
         {
@@ -1856,7 +1856,7 @@
             "water": 2,
             "colorless": 1
           },
-          "damage": 60,
+          "damage": 90,
           "effect": null,
           "description": "A massive dragon formed from water crashes into the target."
         }
@@ -1882,7 +1882,7 @@
       "subtitle": "Third Hokage",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 150,
       "chakraType": "fire",
       "attacks": [
         {
@@ -1891,7 +1891,7 @@
             "fire": 2,
             "colorless": 1
           },
-          "damage": 60,
+          "damage": 80,
           "effect": {
             "type": "bench-damage",
             "amount": 10,
@@ -1921,7 +1921,7 @@
       "subtitle": "Leaf's Yellow Flash",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 120,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -1930,7 +1930,7 @@
             "lightning": 1,
             "colorless": 1
           },
-          "damage": 60,
+          "damage": 80,
           "effect": {
             "type": "switch"
           },
@@ -1964,7 +1964,7 @@
             "lightning": 3,
             "colorless": 1
           },
-          "damage": 90,
+          "damage": 80,
           "effect": {
             "type": "self-damage",
             "amount": 40
@@ -1978,8 +1978,8 @@
       },
       "weakness": "wind",
       "retreatCost": 1,
-      "rarity": "ultra-rare",
-      "isLegendary": true,
+      "rarity": "rare",
+      "isLegendary": false,
       "flavorText": "I will protect the village and the ones I love!",
       "artPath": "cards/ninja/minato.webp",
       "set": "hidden-leaf-origins",
@@ -1993,7 +1993,7 @@
       "subtitle": "Fourth Hokage EX",
       "stage": 1,
       "evolvesFrom": null,
-      "hp": 210,
+      "hp": 270,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -2002,7 +2002,7 @@
             "lightning": 2,
             "colorless": 1
           },
-          "damage": 90,
+          "damage": 170,
           "effect": null,
           "description": "Minato teleports behind the target and delivers a Rasengan."
         },
@@ -2012,7 +2012,7 @@
             "lightning": 3,
             "colorless": 1
           },
-          "damage": 140,
+          "damage": 200,
           "effect": {
             "type": "self-damage",
             "amount": 40
@@ -2026,7 +2026,7 @@
       },
       "weakness": "wind",
       "retreatCost": 2,
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "isLegendary": false,
       "flavorText": "I will protect the village and the ones I love!",
       "artPath": "cards/ninja/minato.webp",
@@ -2041,7 +2041,7 @@
       "subtitle": "Tsunade's Apprentice",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 60,
       "chakraType": "water",
       "attacks": [
         {
@@ -2049,7 +2049,7 @@
           "cost": {
             "colorless": 2
           },
-          "damage": 40,
+          "damage": 50,
           "effect": null,
           "description": "Launch a spray of senbon needles."
         }
@@ -2057,7 +2057,7 @@
       "ability": null,
       "weakness": "lightning",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "Carries TonTon wherever the Fifth Hokage goes.",
       "artPath": "cards/ninja/shizune.webp",
@@ -2072,7 +2072,7 @@
       "subtitle": "Forsaken Apprentice",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 140,
       "chakraType": "fire",
       "attacks": [
         {
@@ -2081,7 +2081,7 @@
             "fire": 1,
             "colorless": 1
           },
-          "damage": 60,
+          "damage": 90,
           "effect": {
             "type": "status",
             "status": "poison"
@@ -2123,7 +2123,7 @@
       "ability": null,
       "weakness": "wind",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "Scars of a career in the Torture and Interrogation Force.",
       "artPath": "cards/ninja/ibiki.webp",
@@ -2138,7 +2138,7 @@
       "subtitle": "Senbon Jonin",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 50,
       "chakraType": "wind",
       "attacks": [
         {
@@ -2147,7 +2147,7 @@
             "wind": 1,
             "colorless": 1
           },
-          "damage": 40,
+          "damage": 20,
           "effect": null,
           "description": "Throw a Hiraishin kunai for a swift strike."
         }
@@ -2155,7 +2155,7 @@
       "ability": null,
       "weakness": "fire",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "Minato's bodyguard, always chewing a senbon.",
       "artPath": "cards/ninja/genma.webp",
@@ -2170,7 +2170,7 @@
       "subtitle": "Body Flicker Master",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 140,
       "chakraType": "fire",
       "attacks": [
         {
@@ -2179,7 +2179,7 @@
             "fire": 2,
             "colorless": 1
           },
-          "damage": 60,
+          "damage": 80,
           "effect": {
             "type": "status",
             "status": "confusion"
@@ -2205,7 +2205,7 @@
       "subtitle": "Kotoamatsukami",
       "stage": 1,
       "evolvesFrom": "hlo-shisui-00",
-      "hp": 140,
+      "hp": 150,
       "chakraType": "fire",
       "attacks": [
         {
@@ -2214,7 +2214,7 @@
             "fire": 2,
             "colorless": 2
           },
-          "damage": 90,
+          "damage": 70,
           "effect": {
             "type": "status",
             "status": "seal"
@@ -2225,8 +2225,8 @@
       "ability": null,
       "weakness": "water",
       "retreatCost": 1,
-      "rarity": "ultra-rare",
-      "isLegendary": true,
+      "rarity": "rare",
+      "isLegendary": false,
       "flavorText": "The ultimate genjutsu \u2014 a gift from a sacrificed eye.",
       "artPath": "cards/ninja/shisui-stage1.webp",
       "set": "hidden-leaf-origins",
@@ -2240,7 +2240,7 @@
       "subtitle": "Root Founder",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 110,
       "chakraType": "wind",
       "attacks": [
         {
@@ -2249,7 +2249,7 @@
             "wind": 1,
             "colorless": 2
           },
-          "damage": 60,
+          "damage": 90,
           "effect": null,
           "description": "Stolen Sharingan eyes rewrite reality."
         }
@@ -2258,7 +2258,7 @@
       "weakness": "lightning",
       "retreatCost": 1,
       "rarity": "rare",
-      "isLegendary": true,
+      "isLegendary": false,
       "flavorText": "His arm bears a dozen stolen Sharingans.",
       "artPath": "cards/ninja/danzo.webp",
       "set": "hidden-leaf-origins",
@@ -2281,7 +2281,7 @@
             "water": 1,
             "colorless": 1
           },
-          "damage": 30,
+          "damage": 40,
           "effect": {
             "type": "heal",
             "amount": 10,
@@ -2308,7 +2308,7 @@
       "subtitle": "Honorable Grandson",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 50,
       "chakraType": "fire",
       "attacks": [
         {
@@ -2316,7 +2316,7 @@
           "cost": {
             "fire": 1
           },
-          "damage": 30,
+          "damage": 50,
           "effect": null,
           "description": "A small but spirited fireball."
         }
@@ -2364,7 +2364,7 @@
       },
       "weakness": "lightning",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "I fight only for myself and love only myself.",
       "artPath": "cards/ninja/gaara-stage0.webp",
@@ -2379,7 +2379,7 @@
       "subtitle": "Fifth Kazekage",
       "stage": 1,
       "evolvesFrom": "hlo-029",
-      "hp": 110,
+      "hp": 120,
       "chakraType": "earth",
       "attacks": [
         {
@@ -2388,7 +2388,7 @@
             "earth": 3,
             "colorless": 1
           },
-          "damage": 70,
+          "damage": 90,
           "effect": {
             "type": "status",
             "status": "paralyze",
@@ -2418,7 +2418,7 @@
       "subtitle": "Wave Country Villain",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 50,
       "chakraType": "water",
       "attacks": [
         {
@@ -2438,7 +2438,7 @@
       },
       "weakness": "earth",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "In the mist, you cannot see me. But I can see you.",
       "artPath": "cards/ninja/zabuza.webp",
@@ -2453,7 +2453,7 @@
       "subtitle": "Ice Mirror User",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 90,
       "chakraType": "water",
       "attacks": [
         {
@@ -2462,7 +2462,7 @@
             "water": 2,
             "colorless": 1
           },
-          "damage": 40,
+          "damage": 30,
           "effect": {
             "type": "bench-damage",
             "amount": 10,
@@ -2474,7 +2474,7 @@
       "ability": null,
       "weakness": "earth",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "I will protect the one who is precious to me.",
       "artPath": "cards/ninja/haku.webp",
@@ -2489,7 +2489,7 @@
       "subtitle": "Last of the Kaguya",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 60,
       "chakraType": "earth",
       "attacks": [
         {
@@ -2509,7 +2509,7 @@
       },
       "weakness": "lightning",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "My bones are my blade and my shield.",
       "artPath": "cards/ninja/kimimaro.webp",
@@ -2524,7 +2524,7 @@
       "subtitle": "Spy Medic",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 70,
       "chakraType": "water",
       "attacks": [
         {
@@ -2532,7 +2532,7 @@
           "cost": {
             "water": 1
           },
-          "damage": 40,
+          "damage": 20,
           "effect": null,
           "description": "An invisible blade of chakra cuts tendons and muscles."
         }
@@ -2540,7 +2540,7 @@
       "ability": null,
       "weakness": "earth",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "I'm just a humble medic.",
       "artPath": "cards/ninja/kabuto.webp",
@@ -2555,7 +2555,7 @@
       "subtitle": "Traitor Chunin",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 90,
       "chakraType": "earth",
       "attacks": [
         {
@@ -2629,7 +2629,7 @@
         "type": "draw",
         "amount": 2
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "hidden-leaf-origins",
       "artPath": "cards/jutsu/kamui.webp",
       "setNumber": 72
@@ -2643,7 +2643,7 @@
         "type": "damage-boost",
         "amount": 70
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "hidden-leaf-origins",
       "artPath": "cards/jutsu/raikiri.webp",
       "setNumber": 73
@@ -2657,7 +2657,7 @@
         "type": "heal",
         "amount": 60
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "hidden-leaf-origins",
       "artPath": "cards/jutsu/sage-mode.webp",
       "setNumber": 74
@@ -2775,7 +2775,7 @@
         "amount": 1,
         "target": "opponent-active"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "hidden-leaf-origins",
       "artPath": "cards/jutsu/chakra-disruption.webp",
       "setNumber": 82
@@ -2789,7 +2789,7 @@
         "type": "conditional",
         "subtype": "damage-prevention"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "hidden-leaf-origins",
       "artPath": "cards/jutsu/earth-wall.webp",
       "setNumber": 83
@@ -2803,7 +2803,7 @@
         "type": "damage-boost",
         "amount": 50
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "hidden-leaf-origins",
       "artPath": "cards/jutsu/fang-over-fang.webp",
       "setNumber": 84
@@ -2821,7 +2821,7 @@
         "bonusCondition": "fire",
         "target": "opponent-active"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "hidden-leaf-origins",
       "artPath": "cards/jutsu/fireball.webp",
       "setNumber": 85
@@ -2836,7 +2836,7 @@
         "subtype": "damage-reduction",
         "amount": 20
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "hidden-leaf-origins",
       "artPath": "cards/jutsu/hidden-mist.webp",
       "setNumber": 86
@@ -2854,7 +2854,7 @@
         "bonusCondition": "lightning",
         "target": "opponent-active"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "hidden-leaf-origins",
       "artPath": "cards/jutsu/thunderbolt.webp",
       "setNumber": 87
@@ -2868,7 +2868,7 @@
         "type": "status",
         "status": "confusion"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "hidden-leaf-origins",
       "artPath": "cards/jutsu/mind-transfer.webp",
       "setNumber": 88
@@ -2883,7 +2883,7 @@
         "subtype": "damage-prevention",
         "amount": 30
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "hidden-leaf-origins",
       "artPath": "cards/jutsu/sand-armor.webp",
       "setNumber": 89
@@ -2898,7 +2898,7 @@
         "amount": 1,
         "subtype": "search-ninja"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "hidden-leaf-origins",
       "artPath": "cards/jutsu/shadow-clone.webp",
       "setNumber": 90
@@ -2912,7 +2912,7 @@
         "type": "status",
         "status": "paralyze"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "hidden-leaf-origins",
       "artPath": "cards/jutsu/shadow-possession.webp",
       "setNumber": 91
@@ -2926,7 +2926,7 @@
         "type": "switch",
         "bonus": "damage-prevention"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "hidden-leaf-origins",
       "artPath": "cards/jutsu/smoke-bomb.webp",
       "setNumber": 92
@@ -2941,7 +2941,7 @@
         "amount": 3,
         "discard": 1
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "hidden-leaf-origins",
       "artPath": "cards/jutsu/team-formation.webp",
       "setNumber": 93
@@ -2956,7 +2956,7 @@
         "subtype": "search-energy",
         "amount": 2
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "hidden-leaf-origins",
       "artPath": "cards/jutsu/training-ground.webp",
       "setNumber": 94
@@ -2970,7 +2970,7 @@
         "type": "conditional",
         "subtype": "copy-attacks"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "hidden-leaf-origins",
       "artPath": "cards/jutsu/transformation.webp",
       "setNumber": 95
@@ -2988,7 +2988,7 @@
         "bonusCondition": "water",
         "target": "opponent-active"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "hidden-leaf-origins",
       "artPath": "cards/jutsu/water-dragon.webp",
       "setNumber": 96
@@ -3005,7 +3005,7 @@
         "benchDamage": 10,
         "target": "opponent-active"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "hidden-leaf-origins",
       "artPath": "cards/jutsu/air-bullets.webp",
       "setNumber": 97
@@ -3151,7 +3151,7 @@
         "type": "damage-boost",
         "amount": 20
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "hidden-leaf-origins",
       "artPath": "cards/tools/hiraishin-kunai.webp",
       "setNumber": 107
@@ -3165,7 +3165,7 @@
         "type": "damage-boost",
         "amount": 15
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "hidden-leaf-origins",
       "artPath": "cards/tools/sharingan.webp",
       "setNumber": 108
@@ -3255,7 +3255,7 @@
           "amount": 10
         }
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "hidden-leaf-origins",
       "artPath": "cards/tools/chakra-blade.webp",
       "setNumber": 114
@@ -3271,7 +3271,7 @@
         "amount": 40,
         "target": "opponent-active"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "hidden-leaf-origins",
       "artPath": "cards/tools/explosive-tag.webp",
       "setNumber": 115
@@ -3287,7 +3287,7 @@
         "status": "paralyze",
         "target": "opponent-active"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "hidden-leaf-origins",
       "artPath": "cards/tools/ninja-wire.webp",
       "setNumber": 116
@@ -3305,7 +3305,7 @@
           "amount": 2
         }
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "hidden-leaf-origins",
       "artPath": "cards/tools/weighted-training-gear.webp",
       "setNumber": 117
@@ -3380,7 +3380,7 @@
         "type": "conditional",
         "subtype": "search-any"
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "hidden-leaf-origins",
       "artPath": "cards/sensei/kakashi.webp",
       "setNumber": 122
@@ -3461,13 +3461,9 @@
     }
   ],
   "pullRates": {
-    "common": 0.48,
-    "uncommon": 0.27,
-    "rare": 0.15,
-    "ultra-rare": 0.065,
-    "legendary": 0.028,
-    "secret": 0.005,
-    "crown": 0.002
+    "common": 0.62,
+    "rare": 0.29,
+    "legendary": 0.09
   },
   "totalCards": 126
 }

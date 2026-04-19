@@ -22,12 +22,8 @@ export function canPayChakraCost(
 export function sortCards(cards: GameCard[], sortBy: 'name' | 'rarity' | 'type' | 'hp'): GameCard[] {
   const rarityOrder: Record<Rarity, number> = {
     [Rarity.Common]: 0,
-    [Rarity.Uncommon]: 1,
-    [Rarity.Rare]: 2,
-    [Rarity.UltraRare]: 3,
-    [Rarity.Legendary]: 4,
-    [Rarity.Secret]: 5,
-    [Rarity.Crown]: 6,
+    [Rarity.Rare]: 1,
+    [Rarity.Legendary]: 2,
   };
 
   return [...cards].sort((a, b) => {

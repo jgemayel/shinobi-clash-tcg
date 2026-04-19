@@ -12,7 +12,7 @@
       "subtitle": "Son of Shukaku",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 80,
       "chakraType": "earth",
       "attacks": [
         {
@@ -21,7 +21,7 @@
             "earth": 1,
             "colorless": 1
           },
-          "damage": 30,
+          "damage": 20,
           "effect": null,
           "description": "Sand whips into blades."
         }
@@ -53,7 +53,7 @@
       "subtitle": "Kazekage of the Sand",
       "stage": 1,
       "evolvesFrom": "sv-001",
-      "hp": 110,
+      "hp": 120,
       "chakraType": "earth",
       "attacks": [
         {
@@ -62,7 +62,7 @@
             "earth": 2,
             "colorless": 1
           },
-          "damage": 70,
+          "damage": 80,
           "effect": null,
           "description": "A tidal wave of desert sand."
         }
@@ -93,7 +93,7 @@
       "subtitle": "Shukaku Unleashed",
       "stage": 2,
       "evolvesFrom": "sv-002",
-      "hp": 180,
+      "hp": 220,
       "chakraType": "earth",
       "attacks": [
         {
@@ -137,7 +137,7 @@
       "subtitle": "Shukaku Unleashed EX",
       "stage": 2,
       "evolvesFrom": null,
-      "hp": 250,
+      "hp": 300,
       "chakraType": "earth",
       "attacks": [
         {
@@ -146,7 +146,7 @@
             "earth": 2,
             "colorless": 1
           },
-          "damage": 110,
+          "damage": 150,
           "effect": null,
           "description": "The entire desert becomes his weapon."
         },
@@ -156,7 +156,7 @@
             "earth": 3,
             "colorless": 2
           },
-          "damage": 160,
+          "damage": 210,
           "effect": {
             "type": "self-damage",
             "amount": 40
@@ -175,9 +175,9 @@
         }
       },
       "weakness": "wind",
-      "retreatCost": 2,
+      "retreatCost": 3,
       "rarity": "legendary",
-      "isLegendary": false,
+      "isLegendary": true,
       "flavorText": "I exist to destroy everyone but myself.",
       "artPath": "cards/ninja/gaara-stage1.webp",
       "set": "sand-village",
@@ -191,7 +191,7 @@
       "subtitle": "Sand Shroud Valor",
       "stage": 2,
       "evolvesFrom": "sv-002",
-      "hp": 200,
+      "hp": 180,
       "chakraType": "earth",
       "attacks": [
         {
@@ -200,7 +200,7 @@
             "earth": 3,
             "colorless": 1
           },
-          "damage": 130,
+          "damage": 110,
           "effect": null,
           "description": "A desert tidal wave."
         }
@@ -216,8 +216,8 @@
         }
       },
       "weakness": "wind",
-      "retreatCost": 2,
-      "rarity": "secret",
+      "retreatCost": 1,
+      "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "I fight for the village that once shunned me.",
       "artPath": "cards/ninja/gaara-stage1.webp",
@@ -232,7 +232,7 @@
       "subtitle": "Wind Mistress",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 90,
       "chakraType": "wind",
       "attacks": [
         {
@@ -241,7 +241,7 @@
             "wind": 1,
             "colorless": 1
           },
-          "damage": 30,
+          "damage": 50,
           "effect": null,
           "description": "A slicing gale of wind."
         }
@@ -273,7 +273,7 @@
             "wind": 2,
             "colorless": 1
           },
-          "damage": 50,
+          "damage": 30,
           "effect": {
             "type": "bench-damage",
             "target": "opponent-bench",
@@ -294,7 +294,7 @@
       },
       "weakness": "lightning",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "Three moons. The wind is with me.",
       "artPath": "cards/ninja/temari.webp",
@@ -309,7 +309,7 @@
       "subtitle": "Apprentice Puppeteer",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 50,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -344,7 +344,7 @@
       "subtitle": "Puppet Master",
       "stage": 1,
       "evolvesFrom": "sv-006",
-      "hp": 110,
+      "hp": 140,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -352,7 +352,7 @@
           "cost": {
             "colorless": 3
           },
-          "damage": 70,
+          "damage": 80,
           "effect": null,
           "description": "Salamander's crushing pincers."
         }
@@ -383,7 +383,7 @@
       "subtitle": "Fourth Kazekage",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 160,
+      "hp": 190,
       "chakraType": "earth",
       "attacks": [
         {
@@ -392,7 +392,7 @@
             "earth": 3,
             "colorless": 1
           },
-          "damage": 100,
+          "damage": 140,
           "effect": {
             "type": "status",
             "status": "seal",
@@ -427,7 +427,7 @@
       "subtitle": "Sand Jonin Squad Leader",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 70,
       "chakraType": "wind",
       "attacks": [
         {
@@ -436,7 +436,7 @@
             "wind": 2,
             "colorless": 1
           },
-          "damage": 40,
+          "damage": 30,
           "effect": null,
           "description": "A soldier's decisive killing technique."
         }
@@ -444,7 +444,7 @@
       "ability": null,
       "weakness": "lightning",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "Duty first. Always.",
       "artPath": "cards/ninja/baki.webp",
@@ -459,7 +459,7 @@
       "subtitle": "Honored Elder",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 140,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -467,7 +467,7 @@
           "cost": {
             "colorless": 2
           },
-          "damage": 60,
+          "damage": 70,
           "effect": {
             "type": "heal",
             "amount": 30,
@@ -494,7 +494,7 @@
       "subtitle": "Ten Puppets Maestro",
       "stage": 1,
       "evolvesFrom": "sv-011",
-      "hp": 140,
+      "hp": 120,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -518,7 +518,7 @@
       },
       "weakness": "wind",
       "retreatCost": 1,
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "isLegendary": false,
       "flavorText": "An old hand still knows the strings.",
       "artPath": "cards/ninja/chiyo.webp",
@@ -542,7 +542,7 @@
             "earth": 1,
             "colorless": 1
           },
-          "damage": 60,
+          "damage": 80,
           "effect": null,
           "description": "An unassuming but perfectly-placed blow."
         }
@@ -585,7 +585,7 @@
       "ability": null,
       "weakness": "lightning",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "I did love you, Gaara. Truly.",
       "artPath": "cards/ninja/yashamaru.webp",
@@ -600,7 +600,7 @@
       "subtitle": "Scorch Release User",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 140,
       "chakraType": "fire",
       "attacks": [
         {
@@ -609,7 +609,7 @@
             "fire": 2,
             "water": 1
           },
-          "damage": 60,
+          "damage": 70,
           "effect": null,
           "description": "An incinerating spiral."
         }
@@ -632,7 +632,7 @@
       "subtitle": "Gaara's Student",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 80,
       "chakraType": "earth",
       "attacks": [
         {
@@ -640,7 +640,7 @@
           "cost": {
             "colorless": 1
           },
-          "damage": 30,
+          "damage": 50,
           "effect": null,
           "description": "Twirls a bladed chain."
         }
@@ -663,7 +663,7 @@
       "subtitle": "Sand Genin",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 70,
       "chakraType": "water",
       "attacks": [
         {
@@ -694,7 +694,7 @@
       "subtitle": "Sand Genin",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 70,
       "chakraType": "wind",
       "attacks": [
         {
@@ -702,7 +702,7 @@
           "cost": {
             "wind": 1
           },
-          "damage": 30,
+          "damage": 50,
           "effect": null,
           "description": "A sharp gust exhaled."
         }
@@ -744,7 +744,7 @@
       "ability": null,
       "weakness": "fire",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "The desert made me strong.",
       "artPath": "cards/ninja/shira.webp",
@@ -759,7 +759,7 @@
       "subtitle": "Magnet Release Legend",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 160,
+      "hp": 180,
       "chakraType": "earth",
       "attacks": [
         {
@@ -768,7 +768,7 @@
             "earth": 3,
             "colorless": 1
           },
-          "damage": 100,
+          "damage": 140,
           "effect": {
             "type": "bench-damage",
             "target": "opponent-bench",
@@ -803,7 +803,7 @@
       "subtitle": "Sealing Master",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 130,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -838,7 +838,7 @@
       "subtitle": "Sand's Founder",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 130,
+      "hp": 140,
       "chakraType": "earth",
       "attacks": [
         {
@@ -847,7 +847,7 @@
             "earth": 2,
             "colorless": 2
           },
-          "damage": 80,
+          "damage": 90,
           "effect": {
             "type": "heal",
             "amount": 30,
@@ -859,7 +859,7 @@
       "ability": null,
       "weakness": "wind",
       "retreatCost": 1,
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "isLegendary": false,
       "flavorText": "I built this village with my two hands.",
       "artPath": "cards/ninja/first-kazekage.webp",
@@ -882,7 +882,7 @@
           "cost": {
             "colorless": 1
           },
-          "damage": 30,
+          "damage": 40,
           "effect": null,
           "description": "Standard academy form."
         }
@@ -905,7 +905,7 @@
       "subtitle": "Gaara Perfect Bond",
       "stage": 2,
       "evolvesFrom": "sv-002",
-      "hp": 240,
+      "hp": 190,
       "chakraType": "earth",
       "attacks": [
         {
@@ -914,7 +914,7 @@
             "earth": 4,
             "colorless": 2
           },
-          "damage": 150,
+          "damage": 130,
           "effect": {
             "type": "bench-damage",
             "target": "opponent-bench",
@@ -934,8 +934,8 @@
         }
       },
       "weakness": "wind",
-      "retreatCost": 2,
-      "rarity": "crown",
+      "retreatCost": 1,
+      "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "Shukaku and I fight as brothers.",
       "artPath": "cards/ninja/shukaku.webp",
@@ -993,7 +993,7 @@
           "amount": 120
         }
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "sand-village",
       "artPath": "cards/jutsu/desert-funeral.webp",
       "setNumber": 28
@@ -1008,7 +1008,7 @@
         "condition": "free-attach",
         "amount": 3
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "sand-village",
       "artPath": "cards/jutsu/puppet-formation.webp",
       "setNumber": 29
@@ -1136,7 +1136,7 @@
         "amount": 20,
         "target": "self-bench"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "sand-village",
       "artPath": "cards/jutsu/desert-suspension.webp",
       "setNumber": 37
@@ -1155,7 +1155,7 @@
           "amount": 40
         }
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "sand-village",
       "artPath": "cards/jutsu/wood-bullet.webp",
       "setNumber": 38
@@ -1170,7 +1170,7 @@
         "target": "opponent-active",
         "amount": 50
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "sand-village",
       "artPath": "cards/jutsu/quicksand.webp",
       "setNumber": 39
@@ -1185,7 +1185,7 @@
         "status": "seal",
         "target": "opponent-active"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "sand-village",
       "artPath": "cards/jutsu/binding-coffin.webp",
       "setNumber": 40
@@ -1200,7 +1200,7 @@
         "condition": "damage-reduction",
         "amount": 30
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "sand-village",
       "artPath": "cards/jutsu/sandstorm-shroud.webp",
       "setNumber": 41
@@ -1216,7 +1216,7 @@
         "target": "opponent-active",
         "amount": 40
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "sand-village",
       "artPath": "cards/jutsu/sickening-spiral.webp",
       "setNumber": 42
@@ -1230,7 +1230,7 @@
         "type": "draw",
         "amount": 1
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "sand-village",
       "artPath": "cards/jutsu/third-eye.webp",
       "setNumber": 43
@@ -1245,7 +1245,7 @@
         "target": "all-opponents",
         "amount": 40
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "sand-village",
       "artPath": "cards/jutsu/cast-net.webp",
       "setNumber": 44
@@ -1319,7 +1319,7 @@
         "type": "damage-boost",
         "amount": 20
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "sand-village",
       "artPath": "cards/tools/iron-sand.webp",
       "setNumber": 49
@@ -1414,7 +1414,7 @@
         "status": "seal",
         "target": "opponent-active"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "sand-village",
       "artPath": "cards/tools/black-ant.webp",
       "setNumber": 55
@@ -1429,7 +1429,7 @@
         "status": "poison",
         "target": "opponent-active"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "sand-village",
       "artPath": "cards/tools/crow-puppet.webp",
       "setNumber": 56
@@ -1444,7 +1444,7 @@
         "status": "poison",
         "target": "opponent-active"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "sand-village",
       "artPath": "cards/tools/poisoned-senbon.webp",
       "setNumber": 57
@@ -1458,7 +1458,7 @@
         "type": "damage-boost",
         "amount": 10
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "sand-village",
       "artPath": "cards/tools/chakra-blade.webp",
       "setNumber": 58
@@ -1473,7 +1473,7 @@
         "amount": 15,
         "target": "self"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "sand-village",
       "artPath": "cards/tools/sand-hourglass.webp",
       "setNumber": 59
@@ -1543,20 +1543,16 @@
           "condition": "gaara-target"
         }
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "sand-village",
       "artPath": "cards/sensei/chiyo.webp",
       "setNumber": 63
     }
   ],
   "pullRates": {
-    "common": 0.48,
-    "uncommon": 0.27,
-    "rare": 0.15,
-    "ultra-rare": 0.065,
-    "legendary": 0.028,
-    "secret": 0.005,
-    "crown": 0.002
+    "common": 0.62,
+    "rare": 0.29,
+    "legendary": 0.09
   },
   "totalCards": 63
 }

@@ -20,7 +20,7 @@
           "cost": {
             "colorless": 3
           },
-          "damage": 60,
+          "damage": 90,
           "effect": {
             "type": "switch",
             "target": "opponent-active"
@@ -46,7 +46,7 @@
       "subtitle": "Machine Body",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 140,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -55,7 +55,7 @@
             "lightning": 1,
             "colorless": 2
           },
-          "damage": 60,
+          "damage": 80,
           "effect": null,
           "description": "A soul-rending beam."
         }
@@ -78,66 +78,15 @@
       "subtitle": "God of Amegakure",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 160,
+      "hp": 220,
       "chakraType": "colorless",
       "attacks": [
         {
           "name": "Chibaku Tensei",
           "cost": {
             "colorless": 4
-          },
-          "damage": 100,
-          "effect": null,
-          "description": "Compresses the battlefield into a gravity sphere."
-        }
-      ],
-      "ability": {
-        "name": "God's Domain",
-        "description": "Each time a Pain Path is Benched or played, gain 1 Colorless Chakra.",
-        "trigger": "passive",
-        "effect": {
-          "type": "conditional",
-          "condition": "path-synergy"
-        }
-      },
-      "weakness": "wind",
-      "retreatCost": 1,
-      "rarity": "legendary",
-      "isLegendary": true,
-      "flavorText": "Know pain. Know peace.",
-      "artPath": "cards/ninja/pain-deva.webp",
-      "set": "akatsuki-dawn",
-      "setNumber": 3,
-      "isEx": false
-    },
-    {
-      "id": "akd-017-ex",
-      "type": "ninja",
-      "name": "Pain (Deva Path)",
-      "subtitle": "God of Amegakure EX",
-      "stage": 0,
-      "evolvesFrom": null,
-      "hp": 230,
-      "chakraType": "colorless",
-      "attacks": [
-        {
-          "name": "Shinra Tensei",
-          "cost": {
-            "colorless": 2
           },
           "damage": 110,
-          "effect": {
-            "type": "switch",
-            "target": "opponent-active"
-          },
-          "description": "Almighty Push \u2014 hurls the target back."
-        },
-        {
-          "name": "Chibaku Tensei",
-          "cost": {
-            "colorless": 4
-          },
-          "damage": 140,
           "effect": null,
           "description": "Compresses the battlefield into a gravity sphere."
         }
@@ -154,7 +103,58 @@
       "weakness": "wind",
       "retreatCost": 2,
       "rarity": "legendary",
-      "isLegendary": false,
+      "isLegendary": true,
+      "flavorText": "Know pain. Know peace.",
+      "artPath": "cards/ninja/pain-deva.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 3,
+      "isEx": false
+    },
+    {
+      "id": "akd-017-ex",
+      "type": "ninja",
+      "name": "Pain (Deva Path)",
+      "subtitle": "God of Amegakure EX",
+      "stage": 0,
+      "evolvesFrom": null,
+      "hp": 300,
+      "chakraType": "colorless",
+      "attacks": [
+        {
+          "name": "Shinra Tensei",
+          "cost": {
+            "colorless": 2
+          },
+          "damage": 160,
+          "effect": {
+            "type": "switch",
+            "target": "opponent-active"
+          },
+          "description": "Almighty Push \u2014 hurls the target back."
+        },
+        {
+          "name": "Chibaku Tensei",
+          "cost": {
+            "colorless": 4
+          },
+          "damage": 190,
+          "effect": null,
+          "description": "Compresses the battlefield into a gravity sphere."
+        }
+      ],
+      "ability": {
+        "name": "God's Domain",
+        "description": "Each time a Pain Path is Benched or played, gain 1 Colorless Chakra.",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "path-synergy"
+        }
+      },
+      "weakness": "wind",
+      "retreatCost": 3,
+      "rarity": "legendary",
+      "isLegendary": true,
       "flavorText": "Know pain. Know peace.",
       "artPath": "cards/ninja/pain-deva.webp",
       "set": "akatsuki-dawn",
@@ -168,7 +168,7 @@
       "subtitle": "Soul Reader",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 130,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -176,7 +176,7 @@
           "cost": {
             "colorless": 3
           },
-          "damage": 60,
+          "damage": 70,
           "effect": null,
           "description": "Extracts the soul \u2014 lethal to those with weak will."
         }
@@ -199,7 +199,7 @@
       "subtitle": "King of Hell",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 120,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -207,7 +207,7 @@
           "cost": {
             "colorless": 3
           },
-          "damage": 60,
+          "damage": 80,
           "effect": {
             "type": "heal",
             "amount": 150,
@@ -234,7 +234,7 @@
       "subtitle": "Chakra Absorber",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 110,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -242,7 +242,7 @@
           "cost": {
             "colorless": 2
           },
-          "damage": 60,
+          "damage": 70,
           "effect": {
             "type": "energy-discard",
             "target": "opponent-active",
@@ -297,7 +297,7 @@
       },
       "weakness": "wind",
       "retreatCost": 2,
-      "rarity": "crown",
+      "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "I am the child of prophecy.",
       "artPath": "cards/ninja/nagato.webp",
@@ -312,7 +312,7 @@
       "subtitle": "The Original Rinnegan EX",
       "stage": 1,
       "evolvesFrom": null,
-      "hp": 290,
+      "hp": 270,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -320,7 +320,7 @@
           "cost": {
             "colorless": 4
           },
-          "damage": 140,
+          "damage": 170,
           "effect": null,
           "description": "Tears rock from the earth to form a moon above the enemy."
         },
@@ -329,7 +329,7 @@
           "cost": {
             "colorless": 3
           },
-          "damage": 190,
+          "damage": 200,
           "effect": {
             "type": "heal",
             "amount": 150,
@@ -348,9 +348,9 @@
         }
       },
       "weakness": "wind",
-      "retreatCost": 3,
-      "rarity": "crown",
-      "isLegendary": false,
+      "retreatCost": 2,
+      "rarity": "legendary",
+      "isLegendary": true,
       "flavorText": "I am the child of prophecy.",
       "artPath": "cards/ninja/nagato.webp",
       "set": "akatsuki-dawn",
@@ -364,7 +364,7 @@
       "subtitle": "Paper User",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 90,
       "chakraType": "water",
       "attacks": [
         {
@@ -396,7 +396,7 @@
       "subtitle": "Paper God Technique",
       "stage": 1,
       "evolvesFrom": "akd-010",
-      "hp": 170,
+      "hp": 200,
       "chakraType": "water",
       "attacks": [
         {
@@ -405,7 +405,7 @@
             "water": 2,
             "colorless": 2
           },
-          "damage": 110,
+          "damage": 120,
           "effect": {
             "type": "self-damage",
             "amount": 50
@@ -423,7 +423,7 @@
         }
       },
       "weakness": "fire",
-      "retreatCost": 1,
+      "retreatCost": 2,
       "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "This is the miracle Nagato died for.",
@@ -439,7 +439,7 @@
       "subtitle": "Akatsuki's Founder",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 70,
       "chakraType": "water",
       "attacks": [
         {
@@ -456,7 +456,7 @@
       "ability": null,
       "weakness": "lightning",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "A world without war \u2014 that was our dream.",
       "artPath": "cards/ninja/yahiko.webp",
@@ -471,7 +471,7 @@
       "subtitle": "Prodigy of the Uchiha",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 140,
       "chakraType": "fire",
       "attacks": [
         {
@@ -480,7 +480,7 @@
             "fire": 1,
             "colorless": 1
           },
-          "damage": 60,
+          "damage": 80,
           "effect": {
             "type": "status",
             "status": "burn",
@@ -515,7 +515,7 @@
       "subtitle": "Mangekyo Susanoo",
       "stage": 1,
       "evolvesFrom": "akd-001",
-      "hp": 170,
+      "hp": 190,
       "chakraType": "fire",
       "attacks": [
         {
@@ -524,7 +524,7 @@
             "fire": 2,
             "colorless": 2
           },
-          "damage": 110,
+          "damage": 130,
           "effect": {
             "type": "status",
             "status": "seal",
@@ -560,7 +560,7 @@
       "subtitle": "Crow's Eternal Promise",
       "stage": 2,
       "evolvesFrom": "akd-002",
-      "hp": 200,
+      "hp": 210,
       "chakraType": "fire",
       "attacks": [
         {
@@ -569,7 +569,7 @@
             "fire": 3,
             "colorless": 3
           },
-          "damage": 130,
+          "damage": 110,
           "effect": {
             "type": "status",
             "status": "seal",
@@ -590,7 +590,7 @@
       },
       "weakness": "water",
       "retreatCost": 2,
-      "rarity": "secret",
+      "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "Forgive me, Sasuke. This time \u2014 forever.",
       "artPath": "cards/ninja/itachi.webp",
@@ -605,7 +605,7 @@
       "subtitle": "Crow's Eternal Promise EX",
       "stage": 2,
       "evolvesFrom": null,
-      "hp": 270,
+      "hp": 330,
       "chakraType": "fire",
       "attacks": [
         {
@@ -613,7 +613,7 @@
           "cost": {
             "fire": 3
           },
-          "damage": 120,
+          "damage": 170,
           "effect": {
             "type": "status",
             "status": "burn",
@@ -627,7 +627,7 @@
             "fire": 3,
             "colorless": 3
           },
-          "damage": 180,
+          "damage": 190,
           "effect": {
             "type": "status",
             "status": "seal",
@@ -648,8 +648,8 @@
       },
       "weakness": "water",
       "retreatCost": 3,
-      "rarity": "secret",
-      "isLegendary": false,
+      "rarity": "legendary",
+      "isLegendary": true,
       "flavorText": "Forgive me, Sasuke. This time \u2014 forever.",
       "artPath": "cards/ninja/itachi.webp",
       "set": "akatsuki-dawn",
@@ -663,7 +663,7 @@
       "subtitle": "Monster of the Mist",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 60,
       "chakraType": "water",
       "attacks": [
         {
@@ -672,7 +672,7 @@
             "water": 1,
             "colorless": 1
           },
-          "damage": 40,
+          "damage": 50,
           "effect": {
             "type": "energy-discard",
             "target": "opponent-active",
@@ -684,7 +684,7 @@
       "ability": null,
       "weakness": "lightning",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "Let's see how much blood I can taste today.",
       "artPath": "cards/ninja/kisame.webp",
@@ -699,7 +699,7 @@
       "subtitle": "Samehada Fusion",
       "stage": 1,
       "evolvesFrom": "akd-003",
-      "hp": 170,
+      "hp": 200,
       "chakraType": "water",
       "attacks": [
         {
@@ -708,58 +708,7 @@
             "water": 3,
             "colorless": 1
           },
-          "damage": 110,
-          "effect": null,
-          "description": "Reshapes the battlefield into an ocean."
-        }
-      ],
-      "ability": {
-        "name": "Chakra Siphon",
-        "description": "When this Ninja takes damage, if you have 0 Chakra attached, draw 1 card.",
-        "trigger": "passive",
-        "effect": {
-          "type": "draw",
-          "amount": 1,
-          "condition": "no-chakra"
-        }
-      },
-      "weakness": "lightning",
-      "retreatCost": 1,
-      "rarity": "legendary",
-      "isLegendary": true,
-      "flavorText": "The tailless tailed beast.",
-      "artPath": "cards/ninja/kisame.webp",
-      "set": "akatsuki-dawn",
-      "setNumber": 18,
-      "isEx": false
-    },
-    {
-      "id": "akd-004-ex",
-      "type": "ninja",
-      "name": "Kisame Hoshigaki",
-      "subtitle": "Samehada Fusion EX",
-      "stage": 1,
-      "evolvesFrom": null,
-      "hp": 240,
-      "chakraType": "water",
-      "attacks": [
-        {
-          "name": "Thousand Feeding Sharks",
-          "cost": {
-            "water": 2,
-            "colorless": 1
-          },
-          "damage": 110,
-          "effect": null,
-          "description": "A tidal school of chakra sharks."
-        },
-        {
-          "name": "Great Exploding Water Shockwave",
-          "cost": {
-            "water": 3,
-            "colorless": 1
-          },
-          "damage": 160,
+          "damage": 120,
           "effect": null,
           "description": "Reshapes the battlefield into an ocean."
         }
@@ -777,7 +726,58 @@
       "weakness": "lightning",
       "retreatCost": 2,
       "rarity": "legendary",
-      "isLegendary": false,
+      "isLegendary": true,
+      "flavorText": "The tailless tailed beast.",
+      "artPath": "cards/ninja/kisame.webp",
+      "set": "akatsuki-dawn",
+      "setNumber": 18,
+      "isEx": false
+    },
+    {
+      "id": "akd-004-ex",
+      "type": "ninja",
+      "name": "Kisame Hoshigaki",
+      "subtitle": "Samehada Fusion EX",
+      "stage": 1,
+      "evolvesFrom": null,
+      "hp": 310,
+      "chakraType": "water",
+      "attacks": [
+        {
+          "name": "Thousand Feeding Sharks",
+          "cost": {
+            "water": 2,
+            "colorless": 1
+          },
+          "damage": 170,
+          "effect": null,
+          "description": "A tidal school of chakra sharks."
+        },
+        {
+          "name": "Great Exploding Water Shockwave",
+          "cost": {
+            "water": 3,
+            "colorless": 1
+          },
+          "damage": 200,
+          "effect": null,
+          "description": "Reshapes the battlefield into an ocean."
+        }
+      ],
+      "ability": {
+        "name": "Chakra Siphon",
+        "description": "When this Ninja takes damage, if you have 0 Chakra attached, draw 1 card.",
+        "trigger": "passive",
+        "effect": {
+          "type": "draw",
+          "amount": 1,
+          "condition": "no-chakra"
+        }
+      },
+      "weakness": "lightning",
+      "retreatCost": 3,
+      "rarity": "legendary",
+      "isLegendary": true,
       "flavorText": "The tailless tailed beast.",
       "artPath": "cards/ninja/kisame.webp",
       "set": "akatsuki-dawn",
@@ -791,7 +791,7 @@
       "subtitle": "Clay Bomber",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 80,
       "chakraType": "earth",
       "attacks": [
         {
@@ -799,7 +799,7 @@
           "cost": {
             "earth": 2
           },
-          "damage": 30,
+          "damage": 20,
           "effect": {
             "type": "bench-damage",
             "target": "opponent-bench",
@@ -826,7 +826,7 @@
       "subtitle": "C4: Karura",
       "stage": 1,
       "evolvesFrom": "akd-005",
-      "hp": 140,
+      "hp": 130,
       "chakraType": "earth",
       "attacks": [
         {
@@ -835,7 +835,7 @@
             "earth": 3,
             "colorless": 2
           },
-          "damage": 90,
+          "damage": 80,
           "effect": {
             "type": "self-damage",
             "amount": 60,
@@ -861,7 +861,7 @@
       },
       "weakness": "water",
       "retreatCost": 1,
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "isLegendary": false,
       "flavorText": "True art lasts only a moment. Witness it!",
       "artPath": "cards/ninja/deidara.webp",
@@ -876,7 +876,7 @@
       "subtitle": "Third Kazekage's Killer",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 110,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -884,7 +884,7 @@
           "cost": {
             "colorless": 2
           },
-          "damage": 60,
+          "damage": 90,
           "effect": null,
           "description": "Commands the Third Kazekage's magnetized iron."
         }
@@ -907,7 +907,7 @@
       "subtitle": "Hiruko Puppet Mode",
       "stage": 1,
       "evolvesFrom": "akd-007",
-      "hp": 140,
+      "hp": 120,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -915,7 +915,7 @@
           "cost": {
             "colorless": 3
           },
-          "damage": 90,
+          "damage": 80,
           "effect": null,
           "description": "The hollow shell unloads countless concealed weapons."
         }
@@ -932,7 +932,7 @@
       },
       "weakness": "fire",
       "retreatCost": 1,
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "isLegendary": false,
       "flavorText": "I cannot be killed. I already died.",
       "artPath": "cards/ninja/sasori.webp",
@@ -947,7 +947,7 @@
       "subtitle": "Hundred Puppets Master",
       "stage": 2,
       "evolvesFrom": "akd-008",
-      "hp": 180,
+      "hp": 220,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -955,7 +955,7 @@
           "cost": {
             "colorless": 2
           },
-          "damage": 120,
+          "damage": 140,
           "effect": {
             "type": "heal",
             "amount": 30,
@@ -992,7 +992,7 @@
       "subtitle": "Hundred Puppets Master EX",
       "stage": 2,
       "evolvesFrom": null,
-      "hp": 250,
+      "hp": 270,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -1000,7 +1000,7 @@
           "cost": {
             "colorless": 4
           },
-          "damage": 110,
+          "damage": 160,
           "effect": null,
           "description": "Unleashes his army of human puppets in a single devastating dance."
         },
@@ -1009,7 +1009,7 @@
           "cost": {
             "colorless": 2
           },
-          "damage": 160,
+          "damage": 210,
           "effect": {
             "type": "heal",
             "amount": 30,
@@ -1032,7 +1032,7 @@
       "weakness": "fire",
       "retreatCost": 2,
       "rarity": "legendary",
-      "isLegendary": false,
+      "isLegendary": true,
       "flavorText": "Art is eternal beauty.",
       "artPath": "cards/ninja/sasori.webp",
       "set": "akatsuki-dawn",
@@ -1046,7 +1046,7 @@
       "subtitle": "Jashinist Immortal",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 160,
+      "hp": 190,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -1054,7 +1054,7 @@
           "cost": {
             "colorless": 3
           },
-          "damage": 100,
+          "damage": 130,
           "effect": {
             "type": "self-damage",
             "amount": 40,
@@ -1110,7 +1110,7 @@
       "ability": null,
       "weakness": "wind",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "Money first. Bodies later.",
       "artPath": "cards/ninja/kakuzu.webp",
@@ -1125,7 +1125,7 @@
       "subtitle": "Five Hearts Unleashed",
       "stage": 1,
       "evolvesFrom": "akd-013",
-      "hp": 170,
+      "hp": 190,
       "chakraType": "earth",
       "attacks": [
         {
@@ -1168,7 +1168,7 @@
       "subtitle": "Tobi the Masked Man",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 160,
+      "hp": 190,
       "chakraType": "fire",
       "attacks": [
         {
@@ -1208,7 +1208,7 @@
       "subtitle": "Ten-Tails Jinchuriki",
       "stage": 1,
       "evolvesFrom": "akd-024",
-      "hp": 220,
+      "hp": 180,
       "chakraType": "fire",
       "attacks": [
         {
@@ -1217,7 +1217,7 @@
             "fire": 2,
             "colorless": 3
           },
-          "damage": 140,
+          "damage": 110,
           "effect": {
             "type": "bench-damage",
             "target": "opponent-bench",
@@ -1236,8 +1236,8 @@
         }
       },
       "weakness": "water",
-      "retreatCost": 2,
-      "rarity": "crown",
+      "retreatCost": 1,
+      "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "I will become the god of this broken world.",
       "artPath": "cards/ninja/juubi.webp",
@@ -1252,7 +1252,7 @@
       "subtitle": "Ten-Tails Jinchuriki EX",
       "stage": 1,
       "evolvesFrom": null,
-      "hp": 290,
+      "hp": 310,
       "chakraType": "fire",
       "attacks": [
         {
@@ -1260,7 +1260,7 @@
           "cost": {
             "colorless": 2
           },
-          "damage": 140,
+          "damage": 150,
           "effect": null,
           "description": "Black spheres that erase what they touch."
         },
@@ -1270,7 +1270,7 @@
             "fire": 2,
             "colorless": 3
           },
-          "damage": 190,
+          "damage": 200,
           "effect": {
             "type": "bench-damage",
             "target": "opponent-bench",
@@ -1290,8 +1290,8 @@
       },
       "weakness": "water",
       "retreatCost": 3,
-      "rarity": "crown",
-      "isLegendary": false,
+      "rarity": "legendary",
+      "isLegendary": true,
       "flavorText": "I will become the god of this broken world.",
       "artPath": "cards/ninja/juubi.webp",
       "set": "akatsuki-dawn",
@@ -1305,7 +1305,7 @@
       "subtitle": "Will of Kaguya",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 120,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -1313,7 +1313,7 @@
           "cost": {
             "colorless": 2
           },
-          "damage": 60,
+          "damage": 70,
           "effect": null,
           "description": "Bends the target's chakra flow to his design."
         }
@@ -1345,7 +1345,7 @@
       "subtitle": "Plant Clone",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 70,
       "chakraType": "earth",
       "attacks": [
         {
@@ -1354,7 +1354,7 @@
             "earth": 1,
             "colorless": 1
           },
-          "damage": 40,
+          "damage": 20,
           "effect": null,
           "description": "Chakra vines ensnare the target."
         }
@@ -1362,7 +1362,7 @@
       "ability": null,
       "weakness": "fire",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "I am the mother's child.",
       "artPath": "cards/ninja/white-zetsu.webp",
@@ -1377,7 +1377,7 @@
       "subtitle": "Akatsuki Informant",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 90,
       "chakraType": "water",
       "attacks": [
         {
@@ -1394,7 +1394,7 @@
       "ability": null,
       "weakness": "lightning",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "Knowledge is the only true power.",
       "artPath": "cards/ninja/kabuto.webp",
@@ -1409,7 +1409,7 @@
       "subtitle": "Akatsuki Sage Apprentice",
       "stage": 1,
       "evolvesFrom": "akd-028",
-      "hp": 170,
+      "hp": 200,
       "chakraType": "water",
       "attacks": [
         {
@@ -1418,7 +1418,7 @@
             "water": 2,
             "colorless": 2
           },
-          "damage": 110,
+          "damage": 140,
           "effect": null,
           "description": "Resurrects a slain warrior to fight alongside."
         }
@@ -1434,7 +1434,7 @@
         }
       },
       "weakness": "lightning",
-      "retreatCost": 1,
+      "retreatCost": 2,
       "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "I am the sum of everyone I have consumed.",
@@ -1669,7 +1669,7 @@
           "amount": 1
         }
       },
-      "rarity": "crown",
+      "rarity": "legendary",
       "set": "akatsuki-dawn",
       "artPath": "cards/jutsu/gedo.webp",
       "setNumber": 47
@@ -1689,7 +1689,7 @@
           "amount": 200
         }
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "akatsuki-dawn",
       "artPath": "cards/jutsu/c4.webp",
       "setNumber": 48
@@ -1708,7 +1708,7 @@
           "amount": 80
         }
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "akatsuki-dawn",
       "artPath": "cards/jutsu/jashin.webp",
       "setNumber": 49
@@ -1722,7 +1722,7 @@
         "type": "conditional",
         "condition": "obito-required-damage-block"
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "akatsuki-dawn",
       "artPath": "cards/jutsu/kamui-warp.webp",
       "setNumber": 50
@@ -1737,7 +1737,7 @@
         "condition": "damage-reduction",
         "amount": 50
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "akatsuki-dawn",
       "artPath": "cards/jutsu/susanoo.webp",
       "setNumber": 51
@@ -1752,7 +1752,7 @@
         "target": "opponent-active",
         "amount": 140
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "akatsuki-dawn",
       "artPath": "cards/jutsu/feeding-sharks.webp",
       "setNumber": 52
@@ -1768,7 +1768,7 @@
         "target": "opponent-active",
         "amount": 60
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "akatsuki-dawn",
       "artPath": "cards/jutsu/totsuka.webp",
       "setNumber": 53
@@ -1782,7 +1782,7 @@
         "type": "conditional",
         "condition": "damage-block-turn"
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "akatsuki-dawn",
       "artPath": "cards/jutsu/yata.webp",
       "setNumber": 54
@@ -1944,7 +1944,7 @@
         "condition": "sasori-only-dr",
         "amount": 30
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "akatsuki-dawn",
       "artPath": "cards/tools/hiruko.webp",
       "setNumber": 64
@@ -1960,7 +1960,7 @@
         "target": "self",
         "condition": "once-per-battle"
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "akatsuki-dawn",
       "artPath": "cards/tools/itachi-crow.webp",
       "setNumber": 65
@@ -1974,7 +1974,7 @@
         "type": "conditional",
         "condition": "chakra-flexible"
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "akatsuki-dawn",
       "artPath": "cards/tools/rinnegan-pendant.webp",
       "setNumber": 66
@@ -2016,7 +2016,7 @@
         "type": "conditional",
         "condition": "akatsuki-synergy"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "akatsuki-dawn",
       "artPath": "cards/tools/akatsuki-ring.webp",
       "setNumber": 69
@@ -2080,7 +2080,7 @@
         "type": "conditional",
         "condition": "tutor-jutsu"
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "akatsuki-dawn",
       "artPath": "cards/sensei/konan.webp",
       "setNumber": 73
@@ -2134,7 +2134,7 @@
         "type": "conditional",
         "condition": "tutor-tool"
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "akatsuki-dawn",
       "artPath": "cards/sensei/sasori.webp",
       "setNumber": 76
@@ -2157,13 +2157,9 @@
     }
   ],
   "pullRates": {
-    "common": 0.48,
-    "uncommon": 0.27,
-    "rare": 0.15,
-    "ultra-rare": 0.065,
-    "legendary": 0.028,
-    "secret": 0.005,
-    "crown": 0.002
+    "common": 0.62,
+    "rare": 0.29,
+    "legendary": 0.09
   },
   "totalCards": 77
 }

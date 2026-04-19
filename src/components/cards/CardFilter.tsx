@@ -49,9 +49,7 @@ export default function CardFilter({
 
   const rarities = [
     Rarity.Common,
-    Rarity.Uncommon,
     Rarity.Rare,
-    Rarity.UltraRare,
     Rarity.Legendary,
   ];
 

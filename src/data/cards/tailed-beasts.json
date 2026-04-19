@@ -12,7 +12,7 @@
       "subtitle": "One-Tailed Tanuki",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 160,
+      "hp": 190,
       "chakraType": "earth",
       "attacks": [
         {
@@ -21,7 +21,7 @@
             "earth": 3,
             "colorless": 2
           },
-          "damage": 100,
+          "damage": 120,
           "effect": null,
           "description": "An avalanche of chakra-infused gold."
         }
@@ -52,7 +52,7 @@
       "subtitle": "Two-Tailed Cat",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 160,
+      "hp": 200,
       "chakraType": "fire",
       "attacks": [
         {
@@ -61,7 +61,7 @@
             "fire": 3,
             "colorless": 1
           },
-          "damage": 100,
+          "damage": 130,
           "effect": null,
           "description": "A leaping strike that leaves craters."
         }
@@ -76,7 +76,7 @@
         }
       },
       "weakness": "water",
-      "retreatCost": 1,
+      "retreatCost": 2,
       "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "Playtime, little one.",
@@ -92,7 +92,7 @@
       "subtitle": "Three-Tailed Turtle",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 160,
+      "hp": 170,
       "chakraType": "water",
       "attacks": [
         {
@@ -137,7 +137,7 @@
       "subtitle": "Four-Tailed Ape",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 160,
+      "hp": 170,
       "chakraType": "fire",
       "attacks": [
         {
@@ -146,7 +146,7 @@
             "fire": 2,
             "earth": 2
           },
-          "damage": 100,
+          "damage": 110,
           "effect": null,
           "description": "A roaring jet of liquid stone."
         }
@@ -169,7 +169,7 @@
       "subtitle": "Five-Tailed Dolphin-Horse",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 160,
+      "hp": 170,
       "chakraType": "water",
       "attacks": [
         {
@@ -178,7 +178,7 @@
             "water": 2,
             "colorless": 2
           },
-          "damage": 100,
+          "damage": 140,
           "effect": null,
           "description": "Thrusting twin horns at full gallop."
         }
@@ -210,7 +210,7 @@
       "subtitle": "Six-Tailed Slug",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 160,
+      "hp": 190,
       "chakraType": "water",
       "attacks": [
         {
@@ -218,7 +218,7 @@
           "cost": {
             "water": 3
           },
-          "damage": 100,
+          "damage": 140,
           "effect": {
             "type": "status",
             "status": "paralyze",
@@ -245,7 +245,7 @@
       "subtitle": "Seven-Tailed Beetle",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 160,
+      "hp": 210,
       "chakraType": "wind",
       "attacks": [
         {
@@ -254,7 +254,7 @@
             "wind": 3,
             "colorless": 1
           },
-          "damage": 100,
+          "damage": 130,
           "effect": null,
           "description": "Razor winds from seven tails."
         }
@@ -269,7 +269,7 @@
         }
       },
       "weakness": "lightning",
-      "retreatCost": 1,
+      "retreatCost": 2,
       "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "Fly, fly, fly.",
@@ -285,7 +285,7 @@
       "subtitle": "Eight-Tailed Ox",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 160,
+      "hp": 200,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -293,7 +293,7 @@
           "cost": {
             "colorless": 4
           },
-          "damage": 100,
+          "damage": 130,
           "effect": null,
           "description": "Condenses chakra into a compressed sphere of annihilation."
         }
@@ -308,7 +308,7 @@
         }
       },
       "weakness": "earth",
-      "retreatCost": 1,
+      "retreatCost": 2,
       "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "Eight tails of thunder \u2014 whaaaat!",
@@ -324,7 +324,7 @@
       "subtitle": "Eight-Tailed Ox EX",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 230,
+      "hp": 300,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -332,7 +332,7 @@
           "cost": {
             "colorless": 2
           },
-          "damage": 110,
+          "damage": 160,
           "effect": null,
           "description": "A crushing tail-swung clothesline."
         },
@@ -341,7 +341,7 @@
           "cost": {
             "colorless": 4
           },
-          "damage": 140,
+          "damage": 190,
           "effect": null,
           "description": "Condenses chakra into a compressed sphere of annihilation."
         }
@@ -356,9 +356,9 @@
         }
       },
       "weakness": "earth",
-      "retreatCost": 2,
+      "retreatCost": 3,
       "rarity": "legendary",
-      "isLegendary": false,
+      "isLegendary": true,
       "flavorText": "Eight tails of thunder \u2014 whaaaat!",
       "artPath": "cards/ninja/gyuki.webp",
       "set": "tailed-beasts",
@@ -372,7 +372,7 @@
       "subtitle": "Nine-Tailed Fox",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 210,
+      "hp": 200,
       "chakraType": "fire",
       "attacks": [
         {
@@ -406,7 +406,7 @@
       },
       "weakness": "water",
       "retreatCost": 2,
-      "rarity": "crown",
+      "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "I am the will of chakra itself.",
       "artPath": "cards/ninja/kurama.webp",
@@ -421,7 +421,7 @@
       "subtitle": "Nine-Tailed Fox EX",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 280,
+      "hp": 290,
       "chakraType": "fire",
       "attacks": [
         {
@@ -430,7 +430,7 @@
             "fire": 2,
             "colorless": 2
           },
-          "damage": 140,
+          "damage": 150,
           "effect": null,
           "description": "A concentrated orb of black-and-white chakra."
         },
@@ -440,7 +440,7 @@
             "fire": 3,
             "colorless": 3
           },
-          "damage": 180,
+          "damage": 210,
           "effect": {
             "type": "bench-damage",
             "target": "opponent-bench",
@@ -464,9 +464,9 @@
         }
       },
       "weakness": "water",
-      "retreatCost": 3,
-      "rarity": "crown",
-      "isLegendary": false,
+      "retreatCost": 2,
+      "rarity": "legendary",
+      "isLegendary": true,
       "flavorText": "I am the will of chakra itself.",
       "artPath": "cards/ninja/kurama.webp",
       "set": "tailed-beasts",
@@ -480,7 +480,7 @@
       "subtitle": "Juubi \u2014 The God Tree",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 210,
+      "hp": 160,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -488,7 +488,7 @@
           "cost": {
             "colorless": 7
           },
-          "damage": 140,
+          "damage": 110,
           "effect": {
             "type": "self-damage",
             "amount": 120
@@ -506,8 +506,8 @@
         }
       },
       "weakness": "wind",
-      "retreatCost": 2,
-      "rarity": "crown",
+      "retreatCost": 1,
+      "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "Before the shinobi. Before the Sage. I was.",
       "artPath": "cards/ninja/juubi.webp",
@@ -522,7 +522,7 @@
       "subtitle": "Demonic Statue",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 130,
+      "hp": 110,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -530,7 +530,7 @@
           "cost": {
             "colorless": 3
           },
-          "damage": 80,
+          "damage": 70,
           "effect": null,
           "description": "Binding shadow chains rip the target's chakra free."
         }
@@ -538,7 +538,7 @@
       "ability": null,
       "weakness": "wind",
       "retreatCost": 1,
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "isLegendary": false,
       "flavorText": "The husk that held nine truths.",
       "artPath": "cards/ninja/gedo-mazo.webp",
@@ -553,7 +553,7 @@
       "subtitle": "Matatabi's Chosen",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 130,
+      "hp": 110,
       "chakraType": "fire",
       "attacks": [
         {
@@ -574,7 +574,7 @@
       "ability": null,
       "weakness": "water",
       "retreatCost": 1,
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "isLegendary": false,
       "flavorText": "A loyal kunoichi of the Cloud.",
       "artPath": "cards/ninja/yugito.webp",
@@ -589,7 +589,7 @@
       "subtitle": "Son Gok\u016b's Partner",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 130,
+      "hp": 140,
       "chakraType": "fire",
       "attacks": [
         {
@@ -599,7 +599,7 @@
             "earth": 1,
             "colorless": 1
           },
-          "damage": 80,
+          "damage": 70,
           "effect": {
             "type": "self-damage",
             "amount": 20
@@ -618,7 +618,7 @@
       },
       "weakness": "water",
       "retreatCost": 1,
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "isLegendary": false,
       "flavorText": "I tamed my partner long ago.",
       "artPath": "cards/ninja/roshi.webp",
@@ -633,7 +633,7 @@
       "subtitle": "Koku\u014d's Vessel",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 130,
+      "hp": 120,
       "chakraType": "water",
       "attacks": [
         {
@@ -663,7 +663,7 @@
       },
       "weakness": "wind",
       "retreatCost": 1,
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "isLegendary": false,
       "flavorText": "Warmth is a weapon.",
       "artPath": "cards/ninja/han.webp",
@@ -678,7 +678,7 @@
       "subtitle": "Six-Tails Jinchuriki",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 130,
+      "hp": 120,
       "chakraType": "water",
       "attacks": [
         {
@@ -699,7 +699,7 @@
       "ability": null,
       "weakness": "lightning",
       "retreatCost": 1,
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "isLegendary": false,
       "flavorText": "Wandering, aimless. Just like the bubbles.",
       "artPath": "cards/ninja/utakata.webp",
@@ -714,7 +714,7 @@
       "subtitle": "Seven-Tails Jinchuriki",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 130,
+      "hp": 120,
       "chakraType": "wind",
       "attacks": [
         {
@@ -739,7 +739,7 @@
       },
       "weakness": "lightning",
       "retreatCost": 1,
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "isLegendary": false,
       "flavorText": "Hi, hi! Let's be friends before we fight!",
       "artPath": "cards/ninja/fu.webp",
@@ -754,7 +754,7 @@
       "subtitle": "Eight-Tails Rapper",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 130,
+      "hp": 120,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -779,7 +779,7 @@
       },
       "weakness": "earth",
       "retreatCost": 1,
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "isLegendary": false,
       "flavorText": "Yo yo, eight tails of thunder, crush or be under!",
       "artPath": "cards/ninja/killer-bee.webp",
@@ -794,7 +794,7 @@
       "subtitle": "Perfect Jinchuriki",
       "stage": 1,
       "evolvesFrom": "tb-021",
-      "hp": 170,
+      "hp": 200,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -803,7 +803,7 @@
             "lightning": 2,
             "colorless": 3
           },
-          "damage": 110,
+          "damage": 120,
           "effect": null,
           "description": "A Tailed Beast Ball fired in perfect unity with Gyuki."
         }
@@ -819,7 +819,7 @@
         }
       },
       "weakness": "earth",
-      "retreatCost": 1,
+      "retreatCost": 2,
       "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "Me and my buddy are on the same beat.",
@@ -835,7 +835,7 @@
       "subtitle": "Three-Tails Jinchuriki",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 130,
+      "hp": 150,
       "chakraType": "water",
       "attacks": [
         {
@@ -843,7 +843,7 @@
           "cost": {
             "water": 3
           },
-          "damage": 80,
+          "damage": 70,
           "effect": {
             "type": "status",
             "status": "confusion",
@@ -855,7 +855,7 @@
       "ability": null,
       "weakness": "lightning",
       "retreatCost": 1,
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "isLegendary": false,
       "flavorText": "I am the Mizukage. I am the beast.",
       "artPath": "cards/ninja/yagura.webp",
@@ -879,7 +879,7 @@
             "earth": 3,
             "colorless": 2
           },
-          "damage": 120,
+          "damage": 130,
           "effect": null,
           "description": "Summons a colossus of magnetized sand."
         }
@@ -894,7 +894,7 @@
         }
       },
       "weakness": "wind",
-      "retreatCost": 2,
+      "retreatCost": 1,
       "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "My friend and I fight as one.",
@@ -919,7 +919,7 @@
             "fire": 1,
             "colorless": 2
           },
-          "damage": 60,
+          "damage": 80,
           "effect": {
             "type": "status",
             "status": "paralyze",
@@ -946,7 +946,7 @@
       "subtitle": "Second Kurama Host",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 130,
+      "hp": 120,
       "chakraType": "fire",
       "attacks": [
         {
@@ -955,7 +955,7 @@
             "fire": 2,
             "colorless": 1
           },
-          "damage": 80,
+          "damage": 90,
           "effect": null,
           "description": "An explosive burst of Uzumaki rage."
         }
@@ -972,7 +972,7 @@
       },
       "weakness": "water",
       "retreatCost": 1,
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "isLegendary": false,
       "flavorText": "Dattebane!",
       "artPath": "cards/ninja/kushina.webp",
@@ -987,7 +987,7 @@
       "subtitle": "Kurama Chakra Mode",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 160,
+      "hp": 190,
       "chakraType": "fire",
       "attacks": [
         {
@@ -996,7 +996,7 @@
             "fire": 3,
             "colorless": 2
           },
-          "damage": 100,
+          "damage": 110,
           "effect": null,
           "description": "A full Tailed Beast Ball \u2014 the king of attacks."
         }
@@ -1031,7 +1031,7 @@
       "subtitle": "Bijuu Host Trainee",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 90,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -1039,7 +1039,7 @@
           "cost": {
             "colorless": 1
           },
-          "damage": 30,
+          "damage": 40,
           "effect": null,
           "description": "A tail of chakra flickers into being."
         }
@@ -1062,7 +1062,7 @@
       "subtitle": "Chakra Remnant",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 70,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -1070,7 +1070,7 @@
           "cost": {
             "colorless": 1
           },
-          "damage": 30,
+          "damage": 40,
           "effect": null,
           "description": "A faint echo of the nine beasts."
         }
@@ -1093,7 +1093,7 @@
       "subtitle": "Manifest Cloak",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 70,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -1101,7 +1101,7 @@
           "cost": {
             "colorless": 2
           },
-          "damage": 40,
+          "damage": 50,
           "effect": null,
           "description": "Pure bijuu chakra forms translucent claws."
         }
@@ -1109,7 +1109,7 @@
       "ability": null,
       "weakness": "wind",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "The host wears the power like a coat.",
       "artPath": null,
@@ -1124,7 +1124,7 @@
       "subtitle": "Chakra Duplicate",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 90,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -1132,7 +1132,7 @@
           "cost": {
             "colorless": 2
           },
-          "damage": 40,
+          "damage": 20,
           "effect": null,
           "description": "A lesser copy of the Bijuu's strength."
         }
@@ -1140,7 +1140,7 @@
       "ability": null,
       "weakness": "wind",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "Fragments can fight too.",
       "artPath": null,
@@ -1155,7 +1155,7 @@
       "subtitle": "Newborn Spirit",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 70,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -1163,7 +1163,7 @@
           "cost": {
             "colorless": 1
           },
-          "damage": 30,
+          "damage": 20,
           "effect": null,
           "description": "A tiny but hopeful nip."
         }
@@ -1186,7 +1186,7 @@
       "subtitle": "Fragment of Kaguya",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 180,
+      "hp": 160,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -1195,15 +1195,15 @@
             "colorless": 2,
             "earth": 1
           },
-          "damage": 120,
+          "damage": 130,
           "effect": null,
           "description": "Bones erupt from the earth."
         }
       ],
       "ability": null,
       "weakness": "wind",
-      "retreatCost": 2,
-      "rarity": "secret",
+      "retreatCost": 1,
+      "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "The dream of one eye, cast upon the world.",
       "artPath": null,
@@ -1300,7 +1300,7 @@
         "type": "damage-boost",
         "amount": 30
       },
-      "rarity": "secret",
+      "rarity": "legendary",
       "set": "tailed-beasts",
       "artPath": "cards/jutsu/six-paths-chakra.webp",
       "setNumber": 37
@@ -1315,7 +1315,7 @@
         "condition": "gyuki-required",
         "amount": 120
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "tailed-beasts",
       "artPath": "cards/jutsu/lariat.webp",
       "setNumber": 38
@@ -1334,7 +1334,7 @@
           "amount": 30
         }
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "tailed-beasts",
       "artPath": "cards/jutsu/bijuu-transformation.webp",
       "setNumber": 39
@@ -1435,7 +1435,7 @@
           "amount": 20
         }
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "tailed-beasts",
       "artPath": "cards/jutsu/chakra-cloak.webp",
       "setNumber": 45
@@ -1449,7 +1449,7 @@
         "type": "conditional",
         "condition": "reclaim-chakra-bijuu"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "tailed-beasts",
       "artPath": "cards/jutsu/chakra-receiver.webp",
       "setNumber": 46
@@ -1468,7 +1468,7 @@
           "condition": "killer-bee-in-play"
         }
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "tailed-beasts",
       "artPath": "cards/jutsu/rap-battle.webp",
       "setNumber": 47
@@ -1483,7 +1483,7 @@
         "amount": 3,
         "condition": "bijuu-search"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "tailed-beasts",
       "artPath": "cards/jutsu/bijuu-chat.webp",
       "setNumber": 48
@@ -1543,7 +1543,7 @@
         "type": "conditional",
         "condition": "attack-coin-flip"
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "tailed-beasts",
       "artPath": "cards/tools/seven-tails-pollen.webp",
       "setNumber": 52
@@ -1558,7 +1558,7 @@
         "condition": "damage-reduction",
         "amount": 20
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "tailed-beasts",
       "artPath": "cards/tools/shukaku-gourd.webp",
       "setNumber": 53
@@ -1618,7 +1618,7 @@
         "type": "conditional",
         "condition": "seal-immunity"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "tailed-beasts",
       "artPath": "cards/tools/four-symbols-seal.webp",
       "setNumber": 57
@@ -1632,7 +1632,7 @@
         "type": "conditional",
         "condition": "confusion-immunity"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "tailed-beasts",
       "artPath": "cards/tools/matatabi-whisker.webp",
       "setNumber": 58
@@ -1646,7 +1646,7 @@
         "type": "conditional",
         "condition": "fire-earth-sub"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "tailed-beasts",
       "artPath": "cards/tools/son-goku-headband.webp",
       "setNumber": 59
@@ -1677,7 +1677,7 @@
         "target": "opponent-active",
         "amount": 2
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "tailed-beasts",
       "artPath": "cards/sensei/yagura.webp",
       "setNumber": 61
@@ -1697,20 +1697,16 @@
           "amount": 1
         }
       },
-      "rarity": "crown",
+      "rarity": "legendary",
       "set": "tailed-beasts",
       "artPath": "cards/sensei/hagoromo.webp",
       "setNumber": 62
     }
   ],
   "pullRates": {
-    "common": 0.35,
-    "uncommon": 0.28,
-    "rare": 0.2,
-    "ultra-rare": 0.1,
-    "legendary": 0.055,
-    "secret": 0.01,
-    "crown": 0.005
+    "common": 0.62,
+    "rare": 0.29,
+    "legendary": 0.09
   },
   "totalCards": 62
 }

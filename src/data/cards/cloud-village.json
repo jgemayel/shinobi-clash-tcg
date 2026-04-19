@@ -12,7 +12,7 @@
       "subtitle": "Fourth Raikage",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 130,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -21,7 +21,7 @@
             "lightning": 1,
             "colorless": 1
           },
-          "damage": 60,
+          "damage": 80,
           "effect": null,
           "description": "A powerful clothesline strike."
         }
@@ -44,7 +44,7 @@
       "subtitle": "Fourth Raikage \u2014 Lightning Armor",
       "stage": 1,
       "evolvesFrom": "cv-001",
-      "hp": 170,
+      "hp": 200,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -52,60 +52,7 @@
           "cost": {
             "lightning": 3
           },
-          "damage": 110,
-          "effect": {
-            "type": "self-damage",
-            "amount": 30
-          },
-          "description": "A piercing strike that tears through armor."
-        }
-      ],
-      "ability": {
-        "name": "Lightning Armor",
-        "description": "This Ninja moves first each turn and takes 20 less damage.",
-        "trigger": "passive",
-        "effect": {
-          "type": "conditional",
-          "condition": "first-strike-dr",
-          "amount": 20
-        }
-      },
-      "weakness": "earth",
-      "retreatCost": 1,
-      "rarity": "legendary",
-      "isLegendary": true,
-      "flavorText": "My fist will answer every threat.",
-      "artPath": "cards/ninja/a-raikage.webp",
-      "set": "cloud-village",
-      "setNumber": 2,
-      "isEx": false
-    },
-    {
-      "id": "cv-002-ex",
-      "type": "ninja",
-      "name": "A",
-      "subtitle": "Fourth Raikage \u2014 Lightning Armor EX",
-      "stage": 1,
-      "evolvesFrom": null,
-      "hp": 240,
-      "chakraType": "lightning",
-      "attacks": [
-        {
-          "name": "Raging Thunder Lariat",
-          "cost": {
-            "lightning": 2,
-            "colorless": 1
-          },
-          "damage": 110,
-          "effect": null,
-          "description": "At light-speed, a demolishing lariat."
-        },
-        {
-          "name": "Hell Stab",
-          "cost": {
-            "lightning": 3
-          },
-          "damage": 160,
+          "damage": 120,
           "effect": {
             "type": "self-damage",
             "amount": 30
@@ -126,7 +73,60 @@
       "weakness": "earth",
       "retreatCost": 2,
       "rarity": "legendary",
-      "isLegendary": false,
+      "isLegendary": true,
+      "flavorText": "My fist will answer every threat.",
+      "artPath": "cards/ninja/a-raikage.webp",
+      "set": "cloud-village",
+      "setNumber": 2,
+      "isEx": false
+    },
+    {
+      "id": "cv-002-ex",
+      "type": "ninja",
+      "name": "A",
+      "subtitle": "Fourth Raikage \u2014 Lightning Armor EX",
+      "stage": 1,
+      "evolvesFrom": null,
+      "hp": 260,
+      "chakraType": "lightning",
+      "attacks": [
+        {
+          "name": "Raging Thunder Lariat",
+          "cost": {
+            "lightning": 2,
+            "colorless": 1
+          },
+          "damage": 150,
+          "effect": null,
+          "description": "At light-speed, a demolishing lariat."
+        },
+        {
+          "name": "Hell Stab",
+          "cost": {
+            "lightning": 3
+          },
+          "damage": 190,
+          "effect": {
+            "type": "self-damage",
+            "amount": 30
+          },
+          "description": "A piercing strike that tears through armor."
+        }
+      ],
+      "ability": {
+        "name": "Lightning Armor",
+        "description": "This Ninja moves first each turn and takes 20 less damage.",
+        "trigger": "passive",
+        "effect": {
+          "type": "conditional",
+          "condition": "first-strike-dr",
+          "amount": 20
+        }
+      },
+      "weakness": "earth",
+      "retreatCost": 2,
+      "rarity": "legendary",
+      "isLegendary": true,
       "flavorText": "My fist will answer every threat.",
       "artPath": "cards/ninja/a-raikage.webp",
       "set": "cloud-village",
@@ -140,7 +140,7 @@
       "subtitle": "Unbreakable Shield",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 160,
+      "hp": 180,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -149,7 +149,7 @@
             "lightning": 3,
             "colorless": 2
           },
-          "damage": 100,
+          "damage": 130,
           "effect": {
             "type": "self-damage",
             "amount": 60
@@ -193,7 +193,7 @@
             "lightning": 2,
             "water": 1
           },
-          "damage": 60,
+          "damage": 90,
           "effect": {
             "type": "bench-damage",
             "target": "opponent-bench",
@@ -220,7 +220,7 @@
       "subtitle": "Fifth Raikage",
       "stage": 1,
       "evolvesFrom": "cv-006",
-      "hp": 170,
+      "hp": 190,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -228,7 +228,7 @@
           "cost": {
             "lightning": 3
           },
-          "damage": 110,
+          "damage": 100,
           "effect": null,
           "description": "Rare forbidden lightning strike."
         }
@@ -260,7 +260,7 @@
       "subtitle": "Eight-Tails Rapper",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 130,
+      "hp": 110,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -268,7 +268,7 @@
           "cost": {
             "lightning": 2
           },
-          "damage": 80,
+          "damage": 70,
           "effect": null,
           "description": "A chakra tentacle erupts from his back."
         }
@@ -284,7 +284,7 @@
       },
       "weakness": "earth",
       "retreatCost": 1,
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "isLegendary": false,
       "flavorText": "Check my flow, yo! Eight tails of thunder!",
       "artPath": "cards/ninja/killer-bee.webp",
@@ -299,7 +299,7 @@
       "subtitle": "Perfect Jinchuriki Union",
       "stage": 1,
       "evolvesFrom": "cv-004",
-      "hp": 220,
+      "hp": 190,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -308,7 +308,7 @@
             "lightning": 3,
             "colorless": 1
           },
-          "damage": 140,
+          "damage": 110,
           "effect": {
             "type": "bench-damage",
             "target": "opponent-bench",
@@ -332,8 +332,8 @@
         }
       },
       "weakness": "earth",
-      "retreatCost": 2,
-      "rarity": "crown",
+      "retreatCost": 1,
+      "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "Me and Gyuki \u2014 one beat, one rhyme, unstoppable.",
       "artPath": "cards/ninja/killer-bee.webp",
@@ -348,7 +348,7 @@
       "subtitle": "Perfect Jinchuriki Union EX",
       "stage": 1,
       "evolvesFrom": null,
-      "hp": 290,
+      "hp": 320,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -357,7 +357,7 @@
             "lightning": 2,
             "colorless": 2
           },
-          "damage": 140,
+          "damage": 160,
           "effect": null,
           "description": "Compressed tailed beast chakra unleashed."
         },
@@ -392,8 +392,8 @@
       },
       "weakness": "earth",
       "retreatCost": 3,
-      "rarity": "crown",
-      "isLegendary": false,
+      "rarity": "legendary",
+      "isLegendary": true,
       "flavorText": "Me and Gyuki \u2014 one beat, one rhyme, unstoppable.",
       "artPath": "cards/ninja/killer-bee.webp",
       "set": "cloud-village",
@@ -416,7 +416,7 @@
             "fire": 2,
             "colorless": 1
           },
-          "damage": 60,
+          "damage": 80,
           "effect": {
             "type": "status",
             "status": "burn",
@@ -443,7 +443,7 @@
       "subtitle": "Matatabi Unleashed",
       "stage": 1,
       "evolvesFrom": "cv-015",
-      "hp": 170,
+      "hp": 200,
       "chakraType": "fire",
       "attacks": [
         {
@@ -451,7 +451,7 @@
           "cost": {
             "fire": 3
           },
-          "damage": 110,
+          "damage": 120,
           "effect": null,
           "description": "Leaps with blue flame aura."
         }
@@ -466,7 +466,7 @@
         }
       },
       "weakness": "water",
-      "retreatCost": 1,
+      "retreatCost": 2,
       "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "My partner dances in my veins.",
@@ -482,7 +482,7 @@
       "subtitle": "Previous Eight-Tails Host",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 160,
+      "hp": 180,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -491,7 +491,7 @@
             "lightning": 2,
             "colorless": 1
           },
-          "damage": 100,
+          "damage": 120,
           "effect": null,
           "description": "A hardened horn-headbutt."
         }
@@ -514,7 +514,7 @@
       "subtitle": "Medical Sensor",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 50,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -530,7 +530,7 @@
       "ability": null,
       "weakness": "earth",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "I can feel every enemy within a mile.",
       "artPath": "cards/ninja/c-sensor.webp",
@@ -545,7 +545,7 @@
       "subtitle": "Cold Kunoichi",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 60,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -562,7 +562,7 @@
       "ability": null,
       "weakness": "earth",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "Not my type.",
       "artPath": "cards/ninja/samui.webp",
@@ -577,7 +577,7 @@
       "subtitle": "Twin Edge of Lightning",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 180,
+      "hp": 190,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -586,7 +586,7 @@
             "fire": 1,
             "lightning": 2
           },
-          "damage": 120,
+          "damage": 130,
           "effect": {
             "type": "status",
             "status": "burn",
@@ -606,8 +606,8 @@
         }
       },
       "weakness": "earth",
-      "retreatCost": 2,
-      "rarity": "secret",
+      "retreatCost": 1,
+      "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "Ice and fire. Sister and brother. Strike as one.",
       "artPath": "cards/ninja/samui.webp",
@@ -630,7 +630,7 @@
           "cost": {
             "fire": 1
           },
-          "damage": 40,
+          "damage": 20,
           "effect": {
             "type": "status",
             "status": "burn",
@@ -642,7 +642,7 @@
       "ability": null,
       "weakness": "water",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "I'm HOT \u2014 like, literally!",
       "artPath": "cards/ninja/atsui.webp",
@@ -665,7 +665,7 @@
           "cost": {
             "colorless": 1
           },
-          "damage": 30,
+          "damage": 40,
           "effect": null,
           "description": "A clean diagonal cut."
         }
@@ -696,7 +696,7 @@
           "cost": {
             "colorless": 1
           },
-          "damage": 30,
+          "damage": 40,
           "effect": {
             "type": "draw",
             "amount": 1
@@ -722,7 +722,7 @@
       "subtitle": "Teleport Specialist",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 50,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -730,7 +730,7 @@
           "cost": {
             "colorless": 2
           },
-          "damage": 40,
+          "damage": 30,
           "effect": {
             "type": "switch",
             "target": "self-bench"
@@ -741,7 +741,7 @@
       "ability": null,
       "weakness": "wind",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "Moving the Raikage takes precision.",
       "artPath": "cards/ninja/mabui.webp",
@@ -756,7 +756,7 @@
       "subtitle": "Medical Ninja",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 70,
       "chakraType": "water",
       "attacks": [
         {
@@ -764,7 +764,7 @@
           "cost": {
             "water": 1
           },
-          "damage": 30,
+          "damage": 50,
           "effect": {
             "type": "heal",
             "amount": 40,
@@ -791,7 +791,7 @@
       "subtitle": "Rubber Release User",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 60,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -807,7 +807,7 @@
       "ability": null,
       "weakness": "earth",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "Nothing bounces off me.",
       "artPath": "cards/ninja/dodai.webp",
@@ -822,7 +822,7 @@
       "subtitle": "Magnet Jonin",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 70,
       "chakraType": "earth",
       "attacks": [
         {
@@ -830,7 +830,7 @@
           "cost": {
             "earth": 1
           },
-          "damage": 40,
+          "damage": 20,
           "effect": null,
           "description": "Homing magnetized shuriken."
         }
@@ -838,7 +838,7 @@
       "ability": null,
       "weakness": "wind",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "My shuriken never miss.",
       "artPath": "cards/ninja/toroi.webp",
@@ -853,7 +853,7 @@
       "subtitle": "Cloud Elite",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 50,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -861,7 +861,7 @@
           "cost": {
             "lightning": 1
           },
-          "damage": 40,
+          "damage": 50,
           "effect": null,
           "description": "A silent, sudden shock."
         }
@@ -869,7 +869,7 @@
       "ability": null,
       "weakness": "earth",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "Light speed justice.",
       "artPath": null,
@@ -884,7 +884,7 @@
       "subtitle": "Thunder Cadet",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 70,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -892,7 +892,7 @@
           "cost": {
             "colorless": 1
           },
-          "damage": 30,
+          "damage": 20,
           "effect": null,
           "description": "An amateur jolt."
         }
@@ -915,7 +915,7 @@
       "subtitle": "Cloud Blade Specialist",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 70,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -923,7 +923,7 @@
           "cost": {
             "lightning": 1
           },
-          "damage": 30,
+          "damage": 50,
           "effect": null,
           "description": "A blade that draws lightning."
         }
@@ -1003,7 +1003,7 @@
           "amount": 140
         }
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "cloud-village",
       "artPath": "cards/jutsu/hell-stab.webp",
       "setNumber": 29
@@ -1018,7 +1018,7 @@
         "condition": "raikage-required",
         "amount": 130
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "cloud-village",
       "artPath": "cards/jutsu/liger-bomb.webp",
       "setNumber": 30
@@ -1032,7 +1032,7 @@
         "type": "conditional",
         "condition": "double-attack-turn"
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "cloud-village",
       "artPath": "cards/jutsu/speed-mode.webp",
       "setNumber": 31
@@ -1047,7 +1047,7 @@
         "target": "all-opponents",
         "amount": 60
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "cloud-village",
       "artPath": "cards/jutsu/laser-circus.webp",
       "setNumber": 32
@@ -1062,7 +1062,7 @@
         "condition": "pierce",
         "amount": 100
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "cloud-village",
       "artPath": "cards/jutsu/thunder-god.webp",
       "setNumber": 33
@@ -1216,7 +1216,7 @@
         "amount": 20,
         "target": "self-bench"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "cloud-village",
       "artPath": "cards/jutsu/sword-dance.webp",
       "setNumber": 43
@@ -1230,7 +1230,7 @@
         "type": "conditional",
         "condition": "spawn-lightning-clone"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "cloud-village",
       "artPath": "cards/jutsu/lightning-clone.webp",
       "setNumber": 44
@@ -1245,7 +1245,7 @@
         "condition": "retreat-increase",
         "amount": 1
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "cloud-village",
       "artPath": "cards/jutsu/lightning-field.webp",
       "setNumber": 45
@@ -1259,7 +1259,7 @@
         "type": "conditional",
         "condition": "chakra-shuffle"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "cloud-village",
       "artPath": "cards/jutsu/lightning-transfer.webp",
       "setNumber": 46
@@ -1274,7 +1274,7 @@
         "condition": "reclaim-chakra",
         "amount": 2
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "cloud-village",
       "artPath": "cards/jutsu/raiton-conduit.webp",
       "setNumber": 47
@@ -1289,7 +1289,7 @@
         "condition": "damage-reduction",
         "amount": 30
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "cloud-village",
       "artPath": "cards/jutsu/thunder-armor.webp",
       "setNumber": 48
@@ -1362,7 +1362,7 @@
         "amount": 30,
         "condition": "jinchuriki-only"
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "cloud-village",
       "artPath": "cards/tools/gyuki-fragment.webp",
       "setNumber": 53
@@ -1376,7 +1376,7 @@
         "type": "conditional",
         "condition": "free-teleport-once"
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "cloud-village",
       "artPath": "cards/tools/mabui-crystal.webp",
       "setNumber": 54
@@ -1390,7 +1390,7 @@
         "type": "damage-boost",
         "amount": 30
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "cloud-village",
       "artPath": "cards/tools/raikage-gauntlets.webp",
       "setNumber": 55
@@ -1448,7 +1448,7 @@
         "type": "damage-boost",
         "amount": 15
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "cloud-village",
       "artPath": "cards/tools/cloud-sword.webp",
       "setNumber": 59
@@ -1463,7 +1463,7 @@
         "status": "paralyze",
         "target": "opponent-active"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "cloud-village",
       "artPath": "cards/tools/lightning-needle.webp",
       "setNumber": 60
@@ -1478,7 +1478,7 @@
         "condition": "lightning-resist",
         "amount": 20
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "cloud-village",
       "artPath": "cards/tools/thunder-beads.webp",
       "setNumber": 61
@@ -1538,7 +1538,7 @@
         "type": "conditional",
         "condition": "tutor-storm"
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "cloud-village",
       "artPath": "cards/sensei/darui.webp",
       "setNumber": 65
@@ -1574,7 +1574,7 @@
           "condition": "reveal-hand"
         }
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "cloud-village",
       "artPath": "cards/sensei/c-sensor.webp",
       "setNumber": 67
@@ -1600,13 +1600,9 @@
     }
   ],
   "pullRates": {
-    "common": 0.48,
-    "uncommon": 0.27,
-    "rare": 0.15,
-    "ultra-rare": 0.065,
-    "legendary": 0.028,
-    "secret": 0.005,
-    "crown": 0.002
+    "common": 0.62,
+    "rare": 0.29,
+    "legendary": 0.09
   },
   "totalCards": 68
 }

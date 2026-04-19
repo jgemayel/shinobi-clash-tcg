@@ -15,12 +15,8 @@ function shuffle<T>(arr: T[]): T[] {
 
 const RARITY_RANK: Record<string, number> = {
   [Rarity.Common]: 1,
-  [Rarity.Uncommon]: 2,
-  [Rarity.Rare]: 3,
-  [Rarity.UltraRare]: 4,
-  [Rarity.Legendary]: 5,
-  [Rarity.Secret]: 6,
-  [Rarity.Crown]: 7,
+  [Rarity.Rare]: 2,
+  [Rarity.Legendary]: 3,
 };
 
 function rarityRank(r: string): number {

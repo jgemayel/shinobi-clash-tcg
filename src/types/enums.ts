@@ -16,12 +16,8 @@ export enum CardType {
 
 export enum Rarity {
   Common = 'common',
-  Uncommon = 'uncommon',
   Rare = 'rare',
-  UltraRare = 'ultra-rare',
   Legendary = 'legendary',
-  Secret = 'secret',
-  Crown = 'crown',
 }
 
 export enum StatusEffect {

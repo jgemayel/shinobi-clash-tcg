@@ -12,7 +12,7 @@
       "subtitle": "War Orphan",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 100,
+      "hp": 140,
       "chakraType": "water",
       "attacks": [
         {
@@ -43,7 +43,7 @@
       "subtitle": "Rinnegan Pupil",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 60,
       "chakraType": "colorless",
       "attacks": [
         {
@@ -51,7 +51,7 @@
           "cost": {
             "colorless": 1
           },
-          "damage": 40,
+          "damage": 30,
           "effect": null,
           "description": "Echoes of the Rinnegan's power."
         }
@@ -59,7 +59,7 @@
       "ability": null,
       "weakness": "earth",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "The Rinnegan whispers... and I listen.",
       "artPath": "cards/ninja/nagato.webp",
@@ -74,7 +74,7 @@
       "subtitle": "Rinnegan Awakened",
       "stage": 1,
       "evolvesFrom": "rv-001",
-      "hp": 140,
+      "hp": 130,
       "chakraType": "water",
       "attacks": [
         {
@@ -82,7 +82,7 @@
           "cost": {
             "colorless": 2
           },
-          "damage": 90,
+          "damage": 70,
           "effect": {
             "type": "switch",
             "target": "opponent-active"
@@ -93,7 +93,7 @@
       "ability": null,
       "weakness": "earth",
       "retreatCost": 1,
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "isLegendary": false,
       "flavorText": "I see pathways \u2014 to and from all things.",
       "artPath": "cards/ninja/nagato.webp",
@@ -108,7 +108,7 @@
       "subtitle": "Six Paths Origin",
       "stage": 2,
       "evolvesFrom": "rv-002",
-      "hp": 240,
+      "hp": 210,
       "chakraType": "water",
       "attacks": [
         {
@@ -116,7 +116,7 @@
           "cost": {
             "colorless": 3
           },
-          "damage": 150,
+          "damage": 140,
           "effect": {
             "type": "heal",
             "amount": 150,
@@ -137,7 +137,7 @@
       },
       "weakness": "earth",
       "retreatCost": 2,
-      "rarity": "crown",
+      "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "I was born to know pain.",
       "artPath": "cards/ninja/nagato.webp",
@@ -152,7 +152,7 @@
       "subtitle": "Six Paths Origin EX",
       "stage": 2,
       "evolvesFrom": null,
-      "hp": 310,
+      "hp": 300,
       "chakraType": "water",
       "attacks": [
         {
@@ -169,7 +169,7 @@
           "cost": {
             "colorless": 3
           },
-          "damage": 200,
+          "damage": 210,
           "effect": {
             "type": "heal",
             "amount": 150,
@@ -190,8 +190,8 @@
       },
       "weakness": "earth",
       "retreatCost": 3,
-      "rarity": "crown",
-      "isLegendary": false,
+      "rarity": "legendary",
+      "isLegendary": true,
       "flavorText": "I was born to know pain.",
       "artPath": "cards/ninja/nagato.webp",
       "set": "rain-village",
@@ -205,7 +205,7 @@
       "subtitle": "Rain Orphan",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 90,
       "chakraType": "water",
       "attacks": [
         {
@@ -213,7 +213,7 @@
           "cost": {
             "colorless": 1
           },
-          "damage": 30,
+          "damage": 50,
           "effect": null,
           "description": "A determined throw."
         }
@@ -236,7 +236,7 @@
       "subtitle": "Rain Resistance Leader",
       "stage": 1,
       "evolvesFrom": "rv-004",
-      "hp": 110,
+      "hp": 140,
       "chakraType": "water",
       "attacks": [
         {
@@ -245,7 +245,7 @@
             "water": 1,
             "colorless": 1
           },
-          "damage": 70,
+          "damage": 80,
           "effect": null,
           "description": "Triggered explosive tags."
         }
@@ -277,7 +277,7 @@
       "subtitle": "Rain Resistance Leader EX",
       "stage": 1,
       "evolvesFrom": null,
-      "hp": 210,
+      "hp": 300,
       "chakraType": "water",
       "attacks": [
         {
@@ -285,7 +285,7 @@
           "cost": {
             "colorless": 1
           },
-          "damage": 90,
+          "damage": 150,
           "effect": {
             "type": "draw",
             "amount": 2
@@ -298,7 +298,7 @@
             "water": 1,
             "colorless": 1
           },
-          "damage": 140,
+          "damage": 220,
           "effect": null,
           "description": "Triggered explosive tags."
         }
@@ -314,8 +314,8 @@
         }
       },
       "weakness": "lightning",
-      "retreatCost": 2,
-      "rarity": "ultra-rare",
+      "retreatCost": 3,
+      "rarity": "rare",
       "isLegendary": false,
       "flavorText": "We are Akatsuki. The dawn.",
       "artPath": "cards/ninja/yahiko.webp",
@@ -330,7 +330,7 @@
       "subtitle": "Rain's Angel",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 60,
       "chakraType": "water",
       "attacks": [
         {
@@ -338,7 +338,7 @@
           "cost": {
             "water": 1
           },
-          "damage": 40,
+          "damage": 30,
           "effect": null,
           "description": "Sharpened paper flowers."
         }
@@ -346,7 +346,7 @@
       "ability": null,
       "weakness": "fire",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "Paper blooms where rain falls.",
       "artPath": "cards/ninja/konan-young.webp",
@@ -361,7 +361,7 @@
       "subtitle": "Amegakure Guardian",
       "stage": 1,
       "evolvesFrom": "rv-006",
-      "hp": 170,
+      "hp": 220,
       "chakraType": "water",
       "attacks": [
         {
@@ -370,7 +370,7 @@
             "water": 1,
             "colorless": 1
           },
-          "damage": 110,
+          "damage": 130,
           "effect": null,
           "description": "Paper wings carry lethal strikes."
         }
@@ -385,7 +385,7 @@
         }
       },
       "weakness": "fire",
-      "retreatCost": 1,
+      "retreatCost": 2,
       "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "For Yahiko. For Nagato. For our dream.",
@@ -401,7 +401,7 @@
       "subtitle": "Six Hundred Billion Papers",
       "stage": 2,
       "evolvesFrom": "rv-007",
-      "hp": 200,
+      "hp": 210,
       "chakraType": "water",
       "attacks": [
         {
@@ -429,7 +429,7 @@
       },
       "weakness": "fire",
       "retreatCost": 2,
-      "rarity": "secret",
+      "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "For Yahiko. For Nagato. This is my last miracle.",
       "artPath": "cards/ninja/konan.webp",
@@ -444,7 +444,7 @@
       "subtitle": "Pre-Akatsuki Hanzo",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 160,
+      "hp": 220,
       "chakraType": "water",
       "attacks": [
         {
@@ -453,7 +453,7 @@
             "water": 1,
             "colorless": 1
           },
-          "damage": 100,
+          "damage": 120,
           "effect": {
             "type": "status",
             "status": "poison",
@@ -472,7 +472,7 @@
         }
       },
       "weakness": "lightning",
-      "retreatCost": 1,
+      "retreatCost": 2,
       "rarity": "legendary",
       "isLegendary": true,
       "flavorText": "The Salamander rules the rain.",
@@ -497,7 +497,7 @@
             "water": 1,
             "colorless": 1
           },
-          "damage": 40,
+          "damage": 30,
           "effect": {
             "type": "status",
             "status": "poison",
@@ -509,7 +509,7 @@
       "ability": null,
       "weakness": "lightning",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "The lineage continues.",
       "artPath": "cards/ninja/hanzo.webp",
@@ -555,7 +555,7 @@
       "subtitle": "Fuma Lightning Chunin",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 50,
       "chakraType": "lightning",
       "attacks": [
         {
@@ -563,7 +563,7 @@
           "cost": {
             "lightning": 1
           },
-          "damage": 40,
+          "damage": 50,
           "effect": null,
           "description": "Giant spinning shuriken."
         }
@@ -571,7 +571,7 @@
       "ability": null,
       "weakness": "earth",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "Fuma honor demands we fight.",
       "artPath": null,
@@ -621,7 +621,7 @@
       "subtitle": "Rain Brother",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 90,
       "chakraType": "water",
       "attacks": [
         {
@@ -629,7 +629,7 @@
           "cost": {
             "water": 1
           },
-          "damage": 30,
+          "damage": 20,
           "effect": null,
           "description": "A fog-shrouded double strikes."
         }
@@ -652,7 +652,7 @@
       "subtitle": "Rain Brother",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 50,
       "chakraType": "water",
       "attacks": [
         {
@@ -660,7 +660,7 @@
           "cost": {
             "water": 1
           },
-          "damage": 30,
+          "damage": 20,
           "effect": null,
           "description": "A liquid blade."
         }
@@ -683,7 +683,7 @@
       "subtitle": "Rain Brother",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 70,
       "chakraType": "water",
       "attacks": [
         {
@@ -691,7 +691,7 @@
           "cost": {
             "water": 1
           },
-          "damage": 30,
+          "damage": 50,
           "effect": null,
           "description": "Channels the village's storms."
         }
@@ -730,7 +730,7 @@
       "ability": null,
       "weakness": "lightning",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "My umbrellas aren't for the rain.",
       "artPath": "cards/ninja/shigure.webp",
@@ -745,7 +745,7 @@
       "subtitle": "Ame Elite Assassin",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 90,
       "chakraType": "water",
       "attacks": [
         {
@@ -753,7 +753,7 @@
           "cost": {
             "water": 1
           },
-          "damage": 40,
+          "damage": 50,
           "effect": null,
           "description": "A silent kill in a storm."
         }
@@ -761,7 +761,7 @@
       "ability": null,
       "weakness": "lightning",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "The rain is our cover.",
       "artPath": null,
@@ -776,7 +776,7 @@
       "subtitle": "Young Rain Shinobi",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 90,
       "chakraType": "water",
       "attacks": [
         {
@@ -784,7 +784,7 @@
           "cost": {
             "water": 1
           },
-          "damage": 30,
+          "damage": 40,
           "effect": null,
           "description": "A rookie's try."
         }
@@ -807,7 +807,7 @@
       "subtitle": "Amegakure Veteran",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 80,
+      "hp": 90,
       "chakraType": "water",
       "attacks": [
         {
@@ -815,7 +815,7 @@
           "cost": {
             "water": 1
           },
-          "damage": 40,
+          "damage": 30,
           "effect": null,
           "description": "A water-infused strike."
         }
@@ -823,7 +823,7 @@
       "ability": null,
       "weakness": "lightning",
       "retreatCost": 1,
-      "rarity": "uncommon",
+      "rarity": "common",
       "isLegendary": false,
       "flavorText": "Rain hides my steps.",
       "artPath": null,
@@ -838,7 +838,7 @@
       "subtitle": "Field Healer",
       "stage": 0,
       "evolvesFrom": null,
-      "hp": 60,
+      "hp": 70,
       "chakraType": "water",
       "attacks": [
         {
@@ -846,7 +846,7 @@
           "cost": {
             "water": 1
           },
-          "damage": 30,
+          "damage": 40,
           "effect": {
             "type": "heal",
             "amount": 40,
@@ -890,7 +890,7 @@
         "amount": 30,
         "target": "self-bench"
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "rain-village",
       "artPath": "cards/jutsu/eternal-storm.webp",
       "setNumber": 26
@@ -905,7 +905,7 @@
         "status": "seal",
         "target": "opponent-bench"
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "rain-village",
       "artPath": "cards/jutsu/rain-binding.webp",
       "setNumber": 27
@@ -920,7 +920,7 @@
         "condition": "hanzo-required",
         "amount": 110
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "rain-village",
       "artPath": "cards/jutsu/rain-tiger.webp",
       "setNumber": 28
@@ -1044,7 +1044,7 @@
         "condition": "reclaim-water-chakra",
         "amount": 2
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "rain-village",
       "artPath": "cards/jutsu/chakra-reservoir.webp",
       "setNumber": 36
@@ -1058,7 +1058,7 @@
         "type": "conditional",
         "condition": "spawn-rain-clone"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "rain-village",
       "artPath": "cards/jutsu/rain-clone.webp",
       "setNumber": 37
@@ -1073,7 +1073,7 @@
         "condition": "damage-reduction",
         "amount": 40
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "rain-village",
       "artPath": "cards/jutsu/rain-mist.webp",
       "setNumber": 38
@@ -1087,7 +1087,7 @@
         "type": "draw",
         "amount": 2
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "rain-village",
       "artPath": "cards/jutsu/rain-sensor.webp",
       "setNumber": 39
@@ -1103,7 +1103,7 @@
         "target": "opponent-active",
         "amount": 50
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "rain-village",
       "artPath": "cards/jutsu/rain-needles.webp",
       "setNumber": 40
@@ -1118,7 +1118,7 @@
         "amount": 20,
         "target": "self-bench"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "rain-village",
       "artPath": "cards/jutsu/storm-front.webp",
       "setNumber": 41
@@ -1133,7 +1133,7 @@
         "status": "seal",
         "target": "opponent-active"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "rain-village",
       "artPath": "cards/jutsu/rain-water-prison.webp",
       "setNumber": 42
@@ -1147,7 +1147,7 @@
         "type": "conditional",
         "condition": "damage-block"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "rain-village",
       "artPath": "cards/jutsu/water-sub.webp",
       "setNumber": 43
@@ -1206,7 +1206,7 @@
         "amount": 10,
         "condition": "poison-extra"
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "rain-village",
       "artPath": "cards/tools/ibuse-scale.webp",
       "setNumber": 47
@@ -1322,7 +1322,7 @@
         "status": "paralyze",
         "target": "opponent-active"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "rain-village",
       "artPath": "cards/tools/kusarigama.webp",
       "setNumber": 55
@@ -1337,7 +1337,7 @@
         "condition": "water-resist",
         "amount": 20
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "rain-village",
       "artPath": "cards/tools/rain-guard.webp",
       "setNumber": 56
@@ -1352,7 +1352,7 @@
         "status": "paralyze",
         "target": "opponent-active"
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "set": "rain-village",
       "artPath": "cards/tools/umbrella.webp",
       "setNumber": 57
@@ -1427,7 +1427,7 @@
         "type": "conditional",
         "condition": "tutor-paper"
       },
-      "rarity": "ultra-rare",
+      "rarity": "rare",
       "set": "rain-village",
       "artPath": "cards/sensei/konan.webp",
       "setNumber": 62
@@ -1450,13 +1450,9 @@
     }
   ],
   "pullRates": {
-    "common": 0.48,
-    "uncommon": 0.27,
-    "rare": 0.15,
-    "ultra-rare": 0.065,
-    "legendary": 0.028,
-    "secret": 0.005,
-    "crown": 0.002
+    "common": 0.62,
+    "rare": 0.29,
+    "legendary": 0.09
   },
   "totalCards": 63
 }
