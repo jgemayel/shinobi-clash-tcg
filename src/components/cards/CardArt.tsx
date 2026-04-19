@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { asset } from '@/lib/basePath';
 
 interface CardArtProps {
   cardName: string;
@@ -1203,18 +1204,21 @@ function getCharacterKey(name: string): string {
 }
 
 function getCharacterImage(key: string, cardType: string, stage: number): string | null {
-  if (cardType === 'sensei') {
-    return SENSEI_IMAGES[key] ?? null;
-  }
-  const stages = NINJA_IMAGES[key];
-  if (!stages) return null;
-  if (stages[stage]) return stages[stage];
-  // Fall back to the HIGHEST available stage (most evolved form), not stage 0
-  const availableStages = Object.keys(stages).map(Number).sort((a, b) => b - a);
-  for (const s of availableStages) {
-    if (s <= stage && stages[s]) return stages[s];
-  }
-  return stages[availableStages[0]] ?? null;
+  const raw = (() => {
+    if (cardType === 'sensei') {
+      return SENSEI_IMAGES[key] ?? null;
+    }
+    const stages = NINJA_IMAGES[key];
+    if (!stages) return null;
+    if (stages[stage]) return stages[stage];
+    // Fall back to the HIGHEST available stage (most evolved form), not stage 0
+    const availableStages = Object.keys(stages).map(Number).sort((a, b) => b - a);
+    for (const s of availableStages) {
+      if (s <= stage && stages[s]) return stages[s];
+    }
+    return stages[availableStages[0]] ?? null;
+  })();
+  return raw ? asset(raw) : null;
 }
 
 
@@ -1230,7 +1234,7 @@ export default function CardArt({ cardName, cardType, chakraType, stage = 0, art
   }, [cardName, artPath, stage]);
 
   if (cardType === 'ninja' || cardType === 'sensei') {
-    const artPathSrc = artPath ? `/assets/${artPath}` : null;
+    const artPathSrc = artPath ? asset(`/assets/${artPath}`) : null;
     const charKey = getCharacterKey(cardName);
     const namedSrc = getCharacterImage(charKey, cardType, stage);
 
